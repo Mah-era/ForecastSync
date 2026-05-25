@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-06
+Scenario Title,Low ROI Promotion
+Purpose,Test discount campaign that does not drive enough demand.
+Product Name,Face Wash
+Category,Skin Care
+Brand,Garnier
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Promotions, Forecast Accuracy"
+Recommended Inputs To Tick,"Promotions & Discounts, Historical Sales Data"
+Recommended Outputs To Tick,"Promotion Impact Analysis, Final SCM Recommendation"

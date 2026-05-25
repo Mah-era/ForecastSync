@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-20
+Scenario Title,Returns and Negative Demand Rows
+Purpose,Test negative rows handling.
+Product Name,T-Shirt
+Category,Clothing
+Brand,Trunk
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Historical Sales, Forecast Accuracy"
+Recommended Inputs To Tick,Historical Sales Data
+Recommended Outputs To Tick,"Sales Trend Analysis, Forecast Accuracy Report"

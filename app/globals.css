@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 214 32% 91%;
+  --muted-foreground: 215 16% 47%;
+  --card: 0 0% 100%;
+  --border: 214 32% 88%;
+  --primary: 186 78% 28%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 38 92% 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.leaflet-container {
+  min-height: 360px;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.rain-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rain-layer span {
+  position: absolute;
+  top: -80px;
+  width: 2px;
+  height: 54px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(14, 116, 144, 0), rgba(14, 116, 144, 0.34));
+  animation: rain-fall 2.4s linear infinite;
+}
+
+.clipart-cloud {
+  position: absolute;
+  width: 220px;
+  height: 72px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow:
+    46px -18px 0 10px rgba(255, 255, 255, 0.66),
+    108px -8px 0 2px rgba(255, 255, 255, 0.58),
+    0 18px 48px rgba(15, 23, 42, 0.08);
+  animation: cloud-drift 16s ease-in-out infinite alternate;
+}
+
+.clipart-cloud-a {
+  left: 5%;
+  top: 11%;
+}
+
+.clipart-cloud-b {
+  right: 10%;
+  top: 16%;
+  transform: scale(0.74);
+  animation-duration: 19s;
+}
+
+.clipart-route {
+  position: absolute;
+  right: 7%;
+  bottom: 9%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.75;
+  animation: route-float 4.8s ease-in-out infinite;
+}
+
+.clipart-node {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(15, 118, 110, 0.28);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.09);
+}
+
+.clipart-line {
+  width: 46px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(15, 118, 110, 0.32) 0 8px, transparent 8px 13px);
+}
+
+@keyframes rain-fall {
+  to {
+    transform: translate3d(-28px, calc(100vh + 140px), 0);
+  }
+}
+
+@keyframes cloud-drift {
+  to {
+    transform: translateX(32px);
+  }
+}
+
+@keyframes route-float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

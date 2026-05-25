@@ -1,0 +1,2583 @@
+{
+  "scenario_id": "DPF-29",
+  "source_excel_file": "DPF-29_Manual_Expert_Opinion_Heavy.xlsx",
+  "scenario_title": "Manual Expert Opinion Heavy",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-29"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Manual Expert Opinion Heavy"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test qualitative forecasting input."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Luxury Bridal Dress"
+        },
+        {
+          "Field": "Category",
+          "Value": "Wedding Fashion"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Gulzar e Nikah"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Expert Opinion, Seasonality, Market Trends"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Expert Opinion / Manual Notes, Seasonality, Market Trends"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Demand Forecast, Final SCM Recommendation, Action Plan"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-29"
+        ],
+        [
+          "Scenario Title",
+          "Manual Expert Opinion Heavy"
+        ],
+        [
+          "Purpose",
+          "Test qualitative forecasting input."
+        ],
+        [
+          "Product Name",
+          "Luxury Bridal Dress"
+        ],
+        [
+          "Category",
+          "Wedding Fashion"
+        ],
+        [
+          "Brand",
+          "Gulzar e Nikah"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Expert Opinion, Seasonality, Market Trends"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Expert Opinion / Manual Notes, Seasonality, Market Trends"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Demand Forecast, Final SCM Recommendation, Action Plan"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 74,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 5550000,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 72,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 5400000,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 132,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 9900000,
+          "Notes": "Ramadan/Eid demand surge"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 122,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 9150000,
+          "Notes": "Ramadan/Eid demand surge"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 95,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 7125000,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 87,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6525000,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 82,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6150000,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 94,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 7050000,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 83,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6225000,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 88,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6600000,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 98,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 7350000,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 101,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 7575000,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 91,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6825000,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 87,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 6525000,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 136,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 10200000,
+          "Notes": "Ramadan/Eid demand surge"
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 155,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 11625000,
+          "Notes": "Ramadan/Eid demand surge"
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 105,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 7875000,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 110,
+          "UnitPriceBDT": 75000,
+          "RevenueBDT": 8250000,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Dhaka",
+          "Retail",
+          74,
+          75000,
+          5550000,
+          ""
+        ],
+        [
+          45323,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Chattogram",
+          "Online",
+          72,
+          75000,
+          5400000,
+          ""
+        ],
+        [
+          45352,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Sylhet",
+          "Wholesale",
+          132,
+          75000,
+          9900000,
+          "Ramadan/Eid demand surge"
+        ],
+        [
+          45383,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rajshahi",
+          "Modern Trade",
+          122,
+          75000,
+          9150000,
+          "Ramadan/Eid demand surge"
+        ],
+        [
+          45413,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Khulna",
+          "Retail",
+          95,
+          75000,
+          7125000,
+          ""
+        ],
+        [
+          45444,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Barishal",
+          "Online",
+          87,
+          75000,
+          6525000,
+          ""
+        ],
+        [
+          45474,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rangpur",
+          "Wholesale",
+          82,
+          75000,
+          6150000,
+          ""
+        ],
+        [
+          45505,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Mymensingh",
+          "Modern Trade",
+          94,
+          75000,
+          7050000,
+          ""
+        ],
+        [
+          45536,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Dhaka",
+          "Retail",
+          83,
+          75000,
+          6225000,
+          ""
+        ],
+        [
+          45566,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Chattogram",
+          "Online",
+          88,
+          75000,
+          6600000,
+          ""
+        ],
+        [
+          45597,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Sylhet",
+          "Wholesale",
+          98,
+          75000,
+          7350000,
+          ""
+        ],
+        [
+          45627,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rajshahi",
+          "Modern Trade",
+          101,
+          75000,
+          7575000,
+          ""
+        ],
+        [
+          45658,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Khulna",
+          "Retail",
+          91,
+          75000,
+          6825000,
+          ""
+        ],
+        [
+          45689,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Barishal",
+          "Online",
+          87,
+          75000,
+          6525000,
+          ""
+        ],
+        [
+          45717,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rangpur",
+          "Wholesale",
+          136,
+          75000,
+          10200000,
+          "Ramadan/Eid demand surge"
+        ],
+        [
+          45748,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Mymensingh",
+          "Modern Trade",
+          155,
+          75000,
+          11625000,
+          "Ramadan/Eid demand surge"
+        ],
+        [
+          45778,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Dhaka",
+          "Retail",
+          105,
+          75000,
+          7875000,
+          ""
+        ],
+        [
+          45809,
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Chattogram",
+          "Online",
+          110,
+          75000,
+          8250000,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "GUL-DPF-29-01",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 1987,
+          "SafetyStock": 708,
+          "ReorderPoint": 1427,
+          "StockInTransit": 349,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GUL-DPF-29-02",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3532,
+          "SafetyStock": 583,
+          "ReorderPoint": 1399,
+          "StockInTransit": 475,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GUL-DPF-29-03",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1102,
+          "SafetyStock": 606,
+          "ReorderPoint": 1429,
+          "StockInTransit": 375,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "GUL-DPF-29-04",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1798,
+          "SafetyStock": 462,
+          "ReorderPoint": 1233,
+          "StockInTransit": 244,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GUL-DPF-29-05",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2608,
+          "SafetyStock": 557,
+          "ReorderPoint": 1338,
+          "StockInTransit": 268,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GUL-DPF-29-06",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 997,
+          "SafetyStock": 679,
+          "ReorderPoint": 1352,
+          "StockInTransit": 624,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "GUL-DPF-29-07",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1664,
+          "SafetyStock": 710,
+          "ReorderPoint": 1573,
+          "StockInTransit": 116,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GUL-DPF-29-08",
+          "ProductName": "Luxury Bridal Dress",
+          "Category": "Wedding Fashion",
+          "Brand": "Gulzar e Nikah",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2708,
+          "SafetyStock": 540,
+          "ReorderPoint": 1356,
+          "StockInTransit": 449,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "GUL-DPF-29-01",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Dhaka",
+          "Dhaka DC",
+          1987,
+          708,
+          1427,
+          349,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "GUL-DPF-29-02",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Chattogram",
+          "Chattogram DC",
+          3532,
+          583,
+          1399,
+          475,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "GUL-DPF-29-03",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Sylhet",
+          "Sylhet DC",
+          1102,
+          606,
+          1429,
+          375,
+          120,
+          45674,
+          "Reorder Needed"
+        ],
+        [
+          "GUL-DPF-29-04",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rajshahi",
+          "Rajshahi DC",
+          1798,
+          462,
+          1233,
+          244,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "GUL-DPF-29-05",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Khulna",
+          "Khulna DC",
+          2608,
+          557,
+          1338,
+          268,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "GUL-DPF-29-06",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Barishal",
+          "Barishal DC",
+          997,
+          679,
+          1352,
+          624,
+          120,
+          45677,
+          "Reorder Needed"
+        ],
+        [
+          "GUL-DPF-29-07",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Rangpur",
+          "Rangpur DC",
+          1664,
+          710,
+          1573,
+          116,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "GUL-DPF-29-08",
+          "Luxury Bridal Dress",
+          "Wedding Fashion",
+          "Gulzar e Nikah",
+          "Mymensingh",
+          "Mymensingh DC",
+          2708,
+          540,
+          1356,
+          449,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 23.4,
+          "ActualUpliftPct": 17.2,
+          "BudgetBDT": 124682,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 32.1,
+          "ActualUpliftPct": 21.5,
+          "BudgetBDT": 76051,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 26.7,
+          "ActualUpliftPct": 23.2,
+          "BudgetBDT": 104457,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 15.7,
+          "ActualUpliftPct": 15.9,
+          "BudgetBDT": 131116,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          23.4,
+          17.2,
+          124682,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          32.1,
+          21.5,
+          76051,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          26.7,
+          23.2,
+          104457,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          15.7,
+          15.9,
+          131116,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Wedding Fashion",
+          "CompetitorPriceBDT": 87118,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Wedding Fashion",
+          "CompetitorPriceBDT": 71544,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Wedding Fashion",
+          "CompetitorPriceBDT": 82103,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Wedding Fashion",
+          "CompetitorPriceBDT": 76996,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Wedding Fashion",
+          87118,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Wedding Fashion",
+          71544,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Wedding Fashion",
+          82103,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Wedding Fashion",
+          76996,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.52,
+          "IncomeIndex": 99.8,
+          "PurchasingPowerIndex": 87.16,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.98,
+          "IncomeIndex": 99.8,
+          "PurchasingPowerIndex": 86.37,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.01,
+          "IncomeIndex": 101.07,
+          "PurchasingPowerIndex": 86.7,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.51,
+          "IncomeIndex": 100.67,
+          "PurchasingPowerIndex": 85.74,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.7,
+          "IncomeIndex": 100.72,
+          "PurchasingPowerIndex": 85.42,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.55,
+          "IncomeIndex": 101.39,
+          "PurchasingPowerIndex": 85.88,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.89,
+          "IncomeIndex": 101.37,
+          "PurchasingPowerIndex": 85.3,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.62,
+          "IncomeIndex": 102.08,
+          "PurchasingPowerIndex": 85.97,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.82,
+          "IncomeIndex": 103.11,
+          "PurchasingPowerIndex": 87.63,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.64,
+          "IncomeIndex": 103.5,
+          "PurchasingPowerIndex": 88.06,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.24,
+          "IncomeIndex": 102.18,
+          "PurchasingPowerIndex": 88.35,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.01,
+          "IncomeIndex": 103.99,
+          "PurchasingPowerIndex": 89.28,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.48,
+          "IncomeIndex": 103.29,
+          "PurchasingPowerIndex": 89.97,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.12,
+          "IncomeIndex": 103.98,
+          "PurchasingPowerIndex": 90.78,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.54,
+          "IncomeIndex": 104.9,
+          "PurchasingPowerIndex": 90.36,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.48,
+          "IncomeIndex": 105.35,
+          "PurchasingPowerIndex": 90.6,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.61,
+          "IncomeIndex": 105.39,
+          "PurchasingPowerIndex": 90.38,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.81,
+          "IncomeIndex": 104.34,
+          "PurchasingPowerIndex": 89.72,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.52,
+          99.8,
+          87.16,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.98,
+          99.8,
+          86.37,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.01,
+          101.07,
+          86.7,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.51,
+          100.67,
+          85.74,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.7,
+          100.72,
+          85.42,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.55,
+          101.39,
+          85.88,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.89,
+          101.37,
+          85.3,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.62,
+          102.08,
+          85.97,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.82,
+          103.11,
+          87.63,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.64,
+          103.5,
+          88.06,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.24,
+          102.18,
+          88.35,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.01,
+          103.99,
+          89.28,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.48,
+          103.29,
+          89.97,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.12,
+          103.98,
+          90.78,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.54,
+          104.9,
+          90.36,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.48,
+          105.35,
+          90.6,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.61,
+          105.39,
+          90.38,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.81,
+          104.34,
+          89.72,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 17,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 9,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 29,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          7,
+          5,
+          4,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          2,
+          10,
+          7,
+          4,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          6,
+          7,
+          3,
+          1,
+          17,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          4,
+          11,
+          9,
+          5,
+          29,
+          "Yes",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 79,
+          "ActualUnits": 78,
+          "ForecastError": -1,
+          "AbsoluteError": 1,
+          "APE": 0.01282051282051282,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 83,
+          "ActualUnits": 72,
+          "ForecastError": -11,
+          "AbsoluteError": 11,
+          "APE": 0.1527777777777778,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 80,
+          "ActualUnits": 68,
+          "ForecastError": -12,
+          "AbsoluteError": 12,
+          "APE": 0.17647058823529413,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 84,
+          "ActualUnits": 86,
+          "ForecastError": 2,
+          "AbsoluteError": 2,
+          "APE": 0.023255813953488372,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 80,
+          "ActualUnits": 92,
+          "ForecastError": 12,
+          "AbsoluteError": 12,
+          "APE": 0.13043478260869565,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 89,
+          "ActualUnits": 94,
+          "ForecastError": 5,
+          "AbsoluteError": 5,
+          "APE": 0.05319148936170213,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 94,
+          "ActualUnits": 82,
+          "ForecastError": -12,
+          "AbsoluteError": 12,
+          "APE": 0.14634146341463414,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 91,
+          "ActualUnits": 106,
+          "ForecastError": 15,
+          "AbsoluteError": 15,
+          "APE": 0.14150943396226415,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 99,
+          "ActualUnits": 102,
+          "ForecastError": 3,
+          "AbsoluteError": 3,
+          "APE": 0.029411764705882353,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 91,
+          "ActualUnits": 81,
+          "ForecastError": -10,
+          "AbsoluteError": 10,
+          "APE": 0.12345679012345678,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 104,
+          "ActualUnits": 95,
+          "ForecastError": -9,
+          "AbsoluteError": 9,
+          "APE": 0.09473684210526316,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 106,
+          "ActualUnits": 109,
+          "ForecastError": 3,
+          "AbsoluteError": 3,
+          "APE": 0.027522935779816515,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          79,
+          78,
+          -1,
+          1,
+          0.01282051282051282,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          83,
+          72,
+          -11,
+          11,
+          0.1527777777777778,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          80,
+          68,
+          -12,
+          12,
+          0.17647058823529413,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          84,
+          86,
+          2,
+          2,
+          0.023255813953488372,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          80,
+          92,
+          12,
+          12,
+          0.13043478260869565,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          89,
+          94,
+          5,
+          5,
+          0.05319148936170213,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          94,
+          82,
+          -12,
+          12,
+          0.14634146341463414,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          91,
+          106,
+          15,
+          15,
+          0.14150943396226415,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          99,
+          102,
+          3,
+          3,
+          0.029411764705882353,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          91,
+          81,
+          -10,
+          10,
+          0.12345679012345678,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          104,
+          95,
+          -9,
+          9,
+          0.09473684210526316,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          106,
+          109,
+          3,
+          3,
+          0.027522935779816515,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 79,
+          "ForecastDemandUnits": 74,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 69,
+          "ForecastDemandUnits": 47,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 88,
+          "ForecastDemandUnits": 62,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 85,
+          "ForecastDemandUnits": 61,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 79,
+          "ForecastDemandUnits": 50,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 86,
+          "ForecastDemandUnits": 57,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 82,
+          "ForecastDemandUnits": 54,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 87,
+          "ForecastDemandUnits": 74,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          79,
+          74,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          69,
+          47,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          88,
+          62,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          85,
+          61,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          79,
+          50,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          86,
+          57,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          82,
+          54,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          87,
+          74,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 97136,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 124092,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 378053,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 82412,
+          "DemandPatternNote": "Demand rises before Ramadan/Eid"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 408663,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Monthly",
+          1,
+          97136,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          2,
+          124092,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          4,
+          378053,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Festival-based",
+          1,
+          82412,
+          "Demand rises before Ramadan/Eid"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Monthly",
+          5,
+          408663,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 256,
+          "DataQualityScore": 96,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 123,
+          "DataQualityScore": 79,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 68,
+          "DataQualityScore": 72,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 6,
+          "DataQualityScore": 65,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          256,
+          96,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          123,
+          79,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          68,
+          72,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          6,
+          65,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Luxury Bridal Dress Gulzar e Nikah Wedding Fashion Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Luxury Bridal Dress demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Wedding Fashion competitor pricing promotions Bangladesh Gulzar e Nikah",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Luxury Bridal Dress online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Luxury Bridal Dress Gulzar e Nikah Wedding Fashion Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Luxury Bridal Dress demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Wedding Fashion competitor pricing promotions Bangladesh Gulzar e Nikah",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Luxury Bridal Dress online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 74,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 75,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 74,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Senior Buyer",
+          "Role": "Expert",
+          "OpinionDate": 45580,
+          "DemandSignal": "No historical sales available; use analogous products",
+          "ConfidencePct": 75,
+          "Notes": "Cold-start qualitative scenario"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          74,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          75,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          74,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Senior Buyer",
+          "Expert",
+          45580,
+          "No historical sales available; use analogous products",
+          75,
+          "Cold-start qualitative scenario"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No reliable historical sales; app should use expert opinion and web data.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No reliable historical sales; app should use expert opinion and web data.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

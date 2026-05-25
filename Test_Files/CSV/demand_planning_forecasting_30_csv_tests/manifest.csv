@@ -1,0 +1,31 @@
+﻿scenario_id,scenario_title,source_excel_file,csv_folder,json_file,sheet_count
+DPF-01,Clean Baseline FMCG Demand,DPF-01_Clean_Baseline_FMCG_Demand.xlsx,DPF-01_Clean_Baseline_FMCG_Demand/,DPF-01_Clean_Baseline_FMCG_Demand.json,15
+DPF-02,Ramadan and Eid Seasonal Surge,DPF-02_Ramadan_and_Eid_Seasonal_Surge.xlsx,DPF-02_Ramadan_and_Eid_Seasonal_Surge/,DPF-02_Ramadan_and_Eid_Seasonal_Surge.json,15
+DPF-03,Winter Seasonal Demand Increase,DPF-03_Winter_Seasonal_Demand_Increase.xlsx,DPF-03_Winter_Seasonal_Demand_Increase/,DPF-03_Winter_Seasonal_Demand_Increase.json,15
+DPF-04,Summer Demand Softness,DPF-04_Summer_Demand_Softness.xlsx,DPF-04_Summer_Demand_Softness/,DPF-04_Summer_Demand_Softness.json,15
+DPF-05,High Promotion Uplift,DPF-05_High_Promotion_Uplift.xlsx,DPF-05_High_Promotion_Uplift/,DPF-05_High_Promotion_Uplift.json,15
+DPF-06,Low ROI Promotion,DPF-06_Low_ROI_Promotion.xlsx,DPF-06_Low_ROI_Promotion/,DPF-06_Low_ROI_Promotion.json,15
+DPF-07,Competitor Price Drop Pressure,DPF-07_Competitor_Price_Drop_Pressure.xlsx,DPF-07_Competitor_Price_Drop_Pressure/,DPF-07_Competitor_Price_Drop_Pressure.json,15
+DPF-08,Competitor Product Launch,DPF-08_Competitor_Product_Launch.xlsx,DPF-08_Competitor_Product_Launch/,DPF-08_Competitor_Product_Launch.json,15
+DPF-09,Inflation Demand Reduction,DPF-09_Inflation_Demand_Reduction.xlsx,DPF-09_Inflation_Demand_Reduction/,DPF-09_Inflation_Demand_Reduction.json,15
+DPF-10,Purchasing Power Improvement,DPF-10_Purchasing_Power_Improvement.xlsx,DPF-10_Purchasing_Power_Improvement/,DPF-10_Purchasing_Power_Improvement.json,15
+DPF-11,Low Inventory Stockout Risk,DPF-11_Low_Inventory_Stockout_Risk.xlsx,DPF-11_Low_Inventory_Stockout_Risk/,DPF-11_Low_Inventory_Stockout_Risk.json,15
+DPF-12,Overstock Risk,DPF-12_Overstock_Risk.xlsx,DPF-12_Overstock_Risk/,DPF-12_Overstock_Risk.json,15
+DPF-13,Long Import Lead Time,DPF-13_Long_Import_Lead_Time.xlsx,DPF-13_Long_Import_Lead_Time/,DPF-13_Long_Import_Lead_Time.json,15
+DPF-14,Supplier Production Delay,DPF-14_Supplier_Production_Delay.xlsx,DPF-14_Supplier_Production_Delay/,DPF-14_Supplier_Production_Delay.json,15
+DPF-15,New Product Cold Start,DPF-15_New_Product_Cold_Start.xlsx,DPF-15_New_Product_Cold_Start/,DPF-15_New_Product_Cold_Start.json,15
+DPF-16,Missing Historical Months,DPF-16_Missing_Historical_Months.xlsx,DPF-16_Missing_Historical_Months/,DPF-16_Missing_Historical_Months.json,15
+DPF-17,Duplicate Sales Rows,DPF-17_Duplicate_Sales_Rows.xlsx,DPF-17_Duplicate_Sales_Rows/,DPF-17_Duplicate_Sales_Rows.json,15
+DPF-18,Wrong Date Formats,DPF-18_Wrong_Date_Formats.xlsx,DPF-18_Wrong_Date_Formats/,DPF-18_Wrong_Date_Formats.json,15
+DPF-19,Text Numbers and Currency Symbols,DPF-19_Text_Numbers_and_Currency_Symbols.xlsx,DPF-19_Text_Numbers_and_Currency_Symbols/,DPF-19_Text_Numbers_and_Currency_Symbols.json,15
+DPF-20,Returns and Negative Demand Rows,DPF-20_Returns_and_Negative_Demand_Rows.xlsx,DPF-20_Returns_and_Negative_Demand_Rows/,DPF-20_Returns_and_Negative_Demand_Rows.json,15
+DPF-21,Extreme Outlier Spike,DPF-21_Extreme_Outlier_Spike.xlsx,DPF-21_Extreme_Outlier_Spike/,DPF-21_Extreme_Outlier_Spike.json,15
+DPF-22,Bangladesh Regional Demand Map,DPF-22_Bangladesh_Regional_Demand_Map.xlsx,DPF-22_Bangladesh_Regional_Demand_Map/,DPF-22_Bangladesh_Regional_Demand_Map.json,15
+DPF-23,Multi-Channel POS Demand,DPF-23_Multi_Channel_POS_Demand.xlsx,DPF-23_Multi_Channel_POS_Demand/,DPF-23_Multi_Channel_POS_Demand.json,15
+DPF-24,ERP Schema Mismatch,DPF-24_ERP_Schema_Mismatch.xlsx,DPF-24_ERP_Schema_Mismatch/,DPF-24_ERP_Schema_Mismatch.json,16
+DPF-25,JSON-like Nested Data in Excel,DPF-25_JSON_like_Nested_Data_in_Excel.xlsx,DPF-25_JSON_like_Nested_Data_in_Excel/,DPF-25_JSON_like_Nested_Data_in_Excel.json,16
+DPF-26,Forecast Accuracy Benchmark,DPF-26_Forecast_Accuracy_Benchmark.xlsx,DPF-26_Forecast_Accuracy_Benchmark/,DPF-26_Forecast_Accuracy_Benchmark.json,15
+DPF-27,Mixed Brands and Categories,DPF-27_Mixed_Brands_and_Categories.xlsx,DPF-27_Mixed_Brands_and_Categories/,DPF-27_Mixed_Brands_and_Categories.json,15
+DPF-28,Web Search Source Seeds,DPF-28_Web_Search_Source_Seeds.xlsx,DPF-28_Web_Search_Source_Seeds/,DPF-28_Web_Search_Source_Seeds.json,15
+DPF-29,Manual Expert Opinion Heavy,DPF-29_Manual_Expert_Opinion_Heavy.xlsx,DPF-29_Manual_Expert_Opinion_Heavy/,DPF-29_Manual_Expert_Opinion_Heavy.json,15
+DPF-30,Full End-to-End Complex Scenario,DPF-30_Full_End_to_End_Complex_Scenario.xlsx,DPF-30_Full_End_to_End_Complex_Scenario/,DPF-30_Full_End_to_End_Complex_Scenario.json,15

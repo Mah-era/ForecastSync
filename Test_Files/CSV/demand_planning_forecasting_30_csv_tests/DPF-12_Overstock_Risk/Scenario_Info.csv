@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-12
+Scenario Title,Overstock Risk
+Purpose,Test overstock and holding-cost recommendation.
+Product Name,Formal Shirt
+Category,Clothing
+Brand,Aarong
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Inventory, Historical Sales"
+Recommended Inputs To Tick,"Inventory Levels, Historical Sales Data"
+Recommended Outputs To Tick,"Inventory Requirement, Final SCM Recommendation, Risk Alerts"

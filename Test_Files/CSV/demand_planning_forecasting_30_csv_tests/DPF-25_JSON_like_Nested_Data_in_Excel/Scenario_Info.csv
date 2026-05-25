@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-25
+Scenario Title,JSON-like Nested Data in Excel
+Purpose,Test pasted/nested JSON fields inside Excel.
+Product Name,Cloud Subscription
+Category,Technology Service
+Brand,BDTech
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Technology & Data Tools, Customer Demand Patterns"
+Recommended Inputs To Tick,"JSON Data, Uploaded File Data, Customer Demand Data"
+Recommended Outputs To Tick,"Data Quality Score, Customer Demand Pattern"

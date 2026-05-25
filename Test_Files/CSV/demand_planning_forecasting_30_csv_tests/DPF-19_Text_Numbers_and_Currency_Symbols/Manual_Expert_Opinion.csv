@@ -1,0 +1,5 @@
+﻿ExpertName,Role,OpinionDate,DemandSignal,ConfidencePct,Notes
+Expert 1,Sales Manager,45536,High demand before Eid,60,Qualitative input for expert-opinion forecasting
+Expert 2,Demand Planner,45546,Competitor pricing could reduce demand,88,Qualitative input for expert-opinion forecasting
+Expert 3,Inventory Manager,45556,Online demand rising,70,Qualitative input for expert-opinion forecasting
+Expert 4,Marketing Lead,45566,Inventory should be increased before campaign,84,Qualitative input for expert-opinion forecasting

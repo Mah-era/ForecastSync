@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+FRE-DPF-09-01,Cooking Oil 5L,Grocery,Fresh,Dhaka,Dhaka DC,3157,566,1161,573,120,45672,Overstock Risk
+FRE-DPF-09-02,Cooking Oil 5L,Grocery,Fresh,Chattogram,Chattogram DC,2591,445,1170,208,120,45673,Overstock Risk
+FRE-DPF-09-03,Cooking Oil 5L,Grocery,Fresh,Sylhet,Sylhet DC,1288,558,1315,207,120,45674,Reorder Needed
+FRE-DPF-09-04,Cooking Oil 5L,Grocery,Fresh,Rajshahi,Rajshahi DC,2073,623,1210,611,120,45675,OK
+FRE-DPF-09-05,Cooking Oil 5L,Grocery,Fresh,Khulna,Khulna DC,1070,585,1307,619,120,45676,Reorder Needed
+FRE-DPF-09-06,Cooking Oil 5L,Grocery,Fresh,Barishal,Barishal DC,2468,547,1257,425,120,45677,OK
+FRE-DPF-09-07,Cooking Oil 5L,Grocery,Fresh,Rangpur,Rangpur DC,3695,510,1075,509,120,45678,Overstock Risk
+FRE-DPF-09-08,Cooking Oil 5L,Grocery,Fresh,Mymensingh,Mymensingh DC,1866,642,1403,499,120,45679,OK

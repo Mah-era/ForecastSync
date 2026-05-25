@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-13
+Scenario Title,Long Import Lead Time
+Purpose,Test lead-time-based reorder planning.
+Product Name,Smart Watch
+Category,Electronics
+Brand,Xiaomi
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Lead Time, Inventory, Forecasting Methods"
+Recommended Inputs To Tick,"Lead Time, Inventory Levels, Historical Sales Data"
+Recommended Outputs To Tick,"Lead Time Analysis, Inventory Requirement, Stockout Risk"

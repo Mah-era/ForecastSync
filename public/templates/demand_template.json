@@ -1,0 +1,5 @@
+[
+  { "period": "Jan", "actual": 7200, "promotion": 0, "festival": 0, "inventory": 9100, "region": "Dhaka" },
+  { "period": "Feb", "actual": 7600, "promotion": 4, "festival": 0, "inventory": 8600, "region": "Chattogram" },
+  { "period": "Mar", "actual": 8900, "promotion": 8, "festival": 12, "inventory": 7900, "region": "Dhaka" }
+]

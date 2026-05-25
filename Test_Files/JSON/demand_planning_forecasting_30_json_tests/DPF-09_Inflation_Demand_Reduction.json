@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-09",
+  "source_excel_file": "DPF-09_Inflation_Demand_Reduction.xlsx",
+  "scenario_title": "Inflation Demand Reduction",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-09"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Inflation Demand Reduction"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test economic condition adjustment."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Cooking Oil 5L"
+        },
+        {
+          "Field": "Category",
+          "Value": "Grocery"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Fresh"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Economic Conditions, Historical Sales, Inventory"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Economic Conditions, Historical Sales Data, Online Web Search Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Economic Condition Impact, Demand Forecast, Final SCM Recommendation"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-09"
+        ],
+        [
+          "Scenario Title",
+          "Inflation Demand Reduction"
+        ],
+        [
+          "Purpose",
+          "Test economic condition adjustment."
+        ],
+        [
+          "Product Name",
+          "Cooking Oil 5L"
+        ],
+        [
+          "Category",
+          "Grocery"
+        ],
+        [
+          "Brand",
+          "Fresh"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Economic Conditions, Historical Sales, Inventory"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Economic Conditions, Historical Sales Data, Online Web Search Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Economic Condition Impact, Demand Forecast, Final SCM Recommendation"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1518,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1366200,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1753,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1577700,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1726,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1553400,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1527,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1374300,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1780,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1602000,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1699,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1529100,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1260,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1134000,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1303,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1172700,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1383,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1244700,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1609,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1448100,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1526,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1373400,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1612,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1450800,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1558,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1402200,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1422,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1279800,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1507,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1356300,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1530,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1377000,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1450,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1305000,
+          "Notes": "Demand softened by inflation"
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1615,
+          "UnitPriceBDT": 900,
+          "RevenueBDT": 1453500,
+          "Notes": "Demand softened by inflation"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Dhaka",
+          "Retail",
+          1518,
+          900,
+          1366200,
+          ""
+        ],
+        [
+          45323,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Chattogram",
+          "Online",
+          1753,
+          900,
+          1577700,
+          ""
+        ],
+        [
+          45352,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Sylhet",
+          "Wholesale",
+          1726,
+          900,
+          1553400,
+          ""
+        ],
+        [
+          45383,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rajshahi",
+          "Modern Trade",
+          1527,
+          900,
+          1374300,
+          ""
+        ],
+        [
+          45413,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Khulna",
+          "Retail",
+          1780,
+          900,
+          1602000,
+          ""
+        ],
+        [
+          45444,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Barishal",
+          "Online",
+          1699,
+          900,
+          1529100,
+          ""
+        ],
+        [
+          45474,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rangpur",
+          "Wholesale",
+          1260,
+          900,
+          1134000,
+          "Demand softened by inflation"
+        ],
+        [
+          45505,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Mymensingh",
+          "Modern Trade",
+          1303,
+          900,
+          1172700,
+          "Demand softened by inflation"
+        ],
+        [
+          45536,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Dhaka",
+          "Retail",
+          1383,
+          900,
+          1244700,
+          "Demand softened by inflation"
+        ],
+        [
+          45566,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Chattogram",
+          "Online",
+          1609,
+          900,
+          1448100,
+          "Demand softened by inflation"
+        ],
+        [
+          45597,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Sylhet",
+          "Wholesale",
+          1526,
+          900,
+          1373400,
+          "Demand softened by inflation"
+        ],
+        [
+          45627,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rajshahi",
+          "Modern Trade",
+          1612,
+          900,
+          1450800,
+          "Demand softened by inflation"
+        ],
+        [
+          45658,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Khulna",
+          "Retail",
+          1558,
+          900,
+          1402200,
+          "Demand softened by inflation"
+        ],
+        [
+          45689,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Barishal",
+          "Online",
+          1422,
+          900,
+          1279800,
+          "Demand softened by inflation"
+        ],
+        [
+          45717,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rangpur",
+          "Wholesale",
+          1507,
+          900,
+          1356300,
+          "Demand softened by inflation"
+        ],
+        [
+          45748,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Mymensingh",
+          "Modern Trade",
+          1530,
+          900,
+          1377000,
+          "Demand softened by inflation"
+        ],
+        [
+          45778,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Dhaka",
+          "Retail",
+          1450,
+          900,
+          1305000,
+          "Demand softened by inflation"
+        ],
+        [
+          45809,
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Chattogram",
+          "Online",
+          1615,
+          900,
+          1453500,
+          "Demand softened by inflation"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "FRE-DPF-09-01",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3157,
+          "SafetyStock": 566,
+          "ReorderPoint": 1161,
+          "StockInTransit": 573,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "FRE-DPF-09-02",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 2591,
+          "SafetyStock": 445,
+          "ReorderPoint": 1170,
+          "StockInTransit": 208,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "FRE-DPF-09-03",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1288,
+          "SafetyStock": 558,
+          "ReorderPoint": 1315,
+          "StockInTransit": 207,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "FRE-DPF-09-04",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2073,
+          "SafetyStock": 623,
+          "ReorderPoint": 1210,
+          "StockInTransit": 611,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "FRE-DPF-09-05",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 1070,
+          "SafetyStock": 585,
+          "ReorderPoint": 1307,
+          "StockInTransit": 619,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "FRE-DPF-09-06",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2468,
+          "SafetyStock": 547,
+          "ReorderPoint": 1257,
+          "StockInTransit": 425,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "FRE-DPF-09-07",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 3695,
+          "SafetyStock": 510,
+          "ReorderPoint": 1075,
+          "StockInTransit": 509,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "FRE-DPF-09-08",
+          "ProductName": "Cooking Oil 5L",
+          "Category": "Grocery",
+          "Brand": "Fresh",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1866,
+          "SafetyStock": 642,
+          "ReorderPoint": 1403,
+          "StockInTransit": 499,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "FRE-DPF-09-01",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Dhaka",
+          "Dhaka DC",
+          3157,
+          566,
+          1161,
+          573,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "FRE-DPF-09-02",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Chattogram",
+          "Chattogram DC",
+          2591,
+          445,
+          1170,
+          208,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "FRE-DPF-09-03",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Sylhet",
+          "Sylhet DC",
+          1288,
+          558,
+          1315,
+          207,
+          120,
+          45674,
+          "Reorder Needed"
+        ],
+        [
+          "FRE-DPF-09-04",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rajshahi",
+          "Rajshahi DC",
+          2073,
+          623,
+          1210,
+          611,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "FRE-DPF-09-05",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Khulna",
+          "Khulna DC",
+          1070,
+          585,
+          1307,
+          619,
+          120,
+          45676,
+          "Reorder Needed"
+        ],
+        [
+          "FRE-DPF-09-06",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Barishal",
+          "Barishal DC",
+          2468,
+          547,
+          1257,
+          425,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "FRE-DPF-09-07",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Rangpur",
+          "Rangpur DC",
+          3695,
+          510,
+          1075,
+          509,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "FRE-DPF-09-08",
+          "Cooking Oil 5L",
+          "Grocery",
+          "Fresh",
+          "Mymensingh",
+          "Mymensingh DC",
+          1866,
+          642,
+          1403,
+          499,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 20.8,
+          "ActualUpliftPct": 17.7,
+          "BudgetBDT": 73990,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 27.8,
+          "ActualUpliftPct": 31.7,
+          "BudgetBDT": 85758,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 26.7,
+          "ActualUpliftPct": 24.8,
+          "BudgetBDT": 132585,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 16.3,
+          "ActualUpliftPct": 18.6,
+          "BudgetBDT": 75679,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          20.8,
+          17.7,
+          73990,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          27.8,
+          31.7,
+          85758,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          26.7,
+          24.8,
+          132585,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          16.3,
+          18.6,
+          75679,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 989,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 886,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 833,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 752,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Grocery",
+          989,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Grocery",
+          886,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Grocery",
+          833,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Grocery",
+          752,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.32,
+          "IncomeIndex": 99.08,
+          "PurchasingPowerIndex": 87.28,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.15,
+          "IncomeIndex": 100.33,
+          "PurchasingPowerIndex": 86.24,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.54,
+          "IncomeIndex": 100.69,
+          "PurchasingPowerIndex": 85.7,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.36,
+          "IncomeIndex": 101.41,
+          "PurchasingPowerIndex": 86.21,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.48,
+          "IncomeIndex": 100.91,
+          "PurchasingPowerIndex": 85.86,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.86,
+          "IncomeIndex": 102.23,
+          "PurchasingPowerIndex": 85.6,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 11.49,
+          "IncomeIndex": 101.05,
+          "PurchasingPowerIndex": 80.78,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 11.29,
+          "IncomeIndex": 102.88,
+          "PurchasingPowerIndex": 81.67,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 11.19,
+          "IncomeIndex": 103.19,
+          "PurchasingPowerIndex": 81.93,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 10.6,
+          "IncomeIndex": 103.65,
+          "PurchasingPowerIndex": 83.07,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 10.27,
+          "IncomeIndex": 103,
+          "PurchasingPowerIndex": 83.44,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 10.15,
+          "IncomeIndex": 103.34,
+          "PurchasingPowerIndex": 83.74,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "High",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 9.77,
+          "IncomeIndex": 104.05,
+          "PurchasingPowerIndex": 84.6,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 9.13,
+          "IncomeIndex": 104.1,
+          "PurchasingPowerIndex": 85.71,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 9.49,
+          "IncomeIndex": 104.29,
+          "PurchasingPowerIndex": 85.15,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 9.24,
+          "IncomeIndex": 103.66,
+          "PurchasingPowerIndex": 85.39,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 9.62,
+          "IncomeIndex": 104.41,
+          "PurchasingPowerIndex": 84.97,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 9.87,
+          "IncomeIndex": 104.95,
+          "PurchasingPowerIndex": 84.71,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.32,
+          99.08,
+          87.28,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.15,
+          100.33,
+          86.24,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.54,
+          100.69,
+          85.7,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.36,
+          101.41,
+          86.21,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.48,
+          100.91,
+          85.86,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.86,
+          102.23,
+          85.6,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          11.49,
+          101.05,
+          80.78,
+          111.4,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          11.29,
+          102.88,
+          81.67,
+          111.8,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          11.19,
+          103.19,
+          81.93,
+          112.2,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          10.6,
+          103.65,
+          83.07,
+          112.6,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          10.27,
+          103,
+          83.44,
+          113,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          10.15,
+          103.34,
+          83.74,
+          113.4,
+          "High",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          9.77,
+          104.05,
+          84.6,
+          113.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          9.13,
+          104.1,
+          85.71,
+          114.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          9.49,
+          104.29,
+          85.15,
+          114.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          9.24,
+          103.66,
+          85.39,
+          115,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          9.62,
+          104.41,
+          84.97,
+          115.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          9.87,
+          104.95,
+          84.71,
+          115.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 9,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 17,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          10,
+          9,
+          1,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          4,
+          11,
+          6,
+          1,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          2,
+          11,
+          7,
+          5,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          3,
+          5,
+          4,
+          5,
+          17,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1657,
+          "ActualUnits": 1649,
+          "ForecastError": -8,
+          "AbsoluteError": 8,
+          "APE": 0.004851425106124924,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1510,
+          "ActualUnits": 1381,
+          "ForecastError": -129,
+          "AbsoluteError": 129,
+          "APE": 0.09341057204923968,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1712,
+          "ActualUnits": 1652,
+          "ForecastError": -60,
+          "AbsoluteError": 60,
+          "APE": 0.03631961259079903,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1848,
+          "ActualUnits": 1539,
+          "ForecastError": -309,
+          "AbsoluteError": 309,
+          "APE": 0.20077972709551656,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1608,
+          "ActualUnits": 1608,
+          "ForecastError": 0,
+          "AbsoluteError": 0,
+          "APE": 0,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1715,
+          "ActualUnits": 1711,
+          "ForecastError": -4,
+          "AbsoluteError": 4,
+          "APE": 0.0023378141437755697,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1640,
+          "ActualUnits": 1435,
+          "ForecastError": -205,
+          "AbsoluteError": 205,
+          "APE": 0.14285714285714285,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1775,
+          "ActualUnits": 1679,
+          "ForecastError": -96,
+          "AbsoluteError": 96,
+          "APE": 0.05717689100655152,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1774,
+          "ActualUnits": 2136,
+          "ForecastError": 362,
+          "AbsoluteError": 362,
+          "APE": 0.1694756554307116,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1709,
+          "ActualUnits": 1529,
+          "ForecastError": -180,
+          "AbsoluteError": 180,
+          "APE": 0.11772400261608895,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1927,
+          "ActualUnits": 2284,
+          "ForecastError": 357,
+          "AbsoluteError": 357,
+          "APE": 0.1563047285464098,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1803,
+          "ActualUnits": 2037,
+          "ForecastError": 234,
+          "AbsoluteError": 234,
+          "APE": 0.11487481590574374,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1657,
+          1649,
+          -8,
+          8,
+          0.004851425106124924,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1510,
+          1381,
+          -129,
+          129,
+          0.09341057204923968,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1712,
+          1652,
+          -60,
+          60,
+          0.03631961259079903,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1848,
+          1539,
+          -309,
+          309,
+          0.20077972709551656,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1608,
+          1608,
+          0,
+          0,
+          0,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1715,
+          1711,
+          -4,
+          4,
+          0.0023378141437755697,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1640,
+          1435,
+          -205,
+          205,
+          0.14285714285714285,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1775,
+          1679,
+          -96,
+          96,
+          0.05717689100655152,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1774,
+          2136,
+          362,
+          362,
+          0.1694756554307116,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1709,
+          1529,
+          -180,
+          180,
+          0.11772400261608895,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1927,
+          2284,
+          357,
+          357,
+          0.1563047285464098,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1803,
+          2037,
+          234,
+          234,
+          0.11487481590574374,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 98,
+          "ForecastDemandUnits": 1526,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 84,
+          "ForecastDemandUnits": 1200,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 76,
+          "ForecastDemandUnits": 1034,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 53,
+          "ForecastDemandUnits": 998,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 73,
+          "ForecastDemandUnits": 977,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 90,
+          "ForecastDemandUnits": 1400,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 50,
+          "ForecastDemandUnits": 924,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 65,
+          "ForecastDemandUnits": 1127,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          98,
+          1526,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          84,
+          1200,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          76,
+          1034,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          53,
+          998,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          73,
+          977,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          90,
+          1400,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          50,
+          924,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          65,
+          1127,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 9115,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 3313,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 5968,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 4591,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 5874,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Weekly",
+          9,
+          9115,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Monthly",
+          3,
+          3313,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          6,
+          5968,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          4,
+          4591,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          8,
+          5874,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 191,
+          "DataQualityScore": 93,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 114,
+          "DataQualityScore": 84,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 80,
+          "DataQualityScore": 74,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 24,
+          "DataQualityScore": 88,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          191,
+          93,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          114,
+          84,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          80,
+          74,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          24,
+          88,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Cooking Oil 5L Fresh Grocery Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Cooking Oil 5L demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Grocery competitor pricing promotions Bangladesh Fresh",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Cooking Oil 5L online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Cooking Oil 5L Fresh Grocery Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Cooking Oil 5L demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Grocery competitor pricing promotions Bangladesh Fresh",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Cooking Oil 5L online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 62,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 62,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 69,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 72,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          62,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          62,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          69,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          72,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

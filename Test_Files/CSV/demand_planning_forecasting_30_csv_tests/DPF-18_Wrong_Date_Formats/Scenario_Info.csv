@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-18
+Scenario Title,Wrong Date Formats
+Purpose,Test date parsing and normalization.
+Product Name,Leather Shoe
+Category,Footwear
+Brand,Apex
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Historical Sales, Technology & Data Tools"
+Recommended Inputs To Tick,"Uploaded File Data, Historical Sales Data"
+Recommended Outputs To Tick,"Sales Trend Analysis, Data Quality Score"

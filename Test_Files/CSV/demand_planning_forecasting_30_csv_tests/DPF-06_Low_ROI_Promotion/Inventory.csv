@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+GAR-DPF-06-01,Face Wash,Skin Care,Garnier,Dhaka,Dhaka DC,3593,712,1368,604,120,45672,Overstock Risk
+GAR-DPF-06-02,Face Wash,Skin Care,Garnier,Chattogram,Chattogram DC,2860,566,1223,625,120,45673,Overstock Risk
+GAR-DPF-06-03,Face Wash,Skin Care,Garnier,Sylhet,Sylhet DC,3328,469,1151,272,120,45674,Overstock Risk
+GAR-DPF-06-04,Face Wash,Skin Care,Garnier,Rajshahi,Rajshahi DC,1726,632,1199,532,120,45675,OK
+GAR-DPF-06-05,Face Wash,Skin Care,Garnier,Khulna,Khulna DC,2013,442,1279,503,120,45676,OK
+GAR-DPF-06-06,Face Wash,Skin Care,Garnier,Barishal,Barishal DC,3674,690,1488,533,120,45677,Overstock Risk
+GAR-DPF-06-07,Face Wash,Skin Care,Garnier,Rangpur,Rangpur DC,3471,653,1287,516,120,45678,Overstock Risk
+GAR-DPF-06-08,Face Wash,Skin Care,Garnier,Mymensingh,Mymensingh DC,1505,492,1132,491,120,45679,OK

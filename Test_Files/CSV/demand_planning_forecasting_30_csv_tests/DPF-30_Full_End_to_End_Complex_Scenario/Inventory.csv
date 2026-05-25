@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+DOV-DPF-30-01,Dove Shampoo,Personal Care,Dove,Dhaka,Dhaka DC,493,484,1149,393,120,45672,Reorder Needed
+DOV-DPF-30-02,Dove Shampoo,Personal Care,Dove,Chattogram,Chattogram DC,449,577,1302,349,120,45673,Stockout Risk
+DOV-DPF-30-03,Dove Shampoo,Personal Care,Dove,Sylhet,Sylhet DC,135,700,1422,607,120,45674,Stockout Risk
+DOV-DPF-30-04,Dove Shampoo,Personal Care,Dove,Rajshahi,Rajshahi DC,1494,537,1113,347,120,45675,OK
+DOV-DPF-30-05,Dove Shampoo,Personal Care,Dove,Khulna,Khulna DC,3412,620,1331,370,120,45676,Overstock Risk
+DOV-DPF-30-06,Dove Shampoo,Personal Care,Dove,Barishal,Barishal DC,308,683,1476,495,120,45677,Stockout Risk
+DOV-DPF-30-07,Dove Shampoo,Personal Care,Dove,Rangpur,Rangpur DC,1927,550,1292,182,120,45678,OK
+DOV-DPF-30-08,Dove Shampoo,Personal Care,Dove,Mymensingh,Mymensingh DC,2466,460,1181,495,120,45679,Overstock Risk

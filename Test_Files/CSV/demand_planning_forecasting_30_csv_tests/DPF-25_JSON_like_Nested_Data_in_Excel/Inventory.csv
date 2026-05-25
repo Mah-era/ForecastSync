@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+BDT-DPF-25-01,Cloud Subscription,Technology Service,BDTech,Dhaka,Dhaka DC,3249,603,1266,210,120,45672,Overstock Risk
+BDT-DPF-25-02,Cloud Subscription,Technology Service,BDTech,Chattogram,Chattogram DC,3562,517,1221,488,120,45673,Overstock Risk
+BDT-DPF-25-03,Cloud Subscription,Technology Service,BDTech,Sylhet,Sylhet DC,2513,624,1292,347,120,45674,OK
+BDT-DPF-25-04,Cloud Subscription,Technology Service,BDTech,Rajshahi,Rajshahi DC,1809,574,1248,217,120,45675,OK
+BDT-DPF-25-05,Cloud Subscription,Technology Service,BDTech,Khulna,Khulna DC,1679,604,1446,381,120,45676,OK
+BDT-DPF-25-06,Cloud Subscription,Technology Service,BDTech,Barishal,Barishal DC,2360,493,1130,299,120,45677,Overstock Risk
+BDT-DPF-25-07,Cloud Subscription,Technology Service,BDTech,Rangpur,Rangpur DC,2471,506,1218,467,120,45678,Overstock Risk
+BDT-DPF-25-08,Cloud Subscription,Technology Service,BDTech,Mymensingh,Mymensingh DC,2164,445,1099,297,120,45679,OK

@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+PRA-DPF-16-01,Rice 5kg,Grocery,Pran,Dhaka,Dhaka DC,2085,590,1205,334,120,45672,OK
+PRA-DPF-16-02,Rice 5kg,Grocery,Pran,Chattogram,Chattogram DC,3714,460,1208,83,120,45673,Overstock Risk
+PRA-DPF-16-03,Rice 5kg,Grocery,Pran,Sylhet,Sylhet DC,1495,694,1558,294,120,45674,Reorder Needed
+PRA-DPF-16-04,Rice 5kg,Grocery,Pran,Rajshahi,Rajshahi DC,1699,636,1441,308,120,45675,OK
+PRA-DPF-16-05,Rice 5kg,Grocery,Pran,Khulna,Khulna DC,2032,616,1348,159,120,45676,OK
+PRA-DPF-16-06,Rice 5kg,Grocery,Pran,Barishal,Barishal DC,1115,462,1317,611,120,45677,Reorder Needed
+PRA-DPF-16-07,Rice 5kg,Grocery,Pran,Rangpur,Rangpur DC,1322,530,1278,495,120,45678,OK
+PRA-DPF-16-08,Rice 5kg,Grocery,Pran,Mymensingh,Mymensingh DC,2743,617,1276,316,120,45679,Overstock Risk

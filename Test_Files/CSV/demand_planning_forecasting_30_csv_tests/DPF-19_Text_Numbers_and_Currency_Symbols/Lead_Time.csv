@@ -1,0 +1,5 @@
+﻿Supplier,SupplierCountry,OrderDate,PurchaseLeadDays,ProductionLeadDays,ShippingLeadDays,DeliveryLeadDays,TotalLeadTimeDays,DelayFlag,DelayReason
+Supplier A,Bangladesh,45505,4,11,8,4,27,Yes,
+Supplier B,China,45535,2,8,7,2,19,No,
+Supplier C,India,45565,6,12,7,5,30,Yes,
+Supplier D,Vietnam,45595,4,7,4,3,18,No,

@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-19",
+  "source_excel_file": "DPF-19_Text_Numbers_and_Currency_Symbols.xlsx",
+  "scenario_title": "Text Numbers and Currency Symbols",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-19"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Text Numbers and Currency Symbols"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test numeric cleaning."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Foundation Makeup"
+        },
+        {
+          "Field": "Category",
+          "Value": "Cosmetics"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Maybelline"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Technology & Data Tools"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Uploaded File Data, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Data Quality Score, Sales Trend Analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-19"
+        ],
+        [
+          "Scenario Title",
+          "Text Numbers and Currency Symbols"
+        ],
+        [
+          "Purpose",
+          "Test numeric cleaning."
+        ],
+        [
+          "Product Name",
+          "Foundation Makeup"
+        ],
+        [
+          "Category",
+          "Cosmetics"
+        ],
+        [
+          "Brand",
+          "Maybelline"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Technology & Data Tools"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Uploaded File Data, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Data Quality Score, Sales Trend Analysis"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": "937",
+          "UnitPriceBDT": "৳850",
+          "RevenueBDT": "BDT 796,450",
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1040,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 884000,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 924,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 785400,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 973,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 827050,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": "1,042",
+          "UnitPriceBDT": "৳850",
+          "RevenueBDT": "BDT 885,700",
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 945,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 803250,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 964,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 819400,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1131,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 961350,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": "1,126",
+          "UnitPriceBDT": "৳850",
+          "RevenueBDT": "BDT 957,100",
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1145,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 973250,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1189,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 1010650,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1192,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 1013200,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": "1,125",
+          "UnitPriceBDT": "৳850",
+          "RevenueBDT": "BDT 956,250",
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1042,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 885700,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1097,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 932450,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1166,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 991100,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": "1,075",
+          "UnitPriceBDT": "৳850",
+          "RevenueBDT": "BDT 913,750",
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1293,
+          "UnitPriceBDT": 850,
+          "RevenueBDT": 1099050,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Dhaka",
+          "Retail",
+          "937",
+          "৳850",
+          "BDT 796,450",
+          ""
+        ],
+        [
+          45323,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Chattogram",
+          "Online",
+          1040,
+          850,
+          884000,
+          ""
+        ],
+        [
+          45352,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Sylhet",
+          "Wholesale",
+          924,
+          850,
+          785400,
+          ""
+        ],
+        [
+          45383,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rajshahi",
+          "Modern Trade",
+          973,
+          850,
+          827050,
+          ""
+        ],
+        [
+          45413,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Khulna",
+          "Retail",
+          "1,042",
+          "৳850",
+          "BDT 885,700",
+          ""
+        ],
+        [
+          45444,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Barishal",
+          "Online",
+          945,
+          850,
+          803250,
+          ""
+        ],
+        [
+          45474,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rangpur",
+          "Wholesale",
+          964,
+          850,
+          819400,
+          ""
+        ],
+        [
+          45505,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Mymensingh",
+          "Modern Trade",
+          1131,
+          850,
+          961350,
+          ""
+        ],
+        [
+          45536,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Dhaka",
+          "Retail",
+          "1,126",
+          "৳850",
+          "BDT 957,100",
+          ""
+        ],
+        [
+          45566,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Chattogram",
+          "Online",
+          1145,
+          850,
+          973250,
+          ""
+        ],
+        [
+          45597,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Sylhet",
+          "Wholesale",
+          1189,
+          850,
+          1010650,
+          ""
+        ],
+        [
+          45627,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rajshahi",
+          "Modern Trade",
+          1192,
+          850,
+          1013200,
+          ""
+        ],
+        [
+          45658,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Khulna",
+          "Retail",
+          "1,125",
+          "৳850",
+          "BDT 956,250",
+          ""
+        ],
+        [
+          45689,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Barishal",
+          "Online",
+          1042,
+          850,
+          885700,
+          ""
+        ],
+        [
+          45717,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rangpur",
+          "Wholesale",
+          1097,
+          850,
+          932450,
+          ""
+        ],
+        [
+          45748,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Mymensingh",
+          "Modern Trade",
+          1166,
+          850,
+          991100,
+          ""
+        ],
+        [
+          45778,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Dhaka",
+          "Retail",
+          "1,075",
+          "৳850",
+          "BDT 913,750",
+          ""
+        ],
+        [
+          45809,
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Chattogram",
+          "Online",
+          1293,
+          850,
+          1099050,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "MAY-DPF-19-01",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3403,
+          "SafetyStock": 448,
+          "ReorderPoint": 1070,
+          "StockInTransit": 533,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "MAY-DPF-19-02",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3281,
+          "SafetyStock": 509,
+          "ReorderPoint": 1215,
+          "StockInTransit": 580,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "MAY-DPF-19-03",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2901,
+          "SafetyStock": 515,
+          "ReorderPoint": 1339,
+          "StockInTransit": 353,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "MAY-DPF-19-04",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2702,
+          "SafetyStock": 474,
+          "ReorderPoint": 1044,
+          "StockInTransit": 280,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "MAY-DPF-19-05",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2583,
+          "SafetyStock": 489,
+          "ReorderPoint": 1328,
+          "StockInTransit": 398,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MAY-DPF-19-06",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1881,
+          "SafetyStock": 485,
+          "ReorderPoint": 1331,
+          "StockInTransit": 487,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MAY-DPF-19-07",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2855,
+          "SafetyStock": 518,
+          "ReorderPoint": 1202,
+          "StockInTransit": 165,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "MAY-DPF-19-08",
+          "ProductName": "Foundation Makeup",
+          "Category": "Cosmetics",
+          "Brand": "Maybelline",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2520,
+          "SafetyStock": 705,
+          "ReorderPoint": 1539,
+          "StockInTransit": 431,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "MAY-DPF-19-01",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Dhaka",
+          "Dhaka DC",
+          3403,
+          448,
+          1070,
+          533,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "MAY-DPF-19-02",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Chattogram",
+          "Chattogram DC",
+          3281,
+          509,
+          1215,
+          580,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "MAY-DPF-19-03",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Sylhet",
+          "Sylhet DC",
+          2901,
+          515,
+          1339,
+          353,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "MAY-DPF-19-04",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rajshahi",
+          "Rajshahi DC",
+          2702,
+          474,
+          1044,
+          280,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "MAY-DPF-19-05",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Khulna",
+          "Khulna DC",
+          2583,
+          489,
+          1328,
+          398,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "MAY-DPF-19-06",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Barishal",
+          "Barishal DC",
+          1881,
+          485,
+          1331,
+          487,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "MAY-DPF-19-07",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Rangpur",
+          "Rangpur DC",
+          2855,
+          518,
+          1202,
+          165,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "MAY-DPF-19-08",
+          "Foundation Makeup",
+          "Cosmetics",
+          "Maybelline",
+          "Mymensingh",
+          "Mymensingh DC",
+          2520,
+          705,
+          1539,
+          431,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 20.1,
+          "ActualUpliftPct": 16.3,
+          "BudgetBDT": 106856,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 18.4,
+          "ActualUpliftPct": 20.5,
+          "BudgetBDT": 139082,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 15.1,
+          "ActualUpliftPct": 18.1,
+          "BudgetBDT": 128263,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 16,
+          "ActualUpliftPct": 10.5,
+          "BudgetBDT": 92715,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          20.1,
+          16.3,
+          106856,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          18.4,
+          20.5,
+          139082,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          15.1,
+          18.1,
+          128263,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          16,
+          10.5,
+          92715,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Cosmetics",
+          "CompetitorPriceBDT": 943,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Cosmetics",
+          "CompetitorPriceBDT": 790,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Cosmetics",
+          "CompetitorPriceBDT": 993,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Cosmetics",
+          "CompetitorPriceBDT": 894,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Cosmetics",
+          943,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Cosmetics",
+          790,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Cosmetics",
+          993,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Cosmetics",
+          894,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.45,
+          "IncomeIndex": 99.75,
+          "PurchasingPowerIndex": 87.25,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.8,
+          "IncomeIndex": 99.8,
+          "PurchasingPowerIndex": 86.68,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.22,
+          "IncomeIndex": 100.95,
+          "PurchasingPowerIndex": 86.31,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.7,
+          "IncomeIndex": 100.69,
+          "PurchasingPowerIndex": 85.41,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.43,
+          "IncomeIndex": 101.22,
+          "PurchasingPowerIndex": 86.04,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.79,
+          "IncomeIndex": 102.19,
+          "PurchasingPowerIndex": 85.71,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.52,
+          "IncomeIndex": 102.09,
+          "PurchasingPowerIndex": 86.15,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.43,
+          "IncomeIndex": 101.7,
+          "PurchasingPowerIndex": 86.17,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.81,
+          "IncomeIndex": 101.53,
+          "PurchasingPowerIndex": 87.18,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.96,
+          "IncomeIndex": 102.98,
+          "PurchasingPowerIndex": 87.36,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.49,
+          "IncomeIndex": 102.52,
+          "PurchasingPowerIndex": 88.03,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.03,
+          "IncomeIndex": 104.08,
+          "PurchasingPowerIndex": 89.28,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.47,
+          "IncomeIndex": 102.9,
+          "PurchasingPowerIndex": 89.87,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.54,
+          "IncomeIndex": 104.7,
+          "PurchasingPowerIndex": 90.28,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.48,
+          "IncomeIndex": 104.8,
+          "PurchasingPowerIndex": 90.42,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.41,
+          "IncomeIndex": 104.82,
+          "PurchasingPowerIndex": 90.55,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.63,
+          "IncomeIndex": 105.24,
+          "PurchasingPowerIndex": 90.3,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.9,
+          "IncomeIndex": 106.09,
+          "PurchasingPowerIndex": 90.1,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.45,
+          99.75,
+          87.25,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.8,
+          99.8,
+          86.68,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.22,
+          100.95,
+          86.31,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.7,
+          100.69,
+          85.41,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.43,
+          101.22,
+          86.04,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.79,
+          102.19,
+          85.71,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.52,
+          102.09,
+          86.15,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.43,
+          101.7,
+          86.17,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.81,
+          101.53,
+          87.18,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.96,
+          102.98,
+          87.36,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.49,
+          102.52,
+          88.03,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.03,
+          104.08,
+          89.28,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.47,
+          102.9,
+          89.87,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.54,
+          104.7,
+          90.28,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.48,
+          104.8,
+          90.42,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.41,
+          104.82,
+          90.55,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.63,
+          105.24,
+          90.3,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.9,
+          106.09,
+          90.1,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 27,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 30,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          4,
+          11,
+          8,
+          4,
+          27,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          2,
+          8,
+          7,
+          2,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          6,
+          12,
+          7,
+          5,
+          30,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          4,
+          7,
+          4,
+          3,
+          18,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 874,
+          "ActualUnits": 761,
+          "ForecastError": -113,
+          "AbsoluteError": 113,
+          "APE": 0.14848883048620237,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 922,
+          "ActualUnits": 1054,
+          "ForecastError": 132,
+          "AbsoluteError": 132,
+          "APE": 0.1252371916508539,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1040,
+          "ActualUnits": 929,
+          "ForecastError": -111,
+          "AbsoluteError": 111,
+          "APE": 0.11948331539289558,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1043,
+          "ActualUnits": 995,
+          "ForecastError": -48,
+          "AbsoluteError": 48,
+          "APE": 0.04824120603015075,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 942,
+          "ActualUnits": 906,
+          "ForecastError": -36,
+          "AbsoluteError": 36,
+          "APE": 0.039735099337748346,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1096,
+          "ActualUnits": 1033,
+          "ForecastError": -63,
+          "AbsoluteError": 63,
+          "APE": 0.06098741529525654,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1125,
+          "ActualUnits": 1072,
+          "ForecastError": -53,
+          "AbsoluteError": 53,
+          "APE": 0.049440298507462684,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1031,
+          "ActualUnits": 967,
+          "ForecastError": -64,
+          "AbsoluteError": 64,
+          "APE": 0.06618407445708377,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1179,
+          "ActualUnits": 1189,
+          "ForecastError": 10,
+          "AbsoluteError": 10,
+          "APE": 0.008410428931875526,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1203,
+          "ActualUnits": 1267,
+          "ForecastError": 64,
+          "AbsoluteError": 64,
+          "APE": 0.050513022888713496,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1241,
+          "ActualUnits": 1053,
+          "ForecastError": -188,
+          "AbsoluteError": 188,
+          "APE": 0.1785375118708452,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1249,
+          "ActualUnits": 1274,
+          "ForecastError": 25,
+          "AbsoluteError": 25,
+          "APE": 0.019623233908948195,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          874,
+          761,
+          -113,
+          113,
+          0.14848883048620237,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          922,
+          1054,
+          132,
+          132,
+          0.1252371916508539,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1040,
+          929,
+          -111,
+          111,
+          0.11948331539289558,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1043,
+          995,
+          -48,
+          48,
+          0.04824120603015075,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          942,
+          906,
+          -36,
+          36,
+          0.039735099337748346,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1096,
+          1033,
+          -63,
+          63,
+          0.06098741529525654,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1125,
+          1072,
+          -53,
+          53,
+          0.049440298507462684,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1031,
+          967,
+          -64,
+          64,
+          0.06618407445708377,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1179,
+          1189,
+          10,
+          10,
+          0.008410428931875526,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1203,
+          1267,
+          64,
+          64,
+          0.050513022888713496,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1241,
+          1053,
+          -188,
+          188,
+          0.1785375118708452,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1249,
+          1274,
+          25,
+          25,
+          0.019623233908948195,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 96,
+          "ForecastDemandUnits": 858,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 64,
+          "ForecastDemandUnits": 582,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 54,
+          "ForecastDemandUnits": 420,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 57,
+          "ForecastDemandUnits": 499,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 81,
+          "ForecastDemandUnits": 921,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 74,
+          "ForecastDemandUnits": 578,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 90,
+          "ForecastDemandUnits": 718,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 50,
+          "ForecastDemandUnits": 472,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          96,
+          858,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          64,
+          582,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          54,
+          420,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          57,
+          499,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          81,
+          921,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          74,
+          578,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          90,
+          718,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          50,
+          472,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 6022,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 6556,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 2789,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 2980,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 6292,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          6,
+          6022,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          8,
+          6556,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          3,
+          2789,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          3,
+          2980,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Festival-based",
+          7,
+          6292,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 172,
+          "DataQualityScore": 87,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 21,
+          "DataQualityScore": 71,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 78,
+          "DataQualityScore": 76,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 16,
+          "DataQualityScore": 90,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          172,
+          87,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          21,
+          71,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          78,
+          76,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          16,
+          90,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Foundation Makeup Maybelline Cosmetics Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Foundation Makeup demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Cosmetics competitor pricing promotions Bangladesh Maybelline",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Foundation Makeup online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Foundation Makeup Maybelline Cosmetics Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Foundation Makeup demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Cosmetics competitor pricing promotions Bangladesh Maybelline",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Foundation Makeup online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 60,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 88,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 70,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 84,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          60,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          88,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          70,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          84,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Some numeric fields contain currency symbols or commas as text.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Some numeric fields contain currency symbols or commas as text.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+TRU-DPF-20-01,T-Shirt,Clothing,Trunk,Dhaka,Dhaka DC,3737,534,1382,273,120,45672,Overstock Risk
+TRU-DPF-20-02,T-Shirt,Clothing,Trunk,Chattogram,Chattogram DC,1417,701,1555,297,120,45673,Reorder Needed
+TRU-DPF-20-03,T-Shirt,Clothing,Trunk,Sylhet,Sylhet DC,1532,640,1242,479,120,45674,OK
+TRU-DPF-20-04,T-Shirt,Clothing,Trunk,Rajshahi,Rajshahi DC,2570,486,1163,433,120,45675,Overstock Risk
+TRU-DPF-20-05,T-Shirt,Clothing,Trunk,Khulna,Khulna DC,982,681,1323,369,120,45676,Reorder Needed
+TRU-DPF-20-06,T-Shirt,Clothing,Trunk,Barishal,Barishal DC,1015,714,1486,434,120,45677,Reorder Needed
+TRU-DPF-20-07,T-Shirt,Clothing,Trunk,Rangpur,Rangpur DC,932,630,1323,284,120,45678,Reorder Needed
+TRU-DPF-20-08,T-Shirt,Clothing,Trunk,Mymensingh,Mymensingh DC,2448,570,1179,457,120,45679,Overstock Risk

@@ -1,0 +1,13 @@
+﻿Month,ForecastUnits,ActualUnits,ForecastError,AbsoluteError,APE,Notes
+45474,1621,1829,208,208,0.11372334609075997,Formula columns should calculate error and accuracy
+45505,1886,1744,-142,142,0.08142201834862385,Formula columns should calculate error and accuracy
+45536,1962,2042,80,80,0.039177277179236046,Formula columns should calculate error and accuracy
+45566,1880,1549,-331,331,0.21368624919302776,Formula columns should calculate error and accuracy
+45597,1779,2087,308,308,0.14758025874460948,Formula columns should calculate error and accuracy
+45627,2140,2222,82,82,0.0369036903690369,Formula columns should calculate error and accuracy
+45658,2151,2265,114,114,0.05033112582781457,Formula columns should calculate error and accuracy
+45689,1908,1662,-246,246,0.148014440433213,Formula columns should calculate error and accuracy
+45717,2008,2369,361,361,0.15238497256226255,Formula columns should calculate error and accuracy
+45748,2250,2620,370,370,0.14122137404580154,Formula columns should calculate error and accuracy
+45778,2332,2108,-224,224,0.1062618595825427,Formula columns should calculate error and accuracy
+45809,2086,1796,-290,290,0.16146993318485522,Formula columns should calculate error and accuracy

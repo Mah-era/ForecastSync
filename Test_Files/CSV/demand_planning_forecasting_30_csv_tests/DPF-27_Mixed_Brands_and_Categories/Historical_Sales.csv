@@ -1,0 +1,61 @@
+﻿Month,ProductName,Category,Brand,Region,Channel,UnitsSold,UnitPriceBDT,RevenueBDT,Notes
+45292,Dove Shampoo,Personal Care,Dove,Chattogram,Online,2038,420,855960,Mixed product row for filter testing
+45292,Lifebuoy Handwash,Personal Care,Lifebuoy,Rangpur,Wholesale,1044,210,219240,Mixed product row for filter testing
+45292,Bata Sandal,Footwear,Bata,Rangpur,Retail,489,950,464550,Mixed product row for filter testing
+45292,Trunk T-Shirt,Clothing,Trunk,Chattogram,Modern Trade,1203,780,938340,Mixed product row for filter testing
+45292,Samsung Phone,Electronics,Samsung,Khulna,Modern Trade,1629,35000,57015000,Mixed product row for filter testing
+45323,Dove Shampoo,Personal Care,Dove,Chattogram,Online,1641,420,689220,Mixed product row for filter testing
+45323,Lifebuoy Handwash,Personal Care,Lifebuoy,Dhaka,Wholesale,2051,210,430710,Mixed product row for filter testing
+45323,Bata Sandal,Footwear,Bata,Chattogram,Modern Trade,1026,950,974700,Mixed product row for filter testing
+45323,Trunk T-Shirt,Clothing,Trunk,Rangpur,Retail,1357,780,1058460,Mixed product row for filter testing
+45323,Samsung Phone,Electronics,Samsung,Dhaka,Retail,692,35000,24220000,Mixed product row for filter testing
+45352,Dove Shampoo,Personal Care,Dove,Mymensingh,Retail,1366,420,573720,Mixed product row for filter testing
+45352,Lifebuoy Handwash,Personal Care,Lifebuoy,Rajshahi,Online,518,210,108780,Mixed product row for filter testing
+45352,Bata Sandal,Footwear,Bata,Mymensingh,Wholesale,1711,950,1625450,Mixed product row for filter testing
+45352,Trunk T-Shirt,Clothing,Trunk,Rangpur,Online,2332,780,1818960,Mixed product row for filter testing
+45352,Samsung Phone,Electronics,Samsung,Chattogram,Modern Trade,1819,35000,63665000,Mixed product row for filter testing
+45383,Dove Shampoo,Personal Care,Dove,Khulna,Retail,1791,420,752220,Mixed product row for filter testing
+45383,Lifebuoy Handwash,Personal Care,Lifebuoy,Rajshahi,Modern Trade,1637,210,343770,Mixed product row for filter testing
+45383,Bata Sandal,Footwear,Bata,Rajshahi,Wholesale,1941,950,1843950,Mixed product row for filter testing
+45383,Trunk T-Shirt,Clothing,Trunk,Barishal,Wholesale,526,780,410280,Mixed product row for filter testing
+45383,Samsung Phone,Electronics,Samsung,Rangpur,Wholesale,368,35000,12880000,Mixed product row for filter testing
+45413,Dove Shampoo,Personal Care,Dove,Chattogram,Modern Trade,897,420,376740,Mixed product row for filter testing
+45413,Lifebuoy Handwash,Personal Care,Lifebuoy,Rajshahi,Retail,495,210,103950,Mixed product row for filter testing
+45413,Bata Sandal,Footwear,Bata,Barishal,Online,327,950,310650,Mixed product row for filter testing
+45413,Trunk T-Shirt,Clothing,Trunk,Rajshahi,Retail,635,780,495300,Mixed product row for filter testing
+45413,Samsung Phone,Electronics,Samsung,Rajshahi,Online,2390,35000,83650000,Mixed product row for filter testing
+45444,Dove Shampoo,Personal Care,Dove,Barishal,Online,1074,420,451080,Mixed product row for filter testing
+45444,Lifebuoy Handwash,Personal Care,Lifebuoy,Khulna,Online,131,210,27510,Mixed product row for filter testing
+45444,Bata Sandal,Footwear,Bata,Khulna,Online,652,950,619400,Mixed product row for filter testing
+45444,Trunk T-Shirt,Clothing,Trunk,Dhaka,Online,570,780,444600,Mixed product row for filter testing
+45444,Samsung Phone,Electronics,Samsung,Barishal,Online,180,35000,6300000,Mixed product row for filter testing
+45474,Dove Shampoo,Personal Care,Dove,Dhaka,Online,1446,420,607320,Mixed product row for filter testing
+45474,Lifebuoy Handwash,Personal Care,Lifebuoy,Dhaka,Online,1206,210,253260,Mixed product row for filter testing
+45474,Bata Sandal,Footwear,Bata,Chattogram,Retail,1844,950,1751800,Mixed product row for filter testing
+45474,Trunk T-Shirt,Clothing,Trunk,Mymensingh,Wholesale,2070,780,1614600,Mixed product row for filter testing
+45474,Samsung Phone,Electronics,Samsung,Chattogram,Modern Trade,2222,35000,77770000,Mixed product row for filter testing
+45505,Dove Shampoo,Personal Care,Dove,Rajshahi,Retail,2183,420,916860,Mixed product row for filter testing
+45505,Lifebuoy Handwash,Personal Care,Lifebuoy,Khulna,Modern Trade,2255,210,473550,Mixed product row for filter testing
+45505,Bata Sandal,Footwear,Bata,Dhaka,Modern Trade,247,950,234650,Mixed product row for filter testing
+45505,Trunk T-Shirt,Clothing,Trunk,Rangpur,Retail,1765,780,1376700,Mixed product row for filter testing
+45505,Samsung Phone,Electronics,Samsung,Mymensingh,Retail,2128,35000,74480000,Mixed product row for filter testing
+45536,Dove Shampoo,Personal Care,Dove,Barishal,Online,450,420,189000,Mixed product row for filter testing
+45536,Lifebuoy Handwash,Personal Care,Lifebuoy,Sylhet,Wholesale,389,210,81690,Mixed product row for filter testing
+45536,Bata Sandal,Footwear,Bata,Barishal,Modern Trade,2366,950,2247700,Mixed product row for filter testing
+45536,Trunk T-Shirt,Clothing,Trunk,Khulna,Modern Trade,2293,780,1788540,Mixed product row for filter testing
+45536,Samsung Phone,Electronics,Samsung,Rangpur,Retail,2190,35000,76650000,Mixed product row for filter testing
+45566,Dove Shampoo,Personal Care,Dove,Rajshahi,Modern Trade,588,420,246960,Mixed product row for filter testing
+45566,Lifebuoy Handwash,Personal Care,Lifebuoy,Rajshahi,Modern Trade,1969,210,413490,Mixed product row for filter testing
+45566,Bata Sandal,Footwear,Bata,Mymensingh,Modern Trade,1508,950,1432600,Mixed product row for filter testing
+45566,Trunk T-Shirt,Clothing,Trunk,Chattogram,Wholesale,1823,780,1421940,Mixed product row for filter testing
+45566,Samsung Phone,Electronics,Samsung,Barishal,Wholesale,1868,35000,65380000,Mixed product row for filter testing
+45597,Dove Shampoo,Personal Care,Dove,Sylhet,Modern Trade,1653,420,694260,Mixed product row for filter testing
+45597,Lifebuoy Handwash,Personal Care,Lifebuoy,Chattogram,Retail,394,210,82740,Mixed product row for filter testing
+45597,Bata Sandal,Footwear,Bata,Rangpur,Retail,501,950,475950,Mixed product row for filter testing
+45597,Trunk T-Shirt,Clothing,Trunk,Sylhet,Retail,1646,780,1283880,Mixed product row for filter testing
+45597,Samsung Phone,Electronics,Samsung,Barishal,Retail,2420,35000,84700000,Mixed product row for filter testing
+45627,Dove Shampoo,Personal Care,Dove,Barishal,Modern Trade,1802,420,756840,Mixed product row for filter testing
+45627,Lifebuoy Handwash,Personal Care,Lifebuoy,Khulna,Wholesale,330,210,69300,Mixed product row for filter testing
+45627,Bata Sandal,Footwear,Bata,Chattogram,Online,1560,950,1482000,Mixed product row for filter testing
+45627,Trunk T-Shirt,Clothing,Trunk,Mymensingh,Online,753,780,587340,Mixed product row for filter testing
+45627,Samsung Phone,Electronics,Samsung,Barishal,Wholesale,563,35000,19705000,Mixed product row for filter testing

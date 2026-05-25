@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-29
+Scenario Title,Manual Expert Opinion Heavy
+Purpose,Test qualitative forecasting input.
+Product Name,Luxury Bridal Dress
+Category,Wedding Fashion
+Brand,Gulzar e Nikah
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Expert Opinion, Seasonality, Market Trends"
+Recommended Inputs To Tick,"Expert Opinion / Manual Notes, Seasonality, Market Trends"
+Recommended Outputs To Tick,"Demand Forecast, Final SCM Recommendation, Action Plan"

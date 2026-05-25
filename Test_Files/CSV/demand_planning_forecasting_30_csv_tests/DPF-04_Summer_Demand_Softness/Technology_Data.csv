@@ -1,0 +1,7 @@
+﻿SourceType,Status,ConnectorType,FileOrAPI,RecordsDetected,DataQualityScore,Notes
+CSV Upload,Available,csvConnector,uploaded_sales.csv,109,84,Flat file import
+Excel Upload,Available,excelConnector,demand_workbook.xlsx,92,92,This workbook
+JSON Upload,Available,jsonConnector,customer_demand.json,68,72,Nested data import
+Web Search API,Available if key exists,webSearchConnector,Tavily/SerpAPI/Bing,12,89,Public market research
+ERP,Placeholder,erpConnector,Future MCP connector,0,,MCP-ready placeholder
+POS,Placeholder,posConnector,Future MCP connector,0,,MCP-ready placeholder

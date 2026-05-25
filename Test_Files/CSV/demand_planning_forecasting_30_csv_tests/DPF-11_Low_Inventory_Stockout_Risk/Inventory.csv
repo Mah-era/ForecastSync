@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+PAM-DPF-11-01,Baby Diaper Pack,Baby Care,Pampers,Dhaka,Dhaka DC,398,631,1386,181,120,45672,Stockout Risk
+PAM-DPF-11-02,Baby Diaper Pack,Baby Care,Pampers,Chattogram,Chattogram DC,362,502,1373,239,120,45673,Stockout Risk
+PAM-DPF-11-03,Baby Diaper Pack,Baby Care,Pampers,Sylhet,Sylhet DC,213,634,1295,267,120,45674,Stockout Risk
+PAM-DPF-11-04,Baby Diaper Pack,Baby Care,Pampers,Rajshahi,Rajshahi DC,3559,659,1307,142,120,45675,Overstock Risk
+PAM-DPF-11-05,Baby Diaper Pack,Baby Care,Pampers,Khulna,Khulna DC,2820,544,1418,525,120,45676,OK
+PAM-DPF-11-06,Baby Diaper Pack,Baby Care,Pampers,Barishal,Barishal DC,467,520,1172,468,120,45677,Stockout Risk
+PAM-DPF-11-07,Baby Diaper Pack,Baby Care,Pampers,Rangpur,Rangpur DC,1871,562,1204,338,120,45678,OK
+PAM-DPF-11-08,Baby Diaper Pack,Baby Care,Pampers,Mymensingh,Mymensingh DC,1456,588,1447,458,120,45679,OK

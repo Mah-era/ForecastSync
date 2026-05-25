@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-22",
+  "source_excel_file": "DPF-22_Bangladesh_Regional_Demand_Map.xlsx",
+  "scenario_title": "Bangladesh Regional Demand Map",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-22"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Bangladesh Regional Demand Map"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test map/dashboard by division."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Biscuit Pack"
+        },
+        {
+          "Field": "Category",
+          "Value": "Food"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Olympic"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Customer Demand Patterns, Regional Demand Map"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Customer Demand Patterns, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Customer Demand Pattern, Regional Demand Map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-22"
+        ],
+        [
+          "Scenario Title",
+          "Bangladesh Regional Demand Map"
+        ],
+        [
+          "Purpose",
+          "Test map/dashboard by division."
+        ],
+        [
+          "Product Name",
+          "Biscuit Pack"
+        ],
+        [
+          "Category",
+          "Food"
+        ],
+        [
+          "Brand",
+          "Olympic"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Customer Demand Patterns, Regional Demand Map"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Customer Demand Patterns, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Customer Demand Pattern, Regional Demand Map"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 3927,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 98175,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 3417,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 85425,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 3703,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 92575,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 3707,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 92675,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 4257,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 106425,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 4258,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 106450,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 4532,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 113300,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 3783,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 94575,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 4176,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 104400,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 3826,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 95650,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 4075,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 101875,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 4433,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 110825,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 3974,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 99350,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 4213,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 105325,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 4763,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 119075,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 4705,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 117625,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 4396,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 109900,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 4871,
+          "UnitPriceBDT": 25,
+          "RevenueBDT": 121775,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Dhaka",
+          "Retail",
+          3927,
+          25,
+          98175,
+          ""
+        ],
+        [
+          45323,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Chattogram",
+          "Online",
+          3417,
+          25,
+          85425,
+          ""
+        ],
+        [
+          45352,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Sylhet",
+          "Wholesale",
+          3703,
+          25,
+          92575,
+          ""
+        ],
+        [
+          45383,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rajshahi",
+          "Modern Trade",
+          3707,
+          25,
+          92675,
+          ""
+        ],
+        [
+          45413,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Khulna",
+          "Retail",
+          4257,
+          25,
+          106425,
+          ""
+        ],
+        [
+          45444,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Barishal",
+          "Online",
+          4258,
+          25,
+          106450,
+          ""
+        ],
+        [
+          45474,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rangpur",
+          "Wholesale",
+          4532,
+          25,
+          113300,
+          ""
+        ],
+        [
+          45505,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Mymensingh",
+          "Modern Trade",
+          3783,
+          25,
+          94575,
+          ""
+        ],
+        [
+          45536,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Dhaka",
+          "Retail",
+          4176,
+          25,
+          104400,
+          ""
+        ],
+        [
+          45566,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Chattogram",
+          "Online",
+          3826,
+          25,
+          95650,
+          ""
+        ],
+        [
+          45597,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Sylhet",
+          "Wholesale",
+          4075,
+          25,
+          101875,
+          ""
+        ],
+        [
+          45627,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rajshahi",
+          "Modern Trade",
+          4433,
+          25,
+          110825,
+          ""
+        ],
+        [
+          45658,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Khulna",
+          "Retail",
+          3974,
+          25,
+          99350,
+          ""
+        ],
+        [
+          45689,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Barishal",
+          "Online",
+          4213,
+          25,
+          105325,
+          ""
+        ],
+        [
+          45717,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rangpur",
+          "Wholesale",
+          4763,
+          25,
+          119075,
+          ""
+        ],
+        [
+          45748,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Mymensingh",
+          "Modern Trade",
+          4705,
+          25,
+          117625,
+          ""
+        ],
+        [
+          45778,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Dhaka",
+          "Retail",
+          4396,
+          25,
+          109900,
+          ""
+        ],
+        [
+          45809,
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Chattogram",
+          "Online",
+          4871,
+          25,
+          121775,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "OLY-DPF-22-01",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3202,
+          "SafetyStock": 442,
+          "ReorderPoint": 1260,
+          "StockInTransit": 459,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "OLY-DPF-22-02",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 1853,
+          "SafetyStock": 483,
+          "ReorderPoint": 1349,
+          "StockInTransit": 260,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "OLY-DPF-22-03",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1142,
+          "SafetyStock": 467,
+          "ReorderPoint": 1298,
+          "StockInTransit": 407,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "OLY-DPF-22-04",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 3195,
+          "SafetyStock": 641,
+          "ReorderPoint": 1373,
+          "StockInTransit": 610,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "OLY-DPF-22-05",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 1963,
+          "SafetyStock": 592,
+          "ReorderPoint": 1417,
+          "StockInTransit": 415,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "OLY-DPF-22-06",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3352,
+          "SafetyStock": 599,
+          "ReorderPoint": 1384,
+          "StockInTransit": 100,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "OLY-DPF-22-07",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1530,
+          "SafetyStock": 520,
+          "ReorderPoint": 1106,
+          "StockInTransit": 203,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "OLY-DPF-22-08",
+          "ProductName": "Biscuit Pack",
+          "Category": "Food",
+          "Brand": "Olympic",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1165,
+          "SafetyStock": 516,
+          "ReorderPoint": 1279,
+          "StockInTransit": 276,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "Reorder Needed"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "OLY-DPF-22-01",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Dhaka",
+          "Dhaka DC",
+          3202,
+          442,
+          1260,
+          459,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "OLY-DPF-22-02",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Chattogram",
+          "Chattogram DC",
+          1853,
+          483,
+          1349,
+          260,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "OLY-DPF-22-03",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Sylhet",
+          "Sylhet DC",
+          1142,
+          467,
+          1298,
+          407,
+          120,
+          45674,
+          "Reorder Needed"
+        ],
+        [
+          "OLY-DPF-22-04",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rajshahi",
+          "Rajshahi DC",
+          3195,
+          641,
+          1373,
+          610,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "OLY-DPF-22-05",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Khulna",
+          "Khulna DC",
+          1963,
+          592,
+          1417,
+          415,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "OLY-DPF-22-06",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Barishal",
+          "Barishal DC",
+          3352,
+          599,
+          1384,
+          100,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "OLY-DPF-22-07",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Rangpur",
+          "Rangpur DC",
+          1530,
+          520,
+          1106,
+          203,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "OLY-DPF-22-08",
+          "Biscuit Pack",
+          "Food",
+          "Olympic",
+          "Mymensingh",
+          "Mymensingh DC",
+          1165,
+          516,
+          1279,
+          276,
+          120,
+          45679,
+          "Reorder Needed"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 16.4,
+          "ActualUpliftPct": 12.8,
+          "BudgetBDT": 94028,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 34.9,
+          "ActualUpliftPct": 36.2,
+          "BudgetBDT": 124822,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 17.6,
+          "ActualUpliftPct": 19.1,
+          "BudgetBDT": 84706,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13.8,
+          "ActualUpliftPct": 17.2,
+          "BudgetBDT": 127600,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          16.4,
+          12.8,
+          94028,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          34.9,
+          36.2,
+          124822,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          17.6,
+          19.1,
+          84706,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13.8,
+          17.2,
+          127600,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Food",
+          "CompetitorPriceBDT": 26,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Food",
+          "CompetitorPriceBDT": 27,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Food",
+          "CompetitorPriceBDT": 28,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Food",
+          "CompetitorPriceBDT": 27,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Food",
+          26,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Food",
+          27,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Food",
+          28,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Food",
+          27,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.34,
+          "IncomeIndex": 99.06,
+          "PurchasingPowerIndex": 87.25,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.78,
+          "IncomeIndex": 99.84,
+          "PurchasingPowerIndex": 86.72,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.07,
+          "IncomeIndex": 101.49,
+          "PurchasingPowerIndex": 86.73,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.74,
+          "IncomeIndex": 100.53,
+          "PurchasingPowerIndex": 85.31,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.76,
+          "IncomeIndex": 100.99,
+          "PurchasingPowerIndex": 85.41,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.94,
+          "IncomeIndex": 101.42,
+          "PurchasingPowerIndex": 85.22,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.45,
+          "IncomeIndex": 101.29,
+          "PurchasingPowerIndex": 86.02,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.4,
+          "IncomeIndex": 101.63,
+          "PurchasingPowerIndex": 86.2,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.1,
+          "IncomeIndex": 103.2,
+          "PurchasingPowerIndex": 87.19,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.61,
+          "IncomeIndex": 102.14,
+          "PurchasingPowerIndex": 87.71,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.57,
+          "IncomeIndex": 103.02,
+          "PurchasingPowerIndex": 88.04,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.65,
+          "IncomeIndex": 102.39,
+          "PurchasingPowerIndex": 89.41,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.36,
+          "IncomeIndex": 103.85,
+          "PurchasingPowerIndex": 90.35,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.56,
+          "IncomeIndex": 103.74,
+          "PurchasingPowerIndex": 89.97,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.04,
+          "IncomeIndex": 103.96,
+          "PurchasingPowerIndex": 90.92,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.65,
+          "IncomeIndex": 104.56,
+          "PurchasingPowerIndex": 90.07,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.81,
+          "IncomeIndex": 105.52,
+          "PurchasingPowerIndex": 90.09,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.51,
+          "IncomeIndex": 105.54,
+          "PurchasingPowerIndex": 90.59,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.34,
+          99.06,
+          87.25,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.78,
+          99.84,
+          86.72,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.07,
+          101.49,
+          86.73,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.74,
+          100.53,
+          85.31,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.76,
+          100.99,
+          85.41,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.94,
+          101.42,
+          85.22,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.45,
+          101.29,
+          86.02,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.4,
+          101.63,
+          86.2,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.1,
+          103.2,
+          87.19,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.61,
+          102.14,
+          87.71,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.57,
+          103.02,
+          88.04,
+          113,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.65,
+          102.39,
+          89.41,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.36,
+          103.85,
+          90.35,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.56,
+          103.74,
+          89.97,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.04,
+          103.96,
+          90.92,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.65,
+          104.56,
+          90.07,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.81,
+          105.52,
+          90.09,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.51,
+          105.54,
+          90.59,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          6,
+          9,
+          7,
+          1,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          4,
+          11,
+          4,
+          4,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          2,
+          9,
+          4,
+          5,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          9,
+          5,
+          2,
+          18,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 3704,
+          "ActualUnits": 3277,
+          "ForecastError": -427,
+          "AbsoluteError": 427,
+          "APE": 0.13030210558437597,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 4228,
+          "ActualUnits": 5027,
+          "ForecastError": 799,
+          "AbsoluteError": 799,
+          "APE": 0.15894171474040183,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 4283,
+          "ActualUnits": 4538,
+          "ForecastError": 255,
+          "AbsoluteError": 255,
+          "APE": 0.05619215513442045,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 4019,
+          "ActualUnits": 3475,
+          "ForecastError": -544,
+          "AbsoluteError": 544,
+          "APE": 0.15654676258992806,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 3992,
+          "ActualUnits": 4847,
+          "ForecastError": 855,
+          "AbsoluteError": 855,
+          "APE": 0.17639777181761915,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 4436,
+          "ActualUnits": 4062,
+          "ForecastError": -374,
+          "AbsoluteError": 374,
+          "APE": 0.09207287050713935,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 4035,
+          "ActualUnits": 4224,
+          "ForecastError": 189,
+          "AbsoluteError": 189,
+          "APE": 0.044744318181818184,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 3967,
+          "ActualUnits": 4414,
+          "ForecastError": 447,
+          "AbsoluteError": 447,
+          "APE": 0.1012686905301314,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 4687,
+          "ActualUnits": 5677,
+          "ForecastError": 990,
+          "AbsoluteError": 990,
+          "APE": 0.17438788092302274,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 4513,
+          "ActualUnits": 3928,
+          "ForecastError": -585,
+          "AbsoluteError": 585,
+          "APE": 0.14893075356415478,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 4706,
+          "ActualUnits": 5641,
+          "ForecastError": 935,
+          "AbsoluteError": 935,
+          "APE": 0.16575075341251552,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 4326,
+          "ActualUnits": 4460,
+          "ForecastError": 134,
+          "AbsoluteError": 134,
+          "APE": 0.030044843049327353,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          3704,
+          3277,
+          -427,
+          427,
+          0.13030210558437597,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          4228,
+          5027,
+          799,
+          799,
+          0.15894171474040183,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          4283,
+          4538,
+          255,
+          255,
+          0.05619215513442045,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          4019,
+          3475,
+          -544,
+          544,
+          0.15654676258992806,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          3992,
+          4847,
+          855,
+          855,
+          0.17639777181761915,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          4436,
+          4062,
+          -374,
+          374,
+          0.09207287050713935,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          4035,
+          4224,
+          189,
+          189,
+          0.044744318181818184,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          3967,
+          4414,
+          447,
+          447,
+          0.1012686905301314,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          4687,
+          5677,
+          990,
+          990,
+          0.17438788092302274,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          4513,
+          3928,
+          -585,
+          585,
+          0.14893075356415478,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          4706,
+          5641,
+          935,
+          935,
+          0.16575075341251552,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          4326,
+          4460,
+          134,
+          134,
+          0.030044843049327353,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 3325,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 58,
+          "ForecastDemandUnits": 2677,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 93,
+          "ForecastDemandUnits": 3940,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 57,
+          "ForecastDemandUnits": 2397,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 70,
+          "ForecastDemandUnits": 3319,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 86,
+          "ForecastDemandUnits": 3061,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 78,
+          "ForecastDemandUnits": 2892,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 60,
+          "ForecastDemandUnits": 1966,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          91,
+          3325,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          58,
+          2677,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          93,
+          3940,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          57,
+          2397,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          70,
+          3319,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          86,
+          3061,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          78,
+          2892,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          60,
+          1966,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 29,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 80,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 84,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 126,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 150,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Monthly",
+          1,
+          29,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          4,
+          80,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Weekly",
+          4,
+          84,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          6,
+          126,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          5,
+          150,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 104,
+          "DataQualityScore": 92,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 53,
+          "DataQualityScore": 93,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 83,
+          "DataQualityScore": 88,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 20,
+          "DataQualityScore": 67,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          104,
+          92,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          53,
+          93,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          83,
+          88,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          20,
+          67,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Biscuit Pack Olympic Food Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Biscuit Pack demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Food competitor pricing promotions Bangladesh Olympic",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Biscuit Pack online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Biscuit Pack Olympic Food Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Biscuit Pack demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Food competitor pricing promotions Bangladesh Olympic",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Biscuit Pack online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 75,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          75,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

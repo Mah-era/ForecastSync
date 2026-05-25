@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-07",
+  "source_excel_file": "DPF-07_Competitor_Price_Drop_Pressure.xlsx",
+  "scenario_title": "Competitor Price Drop Pressure",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-07"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Competitor Price Drop Pressure"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test competitor price war impact."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Laundry Detergent"
+        },
+        {
+          "Field": "Category",
+          "Value": "Home Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Surf Excel"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Competitor Activities, Market Trends, Historical Sales"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Competitor Activities, Market Trends, Online Web Search Data, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Competitor Activity Analysis, Demand Forecast, Risk Alerts"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-07"
+        ],
+        [
+          "Scenario Title",
+          "Competitor Price Drop Pressure"
+        ],
+        [
+          "Purpose",
+          "Test competitor price war impact."
+        ],
+        [
+          "Product Name",
+          "Laundry Detergent"
+        ],
+        [
+          "Category",
+          "Home Care"
+        ],
+        [
+          "Brand",
+          "Surf Excel"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Competitor Activities, Market Trends, Historical Sales"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Competitor Activities, Market Trends, Online Web Search Data, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Competitor Activity Analysis, Demand Forecast, Risk Alerts"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1905,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 476250,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1908,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 477000,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 2136,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 534000,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2122,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 530500,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 2276,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 569000,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 2231,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 557750,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 2136,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 534000,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2385,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 596250,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 2480,
+          "UnitPriceBDT": 250,
+          "RevenueBDT": 620000,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 2042,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 485996,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1956,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 465528,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1817,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 432446,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1999,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 475762,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1737,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 413406,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 2219,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 528122,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2174,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 517412,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1995,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 474810,
+          "Notes": "Competitor price pressure"
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1862,
+          "UnitPriceBDT": 238,
+          "RevenueBDT": 443156,
+          "Notes": "Competitor price pressure"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Dhaka",
+          "Retail",
+          1905,
+          250,
+          476250,
+          ""
+        ],
+        [
+          45323,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Chattogram",
+          "Online",
+          1908,
+          250,
+          477000,
+          ""
+        ],
+        [
+          45352,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Sylhet",
+          "Wholesale",
+          2136,
+          250,
+          534000,
+          ""
+        ],
+        [
+          45383,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rajshahi",
+          "Modern Trade",
+          2122,
+          250,
+          530500,
+          ""
+        ],
+        [
+          45413,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Khulna",
+          "Retail",
+          2276,
+          250,
+          569000,
+          ""
+        ],
+        [
+          45444,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Barishal",
+          "Online",
+          2231,
+          250,
+          557750,
+          ""
+        ],
+        [
+          45474,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rangpur",
+          "Wholesale",
+          2136,
+          250,
+          534000,
+          ""
+        ],
+        [
+          45505,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Mymensingh",
+          "Modern Trade",
+          2385,
+          250,
+          596250,
+          ""
+        ],
+        [
+          45536,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Dhaka",
+          "Retail",
+          2480,
+          250,
+          620000,
+          ""
+        ],
+        [
+          45566,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Chattogram",
+          "Online",
+          2042,
+          238,
+          485996,
+          "Competitor price pressure"
+        ],
+        [
+          45597,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Sylhet",
+          "Wholesale",
+          1956,
+          238,
+          465528,
+          "Competitor price pressure"
+        ],
+        [
+          45627,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rajshahi",
+          "Modern Trade",
+          1817,
+          238,
+          432446,
+          "Competitor price pressure"
+        ],
+        [
+          45658,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Khulna",
+          "Retail",
+          1999,
+          238,
+          475762,
+          "Competitor price pressure"
+        ],
+        [
+          45689,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Barishal",
+          "Online",
+          1737,
+          238,
+          413406,
+          "Competitor price pressure"
+        ],
+        [
+          45717,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rangpur",
+          "Wholesale",
+          2219,
+          238,
+          528122,
+          "Competitor price pressure"
+        ],
+        [
+          45748,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Mymensingh",
+          "Modern Trade",
+          2174,
+          238,
+          517412,
+          "Competitor price pressure"
+        ],
+        [
+          45778,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Dhaka",
+          "Retail",
+          1995,
+          238,
+          474810,
+          "Competitor price pressure"
+        ],
+        [
+          45809,
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Chattogram",
+          "Online",
+          1862,
+          238,
+          443156,
+          "Competitor price pressure"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "SUR-DPF-07-01",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 2923,
+          "SafetyStock": 562,
+          "ReorderPoint": 1410,
+          "StockInTransit": 252,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "SUR-DPF-07-02",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 1301,
+          "SafetyStock": 475,
+          "ReorderPoint": 1235,
+          "StockInTransit": 397,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SUR-DPF-07-03",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2922,
+          "SafetyStock": 545,
+          "ReorderPoint": 1296,
+          "StockInTransit": 237,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "SUR-DPF-07-04",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2328,
+          "SafetyStock": 558,
+          "ReorderPoint": 1372,
+          "StockInTransit": 138,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SUR-DPF-07-05",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2757,
+          "SafetyStock": 681,
+          "ReorderPoint": 1417,
+          "StockInTransit": 551,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SUR-DPF-07-06",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2111,
+          "SafetyStock": 684,
+          "ReorderPoint": 1376,
+          "StockInTransit": 530,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SUR-DPF-07-07",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2021,
+          "SafetyStock": 641,
+          "ReorderPoint": 1301,
+          "StockInTransit": 247,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SUR-DPF-07-08",
+          "ProductName": "Laundry Detergent",
+          "Category": "Home Care",
+          "Brand": "Surf Excel",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1608,
+          "SafetyStock": 702,
+          "ReorderPoint": 1482,
+          "StockInTransit": 336,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "SUR-DPF-07-01",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Dhaka",
+          "Dhaka DC",
+          2923,
+          562,
+          1410,
+          252,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "SUR-DPF-07-02",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Chattogram",
+          "Chattogram DC",
+          1301,
+          475,
+          1235,
+          397,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "SUR-DPF-07-03",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Sylhet",
+          "Sylhet DC",
+          2922,
+          545,
+          1296,
+          237,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "SUR-DPF-07-04",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rajshahi",
+          "Rajshahi DC",
+          2328,
+          558,
+          1372,
+          138,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "SUR-DPF-07-05",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Khulna",
+          "Khulna DC",
+          2757,
+          681,
+          1417,
+          551,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "SUR-DPF-07-06",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Barishal",
+          "Barishal DC",
+          2111,
+          684,
+          1376,
+          530,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "SUR-DPF-07-07",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Rangpur",
+          "Rangpur DC",
+          2021,
+          641,
+          1301,
+          247,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "SUR-DPF-07-08",
+          "Laundry Detergent",
+          "Home Care",
+          "Surf Excel",
+          "Mymensingh",
+          "Mymensingh DC",
+          1608,
+          702,
+          1482,
+          336,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 13.1,
+          "ActualUpliftPct": 9.2,
+          "BudgetBDT": 108869,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 31.4,
+          "ActualUpliftPct": 27.4,
+          "BudgetBDT": 81710,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 15.9,
+          "ActualUpliftPct": 19.5,
+          "BudgetBDT": 120552,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 16.7,
+          "ActualUpliftPct": 15,
+          "BudgetBDT": 148625,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          13.1,
+          9.2,
+          108869,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          31.4,
+          27.4,
+          81710,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          15.9,
+          19.5,
+          120552,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          16.7,
+          15,
+          148625,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Home Care",
+          "CompetitorPriceBDT": 180,
+          "PromoActive": "Yes",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": "Competitor aggressive price drop"
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Home Care",
+          "CompetitorPriceBDT": 243,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Home Care",
+          "CompetitorPriceBDT": 287,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Home Care",
+          "CompetitorPriceBDT": 210,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Home Care",
+          180,
+          "Yes",
+          "No",
+          "https://example.com/competitor/lux",
+          "Competitor aggressive price drop"
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Home Care",
+          243,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Home Care",
+          287,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Home Care",
+          210,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.37,
+          "IncomeIndex": 99.62,
+          "PurchasingPowerIndex": 87.35,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.65,
+          "IncomeIndex": 100.31,
+          "PurchasingPowerIndex": 87.08,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.03,
+          "IncomeIndex": 100.56,
+          "PurchasingPowerIndex": 86.51,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.72,
+          "IncomeIndex": 100.6,
+          "PurchasingPowerIndex": 85.36,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.7,
+          "IncomeIndex": 100.43,
+          "PurchasingPowerIndex": 85.34,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.56,
+          "IncomeIndex": 100.95,
+          "PurchasingPowerIndex": 85.73,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.55,
+          "IncomeIndex": 101.92,
+          "PurchasingPowerIndex": 86.04,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.53,
+          "IncomeIndex": 102.34,
+          "PurchasingPowerIndex": 86.21,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.15,
+          "IncomeIndex": 102.51,
+          "PurchasingPowerIndex": 86.89,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.73,
+          "IncomeIndex": 103.02,
+          "PurchasingPowerIndex": 87.76,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.39,
+          "IncomeIndex": 102.06,
+          "PurchasingPowerIndex": 88.06,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.76,
+          "IncomeIndex": 103.82,
+          "PurchasingPowerIndex": 89.65,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.84,
+          "IncomeIndex": 103.3,
+          "PurchasingPowerIndex": 89.35,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.19,
+          "IncomeIndex": 103.19,
+          "PurchasingPowerIndex": 90.43,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.4,
+          "IncomeIndex": 103.34,
+          "PurchasingPowerIndex": 90.13,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.49,
+          "IncomeIndex": 105.44,
+          "PurchasingPowerIndex": 90.59,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.28,
+          "IncomeIndex": 104.86,
+          "PurchasingPowerIndex": 90.78,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.73,
+          "IncomeIndex": 105.01,
+          "PurchasingPowerIndex": 90.06,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.37,
+          99.62,
+          87.35,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.65,
+          100.31,
+          87.08,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.03,
+          100.56,
+          86.51,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.72,
+          100.6,
+          85.36,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.7,
+          100.43,
+          85.34,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.56,
+          100.95,
+          85.73,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.55,
+          101.92,
+          86.04,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.53,
+          102.34,
+          86.21,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.15,
+          102.51,
+          86.89,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.73,
+          103.02,
+          87.76,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.39,
+          102.06,
+          88.06,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.76,
+          103.82,
+          89.65,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.84,
+          103.3,
+          89.35,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.19,
+          103.19,
+          90.43,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.4,
+          103.34,
+          90.13,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.49,
+          105.44,
+          90.59,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.28,
+          104.86,
+          90.78,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.73,
+          105.01,
+          90.06,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 16,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 14,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 9,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 30,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          10,
+          6,
+          3,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          6,
+          6,
+          2,
+          2,
+          16,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          3,
+          5,
+          3,
+          3,
+          14,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          5,
+          11,
+          9,
+          5,
+          30,
+          "Yes",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 2076,
+          "ActualUnits": 1929,
+          "ForecastError": -147,
+          "AbsoluteError": 147,
+          "APE": 0.07620528771384137,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 2251,
+          "ActualUnits": 1948,
+          "ForecastError": -303,
+          "AbsoluteError": 303,
+          "APE": 0.1555441478439425,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 2153,
+          "ActualUnits": 2009,
+          "ForecastError": -144,
+          "AbsoluteError": 144,
+          "APE": 0.07167745146839223,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 2305,
+          "ActualUnits": 2339,
+          "ForecastError": 34,
+          "AbsoluteError": 34,
+          "APE": 0.01453612654980761,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 2344,
+          "ActualUnits": 1965,
+          "ForecastError": -379,
+          "AbsoluteError": 379,
+          "APE": 0.19287531806615776,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 2262,
+          "ActualUnits": 2397,
+          "ForecastError": 135,
+          "AbsoluteError": 135,
+          "APE": 0.056320400500625784,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 2120,
+          "ActualUnits": 1994,
+          "ForecastError": -126,
+          "AbsoluteError": 126,
+          "APE": 0.06318956870611836,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 2256,
+          "ActualUnits": 1974,
+          "ForecastError": -282,
+          "AbsoluteError": 282,
+          "APE": 0.14285714285714285,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 2317,
+          "ActualUnits": 2204,
+          "ForecastError": -113,
+          "AbsoluteError": 113,
+          "APE": 0.05127041742286751,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 2234,
+          "ActualUnits": 2499,
+          "ForecastError": 265,
+          "AbsoluteError": 265,
+          "APE": 0.10604241696678672,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 2357,
+          "ActualUnits": 2291,
+          "ForecastError": -66,
+          "AbsoluteError": 66,
+          "APE": 0.028808380619816675,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 2666,
+          "ActualUnits": 2720,
+          "ForecastError": 54,
+          "AbsoluteError": 54,
+          "APE": 0.019852941176470587,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          2076,
+          1929,
+          -147,
+          147,
+          0.07620528771384137,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          2251,
+          1948,
+          -303,
+          303,
+          0.1555441478439425,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          2153,
+          2009,
+          -144,
+          144,
+          0.07167745146839223,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          2305,
+          2339,
+          34,
+          34,
+          0.01453612654980761,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          2344,
+          1965,
+          -379,
+          379,
+          0.19287531806615776,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          2262,
+          2397,
+          135,
+          135,
+          0.056320400500625784,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          2120,
+          1994,
+          -126,
+          126,
+          0.06318956870611836,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          2256,
+          1974,
+          -282,
+          282,
+          0.14285714285714285,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          2317,
+          2204,
+          -113,
+          113,
+          0.05127041742286751,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          2234,
+          2499,
+          265,
+          265,
+          0.10604241696678672,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          2357,
+          2291,
+          -66,
+          66,
+          0.028808380619816675,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          2666,
+          2720,
+          54,
+          54,
+          0.019852941176470587,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 95,
+          "ForecastDemandUnits": 2300,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 49,
+          "ForecastDemandUnits": 976,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 92,
+          "ForecastDemandUnits": 1490,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 46,
+          "ForecastDemandUnits": 947,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 49,
+          "ForecastDemandUnits": 1215,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 81,
+          "ForecastDemandUnits": 1641,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 70,
+          "ForecastDemandUnits": 1624,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 71,
+          "ForecastDemandUnits": 1334,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          95,
+          2300,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          49,
+          976,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          92,
+          1490,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          46,
+          947,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          49,
+          1215,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          81,
+          1641,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          70,
+          1624,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          71,
+          1334,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 345,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 2598,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 531,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 1061,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 1906,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Festival-based",
+          1,
+          345,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          8,
+          2598,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          2,
+          531,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          4,
+          1061,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Festival-based",
+          9,
+          1906,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 272,
+          "DataQualityScore": 84,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 106,
+          "DataQualityScore": 77,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 52,
+          "DataQualityScore": 94,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 10,
+          "DataQualityScore": 62,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          272,
+          84,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          106,
+          77,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          52,
+          94,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          10,
+          62,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Laundry Detergent Surf Excel Home Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Laundry Detergent demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Home Care competitor pricing promotions Bangladesh Surf Excel",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Laundry Detergent online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Laundry Detergent Surf Excel Home Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Laundry Detergent demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Home Care competitor pricing promotions Bangladesh Surf Excel",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Laundry Detergent online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 76,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 80,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 63,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 76,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          76,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          80,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          63,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          76,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

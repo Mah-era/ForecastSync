@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+MAR-DPF-28-01,Dry Shampoo Spray,Hair Care,Marico,Dhaka,Dhaka DC,2779,475,1262,122,120,45672,Overstock Risk
+MAR-DPF-28-02,Dry Shampoo Spray,Hair Care,Marico,Chattogram,Chattogram DC,2482,617,1282,145,120,45673,OK
+MAR-DPF-28-03,Dry Shampoo Spray,Hair Care,Marico,Sylhet,Sylhet DC,2896,700,1579,577,120,45674,OK
+MAR-DPF-28-04,Dry Shampoo Spray,Hair Care,Marico,Rajshahi,Rajshahi DC,1144,624,1347,85,120,45675,Reorder Needed
+MAR-DPF-28-05,Dry Shampoo Spray,Hair Care,Marico,Khulna,Khulna DC,1763,702,1371,496,120,45676,OK
+MAR-DPF-28-06,Dry Shampoo Spray,Hair Care,Marico,Barishal,Barishal DC,1427,715,1325,238,120,45677,OK
+MAR-DPF-28-07,Dry Shampoo Spray,Hair Care,Marico,Rangpur,Rangpur DC,3141,580,1313,481,120,45678,Overstock Risk
+MAR-DPF-28-08,Dry Shampoo Spray,Hair Care,Marico,Mymensingh,Mymensingh DC,2389,622,1462,415,120,45679,OK

@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-26
+Scenario Title,Forecast Accuracy Benchmark
+Purpose,Test MAPE and error calculations.
+Product Name,Milk Powder
+Category,Grocery
+Brand,Diploma
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Forecast Accuracy, Historical Sales"
+Recommended Inputs To Tick,"Forecast Accuracy, Historical Sales Data"
+Recommended Outputs To Tick,"Forecast Accuracy Report, MAPE Trend, Forecast Error Bar Chart"

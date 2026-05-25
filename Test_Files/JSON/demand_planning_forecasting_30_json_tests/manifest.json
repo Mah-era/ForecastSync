@@ -1,0 +1,242 @@
+[
+  {
+    "scenario_id": "DPF-01",
+    "scenario_title": "Clean Baseline FMCG Demand",
+    "source_excel_file": "DPF-01_Clean_Baseline_FMCG_Demand.xlsx",
+    "csv_folder": "DPF-01_Clean_Baseline_FMCG_Demand/",
+    "json_file": "DPF-01_Clean_Baseline_FMCG_Demand.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-02",
+    "scenario_title": "Ramadan and Eid Seasonal Surge",
+    "source_excel_file": "DPF-02_Ramadan_and_Eid_Seasonal_Surge.xlsx",
+    "csv_folder": "DPF-02_Ramadan_and_Eid_Seasonal_Surge/",
+    "json_file": "DPF-02_Ramadan_and_Eid_Seasonal_Surge.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-03",
+    "scenario_title": "Winter Seasonal Demand Increase",
+    "source_excel_file": "DPF-03_Winter_Seasonal_Demand_Increase.xlsx",
+    "csv_folder": "DPF-03_Winter_Seasonal_Demand_Increase/",
+    "json_file": "DPF-03_Winter_Seasonal_Demand_Increase.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-04",
+    "scenario_title": "Summer Demand Softness",
+    "source_excel_file": "DPF-04_Summer_Demand_Softness.xlsx",
+    "csv_folder": "DPF-04_Summer_Demand_Softness/",
+    "json_file": "DPF-04_Summer_Demand_Softness.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-05",
+    "scenario_title": "High Promotion Uplift",
+    "source_excel_file": "DPF-05_High_Promotion_Uplift.xlsx",
+    "csv_folder": "DPF-05_High_Promotion_Uplift/",
+    "json_file": "DPF-05_High_Promotion_Uplift.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-06",
+    "scenario_title": "Low ROI Promotion",
+    "source_excel_file": "DPF-06_Low_ROI_Promotion.xlsx",
+    "csv_folder": "DPF-06_Low_ROI_Promotion/",
+    "json_file": "DPF-06_Low_ROI_Promotion.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-07",
+    "scenario_title": "Competitor Price Drop Pressure",
+    "source_excel_file": "DPF-07_Competitor_Price_Drop_Pressure.xlsx",
+    "csv_folder": "DPF-07_Competitor_Price_Drop_Pressure/",
+    "json_file": "DPF-07_Competitor_Price_Drop_Pressure.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-08",
+    "scenario_title": "Competitor Product Launch",
+    "source_excel_file": "DPF-08_Competitor_Product_Launch.xlsx",
+    "csv_folder": "DPF-08_Competitor_Product_Launch/",
+    "json_file": "DPF-08_Competitor_Product_Launch.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-09",
+    "scenario_title": "Inflation Demand Reduction",
+    "source_excel_file": "DPF-09_Inflation_Demand_Reduction.xlsx",
+    "csv_folder": "DPF-09_Inflation_Demand_Reduction/",
+    "json_file": "DPF-09_Inflation_Demand_Reduction.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-10",
+    "scenario_title": "Purchasing Power Improvement",
+    "source_excel_file": "DPF-10_Purchasing_Power_Improvement.xlsx",
+    "csv_folder": "DPF-10_Purchasing_Power_Improvement/",
+    "json_file": "DPF-10_Purchasing_Power_Improvement.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-11",
+    "scenario_title": "Low Inventory Stockout Risk",
+    "source_excel_file": "DPF-11_Low_Inventory_Stockout_Risk.xlsx",
+    "csv_folder": "DPF-11_Low_Inventory_Stockout_Risk/",
+    "json_file": "DPF-11_Low_Inventory_Stockout_Risk.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-12",
+    "scenario_title": "Overstock Risk",
+    "source_excel_file": "DPF-12_Overstock_Risk.xlsx",
+    "csv_folder": "DPF-12_Overstock_Risk/",
+    "json_file": "DPF-12_Overstock_Risk.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-13",
+    "scenario_title": "Long Import Lead Time",
+    "source_excel_file": "DPF-13_Long_Import_Lead_Time.xlsx",
+    "csv_folder": "DPF-13_Long_Import_Lead_Time/",
+    "json_file": "DPF-13_Long_Import_Lead_Time.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-14",
+    "scenario_title": "Supplier Production Delay",
+    "source_excel_file": "DPF-14_Supplier_Production_Delay.xlsx",
+    "csv_folder": "DPF-14_Supplier_Production_Delay/",
+    "json_file": "DPF-14_Supplier_Production_Delay.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-15",
+    "scenario_title": "New Product Cold Start",
+    "source_excel_file": "DPF-15_New_Product_Cold_Start.xlsx",
+    "csv_folder": "DPF-15_New_Product_Cold_Start/",
+    "json_file": "DPF-15_New_Product_Cold_Start.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-16",
+    "scenario_title": "Missing Historical Months",
+    "source_excel_file": "DPF-16_Missing_Historical_Months.xlsx",
+    "csv_folder": "DPF-16_Missing_Historical_Months/",
+    "json_file": "DPF-16_Missing_Historical_Months.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-17",
+    "scenario_title": "Duplicate Sales Rows",
+    "source_excel_file": "DPF-17_Duplicate_Sales_Rows.xlsx",
+    "csv_folder": "DPF-17_Duplicate_Sales_Rows/",
+    "json_file": "DPF-17_Duplicate_Sales_Rows.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-18",
+    "scenario_title": "Wrong Date Formats",
+    "source_excel_file": "DPF-18_Wrong_Date_Formats.xlsx",
+    "csv_folder": "DPF-18_Wrong_Date_Formats/",
+    "json_file": "DPF-18_Wrong_Date_Formats.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-19",
+    "scenario_title": "Text Numbers and Currency Symbols",
+    "source_excel_file": "DPF-19_Text_Numbers_and_Currency_Symbols.xlsx",
+    "csv_folder": "DPF-19_Text_Numbers_and_Currency_Symbols/",
+    "json_file": "DPF-19_Text_Numbers_and_Currency_Symbols.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-20",
+    "scenario_title": "Returns and Negative Demand Rows",
+    "source_excel_file": "DPF-20_Returns_and_Negative_Demand_Rows.xlsx",
+    "csv_folder": "DPF-20_Returns_and_Negative_Demand_Rows/",
+    "json_file": "DPF-20_Returns_and_Negative_Demand_Rows.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-21",
+    "scenario_title": "Extreme Outlier Spike",
+    "source_excel_file": "DPF-21_Extreme_Outlier_Spike.xlsx",
+    "csv_folder": "DPF-21_Extreme_Outlier_Spike/",
+    "json_file": "DPF-21_Extreme_Outlier_Spike.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-22",
+    "scenario_title": "Bangladesh Regional Demand Map",
+    "source_excel_file": "DPF-22_Bangladesh_Regional_Demand_Map.xlsx",
+    "csv_folder": "DPF-22_Bangladesh_Regional_Demand_Map/",
+    "json_file": "DPF-22_Bangladesh_Regional_Demand_Map.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-23",
+    "scenario_title": "Multi-Channel POS Demand",
+    "source_excel_file": "DPF-23_Multi_Channel_POS_Demand.xlsx",
+    "csv_folder": "DPF-23_Multi_Channel_POS_Demand/",
+    "json_file": "DPF-23_Multi_Channel_POS_Demand.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-24",
+    "scenario_title": "ERP Schema Mismatch",
+    "source_excel_file": "DPF-24_ERP_Schema_Mismatch.xlsx",
+    "csv_folder": "DPF-24_ERP_Schema_Mismatch/",
+    "json_file": "DPF-24_ERP_Schema_Mismatch.json",
+    "sheet_count": 16
+  },
+  {
+    "scenario_id": "DPF-25",
+    "scenario_title": "JSON-like Nested Data in Excel",
+    "source_excel_file": "DPF-25_JSON_like_Nested_Data_in_Excel.xlsx",
+    "csv_folder": "DPF-25_JSON_like_Nested_Data_in_Excel/",
+    "json_file": "DPF-25_JSON_like_Nested_Data_in_Excel.json",
+    "sheet_count": 16
+  },
+  {
+    "scenario_id": "DPF-26",
+    "scenario_title": "Forecast Accuracy Benchmark",
+    "source_excel_file": "DPF-26_Forecast_Accuracy_Benchmark.xlsx",
+    "csv_folder": "DPF-26_Forecast_Accuracy_Benchmark/",
+    "json_file": "DPF-26_Forecast_Accuracy_Benchmark.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-27",
+    "scenario_title": "Mixed Brands and Categories",
+    "source_excel_file": "DPF-27_Mixed_Brands_and_Categories.xlsx",
+    "csv_folder": "DPF-27_Mixed_Brands_and_Categories/",
+    "json_file": "DPF-27_Mixed_Brands_and_Categories.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-28",
+    "scenario_title": "Web Search Source Seeds",
+    "source_excel_file": "DPF-28_Web_Search_Source_Seeds.xlsx",
+    "csv_folder": "DPF-28_Web_Search_Source_Seeds/",
+    "json_file": "DPF-28_Web_Search_Source_Seeds.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-29",
+    "scenario_title": "Manual Expert Opinion Heavy",
+    "source_excel_file": "DPF-29_Manual_Expert_Opinion_Heavy.xlsx",
+    "csv_folder": "DPF-29_Manual_Expert_Opinion_Heavy/",
+    "json_file": "DPF-29_Manual_Expert_Opinion_Heavy.json",
+    "sheet_count": 15
+  },
+  {
+    "scenario_id": "DPF-30",
+    "scenario_title": "Full End-to-End Complex Scenario",
+    "source_excel_file": "DPF-30_Full_End_to_End_Complex_Scenario.xlsx",
+    "csv_folder": "DPF-30_Full_End_to_End_Complex_Scenario/",
+    "json_file": "DPF-30_Full_End_to_End_Complex_Scenario.json",
+    "sheet_count": 15
+  }
+]

@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+OLY-DPF-22-01,Biscuit Pack,Food,Olympic,Dhaka,Dhaka DC,3202,442,1260,459,120,45672,Overstock Risk
+OLY-DPF-22-02,Biscuit Pack,Food,Olympic,Chattogram,Chattogram DC,1853,483,1349,260,120,45673,OK
+OLY-DPF-22-03,Biscuit Pack,Food,Olympic,Sylhet,Sylhet DC,1142,467,1298,407,120,45674,Reorder Needed
+OLY-DPF-22-04,Biscuit Pack,Food,Olympic,Rajshahi,Rajshahi DC,3195,641,1373,610,120,45675,Overstock Risk
+OLY-DPF-22-05,Biscuit Pack,Food,Olympic,Khulna,Khulna DC,1963,592,1417,415,120,45676,OK
+OLY-DPF-22-06,Biscuit Pack,Food,Olympic,Barishal,Barishal DC,3352,599,1384,100,120,45677,Overstock Risk
+OLY-DPF-22-07,Biscuit Pack,Food,Olympic,Rangpur,Rangpur DC,1530,520,1106,203,120,45678,OK
+OLY-DPF-22-08,Biscuit Pack,Food,Olympic,Mymensingh,Mymensingh DC,1165,516,1279,276,120,45679,Reorder Needed

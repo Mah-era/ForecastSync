@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+NEW-DPF-15-01,Dry Shampoo Spray,Hair Care,NewBrand,Dhaka,Dhaka DC,2097,642,1411,211,120,45672,OK
+NEW-DPF-15-02,Dry Shampoo Spray,Hair Care,NewBrand,Chattogram,Chattogram DC,3390,449,1093,549,120,45673,Overstock Risk
+NEW-DPF-15-03,Dry Shampoo Spray,Hair Care,NewBrand,Sylhet,Sylhet DC,1125,678,1276,522,120,45674,Reorder Needed
+NEW-DPF-15-04,Dry Shampoo Spray,Hair Care,NewBrand,Rajshahi,Rajshahi DC,1478,643,1424,549,120,45675,OK
+NEW-DPF-15-05,Dry Shampoo Spray,Hair Care,NewBrand,Khulna,Khulna DC,2630,558,1315,507,120,45676,OK
+NEW-DPF-15-06,Dry Shampoo Spray,Hair Care,NewBrand,Barishal,Barishal DC,3214,661,1403,368,120,45677,Overstock Risk
+NEW-DPF-15-07,Dry Shampoo Spray,Hair Care,NewBrand,Rangpur,Rangpur DC,2591,486,1359,236,120,45678,OK
+NEW-DPF-15-08,Dry Shampoo Spray,Hair Care,NewBrand,Mymensingh,Mymensingh DC,2522,702,1427,570,120,45679,OK

@@ -1,0 +1,9 @@
+﻿Region,Latitude,Longitude,DemandScore,ForecastDemandUnits,DemandLevel,Notes
+Dhaka,23.8103,90.4125,87,587,High,Use for Bangladesh/regional demand map
+Chattogram,22.3569,91.7832,95,603,High,Use for Bangladesh/regional demand map
+Sylhet,24.8949,91.8687,76,477,Medium,Use for Bangladesh/regional demand map
+Rajshahi,24.3745,88.6042,78,638,Medium,Use for Bangladesh/regional demand map
+Khulna,22.8456,89.5403,95,946,High,Use for Bangladesh/regional demand map
+Barishal,22.701,90.3535,80,487,High,Use for Bangladesh/regional demand map
+Rangpur,25.7439,89.2752,75,463,Medium,Use for Bangladesh/regional demand map
+Mymensingh,24.7471,90.4203,69,685,Medium,Use for Bangladesh/regional demand map

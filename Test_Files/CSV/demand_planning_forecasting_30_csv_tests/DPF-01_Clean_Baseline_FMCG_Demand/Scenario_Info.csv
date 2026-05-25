@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-01
+Scenario Title,Clean Baseline FMCG Demand
+Purpose,Baseline clean import and complete dashboard smoke test.
+Product Name,Dove Beauty Bar
+Category,Cosmetics
+Brand,Dove
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Historical Sales, Inventory, Lead Time, Forecast Accuracy"
+Recommended Inputs To Tick,"Historical Sales Data, Inventory Levels, Lead Time, Forecast Accuracy"
+Recommended Outputs To Tick,"Demand Forecast, Inventory Requirement, Stockout Risk, Forecast Accuracy Report, Final SCM Recommendation"

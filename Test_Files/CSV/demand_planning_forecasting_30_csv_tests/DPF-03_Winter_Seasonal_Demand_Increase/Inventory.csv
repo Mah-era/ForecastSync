@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+TRU-DPF-03-01,Hoodie Classic,Clothing,Trunk,Dhaka,Dhaka DC,880,695,1427,471,120,45672,Reorder Needed
+TRU-DPF-03-02,Hoodie Classic,Clothing,Trunk,Chattogram,Chattogram DC,3008,624,1301,113,120,45673,Overstock Risk
+TRU-DPF-03-03,Hoodie Classic,Clothing,Trunk,Sylhet,Sylhet DC,2785,531,1191,541,120,45674,Overstock Risk
+TRU-DPF-03-04,Hoodie Classic,Clothing,Trunk,Rajshahi,Rajshahi DC,2944,523,1182,300,120,45675,Overstock Risk
+TRU-DPF-03-05,Hoodie Classic,Clothing,Trunk,Khulna,Khulna DC,2032,521,1122,306,120,45676,OK
+TRU-DPF-03-06,Hoodie Classic,Clothing,Trunk,Barishal,Barishal DC,3579,626,1475,414,120,45677,Overstock Risk
+TRU-DPF-03-07,Hoodie Classic,Clothing,Trunk,Rangpur,Rangpur DC,1740,591,1151,233,120,45678,OK
+TRU-DPF-03-08,Hoodie Classic,Clothing,Trunk,Mymensingh,Mymensingh DC,2111,599,1369,331,120,45679,OK

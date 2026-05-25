@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+AAR-DPF-12-01,Formal Shirt,Clothing,Aarong,Dhaka,Dhaka DC,5627,552,1358,496,120,45672,Overstock Risk
+AAR-DPF-12-02,Formal Shirt,Clothing,Aarong,Chattogram,Chattogram DC,3688,618,1313,621,120,45673,Overstock Risk
+AAR-DPF-12-03,Formal Shirt,Clothing,Aarong,Sylhet,Sylhet DC,1975,679,1529,282,120,45674,OK
+AAR-DPF-12-04,Formal Shirt,Clothing,Aarong,Rajshahi,Rajshahi DC,8147,588,1357,266,120,45675,Overstock Risk
+AAR-DPF-12-05,Formal Shirt,Clothing,Aarong,Khulna,Khulna DC,1388,588,1317,475,120,45676,OK
+AAR-DPF-12-06,Formal Shirt,Clothing,Aarong,Barishal,Barishal DC,1515,441,1008,239,120,45677,OK
+AAR-DPF-12-07,Formal Shirt,Clothing,Aarong,Rangpur,Rangpur DC,7678,586,1409,211,120,45678,Overstock Risk
+AAR-DPF-12-08,Formal Shirt,Clothing,Aarong,Mymensingh,Mymensingh DC,1870,516,1376,474,120,45679,OK

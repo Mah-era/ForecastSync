@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-17
+Scenario Title,Duplicate Sales Rows
+Purpose,Test duplicate detection and de-duplication.
+Product Name,Liquid Handwash
+Category,Personal Care
+Brand,Lifebuoy
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Historical Sales, Data Quality"
+Recommended Inputs To Tick,Historical Sales Data
+Recommended Outputs To Tick,"Sales Trend Analysis, Data Quality Score"

@@ -1,0 +1,3575 @@
+{
+  "scenario_id": "DPF-27",
+  "source_excel_file": "DPF-27_Mixed_Brands_and_Categories.xlsx",
+  "scenario_title": "Mixed Brands and Categories",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-27"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Mixed Brands and Categories"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test product/category/brand selection filtering."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Mixed FMCG Basket"
+        },
+        {
+          "Field": "Category",
+          "Value": "Mixed"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Multiple"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Product Filtering"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data, Uploaded File Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Demand Forecast, Sales Trend Analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-27"
+        ],
+        [
+          "Scenario Title",
+          "Mixed Brands and Categories"
+        ],
+        [
+          "Purpose",
+          "Test product/category/brand selection filtering."
+        ],
+        [
+          "Product Name",
+          "Mixed FMCG Basket"
+        ],
+        [
+          "Category",
+          "Mixed"
+        ],
+        [
+          "Brand",
+          "Multiple"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Product Filtering"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data, Uploaded File Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Demand Forecast, Sales Trend Analysis"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 2038,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 855960,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45292,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1044,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 219240,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45292,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Rangpur",
+          "Channel": "Retail",
+          "UnitsSold": 489,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 464550,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45292,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1203,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 938340,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45292,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Khulna",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1629,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 57015000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1641,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 689220,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Channel": "Wholesale",
+          "UnitsSold": 2051,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 430710,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Chattogram",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1026,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 974700,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Channel": "Retail",
+          "UnitsSold": 1357,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1058460,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 692,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 24220000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Mymensingh",
+          "Channel": "Retail",
+          "UnitsSold": 1366,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 573720,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Online",
+          "UnitsSold": 518,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 108780,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Mymensingh",
+          "Channel": "Wholesale",
+          "UnitsSold": 1711,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 1625450,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Channel": "Online",
+          "UnitsSold": 2332,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1818960,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1819,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 63665000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1791,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 752220,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1637,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 343770,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Rajshahi",
+          "Channel": "Wholesale",
+          "UnitsSold": 1941,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 1843950,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Barishal",
+          "Channel": "Wholesale",
+          "UnitsSold": 526,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 410280,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 368,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 12880000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Chattogram",
+          "Channel": "Modern Trade",
+          "UnitsSold": 897,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 376740,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Retail",
+          "UnitsSold": 495,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 103950,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 327,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 310650,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rajshahi",
+          "Channel": "Retail",
+          "UnitsSold": 635,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 495300,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rajshahi",
+          "Channel": "Online",
+          "UnitsSold": 2390,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 83650000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1074,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 451080,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Channel": "Online",
+          "UnitsSold": 131,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 27510,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Khulna",
+          "Channel": "Online",
+          "UnitsSold": 652,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 619400,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Dhaka",
+          "Channel": "Online",
+          "UnitsSold": 570,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 444600,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 180,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 6300000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Dhaka",
+          "Channel": "Online",
+          "UnitsSold": 1446,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 607320,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Channel": "Online",
+          "UnitsSold": 1206,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 253260,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Chattogram",
+          "Channel": "Retail",
+          "UnitsSold": 1844,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 1751800,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Mymensingh",
+          "Channel": "Wholesale",
+          "UnitsSold": 2070,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1614600,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2222,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 77770000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Rajshahi",
+          "Channel": "Retail",
+          "UnitsSold": 2183,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 916860,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2255,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 473550,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Dhaka",
+          "Channel": "Modern Trade",
+          "UnitsSold": 247,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 234650,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Channel": "Retail",
+          "UnitsSold": 1765,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1376700,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Mymensingh",
+          "Channel": "Retail",
+          "UnitsSold": 2128,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 74480000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 450,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 189000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 389,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 81690,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Barishal",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2366,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 2247700,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Khulna",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2293,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1788540,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rangpur",
+          "Channel": "Retail",
+          "UnitsSold": 2190,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 76650000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 588,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 246960,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1969,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 413490,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1508,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 1432600,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Channel": "Wholesale",
+          "UnitsSold": 1823,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1421940,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Wholesale",
+          "UnitsSold": 1868,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 65380000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Sylhet",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1653,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 694260,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Chattogram",
+          "Channel": "Retail",
+          "UnitsSold": 394,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 82740,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Rangpur",
+          "Channel": "Retail",
+          "UnitsSold": 501,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 475950,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Sylhet",
+          "Channel": "Retail",
+          "UnitsSold": 1646,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 1283880,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Retail",
+          "UnitsSold": 2420,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 84700000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Dove Shampoo",
+          "Category": "Personal Care",
+          "Brand": "Dove",
+          "Region": "Barishal",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1802,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 756840,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Lifebuoy Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Channel": "Wholesale",
+          "UnitsSold": 330,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 69300,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Bata Sandal",
+          "Category": "Footwear",
+          "Brand": "Bata",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1560,
+          "UnitPriceBDT": 950,
+          "RevenueBDT": 1482000,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Trunk T-Shirt",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Mymensingh",
+          "Channel": "Online",
+          "UnitsSold": 753,
+          "UnitPriceBDT": 780,
+          "RevenueBDT": 587340,
+          "Notes": "Mixed product row for filter testing"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Samsung Phone",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Wholesale",
+          "UnitsSold": 563,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 19705000,
+          "Notes": "Mixed product row for filter testing"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Chattogram",
+          "Online",
+          2038,
+          420,
+          855960,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45292,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rangpur",
+          "Wholesale",
+          1044,
+          210,
+          219240,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45292,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Rangpur",
+          "Retail",
+          489,
+          950,
+          464550,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45292,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Modern Trade",
+          1203,
+          780,
+          938340,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45292,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Khulna",
+          "Modern Trade",
+          1629,
+          35000,
+          57015000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45323,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Chattogram",
+          "Online",
+          1641,
+          420,
+          689220,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45323,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Wholesale",
+          2051,
+          210,
+          430710,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45323,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Chattogram",
+          "Modern Trade",
+          1026,
+          950,
+          974700,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45323,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Retail",
+          1357,
+          780,
+          1058460,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45323,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Dhaka",
+          "Retail",
+          692,
+          35000,
+          24220000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45352,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Mymensingh",
+          "Retail",
+          1366,
+          420,
+          573720,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45352,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Online",
+          518,
+          210,
+          108780,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45352,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Mymensingh",
+          "Wholesale",
+          1711,
+          950,
+          1625450,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45352,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Online",
+          2332,
+          780,
+          1818960,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45352,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Modern Trade",
+          1819,
+          35000,
+          63665000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45383,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Khulna",
+          "Retail",
+          1791,
+          420,
+          752220,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45383,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Modern Trade",
+          1637,
+          210,
+          343770,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45383,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Rajshahi",
+          "Wholesale",
+          1941,
+          950,
+          1843950,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45383,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Barishal",
+          "Wholesale",
+          526,
+          780,
+          410280,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45383,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Rangpur",
+          "Wholesale",
+          368,
+          35000,
+          12880000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45413,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Chattogram",
+          "Modern Trade",
+          897,
+          420,
+          376740,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45413,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Retail",
+          495,
+          210,
+          103950,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45413,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Barishal",
+          "Online",
+          327,
+          950,
+          310650,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45413,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Rajshahi",
+          "Retail",
+          635,
+          780,
+          495300,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45413,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Rajshahi",
+          "Online",
+          2390,
+          35000,
+          83650000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45444,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Barishal",
+          "Online",
+          1074,
+          420,
+          451080,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45444,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Online",
+          131,
+          210,
+          27510,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45444,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Khulna",
+          "Online",
+          652,
+          950,
+          619400,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45444,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Dhaka",
+          "Online",
+          570,
+          780,
+          444600,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45444,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Online",
+          180,
+          35000,
+          6300000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45474,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Dhaka",
+          "Online",
+          1446,
+          420,
+          607320,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45474,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Online",
+          1206,
+          210,
+          253260,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45474,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Chattogram",
+          "Retail",
+          1844,
+          950,
+          1751800,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45474,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Mymensingh",
+          "Wholesale",
+          2070,
+          780,
+          1614600,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45474,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Modern Trade",
+          2222,
+          35000,
+          77770000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45505,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Rajshahi",
+          "Retail",
+          2183,
+          420,
+          916860,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45505,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Modern Trade",
+          2255,
+          210,
+          473550,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45505,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Dhaka",
+          "Modern Trade",
+          247,
+          950,
+          234650,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45505,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Retail",
+          1765,
+          780,
+          1376700,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45505,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Mymensingh",
+          "Retail",
+          2128,
+          35000,
+          74480000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45536,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Barishal",
+          "Online",
+          450,
+          420,
+          189000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45536,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Sylhet",
+          "Wholesale",
+          389,
+          210,
+          81690,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45536,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Barishal",
+          "Modern Trade",
+          2366,
+          950,
+          2247700,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45536,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Khulna",
+          "Modern Trade",
+          2293,
+          780,
+          1788540,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45536,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Rangpur",
+          "Retail",
+          2190,
+          35000,
+          76650000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45566,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Rajshahi",
+          "Modern Trade",
+          588,
+          420,
+          246960,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45566,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Modern Trade",
+          1969,
+          210,
+          413490,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45566,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Mymensingh",
+          "Modern Trade",
+          1508,
+          950,
+          1432600,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45566,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Wholesale",
+          1823,
+          780,
+          1421940,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45566,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Wholesale",
+          1868,
+          35000,
+          65380000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45597,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Sylhet",
+          "Modern Trade",
+          1653,
+          420,
+          694260,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45597,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Chattogram",
+          "Retail",
+          394,
+          210,
+          82740,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45597,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Rangpur",
+          "Retail",
+          501,
+          950,
+          475950,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45597,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Sylhet",
+          "Retail",
+          1646,
+          780,
+          1283880,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45597,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Retail",
+          2420,
+          35000,
+          84700000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45627,
+          "Dove Shampoo",
+          "Personal Care",
+          "Dove",
+          "Barishal",
+          "Modern Trade",
+          1802,
+          420,
+          756840,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45627,
+          "Lifebuoy Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Wholesale",
+          330,
+          210,
+          69300,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45627,
+          "Bata Sandal",
+          "Footwear",
+          "Bata",
+          "Chattogram",
+          "Online",
+          1560,
+          950,
+          1482000,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45627,
+          "Trunk T-Shirt",
+          "Clothing",
+          "Trunk",
+          "Mymensingh",
+          "Online",
+          753,
+          780,
+          587340,
+          "Mixed product row for filter testing"
+        ],
+        [
+          45627,
+          "Samsung Phone",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Wholesale",
+          563,
+          35000,
+          19705000,
+          "Mixed product row for filter testing"
+        ]
+      ],
+      "row_count_excluding_header": 60,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "MUL-DPF-27-01",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 1205,
+          "SafetyStock": 517,
+          "ReorderPoint": 1149,
+          "StockInTransit": 311,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MUL-DPF-27-02",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 2488,
+          "SafetyStock": 651,
+          "ReorderPoint": 1410,
+          "StockInTransit": 446,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MUL-DPF-27-03",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2476,
+          "SafetyStock": 607,
+          "ReorderPoint": 1378,
+          "StockInTransit": 456,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MUL-DPF-27-04",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 958,
+          "SafetyStock": 515,
+          "ReorderPoint": 1319,
+          "StockInTransit": 582,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "MUL-DPF-27-05",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 1884,
+          "SafetyStock": 490,
+          "ReorderPoint": 1096,
+          "StockInTransit": 437,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MUL-DPF-27-06",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1075,
+          "SafetyStock": 644,
+          "ReorderPoint": 1515,
+          "StockInTransit": 125,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "MUL-DPF-27-07",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2400,
+          "SafetyStock": 543,
+          "ReorderPoint": 1248,
+          "StockInTransit": 162,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "MUL-DPF-27-08",
+          "ProductName": "Mixed FMCG Basket",
+          "Category": "Mixed",
+          "Brand": "Multiple",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1771,
+          "SafetyStock": 529,
+          "ReorderPoint": 1390,
+          "StockInTransit": 403,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "MUL-DPF-27-01",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Dhaka",
+          "Dhaka DC",
+          1205,
+          517,
+          1149,
+          311,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "MUL-DPF-27-02",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Chattogram",
+          "Chattogram DC",
+          2488,
+          651,
+          1410,
+          446,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "MUL-DPF-27-03",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Sylhet",
+          "Sylhet DC",
+          2476,
+          607,
+          1378,
+          456,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "MUL-DPF-27-04",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Rajshahi",
+          "Rajshahi DC",
+          958,
+          515,
+          1319,
+          582,
+          120,
+          45675,
+          "Reorder Needed"
+        ],
+        [
+          "MUL-DPF-27-05",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Khulna",
+          "Khulna DC",
+          1884,
+          490,
+          1096,
+          437,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "MUL-DPF-27-06",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Barishal",
+          "Barishal DC",
+          1075,
+          644,
+          1515,
+          125,
+          120,
+          45677,
+          "Reorder Needed"
+        ],
+        [
+          "MUL-DPF-27-07",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Rangpur",
+          "Rangpur DC",
+          2400,
+          543,
+          1248,
+          162,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "MUL-DPF-27-08",
+          "Mixed FMCG Basket",
+          "Mixed",
+          "Multiple",
+          "Mymensingh",
+          "Mymensingh DC",
+          1771,
+          529,
+          1390,
+          403,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 22.6,
+          "ActualUpliftPct": 16.8,
+          "BudgetBDT": 137899,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 18.9,
+          "ActualUpliftPct": 13.2,
+          "BudgetBDT": 109880,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 21.4,
+          "ActualUpliftPct": 21.7,
+          "BudgetBDT": 107277,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 12.2,
+          "ActualUpliftPct": 11.6,
+          "BudgetBDT": 101066,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          22.6,
+          16.8,
+          137899,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          18.9,
+          13.2,
+          109880,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          21.4,
+          21.7,
+          107277,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          12.2,
+          11.6,
+          101066,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Mixed",
+          "CompetitorPriceBDT": 258,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Mixed",
+          "CompetitorPriceBDT": 319,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Mixed",
+          "CompetitorPriceBDT": 310,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Mixed",
+          "CompetitorPriceBDT": 303,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Mixed",
+          258,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Mixed",
+          319,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Mixed",
+          310,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Mixed",
+          303,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.39,
+          "IncomeIndex": 99.44,
+          "PurchasingPowerIndex": 87.28,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.18,
+          "IncomeIndex": 99.41,
+          "PurchasingPowerIndex": 85.91,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.06,
+          "IncomeIndex": 101.49,
+          "PurchasingPowerIndex": 86.74,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.67,
+          "IncomeIndex": 101.43,
+          "PurchasingPowerIndex": 85.69,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.54,
+          "IncomeIndex": 100.44,
+          "PurchasingPowerIndex": 85.61,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.69,
+          "IncomeIndex": 101.36,
+          "PurchasingPowerIndex": 85.63,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.37,
+          "IncomeIndex": 101.87,
+          "PurchasingPowerIndex": 86.33,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.21,
+          "IncomeIndex": 102.22,
+          "PurchasingPowerIndex": 86.72,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.15,
+          "IncomeIndex": 102.11,
+          "PurchasingPowerIndex": 86.78,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.61,
+          "IncomeIndex": 103.18,
+          "PurchasingPowerIndex": 88.02,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.23,
+          "IncomeIndex": 102.92,
+          "PurchasingPowerIndex": 88.58,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.65,
+          "IncomeIndex": 102.93,
+          "PurchasingPowerIndex": 89.58,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.55,
+          "IncomeIndex": 103.41,
+          "PurchasingPowerIndex": 89.89,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.47,
+          "IncomeIndex": 103.48,
+          "PurchasingPowerIndex": 90.05,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.24,
+          "IncomeIndex": 105.13,
+          "PurchasingPowerIndex": 90.92,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.15,
+          "IncomeIndex": 105.4,
+          "PurchasingPowerIndex": 91.16,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.5,
+          "IncomeIndex": 105.18,
+          "PurchasingPowerIndex": 90.5,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.72,
+          "IncomeIndex": 104.97,
+          "PurchasingPowerIndex": 90.06,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.39,
+          99.44,
+          87.28,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.18,
+          99.41,
+          85.91,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.06,
+          101.49,
+          86.74,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.67,
+          101.43,
+          85.69,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.54,
+          100.44,
+          85.61,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.69,
+          101.36,
+          85.63,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.37,
+          101.87,
+          86.33,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.21,
+          102.22,
+          86.72,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.15,
+          102.11,
+          86.78,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.61,
+          103.18,
+          88.02,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.23,
+          102.92,
+          88.58,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.65,
+          102.93,
+          89.58,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.55,
+          103.41,
+          89.89,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.47,
+          103.48,
+          90.05,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.24,
+          105.13,
+          90.92,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.15,
+          105.4,
+          91.16,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.5,
+          105.18,
+          90.5,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.72,
+          104.97,
+          90.06,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 21,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 16,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          2,
+          8,
+          8,
+          5,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          6,
+          8,
+          3,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          4,
+          8,
+          7,
+          2,
+          21,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          6,
+          5,
+          3,
+          16,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1358,
+          "ActualUnits": 1634,
+          "ForecastError": 276,
+          "AbsoluteError": 276,
+          "APE": 0.1689106487148103,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1470,
+          "ActualUnits": 1292,
+          "ForecastError": -178,
+          "AbsoluteError": 178,
+          "APE": 0.13777089783281735,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1340,
+          "ActualUnits": 1236,
+          "ForecastError": -104,
+          "AbsoluteError": 104,
+          "APE": 0.08414239482200647,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1387,
+          "ActualUnits": 1222,
+          "ForecastError": -165,
+          "AbsoluteError": 165,
+          "APE": 0.13502454991816695,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1590,
+          "ActualUnits": 1352,
+          "ForecastError": -238,
+          "AbsoluteError": 238,
+          "APE": 0.1760355029585799,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1679,
+          "ActualUnits": 1799,
+          "ForecastError": 120,
+          "AbsoluteError": 120,
+          "APE": 0.06670372429127293,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1557,
+          "ActualUnits": 1628,
+          "ForecastError": 71,
+          "AbsoluteError": 71,
+          "APE": 0.04361179361179361,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1621,
+          "ActualUnits": 1771,
+          "ForecastError": 150,
+          "AbsoluteError": 150,
+          "APE": 0.08469791078486731,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1748,
+          "ActualUnits": 1883,
+          "ForecastError": 135,
+          "AbsoluteError": 135,
+          "APE": 0.07169410515135423,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1813,
+          "ActualUnits": 1721,
+          "ForecastError": -92,
+          "AbsoluteError": 92,
+          "APE": 0.05345729227193492,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1838,
+          "ActualUnits": 1740,
+          "ForecastError": -98,
+          "AbsoluteError": 98,
+          "APE": 0.05632183908045977,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1687,
+          "ActualUnits": 1700,
+          "ForecastError": 13,
+          "AbsoluteError": 13,
+          "APE": 0.007647058823529412,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1358,
+          1634,
+          276,
+          276,
+          0.1689106487148103,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1470,
+          1292,
+          -178,
+          178,
+          0.13777089783281735,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1340,
+          1236,
+          -104,
+          104,
+          0.08414239482200647,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1387,
+          1222,
+          -165,
+          165,
+          0.13502454991816695,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1590,
+          1352,
+          -238,
+          238,
+          0.1760355029585799,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1679,
+          1799,
+          120,
+          120,
+          0.06670372429127293,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1557,
+          1628,
+          71,
+          71,
+          0.04361179361179361,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1621,
+          1771,
+          150,
+          150,
+          0.08469791078486731,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1748,
+          1883,
+          135,
+          135,
+          0.07169410515135423,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1813,
+          1721,
+          -92,
+          92,
+          0.05345729227193492,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1838,
+          1740,
+          -98,
+          98,
+          0.05632183908045977,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1687,
+          1700,
+          13,
+          13,
+          0.007647058823529412,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 93,
+          "ForecastDemandUnits": 1174,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 62,
+          "ForecastDemandUnits": 908,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 67,
+          "ForecastDemandUnits": 941,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 64,
+          "ForecastDemandUnits": 879,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 47,
+          "ForecastDemandUnits": 512,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 63,
+          "ForecastDemandUnits": 695,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 50,
+          "ForecastDemandUnits": 740,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 1016,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          93,
+          1174,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          62,
+          908,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          67,
+          941,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          64,
+          879,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          47,
+          512,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          63,
+          695,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          50,
+          740,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          77,
+          1016,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 3229,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 2093,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 321,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 662,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 285,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Weekly",
+          8,
+          3229,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          6,
+          2093,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          1,
+          321,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Monthly",
+          2,
+          662,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          1,
+          285,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 162,
+          "DataQualityScore": 89,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 154,
+          "DataQualityScore": 86,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 88,
+          "DataQualityScore": 75,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 16,
+          "DataQualityScore": 71,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          162,
+          89,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          154,
+          86,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          88,
+          75,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          16,
+          71,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Mixed FMCG Basket Multiple Mixed Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Mixed FMCG Basket demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Mixed competitor pricing promotions Bangladesh Multiple",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Mixed FMCG Basket online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Mixed FMCG Basket Multiple Mixed Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Mixed FMCG Basket demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Mixed competitor pricing promotions Bangladesh Multiple",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Mixed FMCG Basket online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 89,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 69,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 72,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          89,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          69,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          72,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

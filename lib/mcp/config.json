@@ -1,0 +1,15 @@
+{
+  "name": "Demand Planning MCP Connector Layer",
+  "version": "0.1.0",
+  "description": "Placeholder connector registry for future ERP, POS, inventory, supplier, file, and web search MCP servers.",
+  "connectors": {
+    "webSearchConnector": { "status": "active", "env": ["TAVILY_API_KEY", "TAVILY_MCP_URL"] },
+    "csvConnector": { "status": "active" },
+    "excelConnector": { "status": "active" },
+    "jsonConnector": { "status": "active" },
+    "posConnector": { "status": "placeholder" },
+    "erpConnector": { "status": "placeholder" },
+    "inventoryConnector": { "status": "placeholder" },
+    "supplierConnector": { "status": "placeholder" }
+  }
+}

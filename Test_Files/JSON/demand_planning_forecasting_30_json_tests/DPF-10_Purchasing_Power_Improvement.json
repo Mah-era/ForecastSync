@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-10",
+  "source_excel_file": "DPF-10_Purchasing_Power_Improvement.xlsx",
+  "scenario_title": "Purchasing Power Improvement",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-10"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Purchasing Power Improvement"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test demand expansion with better purchasing power."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Smartphone A Series"
+        },
+        {
+          "Field": "Category",
+          "Value": "Electronics"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Samsung"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Economic Conditions, Market Trends"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Economic Conditions, Market Trends, Online Web Search Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Economic Condition Impact, Market Trend Analysis, Demand Forecast"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-10"
+        ],
+        [
+          "Scenario Title",
+          "Purchasing Power Improvement"
+        ],
+        [
+          "Purpose",
+          "Test demand expansion with better purchasing power."
+        ],
+        [
+          "Product Name",
+          "Smartphone A Series"
+        ],
+        [
+          "Category",
+          "Electronics"
+        ],
+        [
+          "Brand",
+          "Samsung"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Economic Conditions, Market Trends"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Economic Conditions, Market Trends, Online Web Search Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Economic Condition Impact, Market Trend Analysis, Demand Forecast"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 616,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21560000,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 588,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 20580000,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 570,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 19950000,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 612,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21420000,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 628,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21980000,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 531,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 18585000,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 667,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 23345000,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 629,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 22015000,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 609,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21315000,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 651,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 22785000,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 609,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21315000,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 699,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 24465000,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 693,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 24255000,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 679,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 23765000,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 615,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 21525000,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 749,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 26215000,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 671,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 23485000,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 758,
+          "UnitPriceBDT": 35000,
+          "RevenueBDT": 26530000,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Dhaka",
+          "Retail",
+          616,
+          35000,
+          21560000,
+          ""
+        ],
+        [
+          45323,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Online",
+          588,
+          35000,
+          20580000,
+          ""
+        ],
+        [
+          45352,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Sylhet",
+          "Wholesale",
+          570,
+          35000,
+          19950000,
+          ""
+        ],
+        [
+          45383,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rajshahi",
+          "Modern Trade",
+          612,
+          35000,
+          21420000,
+          ""
+        ],
+        [
+          45413,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Khulna",
+          "Retail",
+          628,
+          35000,
+          21980000,
+          ""
+        ],
+        [
+          45444,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Online",
+          531,
+          35000,
+          18585000,
+          ""
+        ],
+        [
+          45474,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rangpur",
+          "Wholesale",
+          667,
+          35000,
+          23345000,
+          ""
+        ],
+        [
+          45505,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Mymensingh",
+          "Modern Trade",
+          629,
+          35000,
+          22015000,
+          ""
+        ],
+        [
+          45536,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Dhaka",
+          "Retail",
+          609,
+          35000,
+          21315000,
+          ""
+        ],
+        [
+          45566,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Online",
+          651,
+          35000,
+          22785000,
+          ""
+        ],
+        [
+          45597,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Sylhet",
+          "Wholesale",
+          609,
+          35000,
+          21315000,
+          ""
+        ],
+        [
+          45627,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rajshahi",
+          "Modern Trade",
+          699,
+          35000,
+          24465000,
+          ""
+        ],
+        [
+          45658,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Khulna",
+          "Retail",
+          693,
+          35000,
+          24255000,
+          ""
+        ],
+        [
+          45689,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Online",
+          679,
+          35000,
+          23765000,
+          ""
+        ],
+        [
+          45717,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rangpur",
+          "Wholesale",
+          615,
+          35000,
+          21525000,
+          ""
+        ],
+        [
+          45748,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Mymensingh",
+          "Modern Trade",
+          749,
+          35000,
+          26215000,
+          ""
+        ],
+        [
+          45778,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Dhaka",
+          "Retail",
+          671,
+          35000,
+          23485000,
+          ""
+        ],
+        [
+          45809,
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Online",
+          758,
+          35000,
+          26530000,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "SAM-DPF-10-01",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 1034,
+          "SafetyStock": 474,
+          "ReorderPoint": 1083,
+          "StockInTransit": 166,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "SAM-DPF-10-02",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 1803,
+          "SafetyStock": 635,
+          "ReorderPoint": 1306,
+          "StockInTransit": 592,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SAM-DPF-10-03",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 3448,
+          "SafetyStock": 673,
+          "ReorderPoint": 1313,
+          "StockInTransit": 424,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "SAM-DPF-10-04",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2459,
+          "SafetyStock": 474,
+          "ReorderPoint": 1131,
+          "StockInTransit": 368,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "SAM-DPF-10-05",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2320,
+          "SafetyStock": 486,
+          "ReorderPoint": 1347,
+          "StockInTransit": 160,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SAM-DPF-10-06",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2769,
+          "SafetyStock": 638,
+          "ReorderPoint": 1392,
+          "StockInTransit": 538,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "SAM-DPF-10-07",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2495,
+          "SafetyStock": 667,
+          "ReorderPoint": 1236,
+          "StockInTransit": 100,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "SAM-DPF-10-08",
+          "ProductName": "Smartphone A Series",
+          "Category": "Electronics",
+          "Brand": "Samsung",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2719,
+          "SafetyStock": 599,
+          "ReorderPoint": 1367,
+          "StockInTransit": 497,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "SAM-DPF-10-01",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Dhaka",
+          "Dhaka DC",
+          1034,
+          474,
+          1083,
+          166,
+          120,
+          45672,
+          "Reorder Needed"
+        ],
+        [
+          "SAM-DPF-10-02",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Chattogram",
+          "Chattogram DC",
+          1803,
+          635,
+          1306,
+          592,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "SAM-DPF-10-03",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Sylhet",
+          "Sylhet DC",
+          3448,
+          673,
+          1313,
+          424,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "SAM-DPF-10-04",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rajshahi",
+          "Rajshahi DC",
+          2459,
+          474,
+          1131,
+          368,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "SAM-DPF-10-05",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Khulna",
+          "Khulna DC",
+          2320,
+          486,
+          1347,
+          160,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "SAM-DPF-10-06",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Barishal",
+          "Barishal DC",
+          2769,
+          638,
+          1392,
+          538,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "SAM-DPF-10-07",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Rangpur",
+          "Rangpur DC",
+          2495,
+          667,
+          1236,
+          100,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "SAM-DPF-10-08",
+          "Smartphone A Series",
+          "Electronics",
+          "Samsung",
+          "Mymensingh",
+          "Mymensingh DC",
+          2719,
+          599,
+          1367,
+          497,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 17,
+          "ActualUpliftPct": 17.6,
+          "BudgetBDT": 114823,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 29.3,
+          "ActualUpliftPct": 24.1,
+          "BudgetBDT": 156099,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 22.2,
+          "ActualUpliftPct": 25.2,
+          "BudgetBDT": 131649,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13,
+          "ActualUpliftPct": 9,
+          "BudgetBDT": 75392,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          17,
+          17.6,
+          114823,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          29.3,
+          24.1,
+          156099,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          22.2,
+          25.2,
+          131649,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13,
+          9,
+          75392,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 34239,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 34802,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 31271,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 36344,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Electronics",
+          34239,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Electronics",
+          34802,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Electronics",
+          31271,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Electronics",
+          36344,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.39,
+          "IncomeIndex": 100.44,
+          "PurchasingPowerIndex": 87.57,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.03,
+          "IncomeIndex": 101.02,
+          "PurchasingPowerIndex": 86.65,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.53,
+          "IncomeIndex": 99.86,
+          "PurchasingPowerIndex": 85.46,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.43,
+          "IncomeIndex": 101.02,
+          "PurchasingPowerIndex": 85.97,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.56,
+          "IncomeIndex": 101.13,
+          "PurchasingPowerIndex": 85.79,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.55,
+          "IncomeIndex": 101,
+          "PurchasingPowerIndex": 85.76,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.35,
+          "IncomeIndex": 101.38,
+          "PurchasingPowerIndex": 86.22,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.3,
+          "IncomeIndex": 102.33,
+          "PurchasingPowerIndex": 94.59,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.9,
+          "IncomeIndex": 103.13,
+          "PurchasingPowerIndex": 95.51,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.47,
+          "IncomeIndex": 102.35,
+          "PurchasingPowerIndex": 96.02,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.32,
+          "IncomeIndex": 102.63,
+          "PurchasingPowerIndex": 96.35,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.06,
+          "IncomeIndex": 103.3,
+          "PurchasingPowerIndex": 96.99,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.6,
+          "IncomeIndex": 103.6,
+          "PurchasingPowerIndex": 97.86,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.27,
+          "IncomeIndex": 102.95,
+          "PurchasingPowerIndex": 98.22,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.57,
+          "IncomeIndex": 104.21,
+          "PurchasingPowerIndex": 98.1,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.63,
+          "IncomeIndex": 103.93,
+          "PurchasingPowerIndex": 97.91,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.44,
+          "IncomeIndex": 103.9,
+          "PurchasingPowerIndex": 98.23,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.8,
+          "IncomeIndex": 105.86,
+          "PurchasingPowerIndex": 98.19,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.39,
+          100.44,
+          87.57,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.03,
+          101.02,
+          86.65,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.53,
+          99.86,
+          85.46,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.43,
+          101.02,
+          85.97,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.56,
+          101.13,
+          85.79,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.55,
+          101,
+          85.76,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.35,
+          101.38,
+          86.22,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.3,
+          102.33,
+          94.59,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.9,
+          103.13,
+          95.51,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.47,
+          102.35,
+          96.02,
+          112.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.32,
+          102.63,
+          96.35,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.06,
+          103.3,
+          96.99,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.6,
+          103.6,
+          97.86,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.27,
+          102.95,
+          98.22,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.57,
+          104.21,
+          98.1,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.63,
+          103.93,
+          97.91,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.44,
+          103.9,
+          98.23,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.8,
+          105.86,
+          98.19,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 17,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 21,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 21,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          9,
+          2,
+          1,
+          17,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          7,
+          6,
+          3,
+          21,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          10,
+          2,
+          4,
+          21,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          8,
+          7,
+          5,
+          22,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 527,
+          "ActualUnits": 514,
+          "ForecastError": -13,
+          "AbsoluteError": 13,
+          "APE": 0.02529182879377432,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 555,
+          "ActualUnits": 577,
+          "ForecastError": 22,
+          "AbsoluteError": 22,
+          "APE": 0.038128249566724434,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 609,
+          "ActualUnits": 651,
+          "ForecastError": 42,
+          "AbsoluteError": 42,
+          "APE": 0.06451612903225806,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 596,
+          "ActualUnits": 519,
+          "ForecastError": -77,
+          "AbsoluteError": 77,
+          "APE": 0.14836223506743737,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 546,
+          "ActualUnits": 529,
+          "ForecastError": -17,
+          "AbsoluteError": 17,
+          "APE": 0.03213610586011342,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 664,
+          "ActualUnits": 693,
+          "ForecastError": 29,
+          "AbsoluteError": 29,
+          "APE": 0.04184704184704185,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 599,
+          "ActualUnits": 526,
+          "ForecastError": -73,
+          "AbsoluteError": 73,
+          "APE": 0.13878326996197718,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 640,
+          "ActualUnits": 628,
+          "ForecastError": -12,
+          "AbsoluteError": 12,
+          "APE": 0.01910828025477707,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 579,
+          "ActualUnits": 484,
+          "ForecastError": -95,
+          "AbsoluteError": 95,
+          "APE": 0.1962809917355372,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 677,
+          "ActualUnits": 773,
+          "ForecastError": 96,
+          "AbsoluteError": 96,
+          "APE": 0.12419146183699871,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 663,
+          "ActualUnits": 583,
+          "ForecastError": -80,
+          "AbsoluteError": 80,
+          "APE": 0.137221269296741,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 724,
+          "ActualUnits": 634,
+          "ForecastError": -90,
+          "AbsoluteError": 90,
+          "APE": 0.14195583596214512,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          527,
+          514,
+          -13,
+          13,
+          0.02529182879377432,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          555,
+          577,
+          22,
+          22,
+          0.038128249566724434,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          609,
+          651,
+          42,
+          42,
+          0.06451612903225806,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          596,
+          519,
+          -77,
+          77,
+          0.14836223506743737,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          546,
+          529,
+          -17,
+          17,
+          0.03213610586011342,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          664,
+          693,
+          29,
+          29,
+          0.04184704184704185,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          599,
+          526,
+          -73,
+          73,
+          0.13878326996197718,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          640,
+          628,
+          -12,
+          12,
+          0.01910828025477707,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          579,
+          484,
+          -95,
+          95,
+          0.1962809917355372,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          677,
+          773,
+          96,
+          96,
+          0.12419146183699871,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          663,
+          583,
+          -80,
+          80,
+          0.137221269296741,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          724,
+          634,
+          -90,
+          90,
+          0.14195583596214512,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 92,
+          "ForecastDemandUnits": 460,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 70,
+          "ForecastDemandUnits": 479,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 92,
+          "ForecastDemandUnits": 593,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 82,
+          "ForecastDemandUnits": 414,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 430,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 90,
+          "ForecastDemandUnits": 511,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 75,
+          "ForecastDemandUnits": 478,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 68,
+          "ForecastDemandUnits": 342,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          92,
+          460,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          70,
+          479,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          92,
+          593,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          82,
+          414,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          77,
+          430,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          90,
+          511,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          75,
+          478,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          68,
+          342,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 281804,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 268609,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 40254,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 370886,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 135765,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Weekly",
+          7,
+          281804,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          8,
+          268609,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          1,
+          40254,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Bi-weekly",
+          9,
+          370886,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Festival-based",
+          3,
+          135765,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 112,
+          "DataQualityScore": 76,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 166,
+          "DataQualityScore": 92,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 24,
+          "DataQualityScore": 76,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 5,
+          "DataQualityScore": 74,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          112,
+          76,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          166,
+          92,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          24,
+          76,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          5,
+          74,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Smartphone A Series Samsung Electronics Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Smartphone A Series demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Electronics competitor pricing promotions Bangladesh Samsung",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Smartphone A Series online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Smartphone A Series Samsung Electronics Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Smartphone A Series demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Electronics competitor pricing promotions Bangladesh Samsung",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Smartphone A Series online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 70,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          70,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-03",
+  "source_excel_file": "DPF-03_Winter_Seasonal_Demand_Increase.xlsx",
+  "scenario_title": "Winter Seasonal Demand Increase",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-03"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Winter Seasonal Demand Increase"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test winter seasonality for apparel."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Hoodie Classic"
+        },
+        {
+          "Field": "Category",
+          "Value": "Clothing"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Trunk"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Seasonality, Historical Sales, Inventory"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data, Seasonality, Inventory Levels"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Seasonal Demand Impact, Demand Forecast, Inventory Requirement"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-03"
+        ],
+        [
+          "Scenario Title",
+          "Winter Seasonal Demand Increase"
+        ],
+        [
+          "Purpose",
+          "Test winter seasonality for apparel."
+        ],
+        [
+          "Product Name",
+          "Hoodie Classic"
+        ],
+        [
+          "Category",
+          "Clothing"
+        ],
+        [
+          "Brand",
+          "Trunk"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Seasonality, Historical Sales, Inventory"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data, Seasonality, Inventory Levels"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Seasonal Demand Impact, Demand Forecast, Inventory Requirement"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1355,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1964750,
+          "Notes": "Winter seasonal lift"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 921,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1335450,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1025,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1486250,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 854,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1238300,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1062,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1539900,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 893,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1294850,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1090,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1580500,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 939,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1361550,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 913,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1323850,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1005,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1457250,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1474,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 2137300,
+          "Notes": "Winter seasonal lift"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1352,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1960400,
+          "Notes": "Winter seasonal lift"
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1470,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 2131500,
+          "Notes": "Winter seasonal lift"
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1078,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1563100,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1059,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1535550,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1123,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1628350,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1050,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1522500,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1186,
+          "UnitPriceBDT": 1450,
+          "RevenueBDT": 1719700,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Dhaka",
+          "Retail",
+          1355,
+          1450,
+          1964750,
+          "Winter seasonal lift"
+        ],
+        [
+          45323,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Online",
+          921,
+          1450,
+          1335450,
+          ""
+        ],
+        [
+          45352,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Sylhet",
+          "Wholesale",
+          1025,
+          1450,
+          1486250,
+          ""
+        ],
+        [
+          45383,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rajshahi",
+          "Modern Trade",
+          854,
+          1450,
+          1238300,
+          ""
+        ],
+        [
+          45413,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Khulna",
+          "Retail",
+          1062,
+          1450,
+          1539900,
+          ""
+        ],
+        [
+          45444,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Barishal",
+          "Online",
+          893,
+          1450,
+          1294850,
+          ""
+        ],
+        [
+          45474,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Wholesale",
+          1090,
+          1450,
+          1580500,
+          ""
+        ],
+        [
+          45505,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Mymensingh",
+          "Modern Trade",
+          939,
+          1450,
+          1361550,
+          ""
+        ],
+        [
+          45536,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Dhaka",
+          "Retail",
+          913,
+          1450,
+          1323850,
+          ""
+        ],
+        [
+          45566,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Online",
+          1005,
+          1450,
+          1457250,
+          ""
+        ],
+        [
+          45597,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Sylhet",
+          "Wholesale",
+          1474,
+          1450,
+          2137300,
+          "Winter seasonal lift"
+        ],
+        [
+          45627,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rajshahi",
+          "Modern Trade",
+          1352,
+          1450,
+          1960400,
+          "Winter seasonal lift"
+        ],
+        [
+          45658,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Khulna",
+          "Retail",
+          1470,
+          1450,
+          2131500,
+          "Winter seasonal lift"
+        ],
+        [
+          45689,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Barishal",
+          "Online",
+          1078,
+          1450,
+          1563100,
+          ""
+        ],
+        [
+          45717,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Wholesale",
+          1059,
+          1450,
+          1535550,
+          ""
+        ],
+        [
+          45748,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Mymensingh",
+          "Modern Trade",
+          1123,
+          1450,
+          1628350,
+          ""
+        ],
+        [
+          45778,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Dhaka",
+          "Retail",
+          1050,
+          1450,
+          1522500,
+          ""
+        ],
+        [
+          45809,
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Online",
+          1186,
+          1450,
+          1719700,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "TRU-DPF-03-01",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 880,
+          "SafetyStock": 695,
+          "ReorderPoint": 1427,
+          "StockInTransit": 471,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "TRU-DPF-03-02",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3008,
+          "SafetyStock": 624,
+          "ReorderPoint": 1301,
+          "StockInTransit": 113,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "TRU-DPF-03-03",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2785,
+          "SafetyStock": 531,
+          "ReorderPoint": 1191,
+          "StockInTransit": 541,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "TRU-DPF-03-04",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2944,
+          "SafetyStock": 523,
+          "ReorderPoint": 1182,
+          "StockInTransit": 300,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "TRU-DPF-03-05",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2032,
+          "SafetyStock": 521,
+          "ReorderPoint": 1122,
+          "StockInTransit": 306,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "TRU-DPF-03-06",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3579,
+          "SafetyStock": 626,
+          "ReorderPoint": 1475,
+          "StockInTransit": 414,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "TRU-DPF-03-07",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1740,
+          "SafetyStock": 591,
+          "ReorderPoint": 1151,
+          "StockInTransit": 233,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "TRU-DPF-03-08",
+          "ProductName": "Hoodie Classic",
+          "Category": "Clothing",
+          "Brand": "Trunk",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2111,
+          "SafetyStock": 599,
+          "ReorderPoint": 1369,
+          "StockInTransit": 331,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "TRU-DPF-03-01",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Dhaka",
+          "Dhaka DC",
+          880,
+          695,
+          1427,
+          471,
+          120,
+          45672,
+          "Reorder Needed"
+        ],
+        [
+          "TRU-DPF-03-02",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Chattogram",
+          "Chattogram DC",
+          3008,
+          624,
+          1301,
+          113,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "TRU-DPF-03-03",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Sylhet",
+          "Sylhet DC",
+          2785,
+          531,
+          1191,
+          541,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "TRU-DPF-03-04",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rajshahi",
+          "Rajshahi DC",
+          2944,
+          523,
+          1182,
+          300,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "TRU-DPF-03-05",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Khulna",
+          "Khulna DC",
+          2032,
+          521,
+          1122,
+          306,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "TRU-DPF-03-06",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Barishal",
+          "Barishal DC",
+          3579,
+          626,
+          1475,
+          414,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "TRU-DPF-03-07",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Rangpur",
+          "Rangpur DC",
+          1740,
+          591,
+          1151,
+          233,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "TRU-DPF-03-08",
+          "Hoodie Classic",
+          "Clothing",
+          "Trunk",
+          "Mymensingh",
+          "Mymensingh DC",
+          2111,
+          599,
+          1369,
+          331,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 17.3,
+          "ActualUpliftPct": 13.5,
+          "BudgetBDT": 112587,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 34.2,
+          "ActualUpliftPct": 38.6,
+          "BudgetBDT": 85272,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 16.3,
+          "ActualUpliftPct": 15.6,
+          "BudgetBDT": 126965,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13.4,
+          "ActualUpliftPct": 15.2,
+          "BudgetBDT": 137602,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          17.3,
+          13.5,
+          112587,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          34.2,
+          38.6,
+          85272,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          16.3,
+          15.6,
+          126965,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13.4,
+          15.2,
+          137602,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1540,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1306,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1293,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1202,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Clothing",
+          1540,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Clothing",
+          1306,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Clothing",
+          1293,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Clothing",
+          1202,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.35,
+          "IncomeIndex": 99.95,
+          "PurchasingPowerIndex": 87.5,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.1,
+          "IncomeIndex": 99.45,
+          "PurchasingPowerIndex": 86.06,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.19,
+          "IncomeIndex": 100.86,
+          "PurchasingPowerIndex": 86.33,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.33,
+          "IncomeIndex": 101.29,
+          "PurchasingPowerIndex": 86.23,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.66,
+          "IncomeIndex": 100.69,
+          "PurchasingPowerIndex": 85.48,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.79,
+          "IncomeIndex": 100.51,
+          "PurchasingPowerIndex": 85.21,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.74,
+          "IncomeIndex": 102.34,
+          "PurchasingPowerIndex": 85.84,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.13,
+          "IncomeIndex": 101.95,
+          "PurchasingPowerIndex": 86.76,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.85,
+          "IncomeIndex": 103.32,
+          "PurchasingPowerIndex": 87.64,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.68,
+          "IncomeIndex": 101.8,
+          "PurchasingPowerIndex": 87.48,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.12,
+          "IncomeIndex": 103.7,
+          "PurchasingPowerIndex": 89,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.87,
+          "IncomeIndex": 103.9,
+          "PurchasingPowerIndex": 89.49,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.69,
+          "IncomeIndex": 104.58,
+          "PurchasingPowerIndex": 90,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.44,
+          "IncomeIndex": 104.8,
+          "PurchasingPowerIndex": 90.49,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.54,
+          "IncomeIndex": 104.43,
+          "PurchasingPowerIndex": 90.22,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.48,
+          "IncomeIndex": 104.51,
+          "PurchasingPowerIndex": 90.34,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.72,
+          "IncomeIndex": 104.9,
+          "PurchasingPowerIndex": 90.04,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.04,
+          "IncomeIndex": 105.59,
+          "PurchasingPowerIndex": 89.7,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.35,
+          99.95,
+          87.5,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.1,
+          99.45,
+          86.06,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.19,
+          100.86,
+          86.33,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.33,
+          101.29,
+          86.23,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.66,
+          100.69,
+          85.48,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.79,
+          100.51,
+          85.21,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.74,
+          102.34,
+          85.84,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.13,
+          101.95,
+          86.76,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.85,
+          103.32,
+          87.64,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.68,
+          101.8,
+          87.48,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.12,
+          103.7,
+          89,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.87,
+          103.9,
+          89.49,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.69,
+          104.58,
+          90,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.44,
+          104.8,
+          90.49,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.54,
+          104.43,
+          90.22,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.48,
+          104.51,
+          90.34,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.72,
+          104.9,
+          90.04,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.04,
+          105.59,
+          89.7,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 24,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 26,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          12,
+          6,
+          2,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          4,
+          12,
+          5,
+          3,
+          24,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          6,
+          6,
+          2,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          4,
+          10,
+          7,
+          5,
+          26,
+          "Yes",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 825,
+          "ActualUnits": 726,
+          "ForecastError": -99,
+          "AbsoluteError": 99,
+          "APE": 0.13636363636363635,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 897,
+          "ActualUnits": 790,
+          "ForecastError": -107,
+          "AbsoluteError": 107,
+          "APE": 0.13544303797468354,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 882,
+          "ActualUnits": 870,
+          "ForecastError": -12,
+          "AbsoluteError": 12,
+          "APE": 0.013793103448275862,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 922,
+          "ActualUnits": 928,
+          "ForecastError": 6,
+          "AbsoluteError": 6,
+          "APE": 0.00646551724137931,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 887,
+          "ActualUnits": 1023,
+          "ForecastError": 136,
+          "AbsoluteError": 136,
+          "APE": 0.13294232649071358,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 968,
+          "ActualUnits": 1092,
+          "ForecastError": 124,
+          "AbsoluteError": 124,
+          "APE": 0.11355311355311355,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1098,
+          "ActualUnits": 909,
+          "ForecastError": -189,
+          "AbsoluteError": 189,
+          "APE": 0.2079207920792079,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1104,
+          "ActualUnits": 1160,
+          "ForecastError": 56,
+          "AbsoluteError": 56,
+          "APE": 0.04827586206896552,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1039,
+          "ActualUnits": 1244,
+          "ForecastError": 205,
+          "AbsoluteError": 205,
+          "APE": 0.1647909967845659,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1019,
+          "ActualUnits": 995,
+          "ForecastError": -24,
+          "AbsoluteError": 24,
+          "APE": 0.024120603015075376,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1165,
+          "ActualUnits": 1345,
+          "ForecastError": 180,
+          "AbsoluteError": 180,
+          "APE": 0.13382899628252787,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1106,
+          "ActualUnits": 1232,
+          "ForecastError": 126,
+          "AbsoluteError": 126,
+          "APE": 0.10227272727272728,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          825,
+          726,
+          -99,
+          99,
+          0.13636363636363635,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          897,
+          790,
+          -107,
+          107,
+          0.13544303797468354,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          882,
+          870,
+          -12,
+          12,
+          0.013793103448275862,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          922,
+          928,
+          6,
+          6,
+          0.00646551724137931,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          887,
+          1023,
+          136,
+          136,
+          0.13294232649071358,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          968,
+          1092,
+          124,
+          124,
+          0.11355311355311355,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1098,
+          909,
+          -189,
+          189,
+          0.2079207920792079,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1104,
+          1160,
+          56,
+          56,
+          0.04827586206896552,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1039,
+          1244,
+          205,
+          205,
+          0.1647909967845659,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1019,
+          995,
+          -24,
+          24,
+          0.024120603015075376,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1165,
+          1345,
+          180,
+          180,
+          0.13382899628252787,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1106,
+          1232,
+          126,
+          126,
+          0.10227272727272728,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 982,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 76,
+          "ForecastDemandUnits": 588,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 72,
+          "ForecastDemandUnits": 643,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 69,
+          "ForecastDemandUnits": 570,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 88,
+          "ForecastDemandUnits": 910,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 682,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 74,
+          "ForecastDemandUnits": 806,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 84,
+          "ForecastDemandUnits": 769,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          91,
+          982,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          76,
+          588,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          72,
+          643,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          69,
+          570,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          88,
+          910,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          91,
+          682,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          74,
+          806,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          84,
+          769,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 1233,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 5742,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 1386,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 6222,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 9815,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Festival-based",
+          1,
+          1233,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Festival-based",
+          3,
+          5742,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          1,
+          1386,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Monthly",
+          4,
+          6222,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Monthly",
+          7,
+          9815,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 293,
+          "DataQualityScore": 88,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 84,
+          "DataQualityScore": 96,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 20,
+          "DataQualityScore": 85,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 5,
+          "DataQualityScore": 83,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          293,
+          88,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          84,
+          96,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          20,
+          85,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          5,
+          83,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Hoodie Classic Trunk Clothing Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Hoodie Classic demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Clothing competitor pricing promotions Bangladesh Trunk",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Hoodie Classic online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Hoodie Classic Trunk Clothing Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Hoodie Classic demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Clothing competitor pricing promotions Bangladesh Trunk",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Hoodie Classic online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 77,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 61,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 90,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 71,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          77,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          61,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          90,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          71,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

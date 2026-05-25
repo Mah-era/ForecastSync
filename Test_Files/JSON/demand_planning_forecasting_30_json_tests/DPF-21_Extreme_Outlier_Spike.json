@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-21",
+  "source_excel_file": "DPF-21_Extreme_Outlier_Spike.xlsx",
+  "scenario_title": "Extreme Outlier Spike",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-21"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Extreme Outlier Spike"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test outlier detection and robust forecast."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Power Bank"
+        },
+        {
+          "Field": "Category",
+          "Value": "Electronics"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Anker"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Forecasting Methods"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data, Forecasting Methods"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Demand Forecast, Forecast Confidence Score, Risk Alerts"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-21"
+        ],
+        [
+          "Scenario Title",
+          "Extreme Outlier Spike"
+        ],
+        [
+          "Purpose",
+          "Test outlier detection and robust forecast."
+        ],
+        [
+          "Product Name",
+          "Power Bank"
+        ],
+        [
+          "Category",
+          "Electronics"
+        ],
+        [
+          "Brand",
+          "Anker"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Forecasting Methods"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data, Forecasting Methods"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Demand Forecast, Forecast Confidence Score, Risk Alerts"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 607,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1456800,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 591,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1418400,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 665,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1596000,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 564,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1353600,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 627,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1504800,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 656,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1574400,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 589,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1413600,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 663,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1591200,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 642,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1540800,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 760,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1824000,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 3655,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 8772000,
+          "Notes": "Extreme demand outlier"
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 618,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1483200,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 692,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1660800,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 637,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1528800,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 735,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1764000,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 792,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1900800,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 796,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 1910400,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 837,
+          "UnitPriceBDT": 2400,
+          "RevenueBDT": 2008800,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Dhaka",
+          "Retail",
+          607,
+          2400,
+          1456800,
+          ""
+        ],
+        [
+          45323,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Chattogram",
+          "Online",
+          591,
+          2400,
+          1418400,
+          ""
+        ],
+        [
+          45352,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Sylhet",
+          "Wholesale",
+          665,
+          2400,
+          1596000,
+          ""
+        ],
+        [
+          45383,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rajshahi",
+          "Modern Trade",
+          564,
+          2400,
+          1353600,
+          ""
+        ],
+        [
+          45413,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Khulna",
+          "Retail",
+          627,
+          2400,
+          1504800,
+          ""
+        ],
+        [
+          45444,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Barishal",
+          "Online",
+          656,
+          2400,
+          1574400,
+          ""
+        ],
+        [
+          45474,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rangpur",
+          "Wholesale",
+          589,
+          2400,
+          1413600,
+          ""
+        ],
+        [
+          45505,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Mymensingh",
+          "Modern Trade",
+          663,
+          2400,
+          1591200,
+          ""
+        ],
+        [
+          45536,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Dhaka",
+          "Retail",
+          642,
+          2400,
+          1540800,
+          ""
+        ],
+        [
+          45566,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Chattogram",
+          "Online",
+          760,
+          2400,
+          1824000,
+          ""
+        ],
+        [
+          45597,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Sylhet",
+          "Wholesale",
+          3655,
+          2400,
+          8772000,
+          "Extreme demand outlier"
+        ],
+        [
+          45627,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rajshahi",
+          "Modern Trade",
+          618,
+          2400,
+          1483200,
+          ""
+        ],
+        [
+          45658,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Khulna",
+          "Retail",
+          692,
+          2400,
+          1660800,
+          ""
+        ],
+        [
+          45689,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Barishal",
+          "Online",
+          637,
+          2400,
+          1528800,
+          ""
+        ],
+        [
+          45717,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rangpur",
+          "Wholesale",
+          735,
+          2400,
+          1764000,
+          ""
+        ],
+        [
+          45748,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Mymensingh",
+          "Modern Trade",
+          792,
+          2400,
+          1900800,
+          ""
+        ],
+        [
+          45778,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Dhaka",
+          "Retail",
+          796,
+          2400,
+          1910400,
+          ""
+        ],
+        [
+          45809,
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Chattogram",
+          "Online",
+          837,
+          2400,
+          2008800,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "ANK-DPF-21-01",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 2708,
+          "SafetyStock": 685,
+          "ReorderPoint": 1425,
+          "StockInTransit": 435,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "ANK-DPF-21-02",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 2187,
+          "SafetyStock": 534,
+          "ReorderPoint": 1358,
+          "StockInTransit": 524,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "ANK-DPF-21-03",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 3302,
+          "SafetyStock": 531,
+          "ReorderPoint": 1337,
+          "StockInTransit": 405,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "ANK-DPF-21-04",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2935,
+          "SafetyStock": 540,
+          "ReorderPoint": 1245,
+          "StockInTransit": 129,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "ANK-DPF-21-05",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2769,
+          "SafetyStock": 441,
+          "ReorderPoint": 1115,
+          "StockInTransit": 424,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "ANK-DPF-21-06",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3175,
+          "SafetyStock": 591,
+          "ReorderPoint": 1271,
+          "StockInTransit": 133,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "ANK-DPF-21-07",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 3454,
+          "SafetyStock": 575,
+          "ReorderPoint": 1398,
+          "StockInTransit": 483,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "ANK-DPF-21-08",
+          "ProductName": "Power Bank",
+          "Category": "Electronics",
+          "Brand": "Anker",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2051,
+          "SafetyStock": 510,
+          "ReorderPoint": 1133,
+          "StockInTransit": 141,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "ANK-DPF-21-01",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Dhaka",
+          "Dhaka DC",
+          2708,
+          685,
+          1425,
+          435,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "ANK-DPF-21-02",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Chattogram",
+          "Chattogram DC",
+          2187,
+          534,
+          1358,
+          524,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "ANK-DPF-21-03",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Sylhet",
+          "Sylhet DC",
+          3302,
+          531,
+          1337,
+          405,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "ANK-DPF-21-04",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rajshahi",
+          "Rajshahi DC",
+          2935,
+          540,
+          1245,
+          129,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "ANK-DPF-21-05",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Khulna",
+          "Khulna DC",
+          2769,
+          441,
+          1115,
+          424,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "ANK-DPF-21-06",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Barishal",
+          "Barishal DC",
+          3175,
+          591,
+          1271,
+          133,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "ANK-DPF-21-07",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Rangpur",
+          "Rangpur DC",
+          3454,
+          575,
+          1398,
+          483,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "ANK-DPF-21-08",
+          "Power Bank",
+          "Electronics",
+          "Anker",
+          "Mymensingh",
+          "Mymensingh DC",
+          2051,
+          510,
+          1133,
+          141,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 22.2,
+          "ActualUpliftPct": 17.3,
+          "BudgetBDT": 144210,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 21.4,
+          "ActualUpliftPct": 18.3,
+          "BudgetBDT": 138143,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 15.7,
+          "ActualUpliftPct": 16.2,
+          "BudgetBDT": 130493,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 11.2,
+          "ActualUpliftPct": 13.3,
+          "BudgetBDT": 111165,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          22.2,
+          17.3,
+          144210,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          21.4,
+          18.3,
+          138143,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          15.7,
+          16.2,
+          130493,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          11.2,
+          13.3,
+          111165,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2477,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2404,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2801,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 1972,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Electronics",
+          2477,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Electronics",
+          2404,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Electronics",
+          2801,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Electronics",
+          1972,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.64,
+          "IncomeIndex": 100.11,
+          "PurchasingPowerIndex": 87.04,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.85,
+          "IncomeIndex": 100.47,
+          "PurchasingPowerIndex": 86.79,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.5,
+          "IncomeIndex": 101.16,
+          "PurchasingPowerIndex": 85.9,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.76,
+          "IncomeIndex": 101.28,
+          "PurchasingPowerIndex": 85.5,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.47,
+          "IncomeIndex": 101.83,
+          "PurchasingPowerIndex": 86.15,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.46,
+          "IncomeIndex": 101.82,
+          "PurchasingPowerIndex": 86.17,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.65,
+          "IncomeIndex": 101.44,
+          "PurchasingPowerIndex": 85.72,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.6,
+          "IncomeIndex": 101.94,
+          "PurchasingPowerIndex": 85.97,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.11,
+          "IncomeIndex": 102.79,
+          "PurchasingPowerIndex": 87.04,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.52,
+          "IncomeIndex": 102.5,
+          "PurchasingPowerIndex": 87.97,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.18,
+          "IncomeIndex": 102.59,
+          "PurchasingPowerIndex": 88.58,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.08,
+          "IncomeIndex": 102.58,
+          "PurchasingPowerIndex": 88.73,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.65,
+          "IncomeIndex": 104.37,
+          "PurchasingPowerIndex": 90,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.39,
+          "IncomeIndex": 104.59,
+          "PurchasingPowerIndex": 90.51,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.33,
+          "IncomeIndex": 103.83,
+          "PurchasingPowerIndex": 90.39,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.49,
+          "IncomeIndex": 104.61,
+          "PurchasingPowerIndex": 90.35,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.35,
+          "IncomeIndex": 104.22,
+          "PurchasingPowerIndex": 90.46,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.93,
+          "IncomeIndex": 105.47,
+          "PurchasingPowerIndex": 89.85,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.64,
+          100.11,
+          87.04,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.85,
+          100.47,
+          86.79,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.5,
+          101.16,
+          85.9,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.76,
+          101.28,
+          85.5,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.47,
+          101.83,
+          86.15,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.46,
+          101.82,
+          86.17,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.65,
+          101.44,
+          85.72,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.6,
+          101.94,
+          85.97,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.11,
+          102.79,
+          87.04,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.52,
+          102.5,
+          87.97,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.18,
+          102.59,
+          88.58,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.08,
+          102.58,
+          88.73,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.65,
+          104.37,
+          90,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.39,
+          104.59,
+          90.51,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.33,
+          103.83,
+          90.39,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.49,
+          104.61,
+          90.35,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.35,
+          104.22,
+          90.46,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.93,
+          105.47,
+          89.85,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 29,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 17,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          7,
+          7,
+          1,
+          18,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          4,
+          12,
+          8,
+          5,
+          29,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          4,
+          11,
+          2,
+          5,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          5,
+          8,
+          2,
+          17,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 546,
+          "ActualUnits": 460,
+          "ForecastError": -86,
+          "AbsoluteError": 86,
+          "APE": 0.18695652173913044,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 583,
+          "ActualUnits": 661,
+          "ForecastError": 78,
+          "AbsoluteError": 78,
+          "APE": 0.11800302571860817,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 684,
+          "ActualUnits": 748,
+          "ForecastError": 64,
+          "AbsoluteError": 64,
+          "APE": 0.0855614973262032,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 591,
+          "ActualUnits": 499,
+          "ForecastError": -92,
+          "AbsoluteError": 92,
+          "APE": 0.1843687374749499,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 685,
+          "ActualUnits": 618,
+          "ForecastError": -67,
+          "AbsoluteError": 67,
+          "APE": 0.10841423948220065,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 665,
+          "ActualUnits": 641,
+          "ForecastError": -24,
+          "AbsoluteError": 24,
+          "APE": 0.0374414976599064,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 666,
+          "ActualUnits": 710,
+          "ForecastError": 44,
+          "AbsoluteError": 44,
+          "APE": 0.061971830985915494,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 708,
+          "ActualUnits": 740,
+          "ForecastError": 32,
+          "AbsoluteError": 32,
+          "APE": 0.043243243243243246,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 658,
+          "ActualUnits": 710,
+          "ForecastError": 52,
+          "AbsoluteError": 52,
+          "APE": 0.07323943661971831,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 692,
+          "ActualUnits": 709,
+          "ForecastError": 17,
+          "AbsoluteError": 17,
+          "APE": 0.023977433004231313,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 763,
+          "ActualUnits": 838,
+          "ForecastError": 75,
+          "AbsoluteError": 75,
+          "APE": 0.08949880668257756,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 760,
+          "ActualUnits": 637,
+          "ForecastError": -123,
+          "AbsoluteError": 123,
+          "APE": 0.19309262166405022,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          546,
+          460,
+          -86,
+          86,
+          0.18695652173913044,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          583,
+          661,
+          78,
+          78,
+          0.11800302571860817,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          684,
+          748,
+          64,
+          64,
+          0.0855614973262032,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          591,
+          499,
+          -92,
+          92,
+          0.1843687374749499,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          685,
+          618,
+          -67,
+          67,
+          0.10841423948220065,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          665,
+          641,
+          -24,
+          24,
+          0.0374414976599064,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          666,
+          710,
+          44,
+          44,
+          0.061971830985915494,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          708,
+          740,
+          32,
+          32,
+          0.043243243243243246,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          658,
+          710,
+          52,
+          52,
+          0.07323943661971831,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          692,
+          709,
+          17,
+          17,
+          0.023977433004231313,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          763,
+          838,
+          75,
+          75,
+          0.08949880668257756,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          760,
+          637,
+          -123,
+          123,
+          0.19309262166405022,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 436,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 95,
+          "ForecastDemandUnits": 706,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 65,
+          "ForecastDemandUnits": 481,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 48,
+          "ForecastDemandUnits": 218,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 61,
+          "ForecastDemandUnits": 312,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 94,
+          "ForecastDemandUnits": 666,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 73,
+          "ForecastDemandUnits": 510,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 85,
+          "ForecastDemandUnits": 562,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          77,
+          436,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          95,
+          706,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          65,
+          481,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          48,
+          218,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          61,
+          312,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          94,
+          666,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          73,
+          510,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          85,
+          562,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 26850,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 9374,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 4378,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 18827,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 16253,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Monthly",
+          9,
+          26850,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          4,
+          9374,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          2,
+          4378,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Bi-weekly",
+          9,
+          18827,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Weekly",
+          7,
+          16253,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 117,
+          "DataQualityScore": 79,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 61,
+          "DataQualityScore": 88,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 42,
+          "DataQualityScore": 70,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 15,
+          "DataQualityScore": 74,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          117,
+          79,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          61,
+          88,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          42,
+          70,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          15,
+          74,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Power Bank Anker Electronics Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Power Bank demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Electronics competitor pricing promotions Bangladesh Anker",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Power Bank online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Power Bank Anker Electronics Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Power Bank demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Electronics competitor pricing promotions Bangladesh Anker",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Power Bank online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 82,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 89,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 61,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          82,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          89,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          61,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Extreme demand spike should be flagged as outlier.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Extreme demand spike should be flagged as outlier.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

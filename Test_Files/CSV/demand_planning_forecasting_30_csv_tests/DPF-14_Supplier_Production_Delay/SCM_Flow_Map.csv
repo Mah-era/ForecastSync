@@ -1,0 +1,5 @@
+﻿NodeID,NodeType,Name,Region,Latitude,Longitude,NextNodeID,AvgTransitDays,RiskLevel,Notes
+S1,Supplier,Main Supplier,Chattogram,22.3569,91.7832,W1,22,High,Use for SCM flow map supplier → warehouse → retailer → customer
+W1,Warehouse,Central Warehouse,Dhaka,23.8103,90.4125,R1,2,Low,Use for SCM flow map supplier → warehouse → retailer → customer
+R1,Retailer,Retail Network,Dhaka,23.7806,90.2794,C1,1,Low,Use for SCM flow map supplier → warehouse → retailer → customer
+C1,Customer,End Customer Zone,Dhaka,23.7465,90.376,,0,Low,Use for SCM flow map supplier → warehouse → retailer → customer

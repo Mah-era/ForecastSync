@@ -1,0 +1,2665 @@
+{
+  "scenario_id": "DPF-25",
+  "source_excel_file": "DPF-25_JSON_like_Nested_Data_in_Excel.xlsx",
+  "scenario_title": "JSON-like Nested Data in Excel",
+  "sheet_count": 16,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-25"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "JSON-like Nested Data in Excel"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test pasted/nested JSON fields inside Excel."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Cloud Subscription"
+        },
+        {
+          "Field": "Category",
+          "Value": "Technology Service"
+        },
+        {
+          "Field": "Brand",
+          "Value": "BDTech"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Technology & Data Tools, Customer Demand Patterns"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "JSON Data, Uploaded File Data, Customer Demand Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Data Quality Score, Customer Demand Pattern"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-25"
+        ],
+        [
+          "Scenario Title",
+          "JSON-like Nested Data in Excel"
+        ],
+        [
+          "Purpose",
+          "Test pasted/nested JSON fields inside Excel."
+        ],
+        [
+          "Product Name",
+          "Cloud Subscription"
+        ],
+        [
+          "Category",
+          "Technology Service"
+        ],
+        [
+          "Brand",
+          "BDTech"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Technology & Data Tools, Customer Demand Patterns"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "JSON Data, Uploaded File Data, Customer Demand Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Data Quality Score, Customer Demand Pattern"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 312,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 374400,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 273,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 327600,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 320,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 384000,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 277,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 332400,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 312,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 374400,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 322,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 386400,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 322,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 386400,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 321,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 385200,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 368,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 441600,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 337,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 404400,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 316,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 379200,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 322,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 386400,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 356,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 427200,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 371,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 445200,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 373,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 447600,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 405,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 486000,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 397,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 476400,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 373,
+          "UnitPriceBDT": 1200,
+          "RevenueBDT": 447600,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Dhaka",
+          "Retail",
+          312,
+          1200,
+          374400,
+          ""
+        ],
+        [
+          45323,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Chattogram",
+          "Online",
+          273,
+          1200,
+          327600,
+          ""
+        ],
+        [
+          45352,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Sylhet",
+          "Wholesale",
+          320,
+          1200,
+          384000,
+          ""
+        ],
+        [
+          45383,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rajshahi",
+          "Modern Trade",
+          277,
+          1200,
+          332400,
+          ""
+        ],
+        [
+          45413,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Khulna",
+          "Retail",
+          312,
+          1200,
+          374400,
+          ""
+        ],
+        [
+          45444,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Barishal",
+          "Online",
+          322,
+          1200,
+          386400,
+          ""
+        ],
+        [
+          45474,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rangpur",
+          "Wholesale",
+          322,
+          1200,
+          386400,
+          ""
+        ],
+        [
+          45505,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Mymensingh",
+          "Modern Trade",
+          321,
+          1200,
+          385200,
+          ""
+        ],
+        [
+          45536,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Dhaka",
+          "Retail",
+          368,
+          1200,
+          441600,
+          ""
+        ],
+        [
+          45566,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Chattogram",
+          "Online",
+          337,
+          1200,
+          404400,
+          ""
+        ],
+        [
+          45597,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Sylhet",
+          "Wholesale",
+          316,
+          1200,
+          379200,
+          ""
+        ],
+        [
+          45627,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rajshahi",
+          "Modern Trade",
+          322,
+          1200,
+          386400,
+          ""
+        ],
+        [
+          45658,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Khulna",
+          "Retail",
+          356,
+          1200,
+          427200,
+          ""
+        ],
+        [
+          45689,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Barishal",
+          "Online",
+          371,
+          1200,
+          445200,
+          ""
+        ],
+        [
+          45717,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rangpur",
+          "Wholesale",
+          373,
+          1200,
+          447600,
+          ""
+        ],
+        [
+          45748,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Mymensingh",
+          "Modern Trade",
+          405,
+          1200,
+          486000,
+          ""
+        ],
+        [
+          45778,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Dhaka",
+          "Retail",
+          397,
+          1200,
+          476400,
+          ""
+        ],
+        [
+          45809,
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Chattogram",
+          "Online",
+          373,
+          1200,
+          447600,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "BDT-DPF-25-01",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3249,
+          "SafetyStock": 603,
+          "ReorderPoint": 1266,
+          "StockInTransit": 210,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "BDT-DPF-25-02",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3562,
+          "SafetyStock": 517,
+          "ReorderPoint": 1221,
+          "StockInTransit": 488,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "BDT-DPF-25-03",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2513,
+          "SafetyStock": 624,
+          "ReorderPoint": 1292,
+          "StockInTransit": 347,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "BDT-DPF-25-04",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1809,
+          "SafetyStock": 574,
+          "ReorderPoint": 1248,
+          "StockInTransit": 217,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "BDT-DPF-25-05",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 1679,
+          "SafetyStock": 604,
+          "ReorderPoint": 1446,
+          "StockInTransit": 381,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "BDT-DPF-25-06",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2360,
+          "SafetyStock": 493,
+          "ReorderPoint": 1130,
+          "StockInTransit": 299,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "BDT-DPF-25-07",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2471,
+          "SafetyStock": 506,
+          "ReorderPoint": 1218,
+          "StockInTransit": 467,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "BDT-DPF-25-08",
+          "ProductName": "Cloud Subscription",
+          "Category": "Technology Service",
+          "Brand": "BDTech",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2164,
+          "SafetyStock": 445,
+          "ReorderPoint": 1099,
+          "StockInTransit": 297,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "BDT-DPF-25-01",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Dhaka",
+          "Dhaka DC",
+          3249,
+          603,
+          1266,
+          210,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "BDT-DPF-25-02",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Chattogram",
+          "Chattogram DC",
+          3562,
+          517,
+          1221,
+          488,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "BDT-DPF-25-03",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Sylhet",
+          "Sylhet DC",
+          2513,
+          624,
+          1292,
+          347,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "BDT-DPF-25-04",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rajshahi",
+          "Rajshahi DC",
+          1809,
+          574,
+          1248,
+          217,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "BDT-DPF-25-05",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Khulna",
+          "Khulna DC",
+          1679,
+          604,
+          1446,
+          381,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "BDT-DPF-25-06",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Barishal",
+          "Barishal DC",
+          2360,
+          493,
+          1130,
+          299,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "BDT-DPF-25-07",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Rangpur",
+          "Rangpur DC",
+          2471,
+          506,
+          1218,
+          467,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "BDT-DPF-25-08",
+          "Cloud Subscription",
+          "Technology Service",
+          "BDTech",
+          "Mymensingh",
+          "Mymensingh DC",
+          2164,
+          445,
+          1099,
+          297,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 14.9,
+          "ActualUpliftPct": 15.6,
+          "BudgetBDT": 103212,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 28,
+          "ActualUpliftPct": 23.9,
+          "BudgetBDT": 159697,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 23.3,
+          "ActualUpliftPct": 20,
+          "BudgetBDT": 110837,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13.1,
+          "ActualUpliftPct": 10.3,
+          "BudgetBDT": 134916,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          14.9,
+          15.6,
+          103212,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          28,
+          23.9,
+          159697,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          23.3,
+          20,
+          110837,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13.1,
+          10.3,
+          134916,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Technology Service",
+          "CompetitorPriceBDT": 1120,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Technology Service",
+          "CompetitorPriceBDT": 1305,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Technology Service",
+          "CompetitorPriceBDT": 1395,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Technology Service",
+          "CompetitorPriceBDT": 1282,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Technology Service",
+          1120,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Technology Service",
+          1305,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Technology Service",
+          1395,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Technology Service",
+          1282,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.31,
+          "IncomeIndex": 100.48,
+          "PurchasingPowerIndex": 87.71,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.76,
+          "IncomeIndex": 100.48,
+          "PurchasingPowerIndex": 86.95,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.4,
+          "IncomeIndex": 100.79,
+          "PurchasingPowerIndex": 85.96,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.8,
+          "IncomeIndex": 101.57,
+          "PurchasingPowerIndex": 85.51,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.54,
+          "IncomeIndex": 100.92,
+          "PurchasingPowerIndex": 85.75,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.58,
+          "IncomeIndex": 101.92,
+          "PurchasingPowerIndex": 86,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.37,
+          "IncomeIndex": 100.89,
+          "PurchasingPowerIndex": 86.04,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.1,
+          "IncomeIndex": 101.68,
+          "PurchasingPowerIndex": 86.73,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.32,
+          "IncomeIndex": 102.68,
+          "PurchasingPowerIndex": 86.67,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.82,
+          "IncomeIndex": 101.91,
+          "PurchasingPowerIndex": 87.28,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 6.98,
+          "IncomeIndex": 102.57,
+          "PurchasingPowerIndex": 88.91,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.89,
+          "IncomeIndex": 102.98,
+          "PurchasingPowerIndex": 89.19,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.87,
+          "IncomeIndex": 103.1,
+          "PurchasingPowerIndex": 89.25,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.6,
+          "IncomeIndex": 103.13,
+          "PurchasingPowerIndex": 89.71,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.04,
+          "IncomeIndex": 104.18,
+          "PurchasingPowerIndex": 90.99,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.4,
+          "IncomeIndex": 104.87,
+          "PurchasingPowerIndex": 90.59,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.32,
+          "IncomeIndex": 105.42,
+          "PurchasingPowerIndex": 90.89,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.08,
+          "IncomeIndex": 104.27,
+          "PurchasingPowerIndex": 89.25,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.31,
+          100.48,
+          87.71,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.76,
+          100.48,
+          86.95,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.4,
+          100.79,
+          85.96,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.8,
+          101.57,
+          85.51,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.54,
+          100.92,
+          85.75,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.58,
+          101.92,
+          86,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.37,
+          100.89,
+          86.04,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.1,
+          101.68,
+          86.73,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.32,
+          102.68,
+          86.67,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.82,
+          101.91,
+          87.28,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          6.98,
+          102.57,
+          88.91,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.89,
+          102.98,
+          89.19,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.87,
+          103.1,
+          89.25,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.6,
+          103.13,
+          89.71,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.04,
+          104.18,
+          90.99,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.4,
+          104.87,
+          90.59,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.32,
+          105.42,
+          90.89,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.08,
+          104.27,
+          89.25,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 26,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 16,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          6,
+          8,
+          5,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          6,
+          8,
+          8,
+          4,
+          26,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          9,
+          8,
+          3,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          6,
+          5,
+          3,
+          2,
+          16,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 308,
+          "ActualUnits": 285,
+          "ForecastError": -23,
+          "AbsoluteError": 23,
+          "APE": 0.08070175438596491,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 280,
+          "ActualUnits": 256,
+          "ForecastError": -24,
+          "AbsoluteError": 24,
+          "APE": 0.09375,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 315,
+          "ActualUnits": 278,
+          "ForecastError": -37,
+          "AbsoluteError": 37,
+          "APE": 0.13309352517985612,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 312,
+          "ActualUnits": 342,
+          "ForecastError": 30,
+          "AbsoluteError": 30,
+          "APE": 0.08771929824561403,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 322,
+          "ActualUnits": 268,
+          "ForecastError": -54,
+          "AbsoluteError": 54,
+          "APE": 0.20149253731343283,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 316,
+          "ActualUnits": 295,
+          "ForecastError": -21,
+          "AbsoluteError": 21,
+          "APE": 0.0711864406779661,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 360,
+          "ActualUnits": 305,
+          "ForecastError": -55,
+          "AbsoluteError": 55,
+          "APE": 0.18032786885245902,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 324,
+          "ActualUnits": 300,
+          "ForecastError": -24,
+          "AbsoluteError": 24,
+          "APE": 0.08,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 368,
+          "ActualUnits": 389,
+          "ForecastError": 21,
+          "AbsoluteError": 21,
+          "APE": 0.05398457583547558,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 376,
+          "ActualUnits": 338,
+          "ForecastError": -38,
+          "AbsoluteError": 38,
+          "APE": 0.11242603550295859,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 332,
+          "ActualUnits": 302,
+          "ForecastError": -30,
+          "AbsoluteError": 30,
+          "APE": 0.09933774834437085,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 340,
+          "ActualUnits": 315,
+          "ForecastError": -25,
+          "AbsoluteError": 25,
+          "APE": 0.07936507936507936,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          308,
+          285,
+          -23,
+          23,
+          0.08070175438596491,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          280,
+          256,
+          -24,
+          24,
+          0.09375,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          315,
+          278,
+          -37,
+          37,
+          0.13309352517985612,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          312,
+          342,
+          30,
+          30,
+          0.08771929824561403,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          322,
+          268,
+          -54,
+          54,
+          0.20149253731343283,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          316,
+          295,
+          -21,
+          21,
+          0.0711864406779661,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          360,
+          305,
+          -55,
+          55,
+          0.18032786885245902,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          324,
+          300,
+          -24,
+          24,
+          0.08,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          368,
+          389,
+          21,
+          21,
+          0.05398457583547558,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          376,
+          338,
+          -38,
+          38,
+          0.11242603550295859,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          332,
+          302,
+          -30,
+          30,
+          0.09933774834437085,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          340,
+          315,
+          -25,
+          25,
+          0.07936507936507936,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 62,
+          "ForecastDemandUnits": 146,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 55,
+          "ForecastDemandUnits": 189,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 83,
+          "ForecastDemandUnits": 280,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 81,
+          "ForecastDemandUnits": 294,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 73,
+          "ForecastDemandUnits": 178,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 89,
+          "ForecastDemandUnits": 241,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 70,
+          "ForecastDemandUnits": 256,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 236,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          62,
+          146,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          55,
+          189,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          83,
+          280,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          81,
+          294,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          73,
+          178,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          89,
+          241,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          70,
+          256,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          77,
+          236,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 2781,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 8368,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 2250,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 6874,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 10669,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Festival-based",
+          2,
+          2781,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Festival-based",
+          6,
+          8368,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Weekly",
+          2,
+          2250,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          5,
+          6874,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          8,
+          10669,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 163,
+          "DataQualityScore": 83,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 66,
+          "DataQualityScore": 88,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 65,
+          "DataQualityScore": 90,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 20,
+          "DataQualityScore": 62,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          163,
+          83,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          66,
+          88,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          65,
+          90,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          20,
+          62,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Cloud Subscription BDTech Technology Service Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Cloud Subscription demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Technology Service competitor pricing promotions Bangladesh BDTech",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Cloud Subscription online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Cloud Subscription BDTech Technology Service Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Cloud Subscription demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Technology Service competitor pricing promotions Bangladesh BDTech",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Cloud Subscription online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 75,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 71,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 70,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          75,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          71,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          70,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    },
+    "Nested_JSON_In_Cells": {
+      "columns": [
+        "RecordID",
+        "RawJSON",
+        "ExpectedParserBehavior"
+      ],
+      "records": [
+        {
+          "RecordID": "JSON-001",
+          "RawJSON": "{\"customer\": {\"segment\": \"premium\", \"region\": \"Chattogram\"}, \"demand\": {\"units\": 92, \"month\": \"2024-01\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 81}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-002",
+          "RawJSON": "{\"customer\": {\"segment\": \"retail\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 157, \"month\": \"2024-02\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 85}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-003",
+          "RawJSON": "{\"customer\": {\"segment\": \"youth\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 55, \"month\": \"2024-03\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": true, \"promo\": false, \"confidence\": 80}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-004",
+          "RawJSON": "{\"customer\": {\"segment\": \"premium\", \"region\": \"Barishal\"}, \"demand\": {\"units\": 69, \"month\": \"2024-04\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": true, \"promo\": false, \"confidence\": 85}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-005",
+          "RawJSON": "{\"customer\": {\"segment\": \"youth\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 221, \"month\": \"2024-05\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 63}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-006",
+          "RawJSON": "{\"customer\": {\"segment\": \"family\", \"region\": \"Barishal\"}, \"demand\": {\"units\": 265, \"month\": \"2024-06\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 88}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-007",
+          "RawJSON": "{\"customer\": {\"segment\": \"youth\", \"region\": \"Rajshahi\"}, \"demand\": {\"units\": 146, \"month\": \"2024-07\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 95}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        },
+        {
+          "RecordID": "JSON-008",
+          "RawJSON": "{\"customer\": {\"segment\": \"family\", \"region\": \"Khulna\"}, \"demand\": {\"units\": 234, \"month\": \"2024-08\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": true, \"confidence\": 91}}",
+          "ExpectedParserBehavior": "Flatten nested product/customer/demand fields"
+        }
+      ],
+      "raw_rows": [
+        [
+          "RecordID",
+          "RawJSON",
+          "ExpectedParserBehavior"
+        ],
+        [
+          "JSON-001",
+          "{\"customer\": {\"segment\": \"premium\", \"region\": \"Chattogram\"}, \"demand\": {\"units\": 92, \"month\": \"2024-01\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 81}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-002",
+          "{\"customer\": {\"segment\": \"retail\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 157, \"month\": \"2024-02\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 85}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-003",
+          "{\"customer\": {\"segment\": \"youth\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 55, \"month\": \"2024-03\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": true, \"promo\": false, \"confidence\": 80}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-004",
+          "{\"customer\": {\"segment\": \"premium\", \"region\": \"Barishal\"}, \"demand\": {\"units\": 69, \"month\": \"2024-04\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": true, \"promo\": false, \"confidence\": 85}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-005",
+          "{\"customer\": {\"segment\": \"youth\", \"region\": \"Mymensingh\"}, \"demand\": {\"units\": 221, \"month\": \"2024-05\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 63}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-006",
+          "{\"customer\": {\"segment\": \"family\", \"region\": \"Barishal\"}, \"demand\": {\"units\": 265, \"month\": \"2024-06\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 88}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-007",
+          "{\"customer\": {\"segment\": \"youth\", \"region\": \"Rajshahi\"}, \"demand\": {\"units\": 146, \"month\": \"2024-07\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": false, \"confidence\": 95}}",
+          "Flatten nested product/customer/demand fields"
+        ],
+        [
+          "JSON-008",
+          "{\"customer\": {\"segment\": \"family\", \"region\": \"Khulna\"}, \"demand\": {\"units\": 234, \"month\": \"2024-08\"}, \"product\": {\"name\": \"Cloud Subscription\", \"brand\": \"BDTech\", \"category\": \"Technology Service\"}, \"signals\": {\"festival\": false, \"promo\": true, \"confidence\": 91}}",
+          "Flatten nested product/customer/demand fields"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

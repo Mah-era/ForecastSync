@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-19
+Scenario Title,Text Numbers and Currency Symbols
+Purpose,Test numeric cleaning.
+Product Name,Foundation Makeup
+Category,Cosmetics
+Brand,Maybelline
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Historical Sales, Technology & Data Tools"
+Recommended Inputs To Tick,"Uploaded File Data, Historical Sales Data"
+Recommended Outputs To Tick,"Data Quality Score, Sales Trend Analysis"

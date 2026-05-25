@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+MUL-DPF-27-01,Mixed FMCG Basket,Mixed,Multiple,Dhaka,Dhaka DC,1205,517,1149,311,120,45672,OK
+MUL-DPF-27-02,Mixed FMCG Basket,Mixed,Multiple,Chattogram,Chattogram DC,2488,651,1410,446,120,45673,OK
+MUL-DPF-27-03,Mixed FMCG Basket,Mixed,Multiple,Sylhet,Sylhet DC,2476,607,1378,456,120,45674,OK
+MUL-DPF-27-04,Mixed FMCG Basket,Mixed,Multiple,Rajshahi,Rajshahi DC,958,515,1319,582,120,45675,Reorder Needed
+MUL-DPF-27-05,Mixed FMCG Basket,Mixed,Multiple,Khulna,Khulna DC,1884,490,1096,437,120,45676,OK
+MUL-DPF-27-06,Mixed FMCG Basket,Mixed,Multiple,Barishal,Barishal DC,1075,644,1515,125,120,45677,Reorder Needed
+MUL-DPF-27-07,Mixed FMCG Basket,Mixed,Multiple,Rangpur,Rangpur DC,2400,543,1248,162,120,45678,OK
+MUL-DPF-27-08,Mixed FMCG Basket,Mixed,Multiple,Mymensingh,Mymensingh DC,1771,529,1390,403,120,45679,OK

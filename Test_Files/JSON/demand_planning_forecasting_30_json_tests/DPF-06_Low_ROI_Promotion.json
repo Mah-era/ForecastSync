@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-06",
+  "source_excel_file": "DPF-06_Low_ROI_Promotion.xlsx",
+  "scenario_title": "Low ROI Promotion",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-06"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Low ROI Promotion"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test discount campaign that does not drive enough demand."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Face Wash"
+        },
+        {
+          "Field": "Category",
+          "Value": "Skin Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Garnier"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Promotions, Forecast Accuracy"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Promotions & Discounts, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Promotion Impact Analysis, Final SCM Recommendation"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-06"
+        ],
+        [
+          "Scenario Title",
+          "Low ROI Promotion"
+        ],
+        [
+          "Purpose",
+          "Test discount campaign that does not drive enough demand."
+        ],
+        [
+          "Product Name",
+          "Face Wash"
+        ],
+        [
+          "Category",
+          "Skin Care"
+        ],
+        [
+          "Brand",
+          "Garnier"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Promotions, Forecast Accuracy"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Promotions & Discounts, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Promotion Impact Analysis, Final SCM Recommendation"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1224,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 465120,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1324,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 503120,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1189,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 451820,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1204,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 457520,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1360,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 516800,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1306,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 496280,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1422,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 540360,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1380,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 524400,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1428,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 542640,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1328,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 504640,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1485,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 564300,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1442,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 547960,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1534,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 582920,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1637,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 622060,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1500,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 570000,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1453,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 552140,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1567,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 595460,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1408,
+          "UnitPriceBDT": 380,
+          "RevenueBDT": 535040,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Dhaka",
+          "Retail",
+          1224,
+          380,
+          465120,
+          ""
+        ],
+        [
+          45323,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Chattogram",
+          "Online",
+          1324,
+          380,
+          503120,
+          ""
+        ],
+        [
+          45352,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Sylhet",
+          "Wholesale",
+          1189,
+          380,
+          451820,
+          ""
+        ],
+        [
+          45383,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rajshahi",
+          "Modern Trade",
+          1204,
+          380,
+          457520,
+          ""
+        ],
+        [
+          45413,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Khulna",
+          "Retail",
+          1360,
+          380,
+          516800,
+          ""
+        ],
+        [
+          45444,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Barishal",
+          "Online",
+          1306,
+          380,
+          496280,
+          ""
+        ],
+        [
+          45474,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rangpur",
+          "Wholesale",
+          1422,
+          380,
+          540360,
+          ""
+        ],
+        [
+          45505,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Mymensingh",
+          "Modern Trade",
+          1380,
+          380,
+          524400,
+          ""
+        ],
+        [
+          45536,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Dhaka",
+          "Retail",
+          1428,
+          380,
+          542640,
+          ""
+        ],
+        [
+          45566,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Chattogram",
+          "Online",
+          1328,
+          380,
+          504640,
+          ""
+        ],
+        [
+          45597,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Sylhet",
+          "Wholesale",
+          1485,
+          380,
+          564300,
+          ""
+        ],
+        [
+          45627,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rajshahi",
+          "Modern Trade",
+          1442,
+          380,
+          547960,
+          ""
+        ],
+        [
+          45658,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Khulna",
+          "Retail",
+          1534,
+          380,
+          582920,
+          ""
+        ],
+        [
+          45689,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Barishal",
+          "Online",
+          1637,
+          380,
+          622060,
+          ""
+        ],
+        [
+          45717,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rangpur",
+          "Wholesale",
+          1500,
+          380,
+          570000,
+          ""
+        ],
+        [
+          45748,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Mymensingh",
+          "Modern Trade",
+          1453,
+          380,
+          552140,
+          ""
+        ],
+        [
+          45778,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Dhaka",
+          "Retail",
+          1567,
+          380,
+          595460,
+          ""
+        ],
+        [
+          45809,
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Chattogram",
+          "Online",
+          1408,
+          380,
+          535040,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "GAR-DPF-06-01",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3593,
+          "SafetyStock": 712,
+          "ReorderPoint": 1368,
+          "StockInTransit": 604,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GAR-DPF-06-02",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 2860,
+          "SafetyStock": 566,
+          "ReorderPoint": 1223,
+          "StockInTransit": 625,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GAR-DPF-06-03",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 3328,
+          "SafetyStock": 469,
+          "ReorderPoint": 1151,
+          "StockInTransit": 272,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GAR-DPF-06-04",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1726,
+          "SafetyStock": 632,
+          "ReorderPoint": 1199,
+          "StockInTransit": 532,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GAR-DPF-06-05",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2013,
+          "SafetyStock": 442,
+          "ReorderPoint": 1279,
+          "StockInTransit": 503,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "GAR-DPF-06-06",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3674,
+          "SafetyStock": 690,
+          "ReorderPoint": 1488,
+          "StockInTransit": 533,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GAR-DPF-06-07",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 3471,
+          "SafetyStock": 653,
+          "ReorderPoint": 1287,
+          "StockInTransit": 516,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "GAR-DPF-06-08",
+          "ProductName": "Face Wash",
+          "Category": "Skin Care",
+          "Brand": "Garnier",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1505,
+          "SafetyStock": 492,
+          "ReorderPoint": 1132,
+          "StockInTransit": 491,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "GAR-DPF-06-01",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Dhaka",
+          "Dhaka DC",
+          3593,
+          712,
+          1368,
+          604,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "GAR-DPF-06-02",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Chattogram",
+          "Chattogram DC",
+          2860,
+          566,
+          1223,
+          625,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "GAR-DPF-06-03",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Sylhet",
+          "Sylhet DC",
+          3328,
+          469,
+          1151,
+          272,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "GAR-DPF-06-04",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rajshahi",
+          "Rajshahi DC",
+          1726,
+          632,
+          1199,
+          532,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "GAR-DPF-06-05",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Khulna",
+          "Khulna DC",
+          2013,
+          442,
+          1279,
+          503,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "GAR-DPF-06-06",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Barishal",
+          "Barishal DC",
+          3674,
+          690,
+          1488,
+          533,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "GAR-DPF-06-07",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Rangpur",
+          "Rangpur DC",
+          3471,
+          653,
+          1287,
+          516,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "GAR-DPF-06-08",
+          "Face Wash",
+          "Skin Care",
+          "Garnier",
+          "Mymensingh",
+          "Mymensingh DC",
+          1505,
+          492,
+          1132,
+          491,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 21.2,
+          "ActualUpliftPct": 22.5,
+          "BudgetBDT": 82310,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 19.7,
+          "ActualUpliftPct": 7.1,
+          "BudgetBDT": 73548,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 26.8,
+          "ActualUpliftPct": 18,
+          "BudgetBDT": 102838,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 11.3,
+          "ActualUpliftPct": 13.5,
+          "BudgetBDT": 99405,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          21.2,
+          22.5,
+          82310,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          19.7,
+          7.1,
+          73548,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          26.8,
+          18,
+          102838,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          11.3,
+          13.5,
+          99405,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 368,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 339,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 419,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 431,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Skin Care",
+          368,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Skin Care",
+          339,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Skin Care",
+          419,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Skin Care",
+          431,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.42,
+          "IncomeIndex": 100,
+          "PurchasingPowerIndex": 87.39,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.76,
+          "IncomeIndex": 99.63,
+          "PurchasingPowerIndex": 86.7,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.49,
+          "IncomeIndex": 101.49,
+          "PurchasingPowerIndex": 86.01,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.79,
+          "IncomeIndex": 100.49,
+          "PurchasingPowerIndex": 85.2,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.89,
+          "IncomeIndex": 101.81,
+          "PurchasingPowerIndex": 85.43,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.68,
+          "IncomeIndex": 100.65,
+          "PurchasingPowerIndex": 85.45,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.74,
+          "IncomeIndex": 101.25,
+          "PurchasingPowerIndex": 85.51,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.47,
+          "IncomeIndex": 102.45,
+          "PurchasingPowerIndex": 86.33,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.99,
+          "IncomeIndex": 103.09,
+          "PurchasingPowerIndex": 87.35,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.7,
+          "IncomeIndex": 101.88,
+          "PurchasingPowerIndex": 87.47,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.21,
+          "IncomeIndex": 102.53,
+          "PurchasingPowerIndex": 88.5,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.67,
+          "IncomeIndex": 103.04,
+          "PurchasingPowerIndex": 89.57,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.74,
+          "IncomeIndex": 103.12,
+          "PurchasingPowerIndex": 89.48,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.31,
+          "IncomeIndex": 104.18,
+          "PurchasingPowerIndex": 90.52,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.22,
+          "IncomeIndex": 104.55,
+          "PurchasingPowerIndex": 90.78,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.33,
+          "IncomeIndex": 104.74,
+          "PurchasingPowerIndex": 90.66,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.79,
+          "IncomeIndex": 104.46,
+          "PurchasingPowerIndex": 89.79,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.87,
+          "IncomeIndex": 105.4,
+          "PurchasingPowerIndex": 89.94,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.42,
+          100,
+          87.39,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.76,
+          99.63,
+          86.7,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.49,
+          101.49,
+          86.01,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.79,
+          100.49,
+          85.2,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.89,
+          101.81,
+          85.43,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.68,
+          100.65,
+          85.45,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.74,
+          101.25,
+          85.51,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.47,
+          102.45,
+          86.33,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.99,
+          103.09,
+          87.35,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.7,
+          101.88,
+          87.47,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.21,
+          102.53,
+          88.5,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.67,
+          103.04,
+          89.57,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.74,
+          103.12,
+          89.48,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.31,
+          104.18,
+          90.52,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.22,
+          104.55,
+          90.78,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.33,
+          104.74,
+          90.66,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.79,
+          104.46,
+          89.79,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.87,
+          105.4,
+          89.94,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 13,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 16,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 4,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          9,
+          8,
+          1,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          3,
+          5,
+          2,
+          3,
+          13,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          6,
+          3,
+          2,
+          16,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          6,
+          7,
+          8,
+          4,
+          25,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1218,
+          "ActualUnits": 1461,
+          "ForecastError": 243,
+          "AbsoluteError": 243,
+          "APE": 0.16632443531827515,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1325,
+          "ActualUnits": 1373,
+          "ForecastError": 48,
+          "AbsoluteError": 48,
+          "APE": 0.03495994173343044,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1323,
+          "ActualUnits": 1469,
+          "ForecastError": 146,
+          "AbsoluteError": 146,
+          "APE": 0.09938733832539143,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1427,
+          "ActualUnits": 1544,
+          "ForecastError": 117,
+          "AbsoluteError": 117,
+          "APE": 0.07577720207253887,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1440,
+          "ActualUnits": 1535,
+          "ForecastError": 95,
+          "AbsoluteError": 95,
+          "APE": 0.06188925081433225,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1496,
+          "ActualUnits": 1394,
+          "ForecastError": -102,
+          "AbsoluteError": 102,
+          "APE": 0.07317073170731707,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1453,
+          "ActualUnits": 1318,
+          "ForecastError": -135,
+          "AbsoluteError": 135,
+          "APE": 0.10242792109256449,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1409,
+          "ActualUnits": 1288,
+          "ForecastError": -121,
+          "AbsoluteError": 121,
+          "APE": 0.09394409937888198,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1410,
+          "ActualUnits": 1709,
+          "ForecastError": 299,
+          "AbsoluteError": 299,
+          "APE": 0.17495611468695144,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1436,
+          "ActualUnits": 1695,
+          "ForecastError": 259,
+          "AbsoluteError": 259,
+          "APE": 0.1528023598820059,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1543,
+          "ActualUnits": 1303,
+          "ForecastError": -240,
+          "AbsoluteError": 240,
+          "APE": 0.1841903300076746,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1457,
+          "ActualUnits": 1759,
+          "ForecastError": 302,
+          "AbsoluteError": 302,
+          "APE": 0.1716884593519045,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1218,
+          1461,
+          243,
+          243,
+          0.16632443531827515,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1325,
+          1373,
+          48,
+          48,
+          0.03495994173343044,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1323,
+          1469,
+          146,
+          146,
+          0.09938733832539143,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1427,
+          1544,
+          117,
+          117,
+          0.07577720207253887,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1440,
+          1535,
+          95,
+          95,
+          0.06188925081433225,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1496,
+          1394,
+          -102,
+          102,
+          0.07317073170731707,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1453,
+          1318,
+          -135,
+          135,
+          0.10242792109256449,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1409,
+          1288,
+          -121,
+          121,
+          0.09394409937888198,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1410,
+          1709,
+          299,
+          299,
+          0.17495611468695144,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1436,
+          1695,
+          259,
+          259,
+          0.1528023598820059,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1543,
+          1303,
+          -240,
+          240,
+          0.1841903300076746,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1457,
+          1759,
+          302,
+          302,
+          0.1716884593519045,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 82,
+          "ForecastDemandUnits": 816,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 58,
+          "ForecastDemandUnits": 776,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 83,
+          "ForecastDemandUnits": 1282,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 48,
+          "ForecastDemandUnits": 686,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 60,
+          "ForecastDemandUnits": 933,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 95,
+          "ForecastDemandUnits": 1226,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 49,
+          "ForecastDemandUnits": 714,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 80,
+          "ForecastDemandUnits": 854,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          82,
+          816,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          58,
+          776,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          83,
+          1282,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          48,
+          686,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          60,
+          933,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          95,
+          1226,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          49,
+          714,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          80,
+          854,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 1516,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 367,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 1282,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 909,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 922,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          4,
+          1516,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          1,
+          367,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          3,
+          1282,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Bi-weekly",
+          2,
+          909,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Weekly",
+          3,
+          922,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 252,
+          "DataQualityScore": 82,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 170,
+          "DataQualityScore": 80,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 12,
+          "DataQualityScore": 75,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 13,
+          "DataQualityScore": 61,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          252,
+          82,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          170,
+          80,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          12,
+          75,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          13,
+          61,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Face Wash Garnier Skin Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Face Wash demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Skin Care competitor pricing promotions Bangladesh Garnier",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Face Wash online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Face Wash Garnier Skin Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Face Wash demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Skin Care competitor pricing promotions Bangladesh Garnier",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Face Wash online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 83,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 73,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 76,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          83,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          73,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          76,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

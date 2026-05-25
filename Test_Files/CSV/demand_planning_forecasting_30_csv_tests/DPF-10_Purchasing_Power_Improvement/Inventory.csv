@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+SAM-DPF-10-01,Smartphone A Series,Electronics,Samsung,Dhaka,Dhaka DC,1034,474,1083,166,120,45672,Reorder Needed
+SAM-DPF-10-02,Smartphone A Series,Electronics,Samsung,Chattogram,Chattogram DC,1803,635,1306,592,120,45673,OK
+SAM-DPF-10-03,Smartphone A Series,Electronics,Samsung,Sylhet,Sylhet DC,3448,673,1313,424,120,45674,Overstock Risk
+SAM-DPF-10-04,Smartphone A Series,Electronics,Samsung,Rajshahi,Rajshahi DC,2459,474,1131,368,120,45675,Overstock Risk
+SAM-DPF-10-05,Smartphone A Series,Electronics,Samsung,Khulna,Khulna DC,2320,486,1347,160,120,45676,OK
+SAM-DPF-10-06,Smartphone A Series,Electronics,Samsung,Barishal,Barishal DC,2769,638,1392,538,120,45677,OK
+SAM-DPF-10-07,Smartphone A Series,Electronics,Samsung,Rangpur,Rangpur DC,2495,667,1236,100,120,45678,Overstock Risk
+SAM-DPF-10-08,Smartphone A Series,Electronics,Samsung,Mymensingh,Mymensingh DC,2719,599,1367,497,120,45679,OK

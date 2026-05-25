@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-15
+Scenario Title,New Product Cold Start
+Purpose,Test limited historical sales and qualitative forecast.
+Product Name,Dry Shampoo Spray
+Category,Hair Care
+Brand,NewBrand
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Forecasting Methods, Market Trends, Manual Opinion"
+Recommended Inputs To Tick,"Online Web Search Data, Expert Opinion / Manual Notes, Market Trends"
+Recommended Outputs To Tick,"Demand Forecast, Final SCM Recommendation, Forecast Confidence Score"

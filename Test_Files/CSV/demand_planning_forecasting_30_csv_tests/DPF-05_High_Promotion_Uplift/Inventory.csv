@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+BAT-DPF-05-01,Bata Sandal,Footwear,Bata,Dhaka,Dhaka DC,2427,560,1311,564,120,45672,OK
+BAT-DPF-05-02,Bata Sandal,Footwear,Bata,Chattogram,Chattogram DC,2987,606,1174,201,120,45673,Overstock Risk
+BAT-DPF-05-03,Bata Sandal,Footwear,Bata,Sylhet,Sylhet DC,2814,677,1425,86,120,45674,OK
+BAT-DPF-05-04,Bata Sandal,Footwear,Bata,Rajshahi,Rajshahi DC,3074,666,1410,495,120,45675,Overstock Risk
+BAT-DPF-05-05,Bata Sandal,Footwear,Bata,Khulna,Khulna DC,1379,583,1285,228,120,45676,OK
+BAT-DPF-05-06,Bata Sandal,Footwear,Bata,Barishal,Barishal DC,3741,560,1381,608,120,45677,Overstock Risk
+BAT-DPF-05-07,Bata Sandal,Footwear,Bata,Rangpur,Rangpur DC,2226,552,1215,133,120,45678,OK
+BAT-DPF-05-08,Bata Sandal,Footwear,Bata,Mymensingh,Mymensingh DC,1337,553,1272,439,120,45679,OK

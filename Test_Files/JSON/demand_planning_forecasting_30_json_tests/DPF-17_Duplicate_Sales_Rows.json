@@ -1,0 +1,2639 @@
+{
+  "scenario_id": "DPF-17",
+  "source_excel_file": "DPF-17_Duplicate_Sales_Rows.xlsx",
+  "scenario_title": "Duplicate Sales Rows",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-17"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Duplicate Sales Rows"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test duplicate detection and de-duplication."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Liquid Handwash"
+        },
+        {
+          "Field": "Category",
+          "Value": "Personal Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Lifebuoy"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Data Quality"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Sales Trend Analysis, Data Quality Score"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-17"
+        ],
+        [
+          "Scenario Title",
+          "Duplicate Sales Rows"
+        ],
+        [
+          "Purpose",
+          "Test duplicate detection and de-duplication."
+        ],
+        [
+          "Product Name",
+          "Liquid Handwash"
+        ],
+        [
+          "Category",
+          "Personal Care"
+        ],
+        [
+          "Brand",
+          "Lifebuoy"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Data Quality"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Sales Trend Analysis, Data Quality Score"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1585,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 332850,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1456,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 305760,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1460,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 306600,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1407,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 295470,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1407,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 295470,
+          "Notes": "DUPLICATE ROW - should be detected"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1477,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 310170,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1721,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 361410,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1668,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 350280,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1520,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 319200,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1520,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 319200,
+          "Notes": "DUPLICATE ROW - should be detected"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1545,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 324450,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1689,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 354690,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1686,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 354060,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1763,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 370230,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1967,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 413070,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1667,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 350070,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1667,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 350070,
+          "Notes": "DUPLICATE ROW - should be detected"
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1731,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 363510,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1734,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 364140,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1690,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 354900,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1728,
+          "UnitPriceBDT": 210,
+          "RevenueBDT": 362880,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Retail",
+          1585,
+          210,
+          332850,
+          ""
+        ],
+        [
+          45323,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Chattogram",
+          "Online",
+          1456,
+          210,
+          305760,
+          ""
+        ],
+        [
+          45352,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Sylhet",
+          "Wholesale",
+          1460,
+          210,
+          306600,
+          ""
+        ],
+        [
+          45383,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Modern Trade",
+          1407,
+          210,
+          295470,
+          ""
+        ],
+        [
+          45383,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Modern Trade",
+          1407,
+          210,
+          295470,
+          "DUPLICATE ROW - should be detected"
+        ],
+        [
+          45413,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Retail",
+          1477,
+          210,
+          310170,
+          ""
+        ],
+        [
+          45444,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Barishal",
+          "Online",
+          1721,
+          210,
+          361410,
+          ""
+        ],
+        [
+          45474,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rangpur",
+          "Wholesale",
+          1668,
+          210,
+          350280,
+          ""
+        ],
+        [
+          45505,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Mymensingh",
+          "Modern Trade",
+          1520,
+          210,
+          319200,
+          ""
+        ],
+        [
+          45505,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Mymensingh",
+          "Modern Trade",
+          1520,
+          210,
+          319200,
+          "DUPLICATE ROW - should be detected"
+        ],
+        [
+          45536,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Retail",
+          1545,
+          210,
+          324450,
+          ""
+        ],
+        [
+          45566,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Chattogram",
+          "Online",
+          1689,
+          210,
+          354690,
+          ""
+        ],
+        [
+          45597,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Sylhet",
+          "Wholesale",
+          1686,
+          210,
+          354060,
+          ""
+        ],
+        [
+          45627,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Modern Trade",
+          1763,
+          210,
+          370230,
+          ""
+        ],
+        [
+          45658,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Retail",
+          1967,
+          210,
+          413070,
+          ""
+        ],
+        [
+          45689,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Barishal",
+          "Online",
+          1667,
+          210,
+          350070,
+          ""
+        ],
+        [
+          45689,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Barishal",
+          "Online",
+          1667,
+          210,
+          350070,
+          "DUPLICATE ROW - should be detected"
+        ],
+        [
+          45717,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rangpur",
+          "Wholesale",
+          1731,
+          210,
+          363510,
+          ""
+        ],
+        [
+          45748,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Mymensingh",
+          "Modern Trade",
+          1734,
+          210,
+          364140,
+          ""
+        ],
+        [
+          45778,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Retail",
+          1690,
+          210,
+          354900,
+          ""
+        ],
+        [
+          45809,
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Chattogram",
+          "Online",
+          1728,
+          210,
+          362880,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 21,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "LIF-DPF-17-01",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 2847,
+          "SafetyStock": 667,
+          "ReorderPoint": 1450,
+          "StockInTransit": 97,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "LIF-DPF-17-02",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3278,
+          "SafetyStock": 530,
+          "ReorderPoint": 1119,
+          "StockInTransit": 212,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "LIF-DPF-17-03",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1898,
+          "SafetyStock": 581,
+          "ReorderPoint": 1358,
+          "StockInTransit": 218,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "LIF-DPF-17-04",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 3723,
+          "SafetyStock": 449,
+          "ReorderPoint": 1138,
+          "StockInTransit": 324,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "LIF-DPF-17-05",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 3026,
+          "SafetyStock": 509,
+          "ReorderPoint": 1217,
+          "StockInTransit": 517,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "LIF-DPF-17-06",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1277,
+          "SafetyStock": 443,
+          "ReorderPoint": 1269,
+          "StockInTransit": 615,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "LIF-DPF-17-07",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1251,
+          "SafetyStock": 667,
+          "ReorderPoint": 1346,
+          "StockInTransit": 422,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "LIF-DPF-17-08",
+          "ProductName": "Liquid Handwash",
+          "Category": "Personal Care",
+          "Brand": "Lifebuoy",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2728,
+          "SafetyStock": 600,
+          "ReorderPoint": 1243,
+          "StockInTransit": 522,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "Overstock Risk"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "LIF-DPF-17-01",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Dhaka",
+          "Dhaka DC",
+          2847,
+          667,
+          1450,
+          97,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "LIF-DPF-17-02",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Chattogram",
+          "Chattogram DC",
+          3278,
+          530,
+          1119,
+          212,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "LIF-DPF-17-03",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Sylhet",
+          "Sylhet DC",
+          1898,
+          581,
+          1358,
+          218,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "LIF-DPF-17-04",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rajshahi",
+          "Rajshahi DC",
+          3723,
+          449,
+          1138,
+          324,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "LIF-DPF-17-05",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Khulna",
+          "Khulna DC",
+          3026,
+          509,
+          1217,
+          517,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "LIF-DPF-17-06",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Barishal",
+          "Barishal DC",
+          1277,
+          443,
+          1269,
+          615,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "LIF-DPF-17-07",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Rangpur",
+          "Rangpur DC",
+          1251,
+          667,
+          1346,
+          422,
+          120,
+          45678,
+          "Reorder Needed"
+        ],
+        [
+          "LIF-DPF-17-08",
+          "Liquid Handwash",
+          "Personal Care",
+          "Lifebuoy",
+          "Mymensingh",
+          "Mymensingh DC",
+          2728,
+          600,
+          1243,
+          522,
+          120,
+          45679,
+          "Overstock Risk"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 12.3,
+          "ActualUpliftPct": 8.4,
+          "BudgetBDT": 151225,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 26,
+          "ActualUpliftPct": 18.9,
+          "BudgetBDT": 151457,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 27.4,
+          "ActualUpliftPct": 23.3,
+          "BudgetBDT": 73843,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 14.6,
+          "ActualUpliftPct": 11,
+          "BudgetBDT": 121650,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          12.3,
+          8.4,
+          151225,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          26,
+          18.9,
+          151457,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          27.4,
+          23.3,
+          73843,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          14.6,
+          11,
+          121650,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Personal Care",
+          "CompetitorPriceBDT": 234,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Personal Care",
+          "CompetitorPriceBDT": 202,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Personal Care",
+          "CompetitorPriceBDT": 174,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Personal Care",
+          "CompetitorPriceBDT": 224,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Personal Care",
+          234,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Personal Care",
+          202,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Personal Care",
+          174,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Personal Care",
+          224,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.3,
+          "IncomeIndex": 99.43,
+          "PurchasingPowerIndex": 87.41,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.7,
+          "IncomeIndex": 99.86,
+          "PurchasingPowerIndex": 86.86,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.47,
+          "IncomeIndex": 99.67,
+          "PurchasingPowerIndex": 85.5,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.58,
+          "IncomeIndex": 100.39,
+          "PurchasingPowerIndex": 85.53,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.54,
+          "IncomeIndex": 101.02,
+          "PurchasingPowerIndex": 85.78,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.72,
+          "IncomeIndex": 100.62,
+          "PurchasingPowerIndex": 85.35,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.46,
+          "IncomeIndex": 101.07,
+          "PurchasingPowerIndex": 85.94,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.19,
+          "IncomeIndex": 102.87,
+          "PurchasingPowerIndex": 86.94,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.06,
+          "IncomeIndex": 102.66,
+          "PurchasingPowerIndex": 87.09,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.85,
+          "IncomeIndex": 103.29,
+          "PurchasingPowerIndex": 87.64,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.56,
+          "IncomeIndex": 103.56,
+          "PurchasingPowerIndex": 88.21,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.81,
+          "IncomeIndex": 103.39,
+          "PurchasingPowerIndex": 89.43,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.58,
+          "IncomeIndex": 104.43,
+          "PurchasingPowerIndex": 90.14,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.39,
+          "IncomeIndex": 103.68,
+          "PurchasingPowerIndex": 90.25,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.11,
+          "IncomeIndex": 103.84,
+          "PurchasingPowerIndex": 90.77,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.18,
+          "IncomeIndex": 105.29,
+          "PurchasingPowerIndex": 91.08,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.69,
+          "IncomeIndex": 103.92,
+          "PurchasingPowerIndex": 89.8,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.1,
+          "IncomeIndex": 105.16,
+          "PurchasingPowerIndex": 89.48,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.3,
+          99.43,
+          87.41,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.7,
+          99.86,
+          86.86,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.47,
+          99.67,
+          85.5,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.58,
+          100.39,
+          85.53,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.54,
+          101.02,
+          85.78,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.72,
+          100.62,
+          85.35,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.46,
+          101.07,
+          85.94,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.19,
+          102.87,
+          86.94,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.06,
+          102.66,
+          87.09,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.85,
+          103.29,
+          87.64,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.56,
+          103.56,
+          88.21,
+          113,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.81,
+          103.39,
+          89.43,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.58,
+          104.43,
+          90.14,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.39,
+          103.68,
+          90.25,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.11,
+          103.84,
+          90.77,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.18,
+          105.29,
+          91.08,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.69,
+          103.92,
+          89.8,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.1,
+          105.16,
+          89.48,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 21,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          6,
+          8,
+          4,
+          1,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          3,
+          8,
+          6,
+          5,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          2,
+          8,
+          8,
+          3,
+          21,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          3,
+          7,
+          5,
+          5,
+          20,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1445,
+          "ActualUnits": 1612,
+          "ForecastError": 167,
+          "AbsoluteError": 167,
+          "APE": 0.10359801488833748,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1487,
+          "ActualUnits": 1571,
+          "ForecastError": 84,
+          "AbsoluteError": 84,
+          "APE": 0.05346912794398472,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1623,
+          "ActualUnits": 1559,
+          "ForecastError": -64,
+          "AbsoluteError": 64,
+          "APE": 0.04105195638229634,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1612,
+          "ActualUnits": 1413,
+          "ForecastError": -199,
+          "AbsoluteError": 199,
+          "APE": 0.1408351026185421,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1765,
+          "ActualUnits": 2038,
+          "ForecastError": 273,
+          "AbsoluteError": 273,
+          "APE": 0.133954857703631,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1752,
+          "ActualUnits": 2117,
+          "ForecastError": 365,
+          "AbsoluteError": 365,
+          "APE": 0.1724137931034483,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1694,
+          "ActualUnits": 1508,
+          "ForecastError": -186,
+          "AbsoluteError": 186,
+          "APE": 0.123342175066313,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1552,
+          "ActualUnits": 1308,
+          "ForecastError": -244,
+          "AbsoluteError": 244,
+          "APE": 0.18654434250764526,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1775,
+          "ActualUnits": 1470,
+          "ForecastError": -305,
+          "AbsoluteError": 305,
+          "APE": 0.20748299319727892,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1762,
+          "ActualUnits": 1679,
+          "ForecastError": -83,
+          "AbsoluteError": 83,
+          "APE": 0.049434187016081,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1841,
+          "ActualUnits": 2103,
+          "ForecastError": 262,
+          "AbsoluteError": 262,
+          "APE": 0.12458392772230148,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1772,
+          "ActualUnits": 1579,
+          "ForecastError": -193,
+          "AbsoluteError": 193,
+          "APE": 0.12222925902469918,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1445,
+          1612,
+          167,
+          167,
+          0.10359801488833748,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1487,
+          1571,
+          84,
+          84,
+          0.05346912794398472,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1623,
+          1559,
+          -64,
+          64,
+          0.04105195638229634,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1612,
+          1413,
+          -199,
+          199,
+          0.1408351026185421,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1765,
+          2038,
+          273,
+          273,
+          0.133954857703631,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1752,
+          2117,
+          365,
+          365,
+          0.1724137931034483,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1694,
+          1508,
+          -186,
+          186,
+          0.123342175066313,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1552,
+          1308,
+          -244,
+          244,
+          0.18654434250764526,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1775,
+          1470,
+          -305,
+          305,
+          0.20748299319727892,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1762,
+          1679,
+          -83,
+          83,
+          0.049434187016081,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1841,
+          2103,
+          262,
+          262,
+          0.12458392772230148,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1772,
+          1579,
+          -193,
+          193,
+          0.12222925902469918,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 73,
+          "ForecastDemandUnits": 854,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 54,
+          "ForecastDemandUnits": 845,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 54,
+          "ForecastDemandUnits": 921,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 78,
+          "ForecastDemandUnits": 1381,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 49,
+          "ForecastDemandUnits": 689,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 87,
+          "ForecastDemandUnits": 1237,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 51,
+          "ForecastDemandUnits": 702,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 65,
+          "ForecastDemandUnits": 798,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          73,
+          854,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          54,
+          845,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          54,
+          921,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          78,
+          1381,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          49,
+          689,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          87,
+          1237,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          51,
+          702,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          65,
+          798,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 1874,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 1140,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 1007,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 1447,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 571,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          7,
+          1874,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Festival-based",
+          6,
+          1140,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          4,
+          1007,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Bi-weekly",
+          7,
+          1447,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Monthly",
+          3,
+          571,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 50,
+          "DataQualityScore": 97,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 166,
+          "DataQualityScore": 82,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 82,
+          "DataQualityScore": 71,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 10,
+          "DataQualityScore": 79,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          50,
+          97,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          166,
+          82,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          82,
+          71,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          10,
+          79,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Liquid Handwash Lifebuoy Personal Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Liquid Handwash demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Personal Care competitor pricing promotions Bangladesh Lifebuoy",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Liquid Handwash online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Liquid Handwash Lifebuoy Personal Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Liquid Handwash demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Personal Care competitor pricing promotions Bangladesh Lifebuoy",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Liquid Handwash online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 70,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 89,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 90,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          70,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          89,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          90,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Some sales rows are duplicated.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Some sales rows are duplicated.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

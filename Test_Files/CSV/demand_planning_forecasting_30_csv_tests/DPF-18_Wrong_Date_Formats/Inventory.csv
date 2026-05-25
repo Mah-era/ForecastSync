@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+APE-DPF-18-01,Leather Shoe,Footwear,Apex,Dhaka,Dhaka DC,3138,638,1213,316,120,45672,Overstock Risk
+APE-DPF-18-02,Leather Shoe,Footwear,Apex,Chattogram,Chattogram DC,2082,486,1178,560,120,45673,OK
+APE-DPF-18-03,Leather Shoe,Footwear,Apex,Sylhet,Sylhet DC,1885,543,1368,509,120,45674,OK
+APE-DPF-18-04,Leather Shoe,Footwear,Apex,Rajshahi,Rajshahi DC,2537,649,1281,323,120,45675,OK
+APE-DPF-18-05,Leather Shoe,Footwear,Apex,Khulna,Khulna DC,3173,449,1015,219,120,45676,Overstock Risk
+APE-DPF-18-06,Leather Shoe,Footwear,Apex,Barishal,Barishal DC,1176,534,1378,163,120,45677,Reorder Needed
+APE-DPF-18-07,Leather Shoe,Footwear,Apex,Rangpur,Rangpur DC,1091,699,1572,261,120,45678,Reorder Needed
+APE-DPF-18-08,Leather Shoe,Footwear,Apex,Mymensingh,Mymensingh DC,3708,686,1471,312,120,45679,Overstock Risk

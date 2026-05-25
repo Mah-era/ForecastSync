@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-04",
+  "source_excel_file": "DPF-04_Summer_Demand_Softness.xlsx",
+  "scenario_title": "Summer Demand Softness",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-04"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Summer Demand Softness"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test demand drop in hot season."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Moisturizing Cream"
+        },
+        {
+          "Field": "Category",
+          "Value": "Skin Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Nivea"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Seasonality, Economic Conditions, Historical Sales"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data, Seasonality, Economic Conditions"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Demand Forecast, Seasonal Demand Impact"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-04"
+        ],
+        [
+          "Scenario Title",
+          "Summer Demand Softness"
+        ],
+        [
+          "Purpose",
+          "Test demand drop in hot season."
+        ],
+        [
+          "Product Name",
+          "Moisturizing Cream"
+        ],
+        [
+          "Category",
+          "Skin Care"
+        ],
+        [
+          "Brand",
+          "Nivea"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Seasonality, Economic Conditions, Historical Sales"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data, Seasonality, Economic Conditions"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Demand Forecast, Seasonal Demand Impact"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1027,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 534040,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1001,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 520520,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1257,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 653640,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1023,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 531960,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 745,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 387400,
+          "Notes": "Summer demand softness"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 800,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 416000,
+          "Notes": "Summer demand softness"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 934,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 485680,
+          "Notes": "Summer demand softness"
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 901,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 468520,
+          "Notes": "Summer demand softness"
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1155,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 600600,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1241,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 645320,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1148,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 596960,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1419,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 737880,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1287,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 669240,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1238,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 643760,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1289,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 670280,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1382,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 718640,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1091,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 567320,
+          "Notes": "Summer demand softness"
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1046,
+          "UnitPriceBDT": 520,
+          "RevenueBDT": 543920,
+          "Notes": "Summer demand softness"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Dhaka",
+          "Retail",
+          1027,
+          520,
+          534040,
+          ""
+        ],
+        [
+          45323,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Chattogram",
+          "Online",
+          1001,
+          520,
+          520520,
+          ""
+        ],
+        [
+          45352,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Sylhet",
+          "Wholesale",
+          1257,
+          520,
+          653640,
+          ""
+        ],
+        [
+          45383,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rajshahi",
+          "Modern Trade",
+          1023,
+          520,
+          531960,
+          ""
+        ],
+        [
+          45413,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Khulna",
+          "Retail",
+          745,
+          520,
+          387400,
+          "Summer demand softness"
+        ],
+        [
+          45444,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Barishal",
+          "Online",
+          800,
+          520,
+          416000,
+          "Summer demand softness"
+        ],
+        [
+          45474,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rangpur",
+          "Wholesale",
+          934,
+          520,
+          485680,
+          "Summer demand softness"
+        ],
+        [
+          45505,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Mymensingh",
+          "Modern Trade",
+          901,
+          520,
+          468520,
+          "Summer demand softness"
+        ],
+        [
+          45536,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Dhaka",
+          "Retail",
+          1155,
+          520,
+          600600,
+          ""
+        ],
+        [
+          45566,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Chattogram",
+          "Online",
+          1241,
+          520,
+          645320,
+          ""
+        ],
+        [
+          45597,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Sylhet",
+          "Wholesale",
+          1148,
+          520,
+          596960,
+          ""
+        ],
+        [
+          45627,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rajshahi",
+          "Modern Trade",
+          1419,
+          520,
+          737880,
+          ""
+        ],
+        [
+          45658,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Khulna",
+          "Retail",
+          1287,
+          520,
+          669240,
+          ""
+        ],
+        [
+          45689,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Barishal",
+          "Online",
+          1238,
+          520,
+          643760,
+          ""
+        ],
+        [
+          45717,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rangpur",
+          "Wholesale",
+          1289,
+          520,
+          670280,
+          ""
+        ],
+        [
+          45748,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Mymensingh",
+          "Modern Trade",
+          1382,
+          520,
+          718640,
+          ""
+        ],
+        [
+          45778,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Dhaka",
+          "Retail",
+          1091,
+          520,
+          567320,
+          "Summer demand softness"
+        ],
+        [
+          45809,
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Chattogram",
+          "Online",
+          1046,
+          520,
+          543920,
+          "Summer demand softness"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "NIV-DPF-04-01",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3111,
+          "SafetyStock": 485,
+          "ReorderPoint": 1145,
+          "StockInTransit": 393,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NIV-DPF-04-02",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3546,
+          "SafetyStock": 598,
+          "ReorderPoint": 1449,
+          "StockInTransit": 281,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NIV-DPF-04-03",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 3582,
+          "SafetyStock": 495,
+          "ReorderPoint": 1244,
+          "StockInTransit": 532,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NIV-DPF-04-04",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1573,
+          "SafetyStock": 632,
+          "ReorderPoint": 1289,
+          "StockInTransit": 451,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NIV-DPF-04-05",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 3191,
+          "SafetyStock": 659,
+          "ReorderPoint": 1400,
+          "StockInTransit": 98,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NIV-DPF-04-06",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2407,
+          "SafetyStock": 622,
+          "ReorderPoint": 1204,
+          "StockInTransit": 431,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NIV-DPF-04-07",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 911,
+          "SafetyStock": 556,
+          "ReorderPoint": 1273,
+          "StockInTransit": 313,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "NIV-DPF-04-08",
+          "ProductName": "Moisturizing Cream",
+          "Category": "Skin Care",
+          "Brand": "Nivea",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1916,
+          "SafetyStock": 685,
+          "ReorderPoint": 1392,
+          "StockInTransit": 159,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "NIV-DPF-04-01",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Dhaka",
+          "Dhaka DC",
+          3111,
+          485,
+          1145,
+          393,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "NIV-DPF-04-02",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Chattogram",
+          "Chattogram DC",
+          3546,
+          598,
+          1449,
+          281,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "NIV-DPF-04-03",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Sylhet",
+          "Sylhet DC",
+          3582,
+          495,
+          1244,
+          532,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "NIV-DPF-04-04",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rajshahi",
+          "Rajshahi DC",
+          1573,
+          632,
+          1289,
+          451,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "NIV-DPF-04-05",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Khulna",
+          "Khulna DC",
+          3191,
+          659,
+          1400,
+          98,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "NIV-DPF-04-06",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Barishal",
+          "Barishal DC",
+          2407,
+          622,
+          1204,
+          431,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "NIV-DPF-04-07",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Rangpur",
+          "Rangpur DC",
+          911,
+          556,
+          1273,
+          313,
+          120,
+          45678,
+          "Reorder Needed"
+        ],
+        [
+          "NIV-DPF-04-08",
+          "Moisturizing Cream",
+          "Skin Care",
+          "Nivea",
+          "Mymensingh",
+          "Mymensingh DC",
+          1916,
+          685,
+          1392,
+          159,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 14.1,
+          "ActualUpliftPct": 13.6,
+          "BudgetBDT": 128541,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 29.1,
+          "ActualUpliftPct": 35,
+          "BudgetBDT": 139718,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 22,
+          "ActualUpliftPct": 25.2,
+          "BudgetBDT": 123323,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13.2,
+          "ActualUpliftPct": 10.5,
+          "BudgetBDT": 154116,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          14.1,
+          13.6,
+          128541,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          29.1,
+          35,
+          139718,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          22,
+          25.2,
+          123323,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13.2,
+          10.5,
+          154116,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 479,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 511,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 567,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Skin Care",
+          "CompetitorPriceBDT": 533,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Skin Care",
+          479,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Skin Care",
+          511,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Skin Care",
+          567,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Skin Care",
+          533,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.6,
+          "IncomeIndex": 99.67,
+          "PurchasingPowerIndex": 86.98,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.89,
+          "IncomeIndex": 99.95,
+          "PurchasingPowerIndex": 86.57,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.23,
+          "IncomeIndex": 100.31,
+          "PurchasingPowerIndex": 86.09,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.36,
+          "IncomeIndex": 100.46,
+          "PurchasingPowerIndex": 85.92,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.72,
+          "IncomeIndex": 101.96,
+          "PurchasingPowerIndex": 85.76,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.73,
+          "IncomeIndex": 101.53,
+          "PurchasingPowerIndex": 85.62,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.41,
+          "IncomeIndex": 101.28,
+          "PurchasingPowerIndex": 86.09,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.31,
+          "IncomeIndex": 102.21,
+          "PurchasingPowerIndex": 86.53,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.89,
+          "IncomeIndex": 102.35,
+          "PurchasingPowerIndex": 87.29,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.8,
+          "IncomeIndex": 102.6,
+          "PurchasingPowerIndex": 87.52,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 6.98,
+          "IncomeIndex": 102.59,
+          "PurchasingPowerIndex": 88.91,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.84,
+          "IncomeIndex": 102.79,
+          "PurchasingPowerIndex": 89.21,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.69,
+          "IncomeIndex": 103.34,
+          "PurchasingPowerIndex": 89.63,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.42,
+          "IncomeIndex": 103.59,
+          "PurchasingPowerIndex": 90.17,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.6,
+          "IncomeIndex": 104.3,
+          "PurchasingPowerIndex": 90.07,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.26,
+          "IncomeIndex": 104.41,
+          "PurchasingPowerIndex": 90.68,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.41,
+          "IncomeIndex": 104.26,
+          "PurchasingPowerIndex": 90.38,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.94,
+          "IncomeIndex": 104.73,
+          "PurchasingPowerIndex": 89.62,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.6,
+          99.67,
+          86.98,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.89,
+          99.95,
+          86.57,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.23,
+          100.31,
+          86.09,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.36,
+          100.46,
+          85.92,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.72,
+          101.96,
+          85.76,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.73,
+          101.53,
+          85.62,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.41,
+          101.28,
+          86.09,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.31,
+          102.21,
+          86.53,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.89,
+          102.35,
+          87.29,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.8,
+          102.6,
+          87.52,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          6.98,
+          102.59,
+          88.91,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.84,
+          102.79,
+          89.21,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.69,
+          103.34,
+          89.63,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.42,
+          103.59,
+          90.17,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.6,
+          104.3,
+          90.07,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.26,
+          104.41,
+          90.68,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.41,
+          104.26,
+          90.38,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.94,
+          104.73,
+          89.62,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 21,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 2,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          6,
+          7,
+          5,
+          2,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          9,
+          6,
+          1,
+          21,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          3,
+          9,
+          5,
+          3,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          3,
+          9,
+          2,
+          5,
+          19,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1018,
+          "ActualUnits": 853,
+          "ForecastError": -165,
+          "AbsoluteError": 165,
+          "APE": 0.19343493552168817,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1022,
+          "ActualUnits": 957,
+          "ForecastError": -65,
+          "AbsoluteError": 65,
+          "APE": 0.06792058516196448,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1246,
+          "ActualUnits": 1340,
+          "ForecastError": 94,
+          "AbsoluteError": 94,
+          "APE": 0.07014925373134329,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1225,
+          "ActualUnits": 1055,
+          "ForecastError": -170,
+          "AbsoluteError": 170,
+          "APE": 0.16113744075829384,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1072,
+          "ActualUnits": 1001,
+          "ForecastError": -71,
+          "AbsoluteError": 71,
+          "APE": 0.07092907092907093,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1205,
+          "ActualUnits": 1152,
+          "ForecastError": -53,
+          "AbsoluteError": 53,
+          "APE": 0.04600694444444445,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1347,
+          "ActualUnits": 1241,
+          "ForecastError": -106,
+          "AbsoluteError": 106,
+          "APE": 0.0854149879129734,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1345,
+          "ActualUnits": 1164,
+          "ForecastError": -181,
+          "AbsoluteError": 181,
+          "APE": 0.15549828178694158,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 1165,
+          "ActualUnits": 1184,
+          "ForecastError": 19,
+          "AbsoluteError": 19,
+          "APE": 0.016047297297297296,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1318,
+          "ActualUnits": 1443,
+          "ForecastError": 125,
+          "AbsoluteError": 125,
+          "APE": 0.08662508662508663,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 1228,
+          "ActualUnits": 1405,
+          "ForecastError": 177,
+          "AbsoluteError": 177,
+          "APE": 0.12597864768683273,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 1463,
+          "ActualUnits": 1250,
+          "ForecastError": -213,
+          "AbsoluteError": 213,
+          "APE": 0.1704,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1018,
+          853,
+          -165,
+          165,
+          0.19343493552168817,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1022,
+          957,
+          -65,
+          65,
+          0.06792058516196448,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1246,
+          1340,
+          94,
+          94,
+          0.07014925373134329,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1225,
+          1055,
+          -170,
+          170,
+          0.16113744075829384,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1072,
+          1001,
+          -71,
+          71,
+          0.07092907092907093,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1205,
+          1152,
+          -53,
+          53,
+          0.04600694444444445,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1347,
+          1241,
+          -106,
+          106,
+          0.0854149879129734,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1345,
+          1164,
+          -181,
+          181,
+          0.15549828178694158,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          1165,
+          1184,
+          19,
+          19,
+          0.016047297297297296,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1318,
+          1443,
+          125,
+          125,
+          0.08662508662508663,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          1228,
+          1405,
+          177,
+          177,
+          0.12597864768683273,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          1463,
+          1250,
+          -213,
+          213,
+          0.1704,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 68,
+          "ForecastDemandUnits": 605,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 93,
+          "ForecastDemandUnits": 980,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 83,
+          "ForecastDemandUnits": 1046,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 59,
+          "ForecastDemandUnits": 738,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 69,
+          "ForecastDemandUnits": 740,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 73,
+          "ForecastDemandUnits": 722,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 82,
+          "ForecastDemandUnits": 1123,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 64,
+          "ForecastDemandUnits": 728,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          68,
+          605,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          93,
+          980,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          83,
+          1046,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          59,
+          738,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          69,
+          740,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          73,
+          722,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          82,
+          1123,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          64,
+          728,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 1423,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 1994,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 1473,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 1251,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 4055,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Weekly",
+          2,
+          1423,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          4,
+          1994,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Weekly",
+          3,
+          1473,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          3,
+          1251,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Festival-based",
+          8,
+          4055,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 109,
+          "DataQualityScore": 84,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 92,
+          "DataQualityScore": 92,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 68,
+          "DataQualityScore": 72,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 12,
+          "DataQualityScore": 89,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          109,
+          84,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          92,
+          92,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          68,
+          72,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          12,
+          89,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Moisturizing Cream Nivea Skin Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Moisturizing Cream demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Skin Care competitor pricing promotions Bangladesh Nivea",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Moisturizing Cream online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Moisturizing Cream Nivea Skin Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Moisturizing Cream demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Skin Care competitor pricing promotions Bangladesh Nivea",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Moisturizing Cream online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 68,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 80,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          68,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          80,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-03
+Scenario Title,Winter Seasonal Demand Increase
+Purpose,Test winter seasonality for apparel.
+Product Name,Hoodie Classic
+Category,Clothing
+Brand,Trunk
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Seasonality, Historical Sales, Inventory"
+Recommended Inputs To Tick,"Historical Sales Data, Seasonality, Inventory Levels"
+Recommended Outputs To Tick,"Seasonal Demand Impact, Demand Forecast, Inventory Requirement"

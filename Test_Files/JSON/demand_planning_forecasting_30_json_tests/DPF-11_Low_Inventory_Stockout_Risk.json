@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-11",
+  "source_excel_file": "DPF-11_Low_Inventory_Stockout_Risk.xlsx",
+  "scenario_title": "Low Inventory Stockout Risk",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-11"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Low Inventory Stockout Risk"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test stockout and reorder alerts."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Baby Diaper Pack"
+        },
+        {
+          "Field": "Category",
+          "Value": "Baby Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Pampers"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Inventory, Lead Time, Demand Forecast"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Inventory Levels, Lead Time, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Stockout Risk, Inventory Requirement, Action Plan"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-11"
+        ],
+        [
+          "Scenario Title",
+          "Low Inventory Stockout Risk"
+        ],
+        [
+          "Purpose",
+          "Test stockout and reorder alerts."
+        ],
+        [
+          "Product Name",
+          "Baby Diaper Pack"
+        ],
+        [
+          "Category",
+          "Baby Care"
+        ],
+        [
+          "Brand",
+          "Pampers"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Inventory, Lead Time, Demand Forecast"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Inventory Levels, Lead Time, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Stockout Risk, Inventory Requirement, Action Plan"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1830,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2287500,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1738,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2172500,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 1921,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2401250,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2013,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2516250,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 2021,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2526250,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1988,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2485000,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 1707,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2133750,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 1766,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2207500,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1822,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2277500,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1903,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2378750,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 2091,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2613750,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2051,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2563750,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 1973,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2466250,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 1927,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2408750,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 2327,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2908750,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2063,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2578750,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 2094,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2617500,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 2340,
+          "UnitPriceBDT": 1250,
+          "RevenueBDT": 2925000,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Dhaka",
+          "Retail",
+          1830,
+          1250,
+          2287500,
+          ""
+        ],
+        [
+          45323,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Chattogram",
+          "Online",
+          1738,
+          1250,
+          2172500,
+          ""
+        ],
+        [
+          45352,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Sylhet",
+          "Wholesale",
+          1921,
+          1250,
+          2401250,
+          ""
+        ],
+        [
+          45383,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rajshahi",
+          "Modern Trade",
+          2013,
+          1250,
+          2516250,
+          ""
+        ],
+        [
+          45413,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Khulna",
+          "Retail",
+          2021,
+          1250,
+          2526250,
+          ""
+        ],
+        [
+          45444,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Barishal",
+          "Online",
+          1988,
+          1250,
+          2485000,
+          ""
+        ],
+        [
+          45474,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rangpur",
+          "Wholesale",
+          1707,
+          1250,
+          2133750,
+          ""
+        ],
+        [
+          45505,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Mymensingh",
+          "Modern Trade",
+          1766,
+          1250,
+          2207500,
+          ""
+        ],
+        [
+          45536,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Dhaka",
+          "Retail",
+          1822,
+          1250,
+          2277500,
+          ""
+        ],
+        [
+          45566,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Chattogram",
+          "Online",
+          1903,
+          1250,
+          2378750,
+          ""
+        ],
+        [
+          45597,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Sylhet",
+          "Wholesale",
+          2091,
+          1250,
+          2613750,
+          ""
+        ],
+        [
+          45627,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rajshahi",
+          "Modern Trade",
+          2051,
+          1250,
+          2563750,
+          ""
+        ],
+        [
+          45658,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Khulna",
+          "Retail",
+          1973,
+          1250,
+          2466250,
+          ""
+        ],
+        [
+          45689,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Barishal",
+          "Online",
+          1927,
+          1250,
+          2408750,
+          ""
+        ],
+        [
+          45717,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rangpur",
+          "Wholesale",
+          2327,
+          1250,
+          2908750,
+          ""
+        ],
+        [
+          45748,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Mymensingh",
+          "Modern Trade",
+          2063,
+          1250,
+          2578750,
+          ""
+        ],
+        [
+          45778,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Dhaka",
+          "Retail",
+          2094,
+          1250,
+          2617500,
+          ""
+        ],
+        [
+          45809,
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Chattogram",
+          "Online",
+          2340,
+          1250,
+          2925000,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "PAM-DPF-11-01",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 398,
+          "SafetyStock": 631,
+          "ReorderPoint": 1386,
+          "StockInTransit": 181,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Stockout Risk"
+        },
+        {
+          "SKU": "PAM-DPF-11-02",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 362,
+          "SafetyStock": 502,
+          "ReorderPoint": 1373,
+          "StockInTransit": 239,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Stockout Risk"
+        },
+        {
+          "SKU": "PAM-DPF-11-03",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 213,
+          "SafetyStock": 634,
+          "ReorderPoint": 1295,
+          "StockInTransit": 267,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Stockout Risk"
+        },
+        {
+          "SKU": "PAM-DPF-11-04",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 3559,
+          "SafetyStock": 659,
+          "ReorderPoint": 1307,
+          "StockInTransit": 142,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "PAM-DPF-11-05",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2820,
+          "SafetyStock": 544,
+          "ReorderPoint": 1418,
+          "StockInTransit": 525,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PAM-DPF-11-06",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 467,
+          "SafetyStock": 520,
+          "ReorderPoint": 1172,
+          "StockInTransit": 468,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Stockout Risk"
+        },
+        {
+          "SKU": "PAM-DPF-11-07",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1871,
+          "SafetyStock": 562,
+          "ReorderPoint": 1204,
+          "StockInTransit": 338,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PAM-DPF-11-08",
+          "ProductName": "Baby Diaper Pack",
+          "Category": "Baby Care",
+          "Brand": "Pampers",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1456,
+          "SafetyStock": 588,
+          "ReorderPoint": 1447,
+          "StockInTransit": 458,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "PAM-DPF-11-01",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Dhaka",
+          "Dhaka DC",
+          398,
+          631,
+          1386,
+          181,
+          120,
+          45672,
+          "Stockout Risk"
+        ],
+        [
+          "PAM-DPF-11-02",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Chattogram",
+          "Chattogram DC",
+          362,
+          502,
+          1373,
+          239,
+          120,
+          45673,
+          "Stockout Risk"
+        ],
+        [
+          "PAM-DPF-11-03",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Sylhet",
+          "Sylhet DC",
+          213,
+          634,
+          1295,
+          267,
+          120,
+          45674,
+          "Stockout Risk"
+        ],
+        [
+          "PAM-DPF-11-04",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rajshahi",
+          "Rajshahi DC",
+          3559,
+          659,
+          1307,
+          142,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "PAM-DPF-11-05",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Khulna",
+          "Khulna DC",
+          2820,
+          544,
+          1418,
+          525,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "PAM-DPF-11-06",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Barishal",
+          "Barishal DC",
+          467,
+          520,
+          1172,
+          468,
+          120,
+          45677,
+          "Stockout Risk"
+        ],
+        [
+          "PAM-DPF-11-07",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Rangpur",
+          "Rangpur DC",
+          1871,
+          562,
+          1204,
+          338,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "PAM-DPF-11-08",
+          "Baby Diaper Pack",
+          "Baby Care",
+          "Pampers",
+          "Mymensingh",
+          "Mymensingh DC",
+          1456,
+          588,
+          1447,
+          458,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 13.6,
+          "ActualUpliftPct": 13.9,
+          "BudgetBDT": 122815,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 22.4,
+          "ActualUpliftPct": 23.5,
+          "BudgetBDT": 117794,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 24.6,
+          "ActualUpliftPct": 16.7,
+          "BudgetBDT": 107197,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 17.2,
+          "ActualUpliftPct": 12.2,
+          "BudgetBDT": 139369,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          13.6,
+          13.9,
+          122815,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          22.4,
+          23.5,
+          117794,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          24.6,
+          16.7,
+          107197,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          17.2,
+          12.2,
+          139369,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Baby Care",
+          "CompetitorPriceBDT": 1027,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Baby Care",
+          "CompetitorPriceBDT": 1273,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Baby Care",
+          "CompetitorPriceBDT": 1443,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Baby Care",
+          "CompetitorPriceBDT": 1208,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Baby Care",
+          1027,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Baby Care",
+          1273,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Baby Care",
+          1443,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Baby Care",
+          1208,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.76,
+          "IncomeIndex": 100.76,
+          "PurchasingPowerIndex": 87.03,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.88,
+          "IncomeIndex": 99.7,
+          "PurchasingPowerIndex": 86.52,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.52,
+          "IncomeIndex": 100.24,
+          "PurchasingPowerIndex": 85.59,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.6,
+          "IncomeIndex": 101.72,
+          "PurchasingPowerIndex": 85.9,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.42,
+          "IncomeIndex": 101.35,
+          "PurchasingPowerIndex": 86.09,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.72,
+          "IncomeIndex": 101.95,
+          "PurchasingPowerIndex": 85.77,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.85,
+          "IncomeIndex": 102.63,
+          "PurchasingPowerIndex": 85.74,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.17,
+          "IncomeIndex": 102.86,
+          "PurchasingPowerIndex": 86.97,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.85,
+          "IncomeIndex": 103.24,
+          "PurchasingPowerIndex": 87.62,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.97,
+          "IncomeIndex": 102.49,
+          "PurchasingPowerIndex": 87.2,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.27,
+          "IncomeIndex": 103.87,
+          "PurchasingPowerIndex": 88.81,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.18,
+          "IncomeIndex": 104.15,
+          "PurchasingPowerIndex": 89.05,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.82,
+          "IncomeIndex": 102.62,
+          "PurchasingPowerIndex": 89.2,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.43,
+          "IncomeIndex": 103.11,
+          "PurchasingPowerIndex": 90.01,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.59,
+          "IncomeIndex": 103.77,
+          "PurchasingPowerIndex": 89.93,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.64,
+          "IncomeIndex": 104.59,
+          "PurchasingPowerIndex": 90.08,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.52,
+          "IncomeIndex": 105.68,
+          "PurchasingPowerIndex": 90.62,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.02,
+          "IncomeIndex": 105.04,
+          "PurchasingPowerIndex": 89.58,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.76,
+          100.76,
+          87.03,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.88,
+          99.7,
+          86.52,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.52,
+          100.24,
+          85.59,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.6,
+          101.72,
+          85.9,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.42,
+          101.35,
+          86.09,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.72,
+          101.95,
+          85.77,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.85,
+          102.63,
+          85.74,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.17,
+          102.86,
+          86.97,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.85,
+          103.24,
+          87.62,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.97,
+          102.49,
+          87.2,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.27,
+          103.87,
+          88.81,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.18,
+          104.15,
+          89.05,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.82,
+          102.62,
+          89.2,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.43,
+          103.11,
+          90.01,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.59,
+          103.77,
+          89.93,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.64,
+          104.59,
+          90.08,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.52,
+          105.68,
+          90.62,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.02,
+          105.04,
+          89.58,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 30,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          6,
+          7,
+          2,
+          18,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          9,
+          4,
+          1,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          4,
+          9,
+          5,
+          2,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          6,
+          11,
+          8,
+          5,
+          30,
+          "Yes",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 1690,
+          "ActualUnits": 1657,
+          "ForecastError": -33,
+          "AbsoluteError": 33,
+          "APE": 0.019915509957754977,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 1641,
+          "ActualUnits": 1990,
+          "ForecastError": 349,
+          "AbsoluteError": 349,
+          "APE": 0.17537688442211055,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 1812,
+          "ActualUnits": 2164,
+          "ForecastError": 352,
+          "AbsoluteError": 352,
+          "APE": 0.16266173752310537,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 1672,
+          "ActualUnits": 1628,
+          "ForecastError": -44,
+          "AbsoluteError": 44,
+          "APE": 0.02702702702702703,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 1870,
+          "ActualUnits": 1733,
+          "ForecastError": -137,
+          "AbsoluteError": 137,
+          "APE": 0.07905366416618581,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 1859,
+          "ActualUnits": 1957,
+          "ForecastError": 98,
+          "AbsoluteError": 98,
+          "APE": 0.050076647930505876,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 1989,
+          "ActualUnits": 1839,
+          "ForecastError": -150,
+          "AbsoluteError": 150,
+          "APE": 0.08156606851549755,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 1939,
+          "ActualUnits": 1773,
+          "ForecastError": -166,
+          "AbsoluteError": 166,
+          "APE": 0.09362662154540327,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 2098,
+          "ActualUnits": 2111,
+          "ForecastError": 13,
+          "AbsoluteError": 13,
+          "APE": 0.006158218853623875,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 1924,
+          "ActualUnits": 2106,
+          "ForecastError": 182,
+          "AbsoluteError": 182,
+          "APE": 0.08641975308641975,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 2278,
+          "ActualUnits": 2677,
+          "ForecastError": 399,
+          "AbsoluteError": 399,
+          "APE": 0.14904744116548374,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 2250,
+          "ActualUnits": 2466,
+          "ForecastError": 216,
+          "AbsoluteError": 216,
+          "APE": 0.08759124087591241,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          1690,
+          1657,
+          -33,
+          33,
+          0.019915509957754977,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          1641,
+          1990,
+          349,
+          349,
+          0.17537688442211055,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          1812,
+          2164,
+          352,
+          352,
+          0.16266173752310537,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          1672,
+          1628,
+          -44,
+          44,
+          0.02702702702702703,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          1870,
+          1733,
+          -137,
+          137,
+          0.07905366416618581,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          1859,
+          1957,
+          98,
+          98,
+          0.050076647930505876,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          1989,
+          1839,
+          -150,
+          150,
+          0.08156606851549755,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          1939,
+          1773,
+          -166,
+          166,
+          0.09362662154540327,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          2098,
+          2111,
+          13,
+          13,
+          0.006158218853623875,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          1924,
+          2106,
+          182,
+          182,
+          0.08641975308641975,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          2278,
+          2677,
+          399,
+          399,
+          0.14904744116548374,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          2250,
+          2466,
+          216,
+          216,
+          0.08759124087591241,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 93,
+          "ForecastDemandUnits": 1966,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 63,
+          "ForecastDemandUnits": 1029,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 59,
+          "ForecastDemandUnits": 888,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 53,
+          "ForecastDemandUnits": 917,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 74,
+          "ForecastDemandUnits": 1455,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 83,
+          "ForecastDemandUnits": 1361,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 89,
+          "ForecastDemandUnits": 1596,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 75,
+          "ForecastDemandUnits": 1481,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          93,
+          1966,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          63,
+          1029,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          59,
+          888,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          53,
+          917,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          74,
+          1455,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          83,
+          1361,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          89,
+          1596,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          75,
+          1481,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 6041,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 12016,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 3376,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 1622,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 10012,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          4,
+          6041,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          9,
+          12016,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          2,
+          3376,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          1,
+          1622,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          9,
+          10012,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 133,
+          "DataQualityScore": 91,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 133,
+          "DataQualityScore": 73,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 36,
+          "DataQualityScore": 92,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 23,
+          "DataQualityScore": 75,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          133,
+          91,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          133,
+          73,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          36,
+          92,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          23,
+          75,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Baby Diaper Pack Pampers Baby Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Baby Diaper Pack demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Baby Care competitor pricing promotions Bangladesh Pampers",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Baby Diaper Pack online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Baby Diaper Pack Pampers Baby Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Baby Diaper Pack demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Baby Care competitor pricing promotions Bangladesh Pampers",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Baby Diaper Pack online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 62,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 88,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 76,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 74,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          62,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          88,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          76,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          74,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

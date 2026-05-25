@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+SUR-DPF-07-01,Laundry Detergent,Home Care,Surf Excel,Dhaka,Dhaka DC,2923,562,1410,252,120,45672,Overstock Risk
+SUR-DPF-07-02,Laundry Detergent,Home Care,Surf Excel,Chattogram,Chattogram DC,1301,475,1235,397,120,45673,OK
+SUR-DPF-07-03,Laundry Detergent,Home Care,Surf Excel,Sylhet,Sylhet DC,2922,545,1296,237,120,45674,Overstock Risk
+SUR-DPF-07-04,Laundry Detergent,Home Care,Surf Excel,Rajshahi,Rajshahi DC,2328,558,1372,138,120,45675,OK
+SUR-DPF-07-05,Laundry Detergent,Home Care,Surf Excel,Khulna,Khulna DC,2757,681,1417,551,120,45676,OK
+SUR-DPF-07-06,Laundry Detergent,Home Care,Surf Excel,Barishal,Barishal DC,2111,684,1376,530,120,45677,OK
+SUR-DPF-07-07,Laundry Detergent,Home Care,Surf Excel,Rangpur,Rangpur DC,2021,641,1301,247,120,45678,OK
+SUR-DPF-07-08,Laundry Detergent,Home Care,Surf Excel,Mymensingh,Mymensingh DC,1608,702,1482,336,120,45679,OK

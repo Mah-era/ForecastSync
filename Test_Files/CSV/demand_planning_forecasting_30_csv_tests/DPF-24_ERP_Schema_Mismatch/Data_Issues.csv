@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,Sheet/column names intentionally vary to test mapping.,"Detect, warn user, and continue analysis where possible"

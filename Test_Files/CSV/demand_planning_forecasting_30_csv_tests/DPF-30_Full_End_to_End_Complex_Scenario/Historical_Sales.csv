@@ -1,0 +1,22 @@
+﻿Month,ProductName,Category,Brand,Region,Channel,UnitsSold,UnitPriceBDT,RevenueBDT,Notes
+45292,Dove Shampoo,Personal Care,Dove,Dhaka,Retail,"1,765",৳420,"BDT 741,300",
+45323,Dove Shampoo,Personal Care,Dove,Chattogram,Online,1978,420,830760,
+45352,Dove Shampoo,Personal Care,Dove,Sylhet,Wholesale,2710,420,1138200,Ramadan/Eid demand surge
+45383,Dove Shampoo,Personal Care,Dove,Rajshahi,Modern Trade,3030,420,1272600,Ramadan/Eid demand surge
+45383,Dove Shampoo,Personal Care,Dove,Rajshahi,Modern Trade,3030,420,1272600,DUPLICATE ROW - should be detected
+45413,Dove Shampoo,Personal Care,Dove,Khulna,Retail,"2,127",৳420,"BDT 893,340",
+45444,Dove Shampoo,Personal Care,Dove,Barishal,Online,2219,420,931980,
+45474,Dove Shampoo,Personal Care,Dove,Rangpur,Wholesale,1892,420,794640,Demand softened by inflation
+45505,Dove Shampoo,Personal Care,Dove,Mymensingh,Modern Trade,2432,420,1021440,Promotion-driven sales spike; Demand softened by inflation
+45505,Dove Shampoo,Personal Care,Dove,Mymensingh,Modern Trade,2432,420,1021440,DUPLICATE ROW - should be detected
+45536,Dove Shampoo,Personal Care,Dove,Dhaka,Retail,"2,621",৳420,"BDT 1,100,820",Promotion-driven sales spike; Demand softened by inflation
+45566,Dove Shampoo,Personal Care,Dove,Chattogram,Online,1400,399,558600,Demand softened by inflation; Competitor price pressure
+45597,Dove Shampoo,Personal Care,Dove,Sylhet,Wholesale,6685,399,2667315,Demand softened by inflation; Competitor price pressure; Extreme demand outlier
+45627,Dove Shampoo,Personal Care,Dove,Rajshahi,Modern Trade,1404,399,560196,Demand softened by inflation; Competitor price pressure
+45658,Dove Shampoo,Personal Care,Dove,Khulna,Retail,"1,354",৳399,"BDT 540,246",Demand softened by inflation; Competitor price pressure
+45689,Dove Shampoo,Personal Care,Dove,Barishal,Online,1364,399,544236,Demand softened by inflation; Competitor price pressure
+45689,Dove Shampoo,Personal Care,Dove,Barishal,Online,1364,399,544236,DUPLICATE ROW - should be detected
+45717,Dove Shampoo,Personal Care,Dove,Rangpur,Wholesale,1926,399,768474,Ramadan/Eid demand surge; Demand softened by inflation; Competitor price pressure
+45748,Dove Shampoo,Personal Care,Dove,Mymensingh,Modern Trade,2050,399,817950,Ramadan/Eid demand surge; Demand softened by inflation; Competitor price pressure
+45778,Dove Shampoo,Personal Care,Dove,Dhaka,Retail,"1,465",৳399,"BDT 584,535",Demand softened by inflation; Competitor price pressure
+45809,Dove Shampoo,Personal Care,Dove,Chattogram,Online,1567,399,625233,Demand softened by inflation; Competitor price pressure

@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-10
+Scenario Title,Purchasing Power Improvement
+Purpose,Test demand expansion with better purchasing power.
+Product Name,Smartphone A Series
+Category,Electronics
+Brand,Samsung
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Economic Conditions, Market Trends"
+Recommended Inputs To Tick,"Economic Conditions, Market Trends, Online Web Search Data"
+Recommended Outputs To Tick,"Economic Condition Impact, Market Trend Analysis, Demand Forecast"

@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-18",
+  "source_excel_file": "DPF-18_Wrong_Date_Formats.xlsx",
+  "scenario_title": "Wrong Date Formats",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-18"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Wrong Date Formats"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test date parsing and normalization."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Leather Shoe"
+        },
+        {
+          "Field": "Category",
+          "Value": "Footwear"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Apex"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Technology & Data Tools"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Uploaded File Data, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Sales Trend Analysis, Data Quality Score"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-18"
+        ],
+        [
+          "Scenario Title",
+          "Wrong Date Formats"
+        ],
+        [
+          "Purpose",
+          "Test date parsing and normalization."
+        ],
+        [
+          "Product Name",
+          "Leather Shoe"
+        ],
+        [
+          "Category",
+          "Footwear"
+        ],
+        [
+          "Brand",
+          "Apex"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Technology & Data Tools"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Uploaded File Data, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Sales Trend Analysis, Data Quality Score"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": "01/01/2024",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 821,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2627200,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 839,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2684800,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 746,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2387200,
+          "Notes": null
+        },
+        {
+          "Month": "01/04/2024",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 835,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2672000,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 814,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2604800,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 773,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2473600,
+          "Notes": null
+        },
+        {
+          "Month": "01/07/2024",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 840,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2688000,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 846,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2707200,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 925,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2960000,
+          "Notes": null
+        },
+        {
+          "Month": "01/10/2024",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 1009,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3228800,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 991,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3171200,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 970,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3104000,
+          "Notes": null
+        },
+        {
+          "Month": "01/01/2025",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 996,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3187200,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 918,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2937600,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 854,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2732800,
+          "Notes": null
+        },
+        {
+          "Month": "01/04/2025",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 912,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 2918400,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 1038,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3321600,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 968,
+          "UnitPriceBDT": 3200,
+          "RevenueBDT": 3097600,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          "01/01/2024",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Dhaka",
+          "Retail",
+          821,
+          3200,
+          2627200,
+          ""
+        ],
+        [
+          45323,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Chattogram",
+          "Online",
+          839,
+          3200,
+          2684800,
+          ""
+        ],
+        [
+          45352,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Sylhet",
+          "Wholesale",
+          746,
+          3200,
+          2387200,
+          ""
+        ],
+        [
+          "01/04/2024",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rajshahi",
+          "Modern Trade",
+          835,
+          3200,
+          2672000,
+          ""
+        ],
+        [
+          45413,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Khulna",
+          "Retail",
+          814,
+          3200,
+          2604800,
+          ""
+        ],
+        [
+          45444,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Barishal",
+          "Online",
+          773,
+          3200,
+          2473600,
+          ""
+        ],
+        [
+          "01/07/2024",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rangpur",
+          "Wholesale",
+          840,
+          3200,
+          2688000,
+          ""
+        ],
+        [
+          45505,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Mymensingh",
+          "Modern Trade",
+          846,
+          3200,
+          2707200,
+          ""
+        ],
+        [
+          45536,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Dhaka",
+          "Retail",
+          925,
+          3200,
+          2960000,
+          ""
+        ],
+        [
+          "01/10/2024",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Chattogram",
+          "Online",
+          1009,
+          3200,
+          3228800,
+          ""
+        ],
+        [
+          45597,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Sylhet",
+          "Wholesale",
+          991,
+          3200,
+          3171200,
+          ""
+        ],
+        [
+          45627,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rajshahi",
+          "Modern Trade",
+          970,
+          3200,
+          3104000,
+          ""
+        ],
+        [
+          "01/01/2025",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Khulna",
+          "Retail",
+          996,
+          3200,
+          3187200,
+          ""
+        ],
+        [
+          45689,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Barishal",
+          "Online",
+          918,
+          3200,
+          2937600,
+          ""
+        ],
+        [
+          45717,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rangpur",
+          "Wholesale",
+          854,
+          3200,
+          2732800,
+          ""
+        ],
+        [
+          "01/04/2025",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Mymensingh",
+          "Modern Trade",
+          912,
+          3200,
+          2918400,
+          ""
+        ],
+        [
+          45778,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Dhaka",
+          "Retail",
+          1038,
+          3200,
+          3321600,
+          ""
+        ],
+        [
+          45809,
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Chattogram",
+          "Online",
+          968,
+          3200,
+          3097600,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "APE-DPF-18-01",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3138,
+          "SafetyStock": 638,
+          "ReorderPoint": 1213,
+          "StockInTransit": 316,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "APE-DPF-18-02",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 2082,
+          "SafetyStock": 486,
+          "ReorderPoint": 1178,
+          "StockInTransit": 560,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "APE-DPF-18-03",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1885,
+          "SafetyStock": 543,
+          "ReorderPoint": 1368,
+          "StockInTransit": 509,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "APE-DPF-18-04",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2537,
+          "SafetyStock": 649,
+          "ReorderPoint": 1281,
+          "StockInTransit": 323,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "APE-DPF-18-05",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 3173,
+          "SafetyStock": 449,
+          "ReorderPoint": 1015,
+          "StockInTransit": 219,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "APE-DPF-18-06",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1176,
+          "SafetyStock": 534,
+          "ReorderPoint": 1378,
+          "StockInTransit": 163,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "APE-DPF-18-07",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1091,
+          "SafetyStock": 699,
+          "ReorderPoint": 1572,
+          "StockInTransit": 261,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "APE-DPF-18-08",
+          "ProductName": "Leather Shoe",
+          "Category": "Footwear",
+          "Brand": "Apex",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 3708,
+          "SafetyStock": 686,
+          "ReorderPoint": 1471,
+          "StockInTransit": 312,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "Overstock Risk"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "APE-DPF-18-01",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Dhaka",
+          "Dhaka DC",
+          3138,
+          638,
+          1213,
+          316,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "APE-DPF-18-02",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Chattogram",
+          "Chattogram DC",
+          2082,
+          486,
+          1178,
+          560,
+          120,
+          45673,
+          "OK"
+        ],
+        [
+          "APE-DPF-18-03",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Sylhet",
+          "Sylhet DC",
+          1885,
+          543,
+          1368,
+          509,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "APE-DPF-18-04",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rajshahi",
+          "Rajshahi DC",
+          2537,
+          649,
+          1281,
+          323,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "APE-DPF-18-05",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Khulna",
+          "Khulna DC",
+          3173,
+          449,
+          1015,
+          219,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "APE-DPF-18-06",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Barishal",
+          "Barishal DC",
+          1176,
+          534,
+          1378,
+          163,
+          120,
+          45677,
+          "Reorder Needed"
+        ],
+        [
+          "APE-DPF-18-07",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Rangpur",
+          "Rangpur DC",
+          1091,
+          699,
+          1572,
+          261,
+          120,
+          45678,
+          "Reorder Needed"
+        ],
+        [
+          "APE-DPF-18-08",
+          "Leather Shoe",
+          "Footwear",
+          "Apex",
+          "Mymensingh",
+          "Mymensingh DC",
+          3708,
+          686,
+          1471,
+          312,
+          120,
+          45679,
+          "Overstock Risk"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 19.8,
+          "ActualUpliftPct": 20.1,
+          "BudgetBDT": 109078,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 19,
+          "ActualUpliftPct": 16.1,
+          "BudgetBDT": 157696,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 21.1,
+          "ActualUpliftPct": 20.8,
+          "BudgetBDT": 153302,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 15.4,
+          "ActualUpliftPct": 16.1,
+          "BudgetBDT": 96766,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          19.8,
+          20.1,
+          109078,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          19,
+          16.1,
+          157696,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          21.1,
+          20.8,
+          153302,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          15.4,
+          16.1,
+          96766,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Footwear",
+          "CompetitorPriceBDT": 2734,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Footwear",
+          "CompetitorPriceBDT": 3077,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Footwear",
+          "CompetitorPriceBDT": 3257,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Footwear",
+          "CompetitorPriceBDT": 3190,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Footwear",
+          2734,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Footwear",
+          3077,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Footwear",
+          3257,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Footwear",
+          3190,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.23,
+          "IncomeIndex": 99.01,
+          "PurchasingPowerIndex": 87.41,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.65,
+          "IncomeIndex": 100.95,
+          "PurchasingPowerIndex": 87.29,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.32,
+          "IncomeIndex": 100.56,
+          "PurchasingPowerIndex": 86.03,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.27,
+          "IncomeIndex": 100.31,
+          "PurchasingPowerIndex": 86.04,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.75,
+          "IncomeIndex": 102.15,
+          "PurchasingPowerIndex": 85.77,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.68,
+          "IncomeIndex": 100.73,
+          "PurchasingPowerIndex": 85.47,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.76,
+          "IncomeIndex": 101.74,
+          "PurchasingPowerIndex": 85.63,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.6,
+          "IncomeIndex": 101.63,
+          "PurchasingPowerIndex": 85.86,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.13,
+          "IncomeIndex": 102.18,
+          "PurchasingPowerIndex": 86.82,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.59,
+          "IncomeIndex": 102.46,
+          "PurchasingPowerIndex": 87.83,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.08,
+          "IncomeIndex": 102.09,
+          "PurchasingPowerIndex": 88.59,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.86,
+          "IncomeIndex": 102.83,
+          "PurchasingPowerIndex": 89.18,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.79,
+          "IncomeIndex": 103.73,
+          "PurchasingPowerIndex": 89.57,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.18,
+          "IncomeIndex": 104.29,
+          "PurchasingPowerIndex": 90.79,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.06,
+          "IncomeIndex": 104.54,
+          "PurchasingPowerIndex": 91.06,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.53,
+          "IncomeIndex": 104.33,
+          "PurchasingPowerIndex": 90.19,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.68,
+          "IncomeIndex": 104.26,
+          "PurchasingPowerIndex": 89.92,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.54,
+          "IncomeIndex": 104.87,
+          "PurchasingPowerIndex": 90.34,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.23,
+          99.01,
+          87.41,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.65,
+          100.95,
+          87.29,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.32,
+          100.56,
+          86.03,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.27,
+          100.31,
+          86.04,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.75,
+          102.15,
+          85.77,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.68,
+          100.73,
+          85.47,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.76,
+          101.74,
+          85.63,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.6,
+          101.63,
+          85.86,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.13,
+          102.18,
+          86.82,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.59,
+          102.46,
+          87.83,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.08,
+          102.09,
+          88.59,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.86,
+          102.83,
+          89.18,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.79,
+          103.73,
+          89.57,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.18,
+          104.29,
+          90.79,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.06,
+          104.54,
+          91.06,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.53,
+          104.33,
+          90.19,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.68,
+          104.26,
+          89.92,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.54,
+          104.87,
+          90.34,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 9,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 31,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 15,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          6,
+          11,
+          9,
+          5,
+          31,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          3,
+          12,
+          6,
+          1,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          5,
+          4,
+          1,
+          15,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          5,
+          7,
+          4,
+          2,
+          18,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 849,
+          "ActualUnits": 739,
+          "ForecastError": -110,
+          "AbsoluteError": 110,
+          "APE": 0.14884979702300405,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 803,
+          "ActualUnits": 976,
+          "ForecastError": 173,
+          "AbsoluteError": 173,
+          "APE": 0.17725409836065573,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 821,
+          "ActualUnits": 1001,
+          "ForecastError": 180,
+          "AbsoluteError": 180,
+          "APE": 0.1798201798201798,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 870,
+          "ActualUnits": 1004,
+          "ForecastError": 134,
+          "AbsoluteError": 134,
+          "APE": 0.13346613545816732,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 822,
+          "ActualUnits": 974,
+          "ForecastError": 152,
+          "AbsoluteError": 152,
+          "APE": 0.15605749486652978,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 953,
+          "ActualUnits": 807,
+          "ForecastError": -146,
+          "AbsoluteError": 146,
+          "APE": 0.1809169764560099,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 876,
+          "ActualUnits": 858,
+          "ForecastError": -18,
+          "AbsoluteError": 18,
+          "APE": 0.02097902097902098,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 880,
+          "ActualUnits": 819,
+          "ForecastError": -61,
+          "AbsoluteError": 61,
+          "APE": 0.07448107448107448,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 920,
+          "ActualUnits": 1076,
+          "ForecastError": 156,
+          "AbsoluteError": 156,
+          "APE": 0.1449814126394052,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 998,
+          "ActualUnits": 1067,
+          "ForecastError": 69,
+          "AbsoluteError": 69,
+          "APE": 0.06466729147141519,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 964,
+          "ActualUnits": 952,
+          "ForecastError": -12,
+          "AbsoluteError": 12,
+          "APE": 0.012605042016806723,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 959,
+          "ActualUnits": 843,
+          "ForecastError": -116,
+          "AbsoluteError": 116,
+          "APE": 0.1376037959667853,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          849,
+          739,
+          -110,
+          110,
+          0.14884979702300405,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          803,
+          976,
+          173,
+          173,
+          0.17725409836065573,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          821,
+          1001,
+          180,
+          180,
+          0.1798201798201798,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          870,
+          1004,
+          134,
+          134,
+          0.13346613545816732,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          822,
+          974,
+          152,
+          152,
+          0.15605749486652978,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          953,
+          807,
+          -146,
+          146,
+          0.1809169764560099,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          876,
+          858,
+          -18,
+          18,
+          0.02097902097902098,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          880,
+          819,
+          -61,
+          61,
+          0.07448107448107448,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          920,
+          1076,
+          156,
+          156,
+          0.1449814126394052,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          998,
+          1067,
+          69,
+          69,
+          0.06466729147141519,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          964,
+          952,
+          -12,
+          12,
+          0.012605042016806723,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          959,
+          843,
+          -116,
+          116,
+          0.1376037959667853,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 90,
+          "ForecastDemandUnits": 750,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 51,
+          "ForecastDemandUnits": 495,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 81,
+          "ForecastDemandUnits": 739,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 95,
+          "ForecastDemandUnits": 679,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 79,
+          "ForecastDemandUnits": 752,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 71,
+          "ForecastDemandUnits": 501,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 86,
+          "ForecastDemandUnits": 683,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 83,
+          "ForecastDemandUnits": 655,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          90,
+          750,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          51,
+          495,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          81,
+          739,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          95,
+          679,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          79,
+          752,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          71,
+          501,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          86,
+          683,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          83,
+          655,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 16669,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 3320,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 10619,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 21412,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 24776,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          5,
+          16669,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Festival-based",
+          1,
+          3320,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          4,
+          10619,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Festival-based",
+          5,
+          21412,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Weekly",
+          6,
+          24776,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 127,
+          "DataQualityScore": 84,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 91,
+          "DataQualityScore": 96,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 72,
+          "DataQualityScore": 92,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 8,
+          "DataQualityScore": 87,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          127,
+          84,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          91,
+          96,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          72,
+          92,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          8,
+          87,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Leather Shoe Apex Footwear Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Leather Shoe demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Footwear competitor pricing promotions Bangladesh Apex",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Leather Shoe online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Leather Shoe Apex Footwear Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Leather Shoe demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Footwear competitor pricing promotions Bangladesh Apex",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Leather Shoe online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 67,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 69,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 83,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          67,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          69,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          83,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Some dates are stored as text in DD/MM/YYYY format.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Some dates are stored as text in DD/MM/YYYY format.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

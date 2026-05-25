@@ -1,0 +1,2471 @@
+{
+  "scenario_id": "DPF-16",
+  "source_excel_file": "DPF-16_Missing_Historical_Months.xlsx",
+  "scenario_title": "Missing Historical Months",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-16"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Missing Historical Months"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test missing period detection."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Rice 5kg"
+        },
+        {
+          "Field": "Category",
+          "Value": "Grocery"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Pran"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Historical Sales, Forecast Accuracy"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Historical Sales Data, Forecast Accuracy"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Sales Trend Analysis, Forecast Accuracy Report"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-16"
+        ],
+        [
+          "Scenario Title",
+          "Missing Historical Months"
+        ],
+        [
+          "Purpose",
+          "Test missing period detection."
+        ],
+        [
+          "Product Name",
+          "Rice 5kg"
+        ],
+        [
+          "Category",
+          "Grocery"
+        ],
+        [
+          "Brand",
+          "Pran"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Historical Sales, Forecast Accuracy"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Historical Sales Data, Forecast Accuracy"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Sales Trend Analysis, Forecast Accuracy Report"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 2416,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1014720,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 2707,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1136940,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 2478,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1040760,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2646,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1111320,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 2985,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1253700,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 3034,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1274280,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 2693,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1131060,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 2768,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1162560,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 3089,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1297380,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 3354,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1408680,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 2743,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1152060,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 3041,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1277220,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 3045,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1278900,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 3528,
+          "UnitPriceBDT": 420,
+          "RevenueBDT": 1481760,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Dhaka",
+          "Retail",
+          2416,
+          420,
+          1014720,
+          ""
+        ],
+        [
+          45323,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Chattogram",
+          "Online",
+          2707,
+          420,
+          1136940,
+          ""
+        ],
+        [
+          45352,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Sylhet",
+          "Wholesale",
+          2478,
+          420,
+          1040760,
+          ""
+        ],
+        [
+          45383,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Rajshahi",
+          "Modern Trade",
+          2646,
+          420,
+          1111320,
+          ""
+        ],
+        [
+          45444,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Barishal",
+          "Online",
+          2985,
+          420,
+          1253700,
+          ""
+        ],
+        [
+          45474,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Rangpur",
+          "Wholesale",
+          3034,
+          420,
+          1274280,
+          ""
+        ],
+        [
+          45505,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Mymensingh",
+          "Modern Trade",
+          2693,
+          420,
+          1131060,
+          ""
+        ],
+        [
+          45566,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Chattogram",
+          "Online",
+          2768,
+          420,
+          1162560,
+          ""
+        ],
+        [
+          45597,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Sylhet",
+          "Wholesale",
+          3089,
+          420,
+          1297380,
+          ""
+        ],
+        [
+          45658,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Khulna",
+          "Retail",
+          3354,
+          420,
+          1408680,
+          ""
+        ],
+        [
+          45689,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Barishal",
+          "Online",
+          2743,
+          420,
+          1152060,
+          ""
+        ],
+        [
+          45717,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Rangpur",
+          "Wholesale",
+          3041,
+          420,
+          1277220,
+          ""
+        ],
+        [
+          45748,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Mymensingh",
+          "Modern Trade",
+          3045,
+          420,
+          1278900,
+          ""
+        ],
+        [
+          45809,
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Chattogram",
+          "Online",
+          3528,
+          420,
+          1481760,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 14,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "PRA-DPF-16-01",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 2085,
+          "SafetyStock": 590,
+          "ReorderPoint": 1205,
+          "StockInTransit": 334,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PRA-DPF-16-02",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3714,
+          "SafetyStock": 460,
+          "ReorderPoint": 1208,
+          "StockInTransit": 83,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "PRA-DPF-16-03",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1495,
+          "SafetyStock": 694,
+          "ReorderPoint": 1558,
+          "StockInTransit": 294,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "PRA-DPF-16-04",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1699,
+          "SafetyStock": 636,
+          "ReorderPoint": 1441,
+          "StockInTransit": 308,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PRA-DPF-16-05",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2032,
+          "SafetyStock": 616,
+          "ReorderPoint": 1348,
+          "StockInTransit": 159,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PRA-DPF-16-06",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1115,
+          "SafetyStock": 462,
+          "ReorderPoint": 1317,
+          "StockInTransit": 611,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "PRA-DPF-16-07",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1322,
+          "SafetyStock": 530,
+          "ReorderPoint": 1278,
+          "StockInTransit": 495,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "PRA-DPF-16-08",
+          "ProductName": "Rice 5kg",
+          "Category": "Grocery",
+          "Brand": "Pran",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2743,
+          "SafetyStock": 617,
+          "ReorderPoint": 1276,
+          "StockInTransit": 316,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "Overstock Risk"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "PRA-DPF-16-01",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Dhaka",
+          "Dhaka DC",
+          2085,
+          590,
+          1205,
+          334,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "PRA-DPF-16-02",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Chattogram",
+          "Chattogram DC",
+          3714,
+          460,
+          1208,
+          83,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "PRA-DPF-16-03",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Sylhet",
+          "Sylhet DC",
+          1495,
+          694,
+          1558,
+          294,
+          120,
+          45674,
+          "Reorder Needed"
+        ],
+        [
+          "PRA-DPF-16-04",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Rajshahi",
+          "Rajshahi DC",
+          1699,
+          636,
+          1441,
+          308,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "PRA-DPF-16-05",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Khulna",
+          "Khulna DC",
+          2032,
+          616,
+          1348,
+          159,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "PRA-DPF-16-06",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Barishal",
+          "Barishal DC",
+          1115,
+          462,
+          1317,
+          611,
+          120,
+          45677,
+          "Reorder Needed"
+        ],
+        [
+          "PRA-DPF-16-07",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Rangpur",
+          "Rangpur DC",
+          1322,
+          530,
+          1278,
+          495,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "PRA-DPF-16-08",
+          "Rice 5kg",
+          "Grocery",
+          "Pran",
+          "Mymensingh",
+          "Mymensingh DC",
+          2743,
+          617,
+          1276,
+          316,
+          120,
+          45679,
+          "Overstock Risk"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 23.4,
+          "ActualUpliftPct": 18.6,
+          "BudgetBDT": 92003,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 34.6,
+          "ActualUpliftPct": 24.9,
+          "BudgetBDT": 125107,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 15.8,
+          "ActualUpliftPct": 16.6,
+          "BudgetBDT": 129225,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 11.8,
+          "ActualUpliftPct": 7.7,
+          "BudgetBDT": 82349,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          23.4,
+          18.6,
+          92003,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          34.6,
+          24.9,
+          125107,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          15.8,
+          16.6,
+          129225,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          11.8,
+          7.7,
+          82349,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 346,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 419,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 397,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Grocery",
+          "CompetitorPriceBDT": 423,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Grocery",
+          346,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Grocery",
+          419,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Grocery",
+          397,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Grocery",
+          423,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.69,
+          "IncomeIndex": 99.52,
+          "PurchasingPowerIndex": 86.78,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.82,
+          "IncomeIndex": 100.8,
+          "PurchasingPowerIndex": 86.95,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.47,
+          "IncomeIndex": 101.07,
+          "PurchasingPowerIndex": 85.93,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.28,
+          "IncomeIndex": 101.7,
+          "PurchasingPowerIndex": 86.43,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.57,
+          "IncomeIndex": 101.06,
+          "PurchasingPowerIndex": 85.75,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.71,
+          "IncomeIndex": 101.03,
+          "PurchasingPowerIndex": 85.5,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.88,
+          "IncomeIndex": 102.06,
+          "PurchasingPowerIndex": 85.53,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.37,
+          "IncomeIndex": 102.12,
+          "PurchasingPowerIndex": 86.42,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.78,
+          "IncomeIndex": 103.12,
+          "PurchasingPowerIndex": 87.71,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.47,
+          "IncomeIndex": 102.01,
+          "PurchasingPowerIndex": 87.91,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.44,
+          "IncomeIndex": 103.79,
+          "PurchasingPowerIndex": 88.5,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7,
+          "IncomeIndex": 102.53,
+          "PurchasingPowerIndex": 88.85,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.74,
+          "IncomeIndex": 102.61,
+          "PurchasingPowerIndex": 89.33,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.6,
+          "IncomeIndex": 102.92,
+          "PurchasingPowerIndex": 89.66,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.03,
+          "IncomeIndex": 103.93,
+          "PurchasingPowerIndex": 90.93,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.6,
+          "IncomeIndex": 103.86,
+          "PurchasingPowerIndex": 89.93,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.8,
+          "IncomeIndex": 103.87,
+          "PurchasingPowerIndex": 89.6,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.99,
+          "IncomeIndex": 105.53,
+          "PurchasingPowerIndex": 89.78,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.69,
+          99.52,
+          86.78,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.82,
+          100.8,
+          86.95,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.47,
+          101.07,
+          85.93,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.28,
+          101.7,
+          86.43,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.57,
+          101.06,
+          85.75,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.71,
+          101.03,
+          85.5,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.88,
+          102.06,
+          85.53,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.37,
+          102.12,
+          86.42,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.78,
+          103.12,
+          87.71,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.47,
+          102.01,
+          87.91,
+          112.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.44,
+          103.79,
+          88.5,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7,
+          102.53,
+          88.85,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.74,
+          102.61,
+          89.33,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.6,
+          102.92,
+          89.66,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.03,
+          103.93,
+          90.93,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.6,
+          103.86,
+          89.93,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.8,
+          103.87,
+          89.6,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.99,
+          105.53,
+          89.78,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 24,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          8,
+          7,
+          2,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          10,
+          6,
+          1,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          6,
+          10,
+          3,
+          5,
+          24,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          7,
+          5,
+          5,
+          19,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 2850,
+          "ActualUnits": 3425,
+          "ForecastError": 575,
+          "AbsoluteError": 575,
+          "APE": 0.1678832116788321,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 2423,
+          "ActualUnits": 2438,
+          "ForecastError": 15,
+          "AbsoluteError": 15,
+          "APE": 0.0061525840853158325,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 2586,
+          "ActualUnits": 2994,
+          "ForecastError": 408,
+          "AbsoluteError": 408,
+          "APE": 0.13627254509018036,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 2661,
+          "ActualUnits": 2771,
+          "ForecastError": 110,
+          "AbsoluteError": 110,
+          "APE": 0.039696860339227716,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 2532,
+          "ActualUnits": 2279,
+          "ForecastError": -253,
+          "AbsoluteError": 253,
+          "APE": 0.11101360245721807,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 2896,
+          "ActualUnits": 2727,
+          "ForecastError": -169,
+          "AbsoluteError": 169,
+          "APE": 0.06197286395306197,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 2983,
+          "ActualUnits": 3000,
+          "ForecastError": 17,
+          "AbsoluteError": 17,
+          "APE": 0.005666666666666667,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 3018,
+          "ActualUnits": 3070,
+          "ForecastError": 52,
+          "AbsoluteError": 52,
+          "APE": 0.016938110749185668,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 3180,
+          "ActualUnits": 2856,
+          "ForecastError": -324,
+          "AbsoluteError": 324,
+          "APE": 0.1134453781512605,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 3314,
+          "ActualUnits": 3726,
+          "ForecastError": 412,
+          "AbsoluteError": 412,
+          "APE": 0.11057434245840043,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 2961,
+          "ActualUnits": 2436,
+          "ForecastError": -525,
+          "AbsoluteError": 525,
+          "APE": 0.21551724137931033,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 3115,
+          "ActualUnits": 2845,
+          "ForecastError": -270,
+          "AbsoluteError": 270,
+          "APE": 0.09490333919156414,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          2850,
+          3425,
+          575,
+          575,
+          0.1678832116788321,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          2423,
+          2438,
+          15,
+          15,
+          0.0061525840853158325,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          2586,
+          2994,
+          408,
+          408,
+          0.13627254509018036,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          2661,
+          2771,
+          110,
+          110,
+          0.039696860339227716,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          2532,
+          2279,
+          -253,
+          253,
+          0.11101360245721807,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          2896,
+          2727,
+          -169,
+          169,
+          0.06197286395306197,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          2983,
+          3000,
+          17,
+          17,
+          0.005666666666666667,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          3018,
+          3070,
+          52,
+          52,
+          0.016938110749185668,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          3180,
+          2856,
+          -324,
+          324,
+          0.1134453781512605,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          3314,
+          3726,
+          412,
+          412,
+          0.11057434245840043,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          2961,
+          2436,
+          -525,
+          525,
+          0.21551724137931033,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          3115,
+          2845,
+          -270,
+          270,
+          0.09490333919156414,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 75,
+          "ForecastDemandUnits": 2083,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 89,
+          "ForecastDemandUnits": 2750,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 66,
+          "ForecastDemandUnits": 1288,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 87,
+          "ForecastDemandUnits": 2122,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 92,
+          "ForecastDemandUnits": 2664,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 51,
+          "ForecastDemandUnits": 1131,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 60,
+          "ForecastDemandUnits": 1497,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 48,
+          "ForecastDemandUnits": 1543,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          75,
+          2083,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          89,
+          2750,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          66,
+          1288,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          87,
+          2122,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          92,
+          2664,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          51,
+          1131,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          60,
+          1497,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          48,
+          1543,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 1797,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 9,
+          "AvgBasketValueBDT": 3961,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 4653,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 927,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 970,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          5,
+          1797,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          9,
+          3961,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Monthly",
+          8,
+          4653,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          2,
+          927,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Festival-based",
+          2,
+          970,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 65,
+          "DataQualityScore": 88,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 53,
+          "DataQualityScore": 77,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 47,
+          "DataQualityScore": 78,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 15,
+          "DataQualityScore": 89,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          65,
+          88,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          53,
+          77,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          47,
+          78,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          15,
+          89,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Rice 5kg Pran Grocery Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Rice 5kg demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Grocery competitor pricing promotions Bangladesh Pran",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Rice 5kg online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Rice 5kg Pran Grocery Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Rice 5kg demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Grocery competitor pricing promotions Bangladesh Pran",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Rice 5kg online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 72,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 82,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 86,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          72,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          82,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          86,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Some historical sales months are missing.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Some historical sales months are missing.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

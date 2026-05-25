@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-24
+Scenario Title,ERP Schema Mismatch
+Purpose,Test flexible column mapping for ERP-like exports.
+Product Name,Office Chair
+Category,Furniture
+Brand,Hatil
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Technology & Data Tools, Inventory"
+Recommended Inputs To Tick,"POS / ERP Data, Inventory Levels, Uploaded File Data"
+Recommended Outputs To Tick,"Data Quality Score, Inventory Requirement"

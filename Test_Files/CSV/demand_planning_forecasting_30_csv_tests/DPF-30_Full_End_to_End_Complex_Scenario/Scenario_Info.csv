@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-30
+Scenario Title,Full End-to-End Complex Scenario
+Purpose,Test all modules together with messy + online + inventory + competitor + economy.
+Product Name,Dove Shampoo
+Category,Personal Care
+Brand,Dove
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,All Modules
+Recommended Inputs To Tick,"Historical Sales Data, Market Trends, Seasonality, Customer Demand Patterns, Promotions & Discounts, Economic Conditions, Competitor Activities, Inventory Levels, Lead Time, Forecast Accuracy, Online Web Search Data, Uploaded File Data, Expert Opinion / Manual Notes"
+Recommended Outputs To Tick,"Demand Forecast, Sales Trend Analysis, Seasonal Demand Impact, Promotion Impact Analysis, Competitor Activity Analysis, Economic Condition Impact, Inventory Requirement, Stockout Risk, Lead Time Analysis, Forecast Accuracy Report, Final SCM Recommendation, Risk Alerts, Action Plan, PDF Report, Excel Report, CSV Export"

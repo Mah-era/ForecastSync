@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-11
+Scenario Title,Low Inventory Stockout Risk
+Purpose,Test stockout and reorder alerts.
+Product Name,Baby Diaper Pack
+Category,Baby Care
+Brand,Pampers
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Inventory, Lead Time, Demand Forecast"
+Recommended Inputs To Tick,"Inventory Levels, Lead Time, Historical Sales Data"
+Recommended Outputs To Tick,"Stockout Risk, Inventory Requirement, Action Plan"

@@ -1,0 +1,167 @@
+# ForecastSync
+
+Advanced SCM demand planning web app built with Next.js App Router, TypeScript, Tailwind CSS, shadcn-style UI components, Recharts, Leaflet, TanStack Table, API routes, and modular analysis skills.
+
+## Features
+
+- Direct use with no login or role-based access.
+- Product, category, brand, and region selection.
+- Separate product/brand online search action using Tavily.
+- CSV, Excel, and JSON import with classification, preview, validation, and quality scoring.
+- Excel import reads every workbook sheet, including unmatched sheets, so the full current file set is available to analysis.
+- Excel data cleaning and correction for trimmed text, normalized dates, converted numeric values, duplicate rows, and blank rows.
+- Downloadable import templates in `public/templates`.
+- Checkbox-controlled input factors and output sections.
+- Web search integration through Tavily when `TAVILY_API_KEY` is available.
+- Search-by-choice source count control for 5, 10, 12, 15, or 20 web sources.
+- Explicit "live search unavailable" status when no web search API key is configured.
+- Moving average, weighted moving average, trend, seasonality, festival, promotion, competitor, economic, inventory, and lead-time forecast adjustments.
+- Forecast Error, Absolute Error, MAPE, forecast accuracy, confidence score, safety stock, reorder point, and recommended stock.
+- Dashboard module cards use the current imported file analysis and render actual chart visuals with a staged wait screen when charts are expensive.
+- Drag-and-drop dashboard card ordering with 1:1, 2:1, 1:2, and 16:4 card sizing.
+- Hover detail buttons on dashboard and Forecast Methods cards showing interpretation and calculation rules.
+- Clean URL navigation: `/` is the choice home, `/import-data` opens file analysis, `/search-by-choice` opens online search, and module pages use paths such as `/historical-sales-data`, `/inventory-levels`, and `/forecast-accuracy`.
+- Tailored module filters use module-specific choices, draft controls, an Apply button, and a wait screen. Dropdown/text changes do not recalculate charts until Apply is clicked.
+- Bangladesh regional demand map driven by uploaded regional/customer demand files, plus SCM supplier to customer flow map.
+- Dedicated `/forecast-methods` module with model types, forecasting data patterns, quantitative techniques, error measurement, calculator, method comparison, and SCM interpretation.
+- PDF, Excel, and CSV exports.
+- MCP-ready connector registry for future ERP, POS, inventory, supplier, file, and web-search servers.
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Live Web Search
+
+Create `.env.local`:
+
+```bash
+TAVILY_API_KEY=your_api_key_here
+TAVILY_MCP_URL=your_tavily_mcp_url_here
+```
+
+Restart the dev server. If the key is missing or the API call fails, the app shows that live search is unavailable.
+
+## Data Import
+
+Supported files:
+
+- `.csv`
+- `.xlsx` / `.xls`
+- `.json`
+
+Recommended columns for historical sales:
+
+- `period`
+- `actual`
+- `promotion`
+- `festival`
+- `inventory`
+- `region`
+
+Upload real files before running operational analysis. File import/checking does not call Tavily. Excel import reads all sheets in the uploaded workbook. If no historical file is present, forecast outputs remain empty instead of using placeholder demand data.
+
+Uploading a new file set immediately clears the previous datasets, module filters, dashboard result, dashboard card order, and search result before parsing the new file. This prevents previous data from leaking into the next analysis.
+
+## Dashboard Behavior
+
+The central dashboard uses the exact analysis result produced from the current uploaded files. Each module card renders real charts, KPIs, risk badges, and recommendation text. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
+
+Dashboard cards can be reordered with the drag handle and resized from the card size menu:
+
+- `1:1`
+- `2:1`
+- `1:2`
+- `16:4`
+
+The Bangladesh Regional Demand Map reads uploaded regional demand rows when available. It recognizes common fields such as `Region`, `City`, `Latitude`, `Longitude`, `Demand`, `ForecastDemandUnits`, `Growth`, and `Risk`.
+
+## Page Routes
+
+ForecastSync has a choice-first route structure:
+
+- `/`: home page with the two pathway choices.
+- `/import-data`: import, clean, validate, preview, select factors, and run file analysis.
+- `/search-by-choice`: Tavily-backed product/category/brand search.
+- `/search-dashboard`: interpreted online-search dashboard after search results exist.
+- `/<module-name>`: detailed imported-analysis modules, for example `/market-trends`, `/customer-demand-patterns`, `/lead-time`, and `/final-scm-recommendation`.
+
+Module routes share the current browser workspace state. If a module route is opened before analysis exists, the import controls stay available so a file can be uploaded and analysed.
+
+## Forecast Methods
+
+Open `/forecast-methods` for the detailed forecasting workbench. It includes:
+
+- Forecasting Model Types
+- Forecasting Data Patterns
+- Quantitative Forecasting Techniques
+- Forecast Error Measurement
+- Interactive Forecast Calculator
+- Visual Comparison Dashboard
+- Final SCM Interpretation Panel
+
+The page uses reusable components from `components/forecasting`, diagrams from `components/forecasting/diagrams`, and calculation logic from `lib/forecasting`.
+
+## Architecture
+
+- `app/`: Next.js routes and API endpoints.
+- `components/dashboard`: dashboard tables and dashboard support UI.
+- `components/charts`: Recharts visual components.
+- `components/maps`: Leaflet regional demand map and SCM flow map.
+- `lib/forecasting`: forecasting formulas and model logic.
+- `lib/file-import`: CSV, Excel, and JSON parsers.
+- `lib/web-search`: Tavily integration plus explicit unavailable status when live search cannot run.
+- `lib/export`: PDF/Excel/CSV browser export helpers.
+- `lib/mcp`: MCP-ready connector interfaces and config.
+- `lib/skills`: separate SCM analysis skills/services.
+- `types`: shared TypeScript data models.
+
+## Skill Modules
+
+- `historicalSalesSkill`
+- `marketTrendSkill`
+- `seasonalitySkill`
+- `customerDemandSkill`
+- `promotionImpactSkill`
+- `economicConditionSkill`
+- `competitorActivitySkill`
+- `inventoryPlanningSkill`
+- `leadTimeSkill`
+- `forecastingMethodSkill`
+- `technologyDataSkill`
+- `forecastAccuracySkill`
+- `finalRecommendationSkill`
+
+Each skill accepts selected inputs, uploaded data and/or online search data, then returns structured insights, chart-ready data, recommendations, and risk level.
+
+## Testing
+
+This workspace includes `Test_Files/EXCEL/Demand Planning Forecasting Tests`, a 30-workbook fixture suite. File fixture testing is import/analysis-only and does not call Tavily:
+
+```bash
+npm run test:fixtures
+```
+
+Tavily search is tested separately:
+
+```bash
+npm run test:web-search
+```
+
+Also run:
+
+```bash
+npm run build
+```
+
+Latest verification completed:
+
+- `npm run build` passed.
+- `npm run test:fixtures` passed all 30 Excel fixture workbooks.
+- `npm run test:web-search` passed with Tavily configured.
+- Browser smoke passed for import analysis, dynamic Bangladesh map update from `DPF-22_Bangladesh_Regional_Demand_Map.xlsx`, dashboard card resize, `/forecast-methods`, hover detail buttons, and console/page error checks.

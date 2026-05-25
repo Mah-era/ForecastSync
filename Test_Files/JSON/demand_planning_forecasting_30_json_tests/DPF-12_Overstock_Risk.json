@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-12",
+  "source_excel_file": "DPF-12_Overstock_Risk.xlsx",
+  "scenario_title": "Overstock Risk",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-12"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Overstock Risk"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test overstock and holding-cost recommendation."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Formal Shirt"
+        },
+        {
+          "Field": "Category",
+          "Value": "Clothing"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Aarong"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Inventory, Historical Sales"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Inventory Levels, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Inventory Requirement, Final SCM Recommendation, Risk Alerts"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-12"
+        ],
+        [
+          "Scenario Title",
+          "Overstock Risk"
+        ],
+        [
+          "Purpose",
+          "Test overstock and holding-cost recommendation."
+        ],
+        [
+          "Product Name",
+          "Formal Shirt"
+        ],
+        [
+          "Category",
+          "Clothing"
+        ],
+        [
+          "Brand",
+          "Aarong"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Inventory, Historical Sales"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Inventory Levels, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Inventory Requirement, Final SCM Recommendation, Risk Alerts"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 752,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1579200,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 703,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1476300,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 723,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1518300,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 724,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1520400,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 663,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1392300,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 746,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1566600,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 819,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1719900,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 815,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1711500,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 764,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1604400,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 855,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1795500,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 852,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1789200,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 831,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1745100,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 736,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1545600,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 805,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1690500,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 758,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1591800,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 959,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 2013900,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 959,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 2013900,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 788,
+          "UnitPriceBDT": 2100,
+          "RevenueBDT": 1654800,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Dhaka",
+          "Retail",
+          752,
+          2100,
+          1579200,
+          ""
+        ],
+        [
+          45323,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Chattogram",
+          "Online",
+          703,
+          2100,
+          1476300,
+          ""
+        ],
+        [
+          45352,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Sylhet",
+          "Wholesale",
+          723,
+          2100,
+          1518300,
+          ""
+        ],
+        [
+          45383,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rajshahi",
+          "Modern Trade",
+          724,
+          2100,
+          1520400,
+          ""
+        ],
+        [
+          45413,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Khulna",
+          "Retail",
+          663,
+          2100,
+          1392300,
+          ""
+        ],
+        [
+          45444,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Barishal",
+          "Online",
+          746,
+          2100,
+          1566600,
+          ""
+        ],
+        [
+          45474,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rangpur",
+          "Wholesale",
+          819,
+          2100,
+          1719900,
+          ""
+        ],
+        [
+          45505,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Mymensingh",
+          "Modern Trade",
+          815,
+          2100,
+          1711500,
+          ""
+        ],
+        [
+          45536,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Dhaka",
+          "Retail",
+          764,
+          2100,
+          1604400,
+          ""
+        ],
+        [
+          45566,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Chattogram",
+          "Online",
+          855,
+          2100,
+          1795500,
+          ""
+        ],
+        [
+          45597,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Sylhet",
+          "Wholesale",
+          852,
+          2100,
+          1789200,
+          ""
+        ],
+        [
+          45627,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rajshahi",
+          "Modern Trade",
+          831,
+          2100,
+          1745100,
+          ""
+        ],
+        [
+          45658,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Khulna",
+          "Retail",
+          736,
+          2100,
+          1545600,
+          ""
+        ],
+        [
+          45689,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Barishal",
+          "Online",
+          805,
+          2100,
+          1690500,
+          ""
+        ],
+        [
+          45717,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rangpur",
+          "Wholesale",
+          758,
+          2100,
+          1591800,
+          ""
+        ],
+        [
+          45748,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Mymensingh",
+          "Modern Trade",
+          959,
+          2100,
+          2013900,
+          ""
+        ],
+        [
+          45778,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Dhaka",
+          "Retail",
+          959,
+          2100,
+          2013900,
+          ""
+        ],
+        [
+          45809,
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Chattogram",
+          "Online",
+          788,
+          2100,
+          1654800,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "AAR-DPF-12-01",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 5627,
+          "SafetyStock": 552,
+          "ReorderPoint": 1358,
+          "StockInTransit": 496,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "AAR-DPF-12-02",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3688,
+          "SafetyStock": 618,
+          "ReorderPoint": 1313,
+          "StockInTransit": 621,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "AAR-DPF-12-03",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1975,
+          "SafetyStock": 679,
+          "ReorderPoint": 1529,
+          "StockInTransit": 282,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "AAR-DPF-12-04",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 8147,
+          "SafetyStock": 588,
+          "ReorderPoint": 1357,
+          "StockInTransit": 266,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "AAR-DPF-12-05",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 1388,
+          "SafetyStock": 588,
+          "ReorderPoint": 1317,
+          "StockInTransit": 475,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "AAR-DPF-12-06",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 1515,
+          "SafetyStock": 441,
+          "ReorderPoint": 1008,
+          "StockInTransit": 239,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "AAR-DPF-12-07",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 7678,
+          "SafetyStock": 586,
+          "ReorderPoint": 1409,
+          "StockInTransit": 211,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "AAR-DPF-12-08",
+          "ProductName": "Formal Shirt",
+          "Category": "Clothing",
+          "Brand": "Aarong",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 1870,
+          "SafetyStock": 516,
+          "ReorderPoint": 1376,
+          "StockInTransit": 474,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "AAR-DPF-12-01",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Dhaka",
+          "Dhaka DC",
+          5627,
+          552,
+          1358,
+          496,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "AAR-DPF-12-02",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Chattogram",
+          "Chattogram DC",
+          3688,
+          618,
+          1313,
+          621,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "AAR-DPF-12-03",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Sylhet",
+          "Sylhet DC",
+          1975,
+          679,
+          1529,
+          282,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "AAR-DPF-12-04",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rajshahi",
+          "Rajshahi DC",
+          8147,
+          588,
+          1357,
+          266,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "AAR-DPF-12-05",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Khulna",
+          "Khulna DC",
+          1388,
+          588,
+          1317,
+          475,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "AAR-DPF-12-06",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Barishal",
+          "Barishal DC",
+          1515,
+          441,
+          1008,
+          239,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "AAR-DPF-12-07",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Rangpur",
+          "Rangpur DC",
+          7678,
+          586,
+          1409,
+          211,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "AAR-DPF-12-08",
+          "Formal Shirt",
+          "Clothing",
+          "Aarong",
+          "Mymensingh",
+          "Mymensingh DC",
+          1870,
+          516,
+          1376,
+          474,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 13.4,
+          "ActualUpliftPct": 15.2,
+          "BudgetBDT": 107732,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 31.8,
+          "ActualUpliftPct": 37.5,
+          "BudgetBDT": 71408,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 18.1,
+          "ActualUpliftPct": 12.9,
+          "BudgetBDT": 73022,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 16,
+          "ActualUpliftPct": 17.1,
+          "BudgetBDT": 74381,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          13.4,
+          15.2,
+          107732,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          31.8,
+          37.5,
+          71408,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          18.1,
+          12.9,
+          73022,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          16,
+          17.1,
+          74381,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 2282,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 2026,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1899,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Clothing",
+          "CompetitorPriceBDT": 1886,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Clothing",
+          2282,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Clothing",
+          2026,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Clothing",
+          1899,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Clothing",
+          1886,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.72,
+          "IncomeIndex": 99.11,
+          "PurchasingPowerIndex": 86.61,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.89,
+          "IncomeIndex": 99.88,
+          "PurchasingPowerIndex": 86.54,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.43,
+          "IncomeIndex": 101.06,
+          "PurchasingPowerIndex": 85.99,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.4,
+          "IncomeIndex": 101.1,
+          "PurchasingPowerIndex": 86.05,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.77,
+          "IncomeIndex": 100.84,
+          "PurchasingPowerIndex": 85.34,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.58,
+          "IncomeIndex": 100.79,
+          "PurchasingPowerIndex": 85.66,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.69,
+          "IncomeIndex": 101.24,
+          "PurchasingPowerIndex": 85.6,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.25,
+          "IncomeIndex": 101.22,
+          "PurchasingPowerIndex": 86.34,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.32,
+          "IncomeIndex": 103.16,
+          "PurchasingPowerIndex": 86.81,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.92,
+          "IncomeIndex": 102.95,
+          "PurchasingPowerIndex": 87.43,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.23,
+          "IncomeIndex": 102.99,
+          "PurchasingPowerIndex": 88.61,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.18,
+          "IncomeIndex": 104.18,
+          "PurchasingPowerIndex": 89.05,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.69,
+          "IncomeIndex": 104.17,
+          "PurchasingPowerIndex": 89.87,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.28,
+          "IncomeIndex": 103.73,
+          "PurchasingPowerIndex": 90.45,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.09,
+          "IncomeIndex": 103.95,
+          "PurchasingPowerIndex": 90.83,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.5,
+          "IncomeIndex": 104.45,
+          "PurchasingPowerIndex": 90.28,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.73,
+          "IncomeIndex": 104.4,
+          "PurchasingPowerIndex": 89.87,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.93,
+          "IncomeIndex": 105.71,
+          "PurchasingPowerIndex": 89.93,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.72,
+          99.11,
+          86.61,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.89,
+          99.88,
+          86.54,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.43,
+          101.06,
+          85.99,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.4,
+          101.1,
+          86.05,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.77,
+          100.84,
+          85.34,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.58,
+          100.79,
+          85.66,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.69,
+          101.24,
+          85.6,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.25,
+          101.22,
+          86.34,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.32,
+          103.16,
+          86.81,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.92,
+          102.95,
+          87.43,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.23,
+          102.99,
+          88.61,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.18,
+          104.18,
+          89.05,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.69,
+          104.17,
+          89.87,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.28,
+          103.73,
+          90.45,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.09,
+          103.95,
+          90.83,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.5,
+          104.45,
+          90.28,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.73,
+          104.4,
+          89.87,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.93,
+          105.71,
+          89.93,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 26,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 8,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          2,
+          11,
+          8,
+          5,
+          26,
+          "Yes",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          6,
+          7,
+          8,
+          2,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          4,
+          8,
+          7,
+          1,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          5,
+          10,
+          3,
+          5,
+          23,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 731,
+          "ActualUnits": 655,
+          "ForecastError": -76,
+          "AbsoluteError": 76,
+          "APE": 0.11603053435114503,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 681,
+          "ActualUnits": 742,
+          "ForecastError": 61,
+          "AbsoluteError": 61,
+          "APE": 0.08221024258760108,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 743,
+          "ActualUnits": 869,
+          "ForecastError": 126,
+          "AbsoluteError": 126,
+          "APE": 0.14499424626006904,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 696,
+          "ActualUnits": 783,
+          "ForecastError": 87,
+          "AbsoluteError": 87,
+          "APE": 0.1111111111111111,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 790,
+          "ActualUnits": 824,
+          "ForecastError": 34,
+          "AbsoluteError": 34,
+          "APE": 0.0412621359223301,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 767,
+          "ActualUnits": 896,
+          "ForecastError": 129,
+          "AbsoluteError": 129,
+          "APE": 0.14397321428571427,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 758,
+          "ActualUnits": 912,
+          "ForecastError": 154,
+          "AbsoluteError": 154,
+          "APE": 0.16885964912280702,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 721,
+          "ActualUnits": 861,
+          "ForecastError": 140,
+          "AbsoluteError": 140,
+          "APE": 0.16260162601626016,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 887,
+          "ActualUnits": 769,
+          "ForecastError": -118,
+          "AbsoluteError": 118,
+          "APE": 0.15344603381014305,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 909,
+          "ActualUnits": 920,
+          "ForecastError": 11,
+          "AbsoluteError": 11,
+          "APE": 0.011956521739130435,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 797,
+          "ActualUnits": 846,
+          "ForecastError": 49,
+          "AbsoluteError": 49,
+          "APE": 0.057919621749408984,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 804,
+          "ActualUnits": 954,
+          "ForecastError": 150,
+          "AbsoluteError": 150,
+          "APE": 0.15723270440251572,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          731,
+          655,
+          -76,
+          76,
+          0.11603053435114503,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          681,
+          742,
+          61,
+          61,
+          0.08221024258760108,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          743,
+          869,
+          126,
+          126,
+          0.14499424626006904,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          696,
+          783,
+          87,
+          87,
+          0.1111111111111111,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          790,
+          824,
+          34,
+          34,
+          0.0412621359223301,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          767,
+          896,
+          129,
+          129,
+          0.14397321428571427,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          758,
+          912,
+          154,
+          154,
+          0.16885964912280702,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          721,
+          861,
+          140,
+          140,
+          0.16260162601626016,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          887,
+          769,
+          -118,
+          118,
+          0.15344603381014305,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          909,
+          920,
+          11,
+          11,
+          0.011956521739130435,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          797,
+          846,
+          49,
+          49,
+          0.057919621749408984,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          804,
+          954,
+          150,
+          150,
+          0.15723270440251572,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 88,
+          "ForecastDemandUnits": 561,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 63,
+          "ForecastDemandUnits": 415,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 79,
+          "ForecastDemandUnits": 594,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 64,
+          "ForecastDemandUnits": 395,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 642,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 74,
+          "ForecastDemandUnits": 414,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 627,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 65,
+          "ForecastDemandUnits": 549,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          88,
+          561,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          63,
+          415,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          79,
+          594,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          64,
+          395,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          77,
+          642,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          74,
+          414,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          91,
+          627,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          65,
+          549,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 13209,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 5101,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 9360,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 8634,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 18990,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Monthly",
+          6,
+          13209,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          3,
+          5101,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Festival-based",
+          5,
+          9360,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Monthly",
+          4,
+          8634,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          8,
+          18990,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 291,
+          "DataQualityScore": 96,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 106,
+          "DataQualityScore": 78,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 72,
+          "DataQualityScore": 93,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 25,
+          "DataQualityScore": 83,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          291,
+          96,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          106,
+          78,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          72,
+          93,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          25,
+          83,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Formal Shirt Aarong Clothing Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Formal Shirt demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Clothing competitor pricing promotions Bangladesh Aarong",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Formal Shirt online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Formal Shirt Aarong Clothing Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Formal Shirt demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Clothing competitor pricing promotions Bangladesh Aarong",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Formal Shirt online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 75,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 74,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 65,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 83,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          75,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          74,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          65,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          83,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

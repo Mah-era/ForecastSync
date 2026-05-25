@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,Some sales rows are duplicated.,"Detect, warn user, and continue analysis where possible"

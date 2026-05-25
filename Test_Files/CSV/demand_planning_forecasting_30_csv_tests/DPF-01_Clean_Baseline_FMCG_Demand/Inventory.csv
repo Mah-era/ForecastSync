@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+DOV-DPF-01-01,Dove Beauty Bar,Cosmetics,Dove,Dhaka,Dhaka DC,3202,442,1260,459,120,45672,Overstock Risk
+DOV-DPF-01-02,Dove Beauty Bar,Cosmetics,Dove,Chattogram,Chattogram DC,1853,483,1349,260,120,45673,OK
+DOV-DPF-01-03,Dove Beauty Bar,Cosmetics,Dove,Sylhet,Sylhet DC,1142,467,1298,407,120,45674,Reorder Needed
+DOV-DPF-01-04,Dove Beauty Bar,Cosmetics,Dove,Rajshahi,Rajshahi DC,3195,641,1373,610,120,45675,Overstock Risk
+DOV-DPF-01-05,Dove Beauty Bar,Cosmetics,Dove,Khulna,Khulna DC,1963,592,1417,415,120,45676,OK
+DOV-DPF-01-06,Dove Beauty Bar,Cosmetics,Dove,Barishal,Barishal DC,3352,599,1384,100,120,45677,Overstock Risk
+DOV-DPF-01-07,Dove Beauty Bar,Cosmetics,Dove,Rangpur,Rangpur DC,1530,520,1106,203,120,45678,OK
+DOV-DPF-01-08,Dove Beauty Bar,Cosmetics,Dove,Mymensingh,Mymensingh DC,1165,516,1279,276,120,45679,Reorder Needed

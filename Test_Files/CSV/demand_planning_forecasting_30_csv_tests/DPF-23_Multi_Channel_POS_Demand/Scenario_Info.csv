@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-23
+Scenario Title,Multi-Channel POS Demand
+Purpose,Test retail/online/wholesale channel analytics.
+Product Name,Wireless Earbuds
+Category,Electronics
+Brand,Realme
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Customer Demand Patterns, Technology & Data Tools"
+Recommended Inputs To Tick,"POS / ERP Data, Customer Demand Data, Historical Sales Data"
+Recommended Outputs To Tick,"Customer Demand Pattern, Data Source Usage Chart"

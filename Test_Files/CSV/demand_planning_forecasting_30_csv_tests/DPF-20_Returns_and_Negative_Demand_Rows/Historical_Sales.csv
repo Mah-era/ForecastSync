@@ -1,0 +1,19 @@
+﻿Month,ProductName,Category,Brand,Region,Channel,UnitsSold,UnitPriceBDT,RevenueBDT,Notes
+45292,T-Shirt,Clothing,Trunk,Dhaka,Retail,1188,780,926640,
+45323,T-Shirt,Clothing,Trunk,Chattogram,Online,1034,780,806520,
+45352,T-Shirt,Clothing,Trunk,Sylhet,Wholesale,1181,780,921180,
+45383,T-Shirt,Clothing,Trunk,Rajshahi,Modern Trade,1184,780,923520,
+45413,T-Shirt,Clothing,Trunk,Khulna,Retail,1096,780,854880,
+45444,T-Shirt,Clothing,Trunk,Barishal,Online,-223,780,-173940,Return/refund adjustment
+45474,T-Shirt,Clothing,Trunk,Rangpur,Wholesale,1154,780,900120,
+45505,T-Shirt,Clothing,Trunk,Mymensingh,Modern Trade,1107,780,863460,
+45536,T-Shirt,Clothing,Trunk,Dhaka,Retail,1198,780,934440,
+45566,T-Shirt,Clothing,Trunk,Chattogram,Online,-230,780,-179400,Return/refund adjustment
+45597,T-Shirt,Clothing,Trunk,Sylhet,Wholesale,1164,780,907920,
+45627,T-Shirt,Clothing,Trunk,Rajshahi,Modern Trade,1381,780,1077180,
+45658,T-Shirt,Clothing,Trunk,Khulna,Retail,1235,780,963300,
+45689,T-Shirt,Clothing,Trunk,Barishal,Online,1249,780,974220,
+45717,T-Shirt,Clothing,Trunk,Rangpur,Wholesale,1404,780,1095120,
+45748,T-Shirt,Clothing,Trunk,Mymensingh,Modern Trade,1379,780,1075620,
+45778,T-Shirt,Clothing,Trunk,Dhaka,Retail,1311,780,1022580,
+45809,T-Shirt,Clothing,Trunk,Chattogram,Online,-272,780,-212160,Return/refund adjustment

@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,Extreme demand spike should be flagged as outlier.,"Detect, warn user, and continue analysis where possible"

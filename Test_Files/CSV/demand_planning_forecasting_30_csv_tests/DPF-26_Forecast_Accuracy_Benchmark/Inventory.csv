@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+DIP-DPF-26-01,Milk Powder,Grocery,Diploma,Dhaka,Dhaka DC,3693,507,1243,286,120,45672,Overstock Risk
+DIP-DPF-26-02,Milk Powder,Grocery,Diploma,Chattogram,Chattogram DC,3525,580,1421,550,120,45673,Overstock Risk
+DIP-DPF-26-03,Milk Powder,Grocery,Diploma,Sylhet,Sylhet DC,1669,657,1350,589,120,45674,OK
+DIP-DPF-26-04,Milk Powder,Grocery,Diploma,Rajshahi,Rajshahi DC,2335,666,1317,239,120,45675,OK
+DIP-DPF-26-05,Milk Powder,Grocery,Diploma,Khulna,Khulna DC,2562,715,1432,157,120,45676,OK
+DIP-DPF-26-06,Milk Powder,Grocery,Diploma,Barishal,Barishal DC,2423,535,1272,374,120,45677,OK
+DIP-DPF-26-07,Milk Powder,Grocery,Diploma,Rangpur,Rangpur DC,2184,528,1148,459,120,45678,OK
+DIP-DPF-26-08,Milk Powder,Grocery,Diploma,Mymensingh,Mymensingh DC,2519,504,1312,99,120,45679,OK

@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-05
+Scenario Title,High Promotion Uplift
+Purpose,Test promotion impact with strong sales response.
+Product Name,Bata Sandal
+Category,Footwear
+Brand,Bata
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Promotions, Historical Sales, Inventory"
+Recommended Inputs To Tick,"Historical Sales Data, Promotions & Discounts, Inventory Levels"
+Recommended Outputs To Tick,"Promotion Impact Analysis, Demand Forecast, Stockout Risk"

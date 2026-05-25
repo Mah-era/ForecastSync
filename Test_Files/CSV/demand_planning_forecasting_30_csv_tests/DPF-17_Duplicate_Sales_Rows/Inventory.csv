@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+LIF-DPF-17-01,Liquid Handwash,Personal Care,Lifebuoy,Dhaka,Dhaka DC,2847,667,1450,97,120,45672,OK
+LIF-DPF-17-02,Liquid Handwash,Personal Care,Lifebuoy,Chattogram,Chattogram DC,3278,530,1119,212,120,45673,Overstock Risk
+LIF-DPF-17-03,Liquid Handwash,Personal Care,Lifebuoy,Sylhet,Sylhet DC,1898,581,1358,218,120,45674,OK
+LIF-DPF-17-04,Liquid Handwash,Personal Care,Lifebuoy,Rajshahi,Rajshahi DC,3723,449,1138,324,120,45675,Overstock Risk
+LIF-DPF-17-05,Liquid Handwash,Personal Care,Lifebuoy,Khulna,Khulna DC,3026,509,1217,517,120,45676,Overstock Risk
+LIF-DPF-17-06,Liquid Handwash,Personal Care,Lifebuoy,Barishal,Barishal DC,1277,443,1269,615,120,45677,OK
+LIF-DPF-17-07,Liquid Handwash,Personal Care,Lifebuoy,Rangpur,Rangpur DC,1251,667,1346,422,120,45678,Reorder Needed
+LIF-DPF-17-08,Liquid Handwash,Personal Care,Lifebuoy,Mymensingh,Mymensingh DC,2728,600,1243,522,120,45679,Overstock Risk

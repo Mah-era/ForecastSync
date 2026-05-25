@@ -1,0 +1,22 @@
+﻿Month,ProductName,Category,Brand,Region,Channel,UnitsSold,UnitPriceBDT,RevenueBDT,Notes
+45292,Liquid Handwash,Personal Care,Lifebuoy,Dhaka,Retail,1585,210,332850,
+45323,Liquid Handwash,Personal Care,Lifebuoy,Chattogram,Online,1456,210,305760,
+45352,Liquid Handwash,Personal Care,Lifebuoy,Sylhet,Wholesale,1460,210,306600,
+45383,Liquid Handwash,Personal Care,Lifebuoy,Rajshahi,Modern Trade,1407,210,295470,
+45383,Liquid Handwash,Personal Care,Lifebuoy,Rajshahi,Modern Trade,1407,210,295470,DUPLICATE ROW - should be detected
+45413,Liquid Handwash,Personal Care,Lifebuoy,Khulna,Retail,1477,210,310170,
+45444,Liquid Handwash,Personal Care,Lifebuoy,Barishal,Online,1721,210,361410,
+45474,Liquid Handwash,Personal Care,Lifebuoy,Rangpur,Wholesale,1668,210,350280,
+45505,Liquid Handwash,Personal Care,Lifebuoy,Mymensingh,Modern Trade,1520,210,319200,
+45505,Liquid Handwash,Personal Care,Lifebuoy,Mymensingh,Modern Trade,1520,210,319200,DUPLICATE ROW - should be detected
+45536,Liquid Handwash,Personal Care,Lifebuoy,Dhaka,Retail,1545,210,324450,
+45566,Liquid Handwash,Personal Care,Lifebuoy,Chattogram,Online,1689,210,354690,
+45597,Liquid Handwash,Personal Care,Lifebuoy,Sylhet,Wholesale,1686,210,354060,
+45627,Liquid Handwash,Personal Care,Lifebuoy,Rajshahi,Modern Trade,1763,210,370230,
+45658,Liquid Handwash,Personal Care,Lifebuoy,Khulna,Retail,1967,210,413070,
+45689,Liquid Handwash,Personal Care,Lifebuoy,Barishal,Online,1667,210,350070,
+45689,Liquid Handwash,Personal Care,Lifebuoy,Barishal,Online,1667,210,350070,DUPLICATE ROW - should be detected
+45717,Liquid Handwash,Personal Care,Lifebuoy,Rangpur,Wholesale,1731,210,363510,
+45748,Liquid Handwash,Personal Care,Lifebuoy,Mymensingh,Modern Trade,1734,210,364140,
+45778,Liquid Handwash,Personal Care,Lifebuoy,Dhaka,Retail,1690,210,354900,
+45809,Liquid Handwash,Personal Care,Lifebuoy,Chattogram,Online,1728,210,362880,

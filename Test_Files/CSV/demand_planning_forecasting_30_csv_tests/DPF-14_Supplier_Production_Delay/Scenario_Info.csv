@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-14
+Scenario Title,Supplier Production Delay
+Purpose,Test supplier delay risk.
+Product Name,Paper Carton Box
+Category,Packaging
+Brand,Xbo
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Lead Time, Inventory, Supply Chain Flow"
+Recommended Inputs To Tick,"Lead Time, Inventory Levels, Historical Sales Data"
+Recommended Outputs To Tick,"Lead Time Analysis, Risk Alerts, Action Plan"

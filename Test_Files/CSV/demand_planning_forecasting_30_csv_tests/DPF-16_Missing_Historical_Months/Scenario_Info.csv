@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-16
+Scenario Title,Missing Historical Months
+Purpose,Test missing period detection.
+Product Name,Rice 5kg
+Category,Grocery
+Brand,Pran
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Messy/Edge Case
+Modules Covered,"Historical Sales, Forecast Accuracy"
+Recommended Inputs To Tick,"Historical Sales Data, Forecast Accuracy"
+Recommended Outputs To Tick,"Sales Trend Analysis, Forecast Accuracy Report"

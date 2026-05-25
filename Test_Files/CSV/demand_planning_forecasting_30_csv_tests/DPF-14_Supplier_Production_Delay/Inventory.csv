@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+XBO-DPF-14-01,Paper Carton Box,Packaging,Xbo,Dhaka,Dhaka DC,2578,590,1368,378,120,45672,OK
+XBO-DPF-14-02,Paper Carton Box,Packaging,Xbo,Chattogram,Chattogram DC,3615,567,1354,316,120,45673,Overstock Risk
+XBO-DPF-14-03,Paper Carton Box,Packaging,Xbo,Sylhet,Sylhet DC,1713,631,1453,513,120,45674,OK
+XBO-DPF-14-04,Paper Carton Box,Packaging,Xbo,Rajshahi,Rajshahi DC,2051,577,1340,208,120,45675,OK
+XBO-DPF-14-05,Paper Carton Box,Packaging,Xbo,Khulna,Khulna DC,2769,637,1450,116,120,45676,OK
+XBO-DPF-14-06,Paper Carton Box,Packaging,Xbo,Barishal,Barishal DC,3723,572,1260,354,120,45677,Overstock Risk
+XBO-DPF-14-07,Paper Carton Box,Packaging,Xbo,Rangpur,Rangpur DC,3521,630,1364,510,120,45678,Overstock Risk
+XBO-DPF-14-08,Paper Carton Box,Packaging,Xbo,Mymensingh,Mymensingh DC,1909,686,1418,426,120,45679,OK

@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+HAT-DPF-24-01,Office Chair,Furniture,Hatil,Dhaka,Dhaka DC,880,695,1427,471,120,45672,Reorder Needed
+HAT-DPF-24-02,Office Chair,Furniture,Hatil,Chattogram,Chattogram DC,3008,624,1301,113,120,45673,Overstock Risk
+HAT-DPF-24-03,Office Chair,Furniture,Hatil,Sylhet,Sylhet DC,2785,531,1191,541,120,45674,Overstock Risk
+HAT-DPF-24-04,Office Chair,Furniture,Hatil,Rajshahi,Rajshahi DC,2944,523,1182,300,120,45675,Overstock Risk
+HAT-DPF-24-05,Office Chair,Furniture,Hatil,Khulna,Khulna DC,2032,521,1122,306,120,45676,OK
+HAT-DPF-24-06,Office Chair,Furniture,Hatil,Barishal,Barishal DC,3579,626,1475,414,120,45677,Overstock Risk
+HAT-DPF-24-07,Office Chair,Furniture,Hatil,Rangpur,Rangpur DC,1740,591,1151,233,120,45678,OK
+HAT-DPF-24-08,Office Chair,Furniture,Hatil,Mymensingh,Mymensingh DC,2111,599,1369,331,120,45679,OK

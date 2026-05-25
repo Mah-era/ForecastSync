@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-08
+Scenario Title,Competitor Product Launch
+Purpose,Test impact of new rival product launch.
+Product Name,Soft Drink 250ml
+Category,Beverage
+Brand,Coca-Cola
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Competitor Activities, Market Trends"
+Recommended Inputs To Tick,"Competitor Activities, Online Web Search Data, Market Trends"
+Recommended Outputs To Tick,"Competitor Activity Analysis, Market Trend Analysis, Action Plan"

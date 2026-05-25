@@ -1,0 +1,5 @@
+﻿CampaignName,StartDate,EndDate,DiscountPct,Channel,ExpectedUpliftPct,ActualUpliftPct,BudgetBDT,Notes
+Ramadan Bundle,45356,45392,12,Retail,20.1,16.3,106856,Use for promotion impact analysis
+Eid Mega Offer,45383,45402,18,All,18.4,20.5,139082,Use for promotion impact analysis
+Online Flash Sale,45514,45522,15,Online,15.1,18.1,128263,Use for promotion impact analysis
+Winter Pack,45627,45657,10,Modern Trade,16,10.5,92715,Use for promotion impact analysis

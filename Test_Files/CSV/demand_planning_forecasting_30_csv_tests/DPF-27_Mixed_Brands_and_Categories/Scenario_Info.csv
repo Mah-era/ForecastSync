@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-27
+Scenario Title,Mixed Brands and Categories
+Purpose,Test product/category/brand selection filtering.
+Product Name,Mixed FMCG Basket
+Category,Mixed
+Brand,Multiple
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Historical Sales, Product Filtering"
+Recommended Inputs To Tick,"Historical Sales Data, Uploaded File Data"
+Recommended Outputs To Tick,"Demand Forecast, Sales Trend Analysis"

@@ -1,0 +1,6 @@
+﻿CustomerSegment,Region,PreferredChannel,PurchaseFrequency,AvgBasketUnits,AvgBasketValueBDT,DemandPatternNote
+Teen/Youth,Dhaka,Online,Weekly,8,3229,Regular demand
+Working Professionals,Chattogram,Wholesale,Bi-weekly,6,2093,Regular demand
+Families,Sylhet,Modern Trade,Bi-weekly,1,321,Regular demand
+Retail Buyers,Rajshahi,Retail,Monthly,2,662,Regular demand
+Premium Customers,Khulna,Online,Bi-weekly,1,285,Regular demand

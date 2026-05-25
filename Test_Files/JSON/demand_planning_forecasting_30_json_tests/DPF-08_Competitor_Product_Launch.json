@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-08",
+  "source_excel_file": "DPF-08_Competitor_Product_Launch.xlsx",
+  "scenario_title": "Competitor Product Launch",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-08"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Competitor Product Launch"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test impact of new rival product launch."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Soft Drink 250ml"
+        },
+        {
+          "Field": "Category",
+          "Value": "Beverage"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Coca-Cola"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Competitor Activities, Market Trends"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Competitor Activities, Online Web Search Data, Market Trends"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Competitor Activity Analysis, Market Trend Analysis, Action Plan"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-08"
+        ],
+        [
+          "Scenario Title",
+          "Competitor Product Launch"
+        ],
+        [
+          "Purpose",
+          "Test impact of new rival product launch."
+        ],
+        [
+          "Product Name",
+          "Soft Drink 250ml"
+        ],
+        [
+          "Category",
+          "Beverage"
+        ],
+        [
+          "Brand",
+          "Coca-Cola"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Competitor Activities, Market Trends"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Competitor Activities, Online Web Search Data, Market Trends"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Competitor Activity Analysis, Market Trend Analysis, Action Plan"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 4010,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 160400,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 4456,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 178240,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 3971,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 158840,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 4408,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 176320,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 4565,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 182600,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 4625,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 185000,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 4084,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 163360,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 4045,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 161800,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 4155,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 166200,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 4652,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 186080,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 4887,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 195480,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 4834,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 193360,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 4354,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 174160,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 5093,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 203720,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 4833,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 193320,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 5199,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 207960,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 5269,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 210760,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 4958,
+          "UnitPriceBDT": 40,
+          "RevenueBDT": 198320,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Dhaka",
+          "Retail",
+          4010,
+          40,
+          160400,
+          ""
+        ],
+        [
+          45323,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Chattogram",
+          "Online",
+          4456,
+          40,
+          178240,
+          ""
+        ],
+        [
+          45352,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Sylhet",
+          "Wholesale",
+          3971,
+          40,
+          158840,
+          ""
+        ],
+        [
+          45383,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rajshahi",
+          "Modern Trade",
+          4408,
+          40,
+          176320,
+          ""
+        ],
+        [
+          45413,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Khulna",
+          "Retail",
+          4565,
+          40,
+          182600,
+          ""
+        ],
+        [
+          45444,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Barishal",
+          "Online",
+          4625,
+          40,
+          185000,
+          ""
+        ],
+        [
+          45474,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rangpur",
+          "Wholesale",
+          4084,
+          40,
+          163360,
+          ""
+        ],
+        [
+          45505,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Mymensingh",
+          "Modern Trade",
+          4045,
+          40,
+          161800,
+          ""
+        ],
+        [
+          45536,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Dhaka",
+          "Retail",
+          4155,
+          40,
+          166200,
+          ""
+        ],
+        [
+          45566,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Chattogram",
+          "Online",
+          4652,
+          40,
+          186080,
+          ""
+        ],
+        [
+          45597,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Sylhet",
+          "Wholesale",
+          4887,
+          40,
+          195480,
+          ""
+        ],
+        [
+          45627,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rajshahi",
+          "Modern Trade",
+          4834,
+          40,
+          193360,
+          ""
+        ],
+        [
+          45658,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Khulna",
+          "Retail",
+          4354,
+          40,
+          174160,
+          ""
+        ],
+        [
+          45689,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Barishal",
+          "Online",
+          5093,
+          40,
+          203720,
+          ""
+        ],
+        [
+          45717,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rangpur",
+          "Wholesale",
+          4833,
+          40,
+          193320,
+          ""
+        ],
+        [
+          45748,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Mymensingh",
+          "Modern Trade",
+          5199,
+          40,
+          207960,
+          ""
+        ],
+        [
+          45778,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Dhaka",
+          "Retail",
+          5269,
+          40,
+          210760,
+          ""
+        ],
+        [
+          45809,
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Chattogram",
+          "Online",
+          4958,
+          40,
+          198320,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "COC-DPF-08-01",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3532,
+          "SafetyStock": 595,
+          "ReorderPoint": 1358,
+          "StockInTransit": 418,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "COC-DPF-08-02",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3360,
+          "SafetyStock": 612,
+          "ReorderPoint": 1220,
+          "StockInTransit": 113,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "COC-DPF-08-03",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2146,
+          "SafetyStock": 523,
+          "ReorderPoint": 1171,
+          "StockInTransit": 106,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "COC-DPF-08-04",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2334,
+          "SafetyStock": 525,
+          "ReorderPoint": 1230,
+          "StockInTransit": 106,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "COC-DPF-08-05",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 3266,
+          "SafetyStock": 461,
+          "ReorderPoint": 1298,
+          "StockInTransit": 545,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "COC-DPF-08-06",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2643,
+          "SafetyStock": 579,
+          "ReorderPoint": 1287,
+          "StockInTransit": 380,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "COC-DPF-08-07",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 3151,
+          "SafetyStock": 686,
+          "ReorderPoint": 1390,
+          "StockInTransit": 520,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "COC-DPF-08-08",
+          "ProductName": "Soft Drink 250ml",
+          "Category": "Beverage",
+          "Brand": "Coca-Cola",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2749,
+          "SafetyStock": 528,
+          "ReorderPoint": 1240,
+          "StockInTransit": 158,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "Overstock Risk"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "COC-DPF-08-01",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Dhaka",
+          "Dhaka DC",
+          3532,
+          595,
+          1358,
+          418,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "COC-DPF-08-02",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Chattogram",
+          "Chattogram DC",
+          3360,
+          612,
+          1220,
+          113,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "COC-DPF-08-03",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Sylhet",
+          "Sylhet DC",
+          2146,
+          523,
+          1171,
+          106,
+          120,
+          45674,
+          "OK"
+        ],
+        [
+          "COC-DPF-08-04",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rajshahi",
+          "Rajshahi DC",
+          2334,
+          525,
+          1230,
+          106,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "COC-DPF-08-05",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Khulna",
+          "Khulna DC",
+          3266,
+          461,
+          1298,
+          545,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "COC-DPF-08-06",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Barishal",
+          "Barishal DC",
+          2643,
+          579,
+          1287,
+          380,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "COC-DPF-08-07",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Rangpur",
+          "Rangpur DC",
+          3151,
+          686,
+          1390,
+          520,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "COC-DPF-08-08",
+          "Soft Drink 250ml",
+          "Beverage",
+          "Coca-Cola",
+          "Mymensingh",
+          "Mymensingh DC",
+          2749,
+          528,
+          1240,
+          158,
+          120,
+          45679,
+          "Overstock Risk"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 12.7,
+          "ActualUpliftPct": 9.1,
+          "BudgetBDT": 150921,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 24.2,
+          "ActualUpliftPct": 26.1,
+          "BudgetBDT": 115409,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 17.6,
+          "ActualUpliftPct": 14,
+          "BudgetBDT": 109398,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 14.4,
+          "ActualUpliftPct": 13.9,
+          "BudgetBDT": 84287,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          12.7,
+          9.1,
+          150921,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          24.2,
+          26.1,
+          115409,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          17.6,
+          14,
+          109398,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          14.4,
+          13.9,
+          84287,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Beverage",
+          "CompetitorPriceBDT": 38,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Beverage",
+          "CompetitorPriceBDT": 37,
+          "PromoActive": "Yes",
+          "LaunchEvent": "Yes",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": "New competitor product launch"
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Beverage",
+          "CompetitorPriceBDT": 39,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Beverage",
+          "CompetitorPriceBDT": 38,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Beverage",
+          38,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Beverage",
+          37,
+          "Yes",
+          "Yes",
+          "https://example.com/competitor/sunsilk",
+          "New competitor product launch"
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Beverage",
+          39,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Beverage",
+          38,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.56,
+          "IncomeIndex": 100.58,
+          "PurchasingPowerIndex": 87.32,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.98,
+          "IncomeIndex": 99.43,
+          "PurchasingPowerIndex": 86.26,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8,
+          "IncomeIndex": 100.96,
+          "PurchasingPowerIndex": 86.69,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.38,
+          "IncomeIndex": 101.35,
+          "PurchasingPowerIndex": 86.16,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.76,
+          "IncomeIndex": 102.01,
+          "PurchasingPowerIndex": 85.71,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.92,
+          "IncomeIndex": 101.17,
+          "PurchasingPowerIndex": 85.19,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.64,
+          "IncomeIndex": 101.08,
+          "PurchasingPowerIndex": 85.64,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.28,
+          "IncomeIndex": 103.04,
+          "PurchasingPowerIndex": 86.84,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.17,
+          "IncomeIndex": 102.18,
+          "PurchasingPowerIndex": 86.77,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.73,
+          "IncomeIndex": 103.58,
+          "PurchasingPowerIndex": 87.94,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.16,
+          "IncomeIndex": 102.75,
+          "PurchasingPowerIndex": 88.66,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.07,
+          "IncomeIndex": 103.93,
+          "PurchasingPowerIndex": 89.15,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.69,
+          "IncomeIndex": 104.26,
+          "PurchasingPowerIndex": 89.9,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.53,
+          "IncomeIndex": 104.27,
+          "PurchasingPowerIndex": 90.18,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.32,
+          "IncomeIndex": 104.49,
+          "PurchasingPowerIndex": 90.61,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.3,
+          "IncomeIndex": 104.22,
+          "PurchasingPowerIndex": 90.55,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.44,
+          "IncomeIndex": 104.16,
+          "PurchasingPowerIndex": 90.3,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.63,
+          "IncomeIndex": 106,
+          "PurchasingPowerIndex": 90.52,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.56,
+          100.58,
+          87.32,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.98,
+          99.43,
+          86.26,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8,
+          100.96,
+          86.69,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.38,
+          101.35,
+          86.16,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.76,
+          102.01,
+          85.71,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.92,
+          101.17,
+          85.19,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.64,
+          101.08,
+          85.64,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.28,
+          103.04,
+          86.84,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.17,
+          102.18,
+          86.77,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.73,
+          103.58,
+          87.94,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.16,
+          102.75,
+          88.66,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.07,
+          103.93,
+          89.15,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.69,
+          104.26,
+          89.9,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.53,
+          104.27,
+          90.18,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.32,
+          104.49,
+          90.61,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.3,
+          104.22,
+          90.55,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.44,
+          104.16,
+          90.3,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.63,
+          106,
+          90.52,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 16,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 5,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          8,
+          5,
+          2,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          3,
+          6,
+          6,
+          1,
+          16,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          6,
+          5,
+          7,
+          5,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          3,
+          11,
+          4,
+          2,
+          20,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 3745,
+          "ActualUnits": 4109,
+          "ForecastError": 364,
+          "AbsoluteError": 364,
+          "APE": 0.08858603066439523,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 4182,
+          "ActualUnits": 4939,
+          "ForecastError": 757,
+          "AbsoluteError": 757,
+          "APE": 0.1532698926908281,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 4344,
+          "ActualUnits": 3638,
+          "ForecastError": -706,
+          "AbsoluteError": 706,
+          "APE": 0.19406267179769104,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 4125,
+          "ActualUnits": 4570,
+          "ForecastError": 445,
+          "AbsoluteError": 445,
+          "APE": 0.09737417943107221,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 4726,
+          "ActualUnits": 5030,
+          "ForecastError": 304,
+          "AbsoluteError": 304,
+          "APE": 0.060437375745526836,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 4622,
+          "ActualUnits": 5239,
+          "ForecastError": 617,
+          "AbsoluteError": 617,
+          "APE": 0.11777056690208056,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 4242,
+          "ActualUnits": 3884,
+          "ForecastError": -358,
+          "AbsoluteError": 358,
+          "APE": 0.092173017507724,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 4985,
+          "ActualUnits": 5652,
+          "ForecastError": 667,
+          "AbsoluteError": 667,
+          "APE": 0.11801132342533617,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 5015,
+          "ActualUnits": 4501,
+          "ForecastError": -514,
+          "AbsoluteError": 514,
+          "APE": 0.11419684514552322,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 4888,
+          "ActualUnits": 5123,
+          "ForecastError": 235,
+          "AbsoluteError": 235,
+          "APE": 0.045871559633027525,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 4743,
+          "ActualUnits": 5349,
+          "ForecastError": 606,
+          "AbsoluteError": 606,
+          "APE": 0.11329220415030847,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 5151,
+          "ActualUnits": 5260,
+          "ForecastError": 109,
+          "AbsoluteError": 109,
+          "APE": 0.020722433460076045,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          3745,
+          4109,
+          364,
+          364,
+          0.08858603066439523,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          4182,
+          4939,
+          757,
+          757,
+          0.1532698926908281,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          4344,
+          3638,
+          -706,
+          706,
+          0.19406267179769104,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          4125,
+          4570,
+          445,
+          445,
+          0.09737417943107221,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          4726,
+          5030,
+          304,
+          304,
+          0.060437375745526836,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          4622,
+          5239,
+          617,
+          617,
+          0.11777056690208056,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          4242,
+          3884,
+          -358,
+          358,
+          0.092173017507724,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          4985,
+          5652,
+          667,
+          667,
+          0.11801132342533617,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          5015,
+          4501,
+          -514,
+          514,
+          0.11419684514552322,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          4888,
+          5123,
+          235,
+          235,
+          0.045871559633027525,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          4743,
+          5349,
+          606,
+          606,
+          0.11329220415030847,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          5151,
+          5260,
+          109,
+          109,
+          0.020722433460076045,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 79,
+          "ForecastDemandUnits": 3897,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 57,
+          "ForecastDemandUnits": 2623,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 53,
+          "ForecastDemandUnits": 2515,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 48,
+          "ForecastDemandUnits": 2056,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 68,
+          "ForecastDemandUnits": 2794,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 51,
+          "ForecastDemandUnits": 2256,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 78,
+          "ForecastDemandUnits": 3668,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 63,
+          "ForecastDemandUnits": 1996,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          79,
+          3897,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          57,
+          2623,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          53,
+          2515,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          48,
+          2056,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          68,
+          2794,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          51,
+          2256,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          78,
+          3668,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          63,
+          1996,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 214,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 239,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 426,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 233,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 165,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          5,
+          214,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Bi-weekly",
+          7,
+          239,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          8,
+          426,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Weekly",
+          7,
+          233,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Monthly",
+          4,
+          165,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 70,
+          "DataQualityScore": 86,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 77,
+          "DataQualityScore": 70,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 50,
+          "DataQualityScore": 73,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 25,
+          "DataQualityScore": 70,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          70,
+          86,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          77,
+          70,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          50,
+          73,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          25,
+          70,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Soft Drink 250ml Coca-Cola Beverage Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Soft Drink 250ml demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Beverage competitor pricing promotions Bangladesh Coca-Cola",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Soft Drink 250ml online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Soft Drink 250ml Coca-Cola Beverage Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Soft Drink 250ml demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Beverage competitor pricing promotions Bangladesh Coca-Cola",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Soft Drink 250ml online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 85,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 64,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 61,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          85,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          64,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          61,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

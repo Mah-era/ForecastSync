@@ -1,0 +1,2583 @@
+{
+  "scenario_id": "DPF-15",
+  "source_excel_file": "DPF-15_New_Product_Cold_Start.xlsx",
+  "scenario_title": "New Product Cold Start",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-15"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "New Product Cold Start"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test limited historical sales and qualitative forecast."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Dry Shampoo Spray"
+        },
+        {
+          "Field": "Category",
+          "Value": "Hair Care"
+        },
+        {
+          "Field": "Brand",
+          "Value": "NewBrand"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Forecasting Methods, Market Trends, Manual Opinion"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "Online Web Search Data, Expert Opinion / Manual Notes, Market Trends"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Demand Forecast, Final SCM Recommendation, Forecast Confidence Score"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-15"
+        ],
+        [
+          "Scenario Title",
+          "New Product Cold Start"
+        ],
+        [
+          "Purpose",
+          "Test limited historical sales and qualitative forecast."
+        ],
+        [
+          "Product Name",
+          "Dry Shampoo Spray"
+        ],
+        [
+          "Category",
+          "Hair Care"
+        ],
+        [
+          "Brand",
+          "NewBrand"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Forecasting Methods, Market Trends, Manual Opinion"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "Online Web Search Data, Expert Opinion / Manual Notes, Market Trends"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Demand Forecast, Final SCM Recommendation, Forecast Confidence Score"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 84,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 46200,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 114,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 62700,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 156,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 85800,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 196,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 107800,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 265,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 145750,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 295,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 162250,
+          "Notes": "Cold-start limited sales history"
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 348,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 191400,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 331,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 182050,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 337,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 185350,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 346,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 190300,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 326,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 179300,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 353,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 194150,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 396,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 217800,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 362,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 199100,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 385,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 211750,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 390,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 214500,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 367,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 201850,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 351,
+          "UnitPriceBDT": 550,
+          "RevenueBDT": 193050,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Dhaka",
+          "Retail",
+          84,
+          550,
+          46200,
+          "Cold-start limited sales history"
+        ],
+        [
+          45323,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Chattogram",
+          "Online",
+          114,
+          550,
+          62700,
+          "Cold-start limited sales history"
+        ],
+        [
+          45352,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Sylhet",
+          "Wholesale",
+          156,
+          550,
+          85800,
+          "Cold-start limited sales history"
+        ],
+        [
+          45383,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rajshahi",
+          "Modern Trade",
+          196,
+          550,
+          107800,
+          "Cold-start limited sales history"
+        ],
+        [
+          45413,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Khulna",
+          "Retail",
+          265,
+          550,
+          145750,
+          "Cold-start limited sales history"
+        ],
+        [
+          45444,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Barishal",
+          "Online",
+          295,
+          550,
+          162250,
+          "Cold-start limited sales history"
+        ],
+        [
+          45474,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rangpur",
+          "Wholesale",
+          348,
+          550,
+          191400,
+          ""
+        ],
+        [
+          45505,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Mymensingh",
+          "Modern Trade",
+          331,
+          550,
+          182050,
+          ""
+        ],
+        [
+          45536,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Dhaka",
+          "Retail",
+          337,
+          550,
+          185350,
+          ""
+        ],
+        [
+          45566,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Chattogram",
+          "Online",
+          346,
+          550,
+          190300,
+          ""
+        ],
+        [
+          45597,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Sylhet",
+          "Wholesale",
+          326,
+          550,
+          179300,
+          ""
+        ],
+        [
+          45627,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rajshahi",
+          "Modern Trade",
+          353,
+          550,
+          194150,
+          ""
+        ],
+        [
+          45658,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Khulna",
+          "Retail",
+          396,
+          550,
+          217800,
+          ""
+        ],
+        [
+          45689,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Barishal",
+          "Online",
+          362,
+          550,
+          199100,
+          ""
+        ],
+        [
+          45717,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rangpur",
+          "Wholesale",
+          385,
+          550,
+          211750,
+          ""
+        ],
+        [
+          45748,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Mymensingh",
+          "Modern Trade",
+          390,
+          550,
+          214500,
+          ""
+        ],
+        [
+          45778,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Dhaka",
+          "Retail",
+          367,
+          550,
+          201850,
+          ""
+        ],
+        [
+          45809,
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Chattogram",
+          "Online",
+          351,
+          550,
+          193050,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "NEW-DPF-15-01",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 2097,
+          "SafetyStock": 642,
+          "ReorderPoint": 1411,
+          "StockInTransit": 211,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NEW-DPF-15-02",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3390,
+          "SafetyStock": 449,
+          "ReorderPoint": 1093,
+          "StockInTransit": 549,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NEW-DPF-15-03",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 1125,
+          "SafetyStock": 678,
+          "ReorderPoint": 1276,
+          "StockInTransit": 522,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "NEW-DPF-15-04",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1478,
+          "SafetyStock": 643,
+          "ReorderPoint": 1424,
+          "StockInTransit": 549,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NEW-DPF-15-05",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2630,
+          "SafetyStock": 558,
+          "ReorderPoint": 1315,
+          "StockInTransit": 507,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NEW-DPF-15-06",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3214,
+          "SafetyStock": 661,
+          "ReorderPoint": 1403,
+          "StockInTransit": 368,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "NEW-DPF-15-07",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2591,
+          "SafetyStock": 486,
+          "ReorderPoint": 1359,
+          "StockInTransit": 236,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "NEW-DPF-15-08",
+          "ProductName": "Dry Shampoo Spray",
+          "Category": "Hair Care",
+          "Brand": "NewBrand",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2522,
+          "SafetyStock": 702,
+          "ReorderPoint": 1427,
+          "StockInTransit": 570,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "NEW-DPF-15-01",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Dhaka",
+          "Dhaka DC",
+          2097,
+          642,
+          1411,
+          211,
+          120,
+          45672,
+          "OK"
+        ],
+        [
+          "NEW-DPF-15-02",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Chattogram",
+          "Chattogram DC",
+          3390,
+          449,
+          1093,
+          549,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "NEW-DPF-15-03",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Sylhet",
+          "Sylhet DC",
+          1125,
+          678,
+          1276,
+          522,
+          120,
+          45674,
+          "Reorder Needed"
+        ],
+        [
+          "NEW-DPF-15-04",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rajshahi",
+          "Rajshahi DC",
+          1478,
+          643,
+          1424,
+          549,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "NEW-DPF-15-05",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Khulna",
+          "Khulna DC",
+          2630,
+          558,
+          1315,
+          507,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "NEW-DPF-15-06",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Barishal",
+          "Barishal DC",
+          3214,
+          661,
+          1403,
+          368,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "NEW-DPF-15-07",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Rangpur",
+          "Rangpur DC",
+          2591,
+          486,
+          1359,
+          236,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "NEW-DPF-15-08",
+          "Dry Shampoo Spray",
+          "Hair Care",
+          "NewBrand",
+          "Mymensingh",
+          "Mymensingh DC",
+          2522,
+          702,
+          1427,
+          570,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 21.8,
+          "ActualUpliftPct": 15.9,
+          "BudgetBDT": 137508,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 25.4,
+          "ActualUpliftPct": 17.4,
+          "BudgetBDT": 94959,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 24.8,
+          "ActualUpliftPct": 26.6,
+          "BudgetBDT": 81942,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 11.5,
+          "ActualUpliftPct": 9.7,
+          "BudgetBDT": 92280,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          21.8,
+          15.9,
+          137508,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          25.4,
+          17.4,
+          94959,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          24.8,
+          26.6,
+          81942,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          11.5,
+          9.7,
+          92280,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Hair Care",
+          "CompetitorPriceBDT": 618,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Hair Care",
+          "CompetitorPriceBDT": 529,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Hair Care",
+          "CompetitorPriceBDT": 479,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Hair Care",
+          "CompetitorPriceBDT": 576,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Hair Care",
+          618,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Hair Care",
+          529,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Hair Care",
+          479,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Hair Care",
+          576,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.58,
+          "IncomeIndex": 99.75,
+          "PurchasingPowerIndex": 87.04,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 7.64,
+          "IncomeIndex": 100.89,
+          "PurchasingPowerIndex": 87.28,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.4,
+          "IncomeIndex": 100.41,
+          "PurchasingPowerIndex": 85.84,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.66,
+          "IncomeIndex": 101.29,
+          "PurchasingPowerIndex": 85.67,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.89,
+          "IncomeIndex": 101.11,
+          "PurchasingPowerIndex": 85.22,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.69,
+          "IncomeIndex": 101.66,
+          "PurchasingPowerIndex": 85.73,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.81,
+          "IncomeIndex": 102.49,
+          "PurchasingPowerIndex": 85.77,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.12,
+          "IncomeIndex": 103.04,
+          "PurchasingPowerIndex": 87.1,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 8.13,
+          "IncomeIndex": 102.79,
+          "PurchasingPowerIndex": 87.02,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.88,
+          "IncomeIndex": 103.29,
+          "PurchasingPowerIndex": 87.59,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.21,
+          "IncomeIndex": 103.94,
+          "PurchasingPowerIndex": 88.92,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 7.09,
+          "IncomeIndex": 103.29,
+          "PurchasingPowerIndex": 88.93,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.49,
+          "IncomeIndex": 103.17,
+          "PurchasingPowerIndex": 89.92,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.41,
+          "IncomeIndex": 103.16,
+          "PurchasingPowerIndex": 90.05,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.51,
+          "IncomeIndex": 104.78,
+          "PurchasingPowerIndex": 90.36,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.59,
+          "IncomeIndex": 105.02,
+          "PurchasingPowerIndex": 90.31,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.25,
+          "IncomeIndex": 105.05,
+          "PurchasingPowerIndex": 90.89,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.01,
+          "IncomeIndex": 104.13,
+          "PurchasingPowerIndex": 89.33,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.58,
+          99.75,
+          87.04,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          7.64,
+          100.89,
+          87.28,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.4,
+          100.41,
+          85.84,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.66,
+          101.29,
+          85.67,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.89,
+          101.11,
+          85.22,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.69,
+          101.66,
+          85.73,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.81,
+          102.49,
+          85.77,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.12,
+          103.04,
+          87.1,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          8.13,
+          102.79,
+          87.02,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.88,
+          103.29,
+          87.59,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.21,
+          103.94,
+          88.92,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          7.09,
+          103.29,
+          88.93,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.49,
+          103.17,
+          89.92,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.41,
+          103.16,
+          90.05,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.51,
+          104.78,
+          90.36,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.59,
+          105.02,
+          90.31,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.25,
+          105.05,
+          90.89,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.01,
+          104.13,
+          89.33,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 9,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 4,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 3,
+          "ProductionLeadDays": 9,
+          "ShippingLeadDays": 3,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 18,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          3,
+          12,
+          9,
+          1,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          5,
+          8,
+          4,
+          3,
+          20,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          3,
+          9,
+          3,
+          3,
+          18,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          4,
+          6,
+          7,
+          2,
+          19,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 273,
+          "ActualUnits": 292,
+          "ForecastError": 19,
+          "AbsoluteError": 19,
+          "APE": 0.06506849315068493,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 320,
+          "ActualUnits": 359,
+          "ForecastError": 39,
+          "AbsoluteError": 39,
+          "APE": 0.10863509749303621,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 308,
+          "ActualUnits": 264,
+          "ForecastError": -44,
+          "AbsoluteError": 44,
+          "APE": 0.16666666666666666,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 292,
+          "ActualUnits": 264,
+          "ForecastError": -28,
+          "AbsoluteError": 28,
+          "APE": 0.10606060606060606,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 297,
+          "ActualUnits": 314,
+          "ForecastError": 17,
+          "AbsoluteError": 17,
+          "APE": 0.054140127388535034,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 331,
+          "ActualUnits": 330,
+          "ForecastError": -1,
+          "AbsoluteError": 1,
+          "APE": 0.0030303030303030303,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 303,
+          "ActualUnits": 290,
+          "ForecastError": -13,
+          "AbsoluteError": 13,
+          "APE": 0.04482758620689655,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 316,
+          "ActualUnits": 368,
+          "ForecastError": 52,
+          "AbsoluteError": 52,
+          "APE": 0.14130434782608695,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 362,
+          "ActualUnits": 366,
+          "ForecastError": 4,
+          "AbsoluteError": 4,
+          "APE": 0.01092896174863388,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 335,
+          "ActualUnits": 287,
+          "ForecastError": -48,
+          "AbsoluteError": 48,
+          "APE": 0.1672473867595819,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 382,
+          "ActualUnits": 329,
+          "ForecastError": -53,
+          "AbsoluteError": 53,
+          "APE": 0.16109422492401215,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 356,
+          "ActualUnits": 335,
+          "ForecastError": -21,
+          "AbsoluteError": 21,
+          "APE": 0.0626865671641791,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          273,
+          292,
+          19,
+          19,
+          0.06506849315068493,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          320,
+          359,
+          39,
+          39,
+          0.10863509749303621,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          308,
+          264,
+          -44,
+          44,
+          0.16666666666666666,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          292,
+          264,
+          -28,
+          28,
+          0.10606060606060606,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          297,
+          314,
+          17,
+          17,
+          0.054140127388535034,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          331,
+          330,
+          -1,
+          1,
+          0.0030303030303030303,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          303,
+          290,
+          -13,
+          13,
+          0.04482758620689655,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          316,
+          368,
+          52,
+          52,
+          0.14130434782608695,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          362,
+          366,
+          4,
+          4,
+          0.01092896174863388,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          335,
+          287,
+          -48,
+          48,
+          0.1672473867595819,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          382,
+          329,
+          -53,
+          53,
+          0.16109422492401215,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          356,
+          335,
+          -21,
+          21,
+          0.0626865671641791,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 77,
+          "ForecastDemandUnits": 263,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 93,
+          "ForecastDemandUnits": 331,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 86,
+          "ForecastDemandUnits": 322,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 54,
+          "ForecastDemandUnits": 127,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 81,
+          "ForecastDemandUnits": 183,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 86,
+          "ForecastDemandUnits": 215,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 67,
+          "ForecastDemandUnits": 223,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 85,
+          "ForecastDemandUnits": 287,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          77,
+          263,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          93,
+          331,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          86,
+          322,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          54,
+          127,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          81,
+          183,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          86,
+          215,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          67,
+          223,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          85,
+          287,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 8,
+          "AvgBasketValueBDT": 5790,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 2,
+          "AvgBasketValueBDT": 972,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 3892,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 4206,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 3264,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Festival-based",
+          8,
+          5790,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          2,
+          972,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Weekly",
+          7,
+          3892,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Festival-based",
+          6,
+          4206,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          5,
+          3264,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 113,
+          "DataQualityScore": 92,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 173,
+          "DataQualityScore": 89,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 87,
+          "DataQualityScore": 79,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 5,
+          "DataQualityScore": 87,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          113,
+          92,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          173,
+          89,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          87,
+          79,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          5,
+          87,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Dry Shampoo Spray NewBrand Hair Care Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Dry Shampoo Spray demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Hair Care competitor pricing promotions Bangladesh NewBrand",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Dry Shampoo Spray online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Dry Shampoo Spray NewBrand Hair Care Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Dry Shampoo Spray demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Hair Care competitor pricing promotions Bangladesh NewBrand",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Dry Shampoo Spray online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 87,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 81,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 88,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 69,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Senior Buyer",
+          "Role": "Expert",
+          "OpinionDate": 45580,
+          "DemandSignal": "No historical sales available; use analogous products",
+          "ConfidencePct": 75,
+          "Notes": "Cold-start qualitative scenario"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          87,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          81,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          88,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          69,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Senior Buyer",
+          "Expert",
+          45580,
+          "No historical sales available; use analogous products",
+          75,
+          "Cold-start qualitative scenario"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No reliable historical sales; app should use expert opinion and web data.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No reliable historical sales; app should use expert opinion and web data.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-04
+Scenario Title,Summer Demand Softness
+Purpose,Test demand drop in hot season.
+Product Name,Moisturizing Cream
+Category,Skin Care
+Brand,Nivea
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Seasonality, Economic Conditions, Historical Sales"
+Recommended Inputs To Tick,"Historical Sales Data, Seasonality, Economic Conditions"
+Recommended Outputs To Tick,"Demand Forecast, Seasonal Demand Impact"

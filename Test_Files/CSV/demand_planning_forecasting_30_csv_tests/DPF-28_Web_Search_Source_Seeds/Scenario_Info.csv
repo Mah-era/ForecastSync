@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-28
+Scenario Title,Web Search Source Seeds
+Purpose,Test online research queries and source link capture.
+Product Name,Dry Shampoo Spray
+Category,Hair Care
+Brand,Marico
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Online Web Search, Market Trends, Competitor Activities"
+Recommended Inputs To Tick,"Online Web Search Data, Market Trends, Competitor Activities, Seasonality"
+Recommended Outputs To Tick,"Online Search Summary, Market Trend Analysis, Competitor Activity Analysis, PDF Report"

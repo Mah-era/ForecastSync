@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,Some dates are stored as text in DD/MM/YYYY format.,"Detect, warn user, and continue analysis where possible"

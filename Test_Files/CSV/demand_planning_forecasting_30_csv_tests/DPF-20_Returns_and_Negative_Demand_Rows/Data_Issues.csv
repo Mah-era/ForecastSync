@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,Negative units represent returns/refunds and should be handled carefully.,"Detect, warn user, and continue analysis where possible"

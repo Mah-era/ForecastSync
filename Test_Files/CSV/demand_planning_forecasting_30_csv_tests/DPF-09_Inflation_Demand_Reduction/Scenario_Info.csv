@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-09
+Scenario Title,Inflation Demand Reduction
+Purpose,Test economic condition adjustment.
+Product Name,Cooking Oil 5L
+Category,Grocery
+Brand,Fresh
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Economic Conditions, Historical Sales, Inventory"
+Recommended Inputs To Tick,"Economic Conditions, Historical Sales Data, Online Web Search Data"
+Recommended Outputs To Tick,"Economic Condition Impact, Demand Forecast, Final SCM Recommendation"

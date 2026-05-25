@@ -1,0 +1,2861 @@
+{
+  "scenario_id": "DPF-24",
+  "source_excel_file": "DPF-24_ERP_Schema_Mismatch.xlsx",
+  "scenario_title": "ERP Schema Mismatch",
+  "sheet_count": 16,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-24"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "ERP Schema Mismatch"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test flexible column mapping for ERP-like exports."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Office Chair"
+        },
+        {
+          "Field": "Category",
+          "Value": "Furniture"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Hatil"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Messy/Edge Case"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Technology & Data Tools, Inventory"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "POS / ERP Data, Inventory Levels, Uploaded File Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Data Quality Score, Inventory Requirement"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-24"
+        ],
+        [
+          "Scenario Title",
+          "ERP Schema Mismatch"
+        ],
+        [
+          "Purpose",
+          "Test flexible column mapping for ERP-like exports."
+        ],
+        [
+          "Product Name",
+          "Office Chair"
+        ],
+        [
+          "Category",
+          "Furniture"
+        ],
+        [
+          "Brand",
+          "Hatil"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Messy/Edge Case"
+        ],
+        [
+          "Modules Covered",
+          "Technology & Data Tools, Inventory"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "POS / ERP Data, Inventory Levels, Uploaded File Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Data Quality Score, Inventory Requirement"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 468,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3978000,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 430,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3655000,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 478,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4063000,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 398,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3383000,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 495,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4207500,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 417,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3544500,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 509,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4326500,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 438,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3723000,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 426,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3621000,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 469,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3986500,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 509,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4326500,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 467,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 3969500,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 508,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4318000,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 503,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4275500,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 494,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4199000,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 524,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4454000,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 490,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4165000,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 554,
+          "UnitPriceBDT": 8500,
+          "RevenueBDT": 4709000,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Dhaka",
+          "Retail",
+          468,
+          8500,
+          3978000,
+          ""
+        ],
+        [
+          45323,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Chattogram",
+          "Online",
+          430,
+          8500,
+          3655000,
+          ""
+        ],
+        [
+          45352,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Sylhet",
+          "Wholesale",
+          478,
+          8500,
+          4063000,
+          ""
+        ],
+        [
+          45383,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rajshahi",
+          "Modern Trade",
+          398,
+          8500,
+          3383000,
+          ""
+        ],
+        [
+          45413,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Khulna",
+          "Retail",
+          495,
+          8500,
+          4207500,
+          ""
+        ],
+        [
+          45444,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Barishal",
+          "Online",
+          417,
+          8500,
+          3544500,
+          ""
+        ],
+        [
+          45474,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rangpur",
+          "Wholesale",
+          509,
+          8500,
+          4326500,
+          ""
+        ],
+        [
+          45505,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Mymensingh",
+          "Modern Trade",
+          438,
+          8500,
+          3723000,
+          ""
+        ],
+        [
+          45536,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Dhaka",
+          "Retail",
+          426,
+          8500,
+          3621000,
+          ""
+        ],
+        [
+          45566,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Chattogram",
+          "Online",
+          469,
+          8500,
+          3986500,
+          ""
+        ],
+        [
+          45597,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Sylhet",
+          "Wholesale",
+          509,
+          8500,
+          4326500,
+          ""
+        ],
+        [
+          45627,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rajshahi",
+          "Modern Trade",
+          467,
+          8500,
+          3969500,
+          ""
+        ],
+        [
+          45658,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Khulna",
+          "Retail",
+          508,
+          8500,
+          4318000,
+          ""
+        ],
+        [
+          45689,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Barishal",
+          "Online",
+          503,
+          8500,
+          4275500,
+          ""
+        ],
+        [
+          45717,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rangpur",
+          "Wholesale",
+          494,
+          8500,
+          4199000,
+          ""
+        ],
+        [
+          45748,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Mymensingh",
+          "Modern Trade",
+          524,
+          8500,
+          4454000,
+          ""
+        ],
+        [
+          45778,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Dhaka",
+          "Retail",
+          490,
+          8500,
+          4165000,
+          ""
+        ],
+        [
+          45809,
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Chattogram",
+          "Online",
+          554,
+          8500,
+          4709000,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "HAT-DPF-24-01",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 880,
+          "SafetyStock": 695,
+          "ReorderPoint": 1427,
+          "StockInTransit": 471,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "HAT-DPF-24-02",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 3008,
+          "SafetyStock": 624,
+          "ReorderPoint": 1301,
+          "StockInTransit": 113,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "HAT-DPF-24-03",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 2785,
+          "SafetyStock": 531,
+          "ReorderPoint": 1191,
+          "StockInTransit": 541,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "HAT-DPF-24-04",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 2944,
+          "SafetyStock": 523,
+          "ReorderPoint": 1182,
+          "StockInTransit": 300,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "HAT-DPF-24-05",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 2032,
+          "SafetyStock": 521,
+          "ReorderPoint": 1122,
+          "StockInTransit": 306,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "HAT-DPF-24-06",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 3579,
+          "SafetyStock": 626,
+          "ReorderPoint": 1475,
+          "StockInTransit": 414,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "HAT-DPF-24-07",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 1740,
+          "SafetyStock": 591,
+          "ReorderPoint": 1151,
+          "StockInTransit": 233,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "HAT-DPF-24-08",
+          "ProductName": "Office Chair",
+          "Category": "Furniture",
+          "Brand": "Hatil",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2111,
+          "SafetyStock": 599,
+          "ReorderPoint": 1369,
+          "StockInTransit": 331,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "HAT-DPF-24-01",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Dhaka",
+          "Dhaka DC",
+          880,
+          695,
+          1427,
+          471,
+          120,
+          45672,
+          "Reorder Needed"
+        ],
+        [
+          "HAT-DPF-24-02",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Chattogram",
+          "Chattogram DC",
+          3008,
+          624,
+          1301,
+          113,
+          120,
+          45673,
+          "Overstock Risk"
+        ],
+        [
+          "HAT-DPF-24-03",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Sylhet",
+          "Sylhet DC",
+          2785,
+          531,
+          1191,
+          541,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "HAT-DPF-24-04",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rajshahi",
+          "Rajshahi DC",
+          2944,
+          523,
+          1182,
+          300,
+          120,
+          45675,
+          "Overstock Risk"
+        ],
+        [
+          "HAT-DPF-24-05",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Khulna",
+          "Khulna DC",
+          2032,
+          521,
+          1122,
+          306,
+          120,
+          45676,
+          "OK"
+        ],
+        [
+          "HAT-DPF-24-06",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Barishal",
+          "Barishal DC",
+          3579,
+          626,
+          1475,
+          414,
+          120,
+          45677,
+          "Overstock Risk"
+        ],
+        [
+          "HAT-DPF-24-07",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Rangpur",
+          "Rangpur DC",
+          1740,
+          591,
+          1151,
+          233,
+          120,
+          45678,
+          "OK"
+        ],
+        [
+          "HAT-DPF-24-08",
+          "Office Chair",
+          "Furniture",
+          "Hatil",
+          "Mymensingh",
+          "Mymensingh DC",
+          2111,
+          599,
+          1369,
+          331,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 17.3,
+          "ActualUpliftPct": 13.5,
+          "BudgetBDT": 112587,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 34.2,
+          "ActualUpliftPct": 38.6,
+          "BudgetBDT": 85272,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 16.3,
+          "ActualUpliftPct": 15.6,
+          "BudgetBDT": 126965,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 13.4,
+          "ActualUpliftPct": 15.2,
+          "BudgetBDT": 137602,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          17.3,
+          13.5,
+          112587,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          34.2,
+          38.6,
+          85272,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          16.3,
+          15.6,
+          126965,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          13.4,
+          15.2,
+          137602,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Furniture",
+          "CompetitorPriceBDT": 9029,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Furniture",
+          "CompetitorPriceBDT": 7657,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Furniture",
+          "CompetitorPriceBDT": 7579,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Furniture",
+          "CompetitorPriceBDT": 7045,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Furniture",
+          9029,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Furniture",
+          7657,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Furniture",
+          7579,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Furniture",
+          7045,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.35,
+          "IncomeIndex": 99.95,
+          "PurchasingPowerIndex": 87.5,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.1,
+          "IncomeIndex": 99.45,
+          "PurchasingPowerIndex": 86.06,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.19,
+          "IncomeIndex": 100.86,
+          "PurchasingPowerIndex": 86.33,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.33,
+          "IncomeIndex": 101.29,
+          "PurchasingPowerIndex": 86.23,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.66,
+          "IncomeIndex": 100.69,
+          "PurchasingPowerIndex": 85.48,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.79,
+          "IncomeIndex": 100.51,
+          "PurchasingPowerIndex": 85.21,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.74,
+          "IncomeIndex": 102.34,
+          "PurchasingPowerIndex": 85.84,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.13,
+          "IncomeIndex": 101.95,
+          "PurchasingPowerIndex": 86.76,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.85,
+          "IncomeIndex": 103.32,
+          "PurchasingPowerIndex": 87.64,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.68,
+          "IncomeIndex": 101.8,
+          "PurchasingPowerIndex": 87.48,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.12,
+          "IncomeIndex": 103.7,
+          "PurchasingPowerIndex": 89,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.87,
+          "IncomeIndex": 103.9,
+          "PurchasingPowerIndex": 89.49,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.69,
+          "IncomeIndex": 104.58,
+          "PurchasingPowerIndex": 90,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.44,
+          "IncomeIndex": 104.8,
+          "PurchasingPowerIndex": 90.49,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.54,
+          "IncomeIndex": 104.43,
+          "PurchasingPowerIndex": 90.22,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.48,
+          "IncomeIndex": 104.51,
+          "PurchasingPowerIndex": 90.34,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.72,
+          "IncomeIndex": 104.9,
+          "PurchasingPowerIndex": 90.04,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 7.04,
+          "IncomeIndex": 105.59,
+          "PurchasingPowerIndex": 89.7,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.35,
+          99.95,
+          87.5,
+          109,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.1,
+          99.45,
+          86.06,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.19,
+          100.86,
+          86.33,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.33,
+          101.29,
+          86.23,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.66,
+          100.69,
+          85.48,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.79,
+          100.51,
+          85.21,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.74,
+          102.34,
+          85.84,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.13,
+          101.95,
+          86.76,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.85,
+          103.32,
+          87.64,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.68,
+          101.8,
+          87.48,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.12,
+          103.7,
+          89,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.87,
+          103.9,
+          89.49,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.69,
+          104.58,
+          90,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.44,
+          104.8,
+          90.49,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.54,
+          104.43,
+          90.22,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.48,
+          104.51,
+          90.34,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.72,
+          104.9,
+          90.04,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          7.04,
+          105.59,
+          89.7,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 25,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 5,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 24,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 5,
+          "ProductionLeadDays": 6,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 19,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 10,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 5,
+          "TotalLeadTimeDays": 26,
+          "DelayFlag": "Yes",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          5,
+          12,
+          6,
+          2,
+          25,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          4,
+          12,
+          5,
+          3,
+          24,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          5,
+          6,
+          6,
+          2,
+          19,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          4,
+          10,
+          7,
+          5,
+          26,
+          "Yes",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 385,
+          "ActualUnits": 339,
+          "ForecastError": -46,
+          "AbsoluteError": 46,
+          "APE": 0.13569321533923304,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 418,
+          "ActualUnits": 368,
+          "ForecastError": -50,
+          "AbsoluteError": 50,
+          "APE": 0.1358695652173913,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 412,
+          "ActualUnits": 406,
+          "ForecastError": -6,
+          "AbsoluteError": 6,
+          "APE": 0.014778325123152709,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 430,
+          "ActualUnits": 433,
+          "ForecastError": 3,
+          "AbsoluteError": 3,
+          "APE": 0.006928406466512702,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 414,
+          "ActualUnits": 477,
+          "ForecastError": 63,
+          "AbsoluteError": 63,
+          "APE": 0.1320754716981132,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 452,
+          "ActualUnits": 510,
+          "ForecastError": 58,
+          "AbsoluteError": 58,
+          "APE": 0.11372549019607843,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 512,
+          "ActualUnits": 424,
+          "ForecastError": -88,
+          "AbsoluteError": 88,
+          "APE": 0.20754716981132076,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 515,
+          "ActualUnits": 541,
+          "ForecastError": 26,
+          "AbsoluteError": 26,
+          "APE": 0.04805914972273567,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 485,
+          "ActualUnits": 581,
+          "ForecastError": 96,
+          "AbsoluteError": 96,
+          "APE": 0.16523235800344235,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 476,
+          "ActualUnits": 465,
+          "ForecastError": -11,
+          "AbsoluteError": 11,
+          "APE": 0.023655913978494623,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 543,
+          "ActualUnits": 627,
+          "ForecastError": 84,
+          "AbsoluteError": 84,
+          "APE": 0.1339712918660287,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 516,
+          "ActualUnits": 575,
+          "ForecastError": 59,
+          "AbsoluteError": 59,
+          "APE": 0.10260869565217391,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          385,
+          339,
+          -46,
+          46,
+          0.13569321533923304,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          418,
+          368,
+          -50,
+          50,
+          0.1358695652173913,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          412,
+          406,
+          -6,
+          6,
+          0.014778325123152709,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          430,
+          433,
+          3,
+          3,
+          0.006928406466512702,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          414,
+          477,
+          63,
+          63,
+          0.1320754716981132,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          452,
+          510,
+          58,
+          58,
+          0.11372549019607843,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          512,
+          424,
+          -88,
+          88,
+          0.20754716981132076,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          515,
+          541,
+          26,
+          26,
+          0.04805914972273567,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          485,
+          581,
+          96,
+          96,
+          0.16523235800344235,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          476,
+          465,
+          -11,
+          11,
+          0.023655913978494623,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          543,
+          627,
+          84,
+          84,
+          0.1339712918660287,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          516,
+          575,
+          59,
+          59,
+          0.10260869565217391,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 458,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 76,
+          "ForecastDemandUnits": 274,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 72,
+          "ForecastDemandUnits": 300,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 69,
+          "ForecastDemandUnits": 266,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 88,
+          "ForecastDemandUnits": 425,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 91,
+          "ForecastDemandUnits": 318,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 74,
+          "ForecastDemandUnits": 376,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 84,
+          "ForecastDemandUnits": 359,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          91,
+          458,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          76,
+          274,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          72,
+          300,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          69,
+          266,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          88,
+          425,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          91,
+          318,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          74,
+          376,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          84,
+          359,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 7228,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 3,
+          "AvgBasketValueBDT": 33663,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 1,
+          "AvgBasketValueBDT": 8127,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 36476,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Monthly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 57534,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Festival-based",
+          1,
+          7228,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Festival-based",
+          3,
+          33663,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Bi-weekly",
+          1,
+          8127,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Monthly",
+          4,
+          36476,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Monthly",
+          7,
+          57534,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 293,
+          "DataQualityScore": 88,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "ERP Export",
+          "Status": "Messy",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "legacy_erp_export.xlsx",
+          "RecordsDetected": 158,
+          "DataQualityScore": 55,
+          "Notes": "Column names differ from required schema"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 20,
+          "DataQualityScore": 85,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 5,
+          "DataQualityScore": 83,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          293,
+          88,
+          "Flat file import"
+        ],
+        [
+          "ERP Export",
+          "Messy",
+          "erpConnector",
+          "legacy_erp_export.xlsx",
+          158,
+          55,
+          "Column names differ from required schema"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          20,
+          85,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          5,
+          83,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Office Chair Hatil Furniture Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Office Chair demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Furniture competitor pricing promotions Bangladesh Hatil",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Office Chair online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Office Chair Hatil Furniture Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Office Chair demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Furniture competitor pricing promotions Bangladesh Hatil",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Office Chair online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 61,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 90,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 71,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 67,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          61,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          90,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          71,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          67,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "Sheet/column names intentionally vary to test mapping.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "Sheet/column names intentionally vary to test mapping.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    },
+    "ERP_Raw_Export_Messy": {
+      "columns": [
+        "TxnDate",
+        "Item_Desc",
+        "BRND",
+        "Cat",
+        "Loc",
+        "Qty",
+        "Price_Taka",
+        "Whse_Stock",
+        "LT_Days"
+      ],
+      "records": [
+        {
+          "TxnDate": "2024/01/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Chattogram",
+          "Qty": 449,
+          "Price_Taka": 8500,
+          "Whse_Stock": 1434,
+          "LT_Days": 8
+        },
+        {
+          "TxnDate": "2024/02/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Dhaka",
+          "Qty": 176,
+          "Price_Taka": 8500,
+          "Whse_Stock": 508,
+          "LT_Days": 33
+        },
+        {
+          "TxnDate": "2024/03/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Dhaka",
+          "Qty": 368,
+          "Price_Taka": 8500,
+          "Whse_Stock": 412,
+          "LT_Days": 14
+        },
+        {
+          "TxnDate": "2024/04/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Sylhet",
+          "Qty": 292,
+          "Price_Taka": 8500,
+          "Whse_Stock": 1471,
+          "LT_Days": 10
+        },
+        {
+          "TxnDate": "2024/05/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Rajshahi",
+          "Qty": 288,
+          "Price_Taka": 8500,
+          "Whse_Stock": 624,
+          "LT_Days": 31
+        },
+        {
+          "TxnDate": "2024/06/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Barishal",
+          "Qty": 135,
+          "Price_Taka": 8500,
+          "Whse_Stock": 1340,
+          "LT_Days": 26
+        },
+        {
+          "TxnDate": "2024/07/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Chattogram",
+          "Qty": 448,
+          "Price_Taka": 8500,
+          "Whse_Stock": 435,
+          "LT_Days": 16
+        },
+        {
+          "TxnDate": "2024/08/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Chattogram",
+          "Qty": 346,
+          "Price_Taka": 8500,
+          "Whse_Stock": 152,
+          "LT_Days": 16
+        },
+        {
+          "TxnDate": "2024/09/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Rangpur",
+          "Qty": 253,
+          "Price_Taka": 8500,
+          "Whse_Stock": 506,
+          "LT_Days": 9
+        },
+        {
+          "TxnDate": "2024/10/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Rajshahi",
+          "Qty": 102,
+          "Price_Taka": 8500,
+          "Whse_Stock": 717,
+          "LT_Days": 34
+        },
+        {
+          "TxnDate": "2024/11/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Chattogram",
+          "Qty": 457,
+          "Price_Taka": 8500,
+          "Whse_Stock": 1259,
+          "LT_Days": 32
+        },
+        {
+          "TxnDate": "2024/12/01",
+          "Item_Desc": "Office Chair",
+          "BRND": "Hatil",
+          "Cat": "Furniture",
+          "Loc": "Dhaka",
+          "Qty": 227,
+          "Price_Taka": 8500,
+          "Whse_Stock": 1191,
+          "LT_Days": 20
+        }
+      ],
+      "raw_rows": [
+        [
+          "TxnDate",
+          "Item_Desc",
+          "BRND",
+          "Cat",
+          "Loc",
+          "Qty",
+          "Price_Taka",
+          "Whse_Stock",
+          "LT_Days"
+        ],
+        [
+          "2024/01/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Chattogram",
+          449,
+          8500,
+          1434,
+          8
+        ],
+        [
+          "2024/02/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Dhaka",
+          176,
+          8500,
+          508,
+          33
+        ],
+        [
+          "2024/03/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Dhaka",
+          368,
+          8500,
+          412,
+          14
+        ],
+        [
+          "2024/04/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Sylhet",
+          292,
+          8500,
+          1471,
+          10
+        ],
+        [
+          "2024/05/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Rajshahi",
+          288,
+          8500,
+          624,
+          31
+        ],
+        [
+          "2024/06/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Barishal",
+          135,
+          8500,
+          1340,
+          26
+        ],
+        [
+          "2024/07/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Chattogram",
+          448,
+          8500,
+          435,
+          16
+        ],
+        [
+          "2024/08/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Chattogram",
+          346,
+          8500,
+          152,
+          16
+        ],
+        [
+          "2024/09/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Rangpur",
+          253,
+          8500,
+          506,
+          9
+        ],
+        [
+          "2024/10/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Rajshahi",
+          102,
+          8500,
+          717,
+          34
+        ],
+        [
+          "2024/11/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Chattogram",
+          457,
+          8500,
+          1259,
+          32
+        ],
+        [
+          "2024/12/01",
+          "Office Chair",
+          "Hatil",
+          "Furniture",
+          "Dhaka",
+          227,
+          8500,
+          1191,
+          20
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 9
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}

@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+MAY-DPF-19-01,Foundation Makeup,Cosmetics,Maybelline,Dhaka,Dhaka DC,3403,448,1070,533,120,45672,Overstock Risk
+MAY-DPF-19-02,Foundation Makeup,Cosmetics,Maybelline,Chattogram,Chattogram DC,3281,509,1215,580,120,45673,Overstock Risk
+MAY-DPF-19-03,Foundation Makeup,Cosmetics,Maybelline,Sylhet,Sylhet DC,2901,515,1339,353,120,45674,Overstock Risk
+MAY-DPF-19-04,Foundation Makeup,Cosmetics,Maybelline,Rajshahi,Rajshahi DC,2702,474,1044,280,120,45675,Overstock Risk
+MAY-DPF-19-05,Foundation Makeup,Cosmetics,Maybelline,Khulna,Khulna DC,2583,489,1328,398,120,45676,OK
+MAY-DPF-19-06,Foundation Makeup,Cosmetics,Maybelline,Barishal,Barishal DC,1881,485,1331,487,120,45677,OK
+MAY-DPF-19-07,Foundation Makeup,Cosmetics,Maybelline,Rangpur,Rangpur DC,2855,518,1202,165,120,45678,Overstock Risk
+MAY-DPF-19-08,Foundation Makeup,Cosmetics,Maybelline,Mymensingh,Mymensingh DC,2520,705,1539,431,120,45679,OK

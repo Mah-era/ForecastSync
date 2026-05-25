@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+ANK-DPF-21-01,Power Bank,Electronics,Anker,Dhaka,Dhaka DC,2708,685,1425,435,120,45672,OK
+ANK-DPF-21-02,Power Bank,Electronics,Anker,Chattogram,Chattogram DC,2187,534,1358,524,120,45673,OK
+ANK-DPF-21-03,Power Bank,Electronics,Anker,Sylhet,Sylhet DC,3302,531,1337,405,120,45674,Overstock Risk
+ANK-DPF-21-04,Power Bank,Electronics,Anker,Rajshahi,Rajshahi DC,2935,540,1245,129,120,45675,Overstock Risk
+ANK-DPF-21-05,Power Bank,Electronics,Anker,Khulna,Khulna DC,2769,441,1115,424,120,45676,Overstock Risk
+ANK-DPF-21-06,Power Bank,Electronics,Anker,Barishal,Barishal DC,3175,591,1271,133,120,45677,Overstock Risk
+ANK-DPF-21-07,Power Bank,Electronics,Anker,Rangpur,Rangpur DC,3454,575,1398,483,120,45678,Overstock Risk
+ANK-DPF-21-08,Power Bank,Electronics,Anker,Mymensingh,Mymensingh DC,2051,510,1133,141,120,45679,OK

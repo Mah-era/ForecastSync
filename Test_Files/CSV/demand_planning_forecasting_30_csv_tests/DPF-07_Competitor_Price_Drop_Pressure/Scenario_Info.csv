@@ -1,0 +1,12 @@
+﻿Field,Value
+Scenario ID,DPF-07
+Scenario Title,Competitor Price Drop Pressure
+Purpose,Test competitor price war impact.
+Product Name,Laundry Detergent
+Category,Home Care
+Brand,Surf Excel
+Expected App Behavior,"App should ingest data, run selected modules, generate dashboard outputs and export report."
+Data Quality,Clean
+Modules Covered,"Competitor Activities, Market Trends, Historical Sales"
+Recommended Inputs To Tick,"Competitor Activities, Market Trends, Online Web Search Data, Historical Sales Data"
+Recommended Outputs To Tick,"Competitor Activity Analysis, Demand Forecast, Risk Alerts"

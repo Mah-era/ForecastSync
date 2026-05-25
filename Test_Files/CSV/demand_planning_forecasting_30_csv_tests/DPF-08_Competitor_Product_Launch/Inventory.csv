@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+COC-DPF-08-01,Soft Drink 250ml,Beverage,Coca-Cola,Dhaka,Dhaka DC,3532,595,1358,418,120,45672,Overstock Risk
+COC-DPF-08-02,Soft Drink 250ml,Beverage,Coca-Cola,Chattogram,Chattogram DC,3360,612,1220,113,120,45673,Overstock Risk
+COC-DPF-08-03,Soft Drink 250ml,Beverage,Coca-Cola,Sylhet,Sylhet DC,2146,523,1171,106,120,45674,OK
+COC-DPF-08-04,Soft Drink 250ml,Beverage,Coca-Cola,Rajshahi,Rajshahi DC,2334,525,1230,106,120,45675,OK
+COC-DPF-08-05,Soft Drink 250ml,Beverage,Coca-Cola,Khulna,Khulna DC,3266,461,1298,545,120,45676,Overstock Risk
+COC-DPF-08-06,Soft Drink 250ml,Beverage,Coca-Cola,Barishal,Barishal DC,2643,579,1287,380,120,45677,Overstock Risk
+COC-DPF-08-07,Soft Drink 250ml,Beverage,Coca-Cola,Rangpur,Rangpur DC,3151,686,1390,520,120,45678,Overstock Risk
+COC-DPF-08-08,Soft Drink 250ml,Beverage,Coca-Cola,Mymensingh,Mymensingh DC,2749,528,1240,158,120,45679,Overstock Risk

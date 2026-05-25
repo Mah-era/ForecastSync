@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+NIV-DPF-04-01,Moisturizing Cream,Skin Care,Nivea,Dhaka,Dhaka DC,3111,485,1145,393,120,45672,Overstock Risk
+NIV-DPF-04-02,Moisturizing Cream,Skin Care,Nivea,Chattogram,Chattogram DC,3546,598,1449,281,120,45673,Overstock Risk
+NIV-DPF-04-03,Moisturizing Cream,Skin Care,Nivea,Sylhet,Sylhet DC,3582,495,1244,532,120,45674,Overstock Risk
+NIV-DPF-04-04,Moisturizing Cream,Skin Care,Nivea,Rajshahi,Rajshahi DC,1573,632,1289,451,120,45675,OK
+NIV-DPF-04-05,Moisturizing Cream,Skin Care,Nivea,Khulna,Khulna DC,3191,659,1400,98,120,45676,Overstock Risk
+NIV-DPF-04-06,Moisturizing Cream,Skin Care,Nivea,Barishal,Barishal DC,2407,622,1204,431,120,45677,OK
+NIV-DPF-04-07,Moisturizing Cream,Skin Care,Nivea,Rangpur,Rangpur DC,911,556,1273,313,120,45678,Reorder Needed
+NIV-DPF-04-08,Moisturizing Cream,Skin Care,Nivea,Mymensingh,Mymensingh DC,1916,685,1392,159,120,45679,OK

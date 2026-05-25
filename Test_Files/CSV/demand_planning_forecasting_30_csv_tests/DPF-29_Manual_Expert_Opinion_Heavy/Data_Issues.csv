@@ -1,0 +1,2 @@
+﻿IssueType,Description,ExpectedValidationBehavior
+Issue 1,No reliable historical sales; app should use expert opinion and web data.,"Detect, warn user, and continue analysis where possible"

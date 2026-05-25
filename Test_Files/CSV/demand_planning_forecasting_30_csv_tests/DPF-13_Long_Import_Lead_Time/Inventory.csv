@@ -1,0 +1,9 @@
+﻿SKU,ProductName,Category,Brand,Region,Warehouse,CurrentStock,SafetyStock,ReorderPoint,StockInTransit,UnitCostBDT,LastUpdated,InventoryStatus
+XIA-DPF-13-01,Smart Watch,Electronics,Xiaomi,Dhaka,Dhaka DC,2329,543,1301,442,120,45672,OK
+XIA-DPF-13-02,Smart Watch,Electronics,Xiaomi,Chattogram,Chattogram DC,2647,573,1289,79,120,45673,Overstock Risk
+XIA-DPF-13-03,Smart Watch,Electronics,Xiaomi,Sylhet,Sylhet DC,2461,443,1172,226,120,45674,Overstock Risk
+XIA-DPF-13-04,Smart Watch,Electronics,Xiaomi,Rajshahi,Rajshahi DC,3685,445,1265,446,120,45675,Overstock Risk
+XIA-DPF-13-05,Smart Watch,Electronics,Xiaomi,Khulna,Khulna DC,3193,690,1284,128,120,45676,Overstock Risk
+XIA-DPF-13-06,Smart Watch,Electronics,Xiaomi,Barishal,Barishal DC,1303,493,1221,523,120,45677,OK
+XIA-DPF-13-07,Smart Watch,Electronics,Xiaomi,Rangpur,Rangpur DC,1644,549,1228,298,120,45678,OK
+XIA-DPF-13-08,Smart Watch,Electronics,Xiaomi,Mymensingh,Mymensingh DC,2499,712,1344,451,120,45679,OK

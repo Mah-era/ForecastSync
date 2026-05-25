@@ -1,0 +1,2567 @@
+{
+  "scenario_id": "DPF-23",
+  "source_excel_file": "DPF-23_Multi_Channel_POS_Demand.xlsx",
+  "scenario_title": "Multi-Channel POS Demand",
+  "sheet_count": 15,
+  "sheets": {
+    "Scenario_Info": {
+      "columns": [
+        "Field",
+        "Value"
+      ],
+      "records": [
+        {
+          "Field": "Scenario ID",
+          "Value": "DPF-23"
+        },
+        {
+          "Field": "Scenario Title",
+          "Value": "Multi-Channel POS Demand"
+        },
+        {
+          "Field": "Purpose",
+          "Value": "Test retail/online/wholesale channel analytics."
+        },
+        {
+          "Field": "Product Name",
+          "Value": "Wireless Earbuds"
+        },
+        {
+          "Field": "Category",
+          "Value": "Electronics"
+        },
+        {
+          "Field": "Brand",
+          "Value": "Realme"
+        },
+        {
+          "Field": "Expected App Behavior",
+          "Value": "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        },
+        {
+          "Field": "Data Quality",
+          "Value": "Clean"
+        },
+        {
+          "Field": "Modules Covered",
+          "Value": "Customer Demand Patterns, Technology & Data Tools"
+        },
+        {
+          "Field": "Recommended Inputs To Tick",
+          "Value": "POS / ERP Data, Customer Demand Data, Historical Sales Data"
+        },
+        {
+          "Field": "Recommended Outputs To Tick",
+          "Value": "Customer Demand Pattern, Data Source Usage Chart"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Field",
+          "Value"
+        ],
+        [
+          "Scenario ID",
+          "DPF-23"
+        ],
+        [
+          "Scenario Title",
+          "Multi-Channel POS Demand"
+        ],
+        [
+          "Purpose",
+          "Test retail/online/wholesale channel analytics."
+        ],
+        [
+          "Product Name",
+          "Wireless Earbuds"
+        ],
+        [
+          "Category",
+          "Electronics"
+        ],
+        [
+          "Brand",
+          "Realme"
+        ],
+        [
+          "Expected App Behavior",
+          "App should ingest data, run selected modules, generate dashboard outputs and export report."
+        ],
+        [
+          "Data Quality",
+          "Clean"
+        ],
+        [
+          "Modules Covered",
+          "Customer Demand Patterns, Technology & Data Tools"
+        ],
+        [
+          "Recommended Inputs To Tick",
+          "POS / ERP Data, Customer Demand Data, Historical Sales Data"
+        ],
+        [
+          "Recommended Outputs To Tick",
+          "Customer Demand Pattern, Data Source Usage Chart"
+        ]
+      ],
+      "row_count_excluding_header": 11,
+      "column_count": 2
+    },
+    "Historical_Sales": {
+      "columns": [
+        "Month",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Channel",
+        "UnitsSold",
+        "UnitPriceBDT",
+        "RevenueBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 648,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 1879200,
+          "Notes": null
+        },
+        {
+          "Month": 45323,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 642,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 1861800,
+          "Notes": null
+        },
+        {
+          "Month": 45352,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 709,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2056100,
+          "Notes": null
+        },
+        {
+          "Month": 45383,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 718,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2082200,
+          "Notes": null
+        },
+        {
+          "Month": 45413,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 736,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2134400,
+          "Notes": null
+        },
+        {
+          "Month": 45444,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 794,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2302600,
+          "Notes": null
+        },
+        {
+          "Month": 45474,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 795,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2305500,
+          "Notes": null
+        },
+        {
+          "Month": 45505,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 863,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2502700,
+          "Notes": null
+        },
+        {
+          "Month": 45536,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 708,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2053200,
+          "Notes": null
+        },
+        {
+          "Month": 45566,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 776,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2250400,
+          "Notes": null
+        },
+        {
+          "Month": 45597,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Sylhet",
+          "Channel": "Wholesale",
+          "UnitsSold": 774,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2244600,
+          "Notes": null
+        },
+        {
+          "Month": 45627,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rajshahi",
+          "Channel": "Modern Trade",
+          "UnitsSold": 886,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2569400,
+          "Notes": null
+        },
+        {
+          "Month": 45658,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Khulna",
+          "Channel": "Retail",
+          "UnitsSold": 776,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2250400,
+          "Notes": null
+        },
+        {
+          "Month": 45689,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Barishal",
+          "Channel": "Online",
+          "UnitsSold": 774,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2244600,
+          "Notes": null
+        },
+        {
+          "Month": 45717,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rangpur",
+          "Channel": "Wholesale",
+          "UnitsSold": 837,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2427300,
+          "Notes": null
+        },
+        {
+          "Month": 45748,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Mymensingh",
+          "Channel": "Modern Trade",
+          "UnitsSold": 841,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2438900,
+          "Notes": null
+        },
+        {
+          "Month": 45778,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Dhaka",
+          "Channel": "Retail",
+          "UnitsSold": 822,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2383800,
+          "Notes": null
+        },
+        {
+          "Month": 45809,
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Chattogram",
+          "Channel": "Online",
+          "UnitsSold": 826,
+          "UnitPriceBDT": 2900,
+          "RevenueBDT": 2395400,
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Channel",
+          "UnitsSold",
+          "UnitPriceBDT",
+          "RevenueBDT",
+          "Notes"
+        ],
+        [
+          45292,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Dhaka",
+          "Retail",
+          648,
+          2900,
+          1879200,
+          ""
+        ],
+        [
+          45323,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Chattogram",
+          "Online",
+          642,
+          2900,
+          1861800,
+          ""
+        ],
+        [
+          45352,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Sylhet",
+          "Wholesale",
+          709,
+          2900,
+          2056100,
+          ""
+        ],
+        [
+          45383,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rajshahi",
+          "Modern Trade",
+          718,
+          2900,
+          2082200,
+          ""
+        ],
+        [
+          45413,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Khulna",
+          "Retail",
+          736,
+          2900,
+          2134400,
+          ""
+        ],
+        [
+          45444,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Barishal",
+          "Online",
+          794,
+          2900,
+          2302600,
+          ""
+        ],
+        [
+          45474,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rangpur",
+          "Wholesale",
+          795,
+          2900,
+          2305500,
+          ""
+        ],
+        [
+          45505,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Mymensingh",
+          "Modern Trade",
+          863,
+          2900,
+          2502700,
+          ""
+        ],
+        [
+          45536,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Dhaka",
+          "Retail",
+          708,
+          2900,
+          2053200,
+          ""
+        ],
+        [
+          45566,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Chattogram",
+          "Online",
+          776,
+          2900,
+          2250400,
+          ""
+        ],
+        [
+          45597,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Sylhet",
+          "Wholesale",
+          774,
+          2900,
+          2244600,
+          ""
+        ],
+        [
+          45627,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rajshahi",
+          "Modern Trade",
+          886,
+          2900,
+          2569400,
+          ""
+        ],
+        [
+          45658,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Khulna",
+          "Retail",
+          776,
+          2900,
+          2250400,
+          ""
+        ],
+        [
+          45689,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Barishal",
+          "Online",
+          774,
+          2900,
+          2244600,
+          ""
+        ],
+        [
+          45717,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rangpur",
+          "Wholesale",
+          837,
+          2900,
+          2427300,
+          ""
+        ],
+        [
+          45748,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Mymensingh",
+          "Modern Trade",
+          841,
+          2900,
+          2438900,
+          ""
+        ],
+        [
+          45778,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Dhaka",
+          "Retail",
+          822,
+          2900,
+          2383800,
+          ""
+        ],
+        [
+          45809,
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Chattogram",
+          "Online",
+          826,
+          2900,
+          2395400,
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 10
+    },
+    "Inventory": {
+      "columns": [
+        "SKU",
+        "ProductName",
+        "Category",
+        "Brand",
+        "Region",
+        "Warehouse",
+        "CurrentStock",
+        "SafetyStock",
+        "ReorderPoint",
+        "StockInTransit",
+        "UnitCostBDT",
+        "LastUpdated",
+        "InventoryStatus"
+      ],
+      "records": [
+        {
+          "SKU": "REA-DPF-23-01",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Dhaka",
+          "Warehouse": "Dhaka DC",
+          "CurrentStock": 3529,
+          "SafetyStock": 562,
+          "ReorderPoint": 1398,
+          "StockInTransit": 378,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45672,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "REA-DPF-23-02",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Chattogram",
+          "Warehouse": "Chattogram DC",
+          "CurrentStock": 1020,
+          "SafetyStock": 715,
+          "ReorderPoint": 1543,
+          "StockInTransit": 608,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45673,
+          "InventoryStatus": "Reorder Needed"
+        },
+        {
+          "SKU": "REA-DPF-23-03",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Sylhet",
+          "Warehouse": "Sylhet DC",
+          "CurrentStock": 3538,
+          "SafetyStock": 673,
+          "ReorderPoint": 1286,
+          "StockInTransit": 342,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45674,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "REA-DPF-23-04",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rajshahi",
+          "Warehouse": "Rajshahi DC",
+          "CurrentStock": 1490,
+          "SafetyStock": 550,
+          "ReorderPoint": 1129,
+          "StockInTransit": 283,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45675,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "REA-DPF-23-05",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Khulna",
+          "Warehouse": "Khulna DC",
+          "CurrentStock": 3708,
+          "SafetyStock": 513,
+          "ReorderPoint": 1324,
+          "StockInTransit": 325,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45676,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "REA-DPF-23-06",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Barishal",
+          "Warehouse": "Barishal DC",
+          "CurrentStock": 2091,
+          "SafetyStock": 703,
+          "ReorderPoint": 1582,
+          "StockInTransit": 381,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45677,
+          "InventoryStatus": "OK"
+        },
+        {
+          "SKU": "REA-DPF-23-07",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Rangpur",
+          "Warehouse": "Rangpur DC",
+          "CurrentStock": 2940,
+          "SafetyStock": 483,
+          "ReorderPoint": 1138,
+          "StockInTransit": 608,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45678,
+          "InventoryStatus": "Overstock Risk"
+        },
+        {
+          "SKU": "REA-DPF-23-08",
+          "ProductName": "Wireless Earbuds",
+          "Category": "Electronics",
+          "Brand": "Realme",
+          "Region": "Mymensingh",
+          "Warehouse": "Mymensingh DC",
+          "CurrentStock": 2540,
+          "SafetyStock": 589,
+          "ReorderPoint": 1388,
+          "StockInTransit": 106,
+          "UnitCostBDT": 120,
+          "LastUpdated": 45679,
+          "InventoryStatus": "OK"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SKU",
+          "ProductName",
+          "Category",
+          "Brand",
+          "Region",
+          "Warehouse",
+          "CurrentStock",
+          "SafetyStock",
+          "ReorderPoint",
+          "StockInTransit",
+          "UnitCostBDT",
+          "LastUpdated",
+          "InventoryStatus"
+        ],
+        [
+          "REA-DPF-23-01",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Dhaka",
+          "Dhaka DC",
+          3529,
+          562,
+          1398,
+          378,
+          120,
+          45672,
+          "Overstock Risk"
+        ],
+        [
+          "REA-DPF-23-02",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Chattogram",
+          "Chattogram DC",
+          1020,
+          715,
+          1543,
+          608,
+          120,
+          45673,
+          "Reorder Needed"
+        ],
+        [
+          "REA-DPF-23-03",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Sylhet",
+          "Sylhet DC",
+          3538,
+          673,
+          1286,
+          342,
+          120,
+          45674,
+          "Overstock Risk"
+        ],
+        [
+          "REA-DPF-23-04",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rajshahi",
+          "Rajshahi DC",
+          1490,
+          550,
+          1129,
+          283,
+          120,
+          45675,
+          "OK"
+        ],
+        [
+          "REA-DPF-23-05",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Khulna",
+          "Khulna DC",
+          3708,
+          513,
+          1324,
+          325,
+          120,
+          45676,
+          "Overstock Risk"
+        ],
+        [
+          "REA-DPF-23-06",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Barishal",
+          "Barishal DC",
+          2091,
+          703,
+          1582,
+          381,
+          120,
+          45677,
+          "OK"
+        ],
+        [
+          "REA-DPF-23-07",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Rangpur",
+          "Rangpur DC",
+          2940,
+          483,
+          1138,
+          608,
+          120,
+          45678,
+          "Overstock Risk"
+        ],
+        [
+          "REA-DPF-23-08",
+          "Wireless Earbuds",
+          "Electronics",
+          "Realme",
+          "Mymensingh",
+          "Mymensingh DC",
+          2540,
+          589,
+          1388,
+          106,
+          120,
+          45679,
+          "OK"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 13
+    },
+    "Promotions": {
+      "columns": [
+        "CampaignName",
+        "StartDate",
+        "EndDate",
+        "DiscountPct",
+        "Channel",
+        "ExpectedUpliftPct",
+        "ActualUpliftPct",
+        "BudgetBDT",
+        "Notes"
+      ],
+      "records": [
+        {
+          "CampaignName": "Ramadan Bundle",
+          "StartDate": 45356,
+          "EndDate": 45392,
+          "DiscountPct": 12,
+          "Channel": "Retail",
+          "ExpectedUpliftPct": 19,
+          "ActualUpliftPct": 18.1,
+          "BudgetBDT": 146745,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Eid Mega Offer",
+          "StartDate": 45383,
+          "EndDate": 45402,
+          "DiscountPct": 18,
+          "Channel": "All",
+          "ExpectedUpliftPct": 20.8,
+          "ActualUpliftPct": 25.6,
+          "BudgetBDT": 77210,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Online Flash Sale",
+          "StartDate": 45514,
+          "EndDate": 45522,
+          "DiscountPct": 15,
+          "Channel": "Online",
+          "ExpectedUpliftPct": 17.8,
+          "ActualUpliftPct": 17.9,
+          "BudgetBDT": 130769,
+          "Notes": "Use for promotion impact analysis"
+        },
+        {
+          "CampaignName": "Winter Pack",
+          "StartDate": 45627,
+          "EndDate": 45657,
+          "DiscountPct": 10,
+          "Channel": "Modern Trade",
+          "ExpectedUpliftPct": 12.4,
+          "ActualUpliftPct": 8.9,
+          "BudgetBDT": 150126,
+          "Notes": "Use for promotion impact analysis"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CampaignName",
+          "StartDate",
+          "EndDate",
+          "DiscountPct",
+          "Channel",
+          "ExpectedUpliftPct",
+          "ActualUpliftPct",
+          "BudgetBDT",
+          "Notes"
+        ],
+        [
+          "Ramadan Bundle",
+          45356,
+          45392,
+          12,
+          "Retail",
+          19,
+          18.1,
+          146745,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Eid Mega Offer",
+          45383,
+          45402,
+          18,
+          "All",
+          20.8,
+          25.6,
+          77210,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Online Flash Sale",
+          45514,
+          45522,
+          15,
+          "Online",
+          17.8,
+          17.9,
+          130769,
+          "Use for promotion impact analysis"
+        ],
+        [
+          "Winter Pack",
+          45627,
+          45657,
+          10,
+          "Modern Trade",
+          12.4,
+          8.9,
+          150126,
+          "Use for promotion impact analysis"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Competitors": {
+      "columns": [
+        "Date",
+        "CompetitorName",
+        "CompetitorProduct",
+        "Category",
+        "CompetitorPriceBDT",
+        "PromoActive",
+        "LaunchEvent",
+        "SourceURL",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Date": 45536,
+          "CompetitorName": "Lux",
+          "CompetitorProduct": "Lux alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2635,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/lux",
+          "Notes": null
+        },
+        {
+          "Date": 45566,
+          "CompetitorName": "Sunsilk",
+          "CompetitorProduct": "Sunsilk alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2999,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/sunsilk",
+          "Notes": null
+        },
+        {
+          "Date": 45597,
+          "CompetitorName": "Nivea",
+          "CompetitorProduct": "Nivea alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 3025,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/nivea",
+          "Notes": null
+        },
+        {
+          "Date": 45627,
+          "CompetitorName": "Local Brand",
+          "CompetitorProduct": "Local Brand alternative",
+          "Category": "Electronics",
+          "CompetitorPriceBDT": 2816,
+          "PromoActive": "No",
+          "LaunchEvent": "No",
+          "SourceURL": "https://example.com/competitor/local-brand",
+          "Notes": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Date",
+          "CompetitorName",
+          "CompetitorProduct",
+          "Category",
+          "CompetitorPriceBDT",
+          "PromoActive",
+          "LaunchEvent",
+          "SourceURL",
+          "Notes"
+        ],
+        [
+          45536,
+          "Lux",
+          "Lux alternative",
+          "Electronics",
+          2635,
+          "No",
+          "No",
+          "https://example.com/competitor/lux",
+          ""
+        ],
+        [
+          45566,
+          "Sunsilk",
+          "Sunsilk alternative",
+          "Electronics",
+          2999,
+          "No",
+          "No",
+          "https://example.com/competitor/sunsilk",
+          ""
+        ],
+        [
+          45597,
+          "Nivea",
+          "Nivea alternative",
+          "Electronics",
+          3025,
+          "No",
+          "No",
+          "https://example.com/competitor/nivea",
+          ""
+        ],
+        [
+          45627,
+          "Local Brand",
+          "Local Brand alternative",
+          "Electronics",
+          2816,
+          "No",
+          "No",
+          "https://example.com/competitor/local-brand",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 9
+    },
+    "Economic": {
+      "columns": [
+        "Month",
+        "InflationPct",
+        "IncomeIndex",
+        "PurchasingPowerIndex",
+        "FXRateBDTUSD",
+        "EconomicRisk",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45292,
+          "InflationPct": 7.55,
+          "IncomeIndex": 100.05,
+          "PurchasingPowerIndex": 87.18,
+          "FXRateBDTUSD": 109,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45323,
+          "InflationPct": 8.15,
+          "IncomeIndex": 99.71,
+          "PurchasingPowerIndex": 86.05,
+          "FXRateBDTUSD": 109.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45352,
+          "InflationPct": 8.37,
+          "IncomeIndex": 100.08,
+          "PurchasingPowerIndex": 85.79,
+          "FXRateBDTUSD": 109.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45383,
+          "InflationPct": 8.45,
+          "IncomeIndex": 101.24,
+          "PurchasingPowerIndex": 86.01,
+          "FXRateBDTUSD": 110.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45413,
+          "InflationPct": 8.55,
+          "IncomeIndex": 100.83,
+          "PurchasingPowerIndex": 85.72,
+          "FXRateBDTUSD": 110.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45444,
+          "InflationPct": 8.85,
+          "IncomeIndex": 100.65,
+          "PurchasingPowerIndex": 85.16,
+          "FXRateBDTUSD": 111,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45474,
+          "InflationPct": 8.57,
+          "IncomeIndex": 102.8,
+          "PurchasingPowerIndex": 86.28,
+          "FXRateBDTUSD": 111.4,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45505,
+          "InflationPct": 8.67,
+          "IncomeIndex": 101.25,
+          "PurchasingPowerIndex": 85.64,
+          "FXRateBDTUSD": 111.8,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45536,
+          "InflationPct": 7.88,
+          "IncomeIndex": 101.93,
+          "PurchasingPowerIndex": 87.19,
+          "FXRateBDTUSD": 112.2,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45566,
+          "InflationPct": 7.93,
+          "IncomeIndex": 103.46,
+          "PurchasingPowerIndex": 87.56,
+          "FXRateBDTUSD": 112.6,
+          "EconomicRisk": "Medium",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45597,
+          "InflationPct": 7.5,
+          "IncomeIndex": 102.74,
+          "PurchasingPowerIndex": 88.07,
+          "FXRateBDTUSD": 113,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45627,
+          "InflationPct": 6.69,
+          "IncomeIndex": 103.97,
+          "PurchasingPowerIndex": 89.81,
+          "FXRateBDTUSD": 113.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45658,
+          "InflationPct": 6.71,
+          "IncomeIndex": 103.82,
+          "PurchasingPowerIndex": 89.73,
+          "FXRateBDTUSD": 113.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45689,
+          "InflationPct": 6.68,
+          "IncomeIndex": 104.21,
+          "PurchasingPowerIndex": 89.91,
+          "FXRateBDTUSD": 114.2,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45717,
+          "InflationPct": 6.01,
+          "IncomeIndex": 104.83,
+          "PurchasingPowerIndex": 91.24,
+          "FXRateBDTUSD": 114.6,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45748,
+          "InflationPct": 6.23,
+          "IncomeIndex": 104.83,
+          "PurchasingPowerIndex": 90.86,
+          "FXRateBDTUSD": 115,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45778,
+          "InflationPct": 6.79,
+          "IncomeIndex": 104.07,
+          "PurchasingPowerIndex": 89.68,
+          "FXRateBDTUSD": 115.4,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        },
+        {
+          "Month": 45809,
+          "InflationPct": 6.58,
+          "IncomeIndex": 104.31,
+          "PurchasingPowerIndex": 90.12,
+          "FXRateBDTUSD": 115.8,
+          "EconomicRisk": "Low",
+          "Notes": "Economic conditions for demand adjustment"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "InflationPct",
+          "IncomeIndex",
+          "PurchasingPowerIndex",
+          "FXRateBDTUSD",
+          "EconomicRisk",
+          "Notes"
+        ],
+        [
+          45292,
+          7.55,
+          100.05,
+          87.18,
+          109,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45323,
+          8.15,
+          99.71,
+          86.05,
+          109.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45352,
+          8.37,
+          100.08,
+          85.79,
+          109.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45383,
+          8.45,
+          101.24,
+          86.01,
+          110.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45413,
+          8.55,
+          100.83,
+          85.72,
+          110.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45444,
+          8.85,
+          100.65,
+          85.16,
+          111,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45474,
+          8.57,
+          102.8,
+          86.28,
+          111.4,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45505,
+          8.67,
+          101.25,
+          85.64,
+          111.8,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45536,
+          7.88,
+          101.93,
+          87.19,
+          112.2,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45566,
+          7.93,
+          103.46,
+          87.56,
+          112.6,
+          "Medium",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45597,
+          7.5,
+          102.74,
+          88.07,
+          113,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45627,
+          6.69,
+          103.97,
+          89.81,
+          113.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45658,
+          6.71,
+          103.82,
+          89.73,
+          113.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45689,
+          6.68,
+          104.21,
+          89.91,
+          114.2,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45717,
+          6.01,
+          104.83,
+          91.24,
+          114.6,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45748,
+          6.23,
+          104.83,
+          90.86,
+          115,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45778,
+          6.79,
+          104.07,
+          89.68,
+          115.4,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ],
+        [
+          45809,
+          6.58,
+          104.31,
+          90.12,
+          115.8,
+          "Low",
+          "Economic conditions for demand adjustment"
+        ]
+      ],
+      "row_count_excluding_header": 18,
+      "column_count": 7
+    },
+    "Lead_Time": {
+      "columns": [
+        "Supplier",
+        "SupplierCountry",
+        "OrderDate",
+        "PurchaseLeadDays",
+        "ProductionLeadDays",
+        "ShippingLeadDays",
+        "DeliveryLeadDays",
+        "TotalLeadTimeDays",
+        "DelayFlag",
+        "DelayReason"
+      ],
+      "records": [
+        {
+          "Supplier": "Supplier A",
+          "SupplierCountry": "Bangladesh",
+          "OrderDate": 45505,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 7,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 3,
+          "TotalLeadTimeDays": 22,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier B",
+          "SupplierCountry": "China",
+          "OrderDate": 45535,
+          "PurchaseLeadDays": 6,
+          "ProductionLeadDays": 8,
+          "ShippingLeadDays": 7,
+          "DeliveryLeadDays": 2,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier C",
+          "SupplierCountry": "India",
+          "OrderDate": 45565,
+          "PurchaseLeadDays": 4,
+          "ProductionLeadDays": 12,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 23,
+          "DelayFlag": "No",
+          "DelayReason": null
+        },
+        {
+          "Supplier": "Supplier D",
+          "SupplierCountry": "Vietnam",
+          "OrderDate": 45595,
+          "PurchaseLeadDays": 2,
+          "ProductionLeadDays": 11,
+          "ShippingLeadDays": 6,
+          "DeliveryLeadDays": 1,
+          "TotalLeadTimeDays": 20,
+          "DelayFlag": "No",
+          "DelayReason": null
+        }
+      ],
+      "raw_rows": [
+        [
+          "Supplier",
+          "SupplierCountry",
+          "OrderDate",
+          "PurchaseLeadDays",
+          "ProductionLeadDays",
+          "ShippingLeadDays",
+          "DeliveryLeadDays",
+          "TotalLeadTimeDays",
+          "DelayFlag",
+          "DelayReason"
+        ],
+        [
+          "Supplier A",
+          "Bangladesh",
+          45505,
+          6,
+          7,
+          6,
+          3,
+          22,
+          "No",
+          ""
+        ],
+        [
+          "Supplier B",
+          "China",
+          45535,
+          6,
+          8,
+          7,
+          2,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier C",
+          "India",
+          45565,
+          4,
+          12,
+          6,
+          1,
+          23,
+          "No",
+          ""
+        ],
+        [
+          "Supplier D",
+          "Vietnam",
+          45595,
+          2,
+          11,
+          6,
+          1,
+          20,
+          "No",
+          ""
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Forecast_Actual": {
+      "columns": [
+        "Month",
+        "ForecastUnits",
+        "ActualUnits",
+        "ForecastError",
+        "AbsoluteError",
+        "APE",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Month": 45474,
+          "ForecastUnits": 630,
+          "ActualUnits": 711,
+          "ForecastError": 81,
+          "AbsoluteError": 81,
+          "APE": 0.11392405063291139,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45505,
+          "ForecastUnits": 734,
+          "ActualUnits": 679,
+          "ForecastError": -55,
+          "AbsoluteError": 55,
+          "APE": 0.08100147275405008,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45536,
+          "ForecastUnits": 763,
+          "ActualUnits": 794,
+          "ForecastError": 31,
+          "AbsoluteError": 31,
+          "APE": 0.03904282115869018,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45566,
+          "ForecastUnits": 731,
+          "ActualUnits": 602,
+          "ForecastError": -129,
+          "AbsoluteError": 129,
+          "APE": 0.21428571428571427,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45597,
+          "ForecastUnits": 692,
+          "ActualUnits": 812,
+          "ForecastError": 120,
+          "AbsoluteError": 120,
+          "APE": 0.1477832512315271,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45627,
+          "ForecastUnits": 832,
+          "ActualUnits": 864,
+          "ForecastError": 32,
+          "AbsoluteError": 32,
+          "APE": 0.037037037037037035,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45658,
+          "ForecastUnits": 836,
+          "ActualUnits": 880,
+          "ForecastError": 44,
+          "AbsoluteError": 44,
+          "APE": 0.05,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45689,
+          "ForecastUnits": 742,
+          "ActualUnits": 646,
+          "ForecastError": -96,
+          "AbsoluteError": 96,
+          "APE": 0.14860681114551083,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45717,
+          "ForecastUnits": 781,
+          "ActualUnits": 921,
+          "ForecastError": 140,
+          "AbsoluteError": 140,
+          "APE": 0.15200868621064062,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45748,
+          "ForecastUnits": 875,
+          "ActualUnits": 1019,
+          "ForecastError": 144,
+          "AbsoluteError": 144,
+          "APE": 0.14131501472031405,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45778,
+          "ForecastUnits": 907,
+          "ActualUnits": 820,
+          "ForecastError": -87,
+          "AbsoluteError": 87,
+          "APE": 0.10609756097560975,
+          "Notes": "Formula columns should calculate error and accuracy"
+        },
+        {
+          "Month": 45809,
+          "ForecastUnits": 811,
+          "ActualUnits": 698,
+          "ForecastError": -113,
+          "AbsoluteError": 113,
+          "APE": 0.16189111747851004,
+          "Notes": "Formula columns should calculate error and accuracy"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Month",
+          "ForecastUnits",
+          "ActualUnits",
+          "ForecastError",
+          "AbsoluteError",
+          "APE",
+          "Notes"
+        ],
+        [
+          45474,
+          630,
+          711,
+          81,
+          81,
+          0.11392405063291139,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45505,
+          734,
+          679,
+          -55,
+          55,
+          0.08100147275405008,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45536,
+          763,
+          794,
+          31,
+          31,
+          0.03904282115869018,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45566,
+          731,
+          602,
+          -129,
+          129,
+          0.21428571428571427,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45597,
+          692,
+          812,
+          120,
+          120,
+          0.1477832512315271,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45627,
+          832,
+          864,
+          32,
+          32,
+          0.037037037037037035,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45658,
+          836,
+          880,
+          44,
+          44,
+          0.05,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45689,
+          742,
+          646,
+          -96,
+          96,
+          0.14860681114551083,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45717,
+          781,
+          921,
+          140,
+          140,
+          0.15200868621064062,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45748,
+          875,
+          1019,
+          144,
+          144,
+          0.14131501472031405,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45778,
+          907,
+          820,
+          -87,
+          87,
+          0.10609756097560975,
+          "Formula columns should calculate error and accuracy"
+        ],
+        [
+          45809,
+          811,
+          698,
+          -113,
+          113,
+          0.16189111747851004,
+          "Formula columns should calculate error and accuracy"
+        ]
+      ],
+      "row_count_excluding_header": 12,
+      "column_count": 7
+    },
+    "Regional_Demand_Map": {
+      "columns": [
+        "Region",
+        "Latitude",
+        "Longitude",
+        "DemandScore",
+        "ForecastDemandUnits",
+        "DemandLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "DemandScore": 100,
+          "ForecastDemandUnits": 721,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "DemandScore": 71,
+          "ForecastDemandUnits": 615,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Sylhet",
+          "Latitude": 24.8949,
+          "Longitude": 91.8687,
+          "DemandScore": 92,
+          "ForecastDemandUnits": 533,
+          "DemandLevel": "High",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rajshahi",
+          "Latitude": 24.3745,
+          "Longitude": 88.6042,
+          "DemandScore": 60,
+          "ForecastDemandUnits": 497,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Khulna",
+          "Latitude": 22.8456,
+          "Longitude": 89.5403,
+          "DemandScore": 56,
+          "ForecastDemandUnits": 467,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Barishal",
+          "Latitude": 22.701,
+          "Longitude": 90.3535,
+          "DemandScore": 46,
+          "ForecastDemandUnits": 270,
+          "DemandLevel": "Low",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Rangpur",
+          "Latitude": 25.7439,
+          "Longitude": 89.2752,
+          "DemandScore": 66,
+          "ForecastDemandUnits": 527,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        },
+        {
+          "Region": "Mymensingh",
+          "Latitude": 24.7471,
+          "Longitude": 90.4203,
+          "DemandScore": 71,
+          "ForecastDemandUnits": 572,
+          "DemandLevel": "Medium",
+          "Notes": "Use for Bangladesh/regional demand map"
+        }
+      ],
+      "raw_rows": [
+        [
+          "Region",
+          "Latitude",
+          "Longitude",
+          "DemandScore",
+          "ForecastDemandUnits",
+          "DemandLevel",
+          "Notes"
+        ],
+        [
+          "Dhaka",
+          23.8103,
+          90.4125,
+          100,
+          721,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Chattogram",
+          22.3569,
+          91.7832,
+          71,
+          615,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Sylhet",
+          24.8949,
+          91.8687,
+          92,
+          533,
+          "High",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rajshahi",
+          24.3745,
+          88.6042,
+          60,
+          497,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Khulna",
+          22.8456,
+          89.5403,
+          56,
+          467,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Barishal",
+          22.701,
+          90.3535,
+          46,
+          270,
+          "Low",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Rangpur",
+          25.7439,
+          89.2752,
+          66,
+          527,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ],
+        [
+          "Mymensingh",
+          24.7471,
+          90.4203,
+          71,
+          572,
+          "Medium",
+          "Use for Bangladesh/regional demand map"
+        ]
+      ],
+      "row_count_excluding_header": 8,
+      "column_count": 7
+    },
+    "SCM_Flow_Map": {
+      "columns": [
+        "NodeID",
+        "NodeType",
+        "Name",
+        "Region",
+        "Latitude",
+        "Longitude",
+        "NextNodeID",
+        "AvgTransitDays",
+        "RiskLevel",
+        "Notes"
+      ],
+      "records": [
+        {
+          "NodeID": "S1",
+          "NodeType": "Supplier",
+          "Name": "Main Supplier",
+          "Region": "Chattogram",
+          "Latitude": 22.3569,
+          "Longitude": 91.7832,
+          "NextNodeID": "W1",
+          "AvgTransitDays": 6,
+          "RiskLevel": "Medium",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "W1",
+          "NodeType": "Warehouse",
+          "Name": "Central Warehouse",
+          "Region": "Dhaka",
+          "Latitude": 23.8103,
+          "Longitude": 90.4125,
+          "NextNodeID": "R1",
+          "AvgTransitDays": 2,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "R1",
+          "NodeType": "Retailer",
+          "Name": "Retail Network",
+          "Region": "Dhaka",
+          "Latitude": 23.7806,
+          "Longitude": 90.2794,
+          "NextNodeID": "C1",
+          "AvgTransitDays": 1,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        },
+        {
+          "NodeID": "C1",
+          "NodeType": "Customer",
+          "Name": "End Customer Zone",
+          "Region": "Dhaka",
+          "Latitude": 23.7465,
+          "Longitude": 90.376,
+          "NextNodeID": null,
+          "AvgTransitDays": 0,
+          "RiskLevel": "Low",
+          "Notes": "Use for SCM flow map supplier → warehouse → retailer → customer"
+        }
+      ],
+      "raw_rows": [
+        [
+          "NodeID",
+          "NodeType",
+          "Name",
+          "Region",
+          "Latitude",
+          "Longitude",
+          "NextNodeID",
+          "AvgTransitDays",
+          "RiskLevel",
+          "Notes"
+        ],
+        [
+          "S1",
+          "Supplier",
+          "Main Supplier",
+          "Chattogram",
+          22.3569,
+          91.7832,
+          "W1",
+          6,
+          "Medium",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "W1",
+          "Warehouse",
+          "Central Warehouse",
+          "Dhaka",
+          23.8103,
+          90.4125,
+          "R1",
+          2,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "R1",
+          "Retailer",
+          "Retail Network",
+          "Dhaka",
+          23.7806,
+          90.2794,
+          "C1",
+          1,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ],
+        [
+          "C1",
+          "Customer",
+          "End Customer Zone",
+          "Dhaka",
+          23.7465,
+          90.376,
+          "",
+          0,
+          "Low",
+          "Use for SCM flow map supplier → warehouse → retailer → customer"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 10
+    },
+    "Customer_Patterns": {
+      "columns": [
+        "CustomerSegment",
+        "Region",
+        "PreferredChannel",
+        "PurchaseFrequency",
+        "AvgBasketUnits",
+        "AvgBasketValueBDT",
+        "DemandPatternNote"
+      ],
+      "records": [
+        {
+          "CustomerSegment": "Teen/Youth",
+          "Region": "Dhaka",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 5,
+          "AvgBasketValueBDT": 12985,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Working Professionals",
+          "Region": "Chattogram",
+          "PreferredChannel": "Wholesale",
+          "PurchaseFrequency": "Weekly",
+          "AvgBasketUnits": 7,
+          "AvgBasketValueBDT": 26863,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Families",
+          "Region": "Sylhet",
+          "PreferredChannel": "Modern Trade",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 10669,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Retail Buyers",
+          "Region": "Rajshahi",
+          "PreferredChannel": "Retail",
+          "PurchaseFrequency": "Festival-based",
+          "AvgBasketUnits": 6,
+          "AvgBasketValueBDT": 17106,
+          "DemandPatternNote": "Regular demand"
+        },
+        {
+          "CustomerSegment": "Premium Customers",
+          "Region": "Khulna",
+          "PreferredChannel": "Online",
+          "PurchaseFrequency": "Bi-weekly",
+          "AvgBasketUnits": 4,
+          "AvgBasketValueBDT": 9445,
+          "DemandPatternNote": "Regular demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "CustomerSegment",
+          "Region",
+          "PreferredChannel",
+          "PurchaseFrequency",
+          "AvgBasketUnits",
+          "AvgBasketValueBDT",
+          "DemandPatternNote"
+        ],
+        [
+          "Teen/Youth",
+          "Dhaka",
+          "Online",
+          "Bi-weekly",
+          5,
+          12985,
+          "Regular demand"
+        ],
+        [
+          "Working Professionals",
+          "Chattogram",
+          "Wholesale",
+          "Weekly",
+          7,
+          26863,
+          "Regular demand"
+        ],
+        [
+          "Families",
+          "Sylhet",
+          "Modern Trade",
+          "Festival-based",
+          4,
+          10669,
+          "Regular demand"
+        ],
+        [
+          "Retail Buyers",
+          "Rajshahi",
+          "Retail",
+          "Festival-based",
+          6,
+          17106,
+          "Regular demand"
+        ],
+        [
+          "Premium Customers",
+          "Khulna",
+          "Online",
+          "Bi-weekly",
+          4,
+          9445,
+          "Regular demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 7
+    },
+    "Technology_Data": {
+      "columns": [
+        "SourceType",
+        "Status",
+        "ConnectorType",
+        "FileOrAPI",
+        "RecordsDetected",
+        "DataQualityScore",
+        "Notes"
+      ],
+      "records": [
+        {
+          "SourceType": "CSV Upload",
+          "Status": "Available",
+          "ConnectorType": "csvConnector",
+          "FileOrAPI": "uploaded_sales.csv",
+          "RecordsDetected": 99,
+          "DataQualityScore": 87,
+          "Notes": "Flat file import"
+        },
+        {
+          "SourceType": "Excel Upload",
+          "Status": "Available",
+          "ConnectorType": "excelConnector",
+          "FileOrAPI": "demand_workbook.xlsx",
+          "RecordsDetected": 104,
+          "DataQualityScore": 78,
+          "Notes": "This workbook"
+        },
+        {
+          "SourceType": "JSON Upload",
+          "Status": "Available",
+          "ConnectorType": "jsonConnector",
+          "FileOrAPI": "customer_demand.json",
+          "RecordsDetected": 18,
+          "DataQualityScore": 94,
+          "Notes": "Nested data import"
+        },
+        {
+          "SourceType": "Web Search API",
+          "Status": "Available if key exists",
+          "ConnectorType": "webSearchConnector",
+          "FileOrAPI": "Tavily/SerpAPI/Bing",
+          "RecordsDetected": 13,
+          "DataQualityScore": 71,
+          "Notes": "Public market research"
+        },
+        {
+          "SourceType": "ERP",
+          "Status": "Placeholder",
+          "ConnectorType": "erpConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        },
+        {
+          "SourceType": "POS",
+          "Status": "Placeholder",
+          "ConnectorType": "posConnector",
+          "FileOrAPI": "Future MCP connector",
+          "RecordsDetected": 0,
+          "DataQualityScore": null,
+          "Notes": "MCP-ready placeholder"
+        }
+      ],
+      "raw_rows": [
+        [
+          "SourceType",
+          "Status",
+          "ConnectorType",
+          "FileOrAPI",
+          "RecordsDetected",
+          "DataQualityScore",
+          "Notes"
+        ],
+        [
+          "CSV Upload",
+          "Available",
+          "csvConnector",
+          "uploaded_sales.csv",
+          99,
+          87,
+          "Flat file import"
+        ],
+        [
+          "Excel Upload",
+          "Available",
+          "excelConnector",
+          "demand_workbook.xlsx",
+          104,
+          78,
+          "This workbook"
+        ],
+        [
+          "JSON Upload",
+          "Available",
+          "jsonConnector",
+          "customer_demand.json",
+          18,
+          94,
+          "Nested data import"
+        ],
+        [
+          "Web Search API",
+          "Available if key exists",
+          "webSearchConnector",
+          "Tavily/SerpAPI/Bing",
+          13,
+          71,
+          "Public market research"
+        ],
+        [
+          "ERP",
+          "Placeholder",
+          "erpConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ],
+        [
+          "POS",
+          "Placeholder",
+          "posConnector",
+          "Future MCP connector",
+          0,
+          "",
+          "MCP-ready placeholder"
+        ]
+      ],
+      "row_count_excluding_header": 6,
+      "column_count": 7
+    },
+    "Web_Search_Seeds": {
+      "columns": [
+        "DataNeed",
+        "SearchQuery",
+        "SuggestedUse",
+        "RequiredFor",
+        "ExampleSourceURL"
+      ],
+      "records": [
+        {
+          "DataNeed": "Market Trends",
+          "SearchQuery": "Wireless Earbuds Realme Electronics Bangladesh market trend 2025",
+          "SuggestedUse": "Summarize product/category demand direction",
+          "RequiredFor": "Market Trends",
+          "ExampleSourceURL": "https://www.google.com/search?q=market+trend"
+        },
+        {
+          "DataNeed": "Seasonality",
+          "SearchQuery": "Wireless Earbuds demand Ramadan Eid Bangladesh",
+          "SuggestedUse": "Detect festival demand uplift",
+          "RequiredFor": "Seasonality",
+          "ExampleSourceURL": "https://www.google.com/search?q=Ramadan+Eid+demand"
+        },
+        {
+          "DataNeed": "Economic Conditions",
+          "SearchQuery": "Bangladesh inflation purchasing power consumer goods 2025",
+          "SuggestedUse": "Adjust forecast based on economy",
+          "RequiredFor": "Economic Conditions",
+          "ExampleSourceURL": "https://www.bb.org.bd/"
+        },
+        {
+          "DataNeed": "Competitor Activities",
+          "SearchQuery": "Electronics competitor pricing promotions Bangladesh Realme",
+          "SuggestedUse": "Compare competitor pricing/promo",
+          "RequiredFor": "Competitor Activities",
+          "ExampleSourceURL": "https://www.google.com/search?q=competitor+pricing"
+        },
+        {
+          "DataNeed": "Customer Demand Patterns",
+          "SearchQuery": "Wireless Earbuds online retail demand Bangladesh Dhaka Chattogram",
+          "SuggestedUse": "Estimate regional/channel demand",
+          "RequiredFor": "Customer Demand Patterns",
+          "ExampleSourceURL": "https://www.google.com/search?q=retail+demand"
+        }
+      ],
+      "raw_rows": [
+        [
+          "DataNeed",
+          "SearchQuery",
+          "SuggestedUse",
+          "RequiredFor",
+          "ExampleSourceURL"
+        ],
+        [
+          "Market Trends",
+          "Wireless Earbuds Realme Electronics Bangladesh market trend 2025",
+          "Summarize product/category demand direction",
+          "Market Trends",
+          "https://www.google.com/search?q=market+trend"
+        ],
+        [
+          "Seasonality",
+          "Wireless Earbuds demand Ramadan Eid Bangladesh",
+          "Detect festival demand uplift",
+          "Seasonality",
+          "https://www.google.com/search?q=Ramadan+Eid+demand"
+        ],
+        [
+          "Economic Conditions",
+          "Bangladesh inflation purchasing power consumer goods 2025",
+          "Adjust forecast based on economy",
+          "Economic Conditions",
+          "https://www.bb.org.bd/"
+        ],
+        [
+          "Competitor Activities",
+          "Electronics competitor pricing promotions Bangladesh Realme",
+          "Compare competitor pricing/promo",
+          "Competitor Activities",
+          "https://www.google.com/search?q=competitor+pricing"
+        ],
+        [
+          "Customer Demand Patterns",
+          "Wireless Earbuds online retail demand Bangladesh Dhaka Chattogram",
+          "Estimate regional/channel demand",
+          "Customer Demand Patterns",
+          "https://www.google.com/search?q=retail+demand"
+        ]
+      ],
+      "row_count_excluding_header": 5,
+      "column_count": 5
+    },
+    "Manual_Expert_Opinion": {
+      "columns": [
+        "ExpertName",
+        "Role",
+        "OpinionDate",
+        "DemandSignal",
+        "ConfidencePct",
+        "Notes"
+      ],
+      "records": [
+        {
+          "ExpertName": "Expert 1",
+          "Role": "Sales Manager",
+          "OpinionDate": 45536,
+          "DemandSignal": "High demand before Eid",
+          "ConfidencePct": 80,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 2",
+          "Role": "Demand Planner",
+          "OpinionDate": 45546,
+          "DemandSignal": "Competitor pricing could reduce demand",
+          "ConfidencePct": 76,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 3",
+          "Role": "Inventory Manager",
+          "OpinionDate": 45556,
+          "DemandSignal": "Online demand rising",
+          "ConfidencePct": 72,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        },
+        {
+          "ExpertName": "Expert 4",
+          "Role": "Marketing Lead",
+          "OpinionDate": 45566,
+          "DemandSignal": "Inventory should be increased before campaign",
+          "ConfidencePct": 81,
+          "Notes": "Qualitative input for expert-opinion forecasting"
+        }
+      ],
+      "raw_rows": [
+        [
+          "ExpertName",
+          "Role",
+          "OpinionDate",
+          "DemandSignal",
+          "ConfidencePct",
+          "Notes"
+        ],
+        [
+          "Expert 1",
+          "Sales Manager",
+          45536,
+          "High demand before Eid",
+          80,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 2",
+          "Demand Planner",
+          45546,
+          "Competitor pricing could reduce demand",
+          76,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 3",
+          "Inventory Manager",
+          45556,
+          "Online demand rising",
+          72,
+          "Qualitative input for expert-opinion forecasting"
+        ],
+        [
+          "Expert 4",
+          "Marketing Lead",
+          45566,
+          "Inventory should be increased before campaign",
+          81,
+          "Qualitative input for expert-opinion forecasting"
+        ]
+      ],
+      "row_count_excluding_header": 4,
+      "column_count": 6
+    },
+    "Data_Issues": {
+      "columns": [
+        "IssueType",
+        "Description",
+        "ExpectedValidationBehavior"
+      ],
+      "records": [
+        {
+          "IssueType": "Issue 1",
+          "Description": "No intentional data quality issue. Clean scenario.",
+          "ExpectedValidationBehavior": "Detect, warn user, and continue analysis where possible"
+        }
+      ],
+      "raw_rows": [
+        [
+          "IssueType",
+          "Description",
+          "ExpectedValidationBehavior"
+        ],
+        [
+          "Issue 1",
+          "No intentional data quality issue. Clean scenario.",
+          "Detect, warn user, and continue analysis where possible"
+        ]
+      ],
+      "row_count_excluding_header": 1,
+      "column_count": 3
+    }
+  },
+  "notes": "Converted from the matching Excel test fixture. raw_rows preserves the original sheet layout; records uses the first row as headers."
+}
