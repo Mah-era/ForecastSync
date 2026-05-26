@@ -9,7 +9,7 @@
   --muted: 214 32% 91%;
   --muted-foreground: 215 16% 47%;
   --card: 0 0% 100%;
-  --border: 214 32% 88%;
+  --border: 214 20% 91%;
   --primary: 186 78% 28%;
   --primary-foreground: 0 0% 100%;
   --accent: 38 92% 50%;
@@ -23,14 +23,17 @@ body {
   margin: 0;
   background: hsl(var(--background));
   color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .leaflet-container {
   min-height: 360px;
-  border-radius: 8px;
+  border-radius: 12px;
   z-index: 0;
 }
 
+/* Rain — subtle slate drops */
 .rain-layer {
   position: absolute;
   inset: 0;
@@ -41,84 +44,49 @@ body {
 .rain-layer span {
   position: absolute;
   top: -80px;
-  width: 2px;
-  height: 54px;
+  width: 1px;
+  height: 44px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(14, 116, 144, 0), rgba(14, 116, 144, 0.34));
-  animation: rain-fall 2.4s linear infinite;
+  background: linear-gradient(180deg, rgba(148, 163, 184, 0), rgba(148, 163, 184, 0.22));
+  animation: rain-fall 3.6s linear infinite;
 }
 
+/* Clouds — softer, more translucent */
 .clipart-cloud {
   position: absolute;
-  width: 220px;
-  height: 72px;
+  width: 200px;
+  height: 60px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.55);
   box-shadow:
-    46px -18px 0 10px rgba(255, 255, 255, 0.66),
-    108px -8px 0 2px rgba(255, 255, 255, 0.58),
-    0 18px 48px rgba(15, 23, 42, 0.08);
-  animation: cloud-drift 16s ease-in-out infinite alternate;
+    42px -16px 0 8px rgba(255, 255, 255, 0.45),
+    96px -6px 0 2px rgba(255, 255, 255, 0.38),
+    0 16px 40px rgba(15, 23, 42, 0.05);
+  animation: cloud-drift 20s ease-in-out infinite alternate;
 }
 
 .clipart-cloud-a {
-  left: 5%;
-  top: 11%;
+  left: 6%;
+  top: 10%;
 }
 
 .clipart-cloud-b {
-  right: 10%;
-  top: 16%;
-  transform: scale(0.74);
-  animation-duration: 19s;
-}
-
-.clipart-route {
-  position: absolute;
-  right: 7%;
-  bottom: 9%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 0.75;
-  animation: route-float 4.8s ease-in-out infinite;
-}
-
-.clipart-node {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid rgba(15, 118, 110, 0.28);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.78);
-  color: #0f766e;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.09);
-}
-
-.clipart-line {
-  width: 46px;
-  height: 2px;
-  background: repeating-linear-gradient(90deg, rgba(15, 118, 110, 0.32) 0 8px, transparent 8px 13px);
+  right: 12%;
+  top: 14%;
+  transform: scale(0.68);
+  animation-duration: 25s;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes rain-fall {
   to {
-    transform: translate3d(-28px, calc(100vh + 140px), 0);
+    transform: translate3d(-24px, calc(100vh + 120px), 0);
   }
 }
 
 @keyframes cloud-drift {
   to {
-    transform: translateX(32px);
-  }
-}
-
-@keyframes route-float {
-  50% {
-    transform: translateY(-10px);
+    transform: translateX(28px);
   }
 }
 

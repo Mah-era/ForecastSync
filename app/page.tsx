@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { Activity, AlertTriangle, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud } from "lucide-react";
+import { Activity, AlertTriangle, ArrowRight, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -448,49 +448,59 @@ export default function Home() {
 
   if (!pathway) {
     return (
-      <main className="relative min-h-screen overflow-hidden bg-slate-100 p-6">
+      <main className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100">
         {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting} />}
         <div className="rain-layer" aria-hidden="true">
-          {Array.from({ length: 42 }).map((_, index) => (
+          {Array.from({ length: 22 }).map((_, index) => (
             <span
               key={index}
               style={{
-                left: `${(index * 37) % 100}%`,
-                animationDelay: `${(index % 12) * -0.28}s`,
-                animationDuration: `${1.8 + (index % 7) * 0.18}s`
+                left: `${(index * 43) % 100}%`,
+                animationDelay: `${(index % 11) * -0.38}s`,
+                animationDuration: `${2.8 + (index % 7) * 0.28}s`
               }}
             />
           ))}
         </div>
         <div className="clipart-cloud clipart-cloud-a" aria-hidden="true" />
         <div className="clipart-cloud clipart-cloud-b" aria-hidden="true" />
-        <section className="relative z-10 mx-auto flex min-h-[calc(100vh-3rem)] max-w-6xl flex-col justify-center">
-          <div className="mb-8">
-            <div className="mb-5 inline-flex items-center gap-4 rounded-lg border border-teal-100 bg-white/90 px-5 py-4 text-teal-900 shadow-panel">
-              <div className="grid h-14 w-14 place-items-center rounded-lg bg-primary text-white">
-                <PackageSearch size={32} />
-              </div>
-              <div>
-                <div className="text-3xl font-semibold tracking-tight">ForecastSync</div>
-                <div className="text-sm text-muted-foreground">Demand planning intelligence</div>
-              </div>
+        <section className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 text-center">
+          <div className="mb-7 flex items-center gap-3">
+            <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-white shadow-sm">
+              <PackageSearch size={20} />
             </div>
-            <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950">Choose how you want to start</h1>
+            <span className="text-base font-bold tracking-tight text-slate-900">ForecastSync</span>
           </div>
-          <div className="grid gap-5 md:grid-cols-2">
+          <h1 className="max-w-2xl text-5xl font-bold tracking-tight text-slate-900" style={{ lineHeight: 1.15 }}>
+            Demand planning,<br />powered by your data
+          </h1>
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-slate-500">
+            Import files, forecast demand, analyse seasonality, inventory, and competitors — all from your own workbook.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
+            {["Forecast accuracy", "Seasonality", "Competitor watch", "Inventory risk", "Lead time", "Sankey flow"].map((tag) => (
+              <span key={tag} className="rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs text-slate-500 shadow-sm">{tag}</span>
+            ))}
+          </div>
+          <div className="mt-14 grid w-full max-w-3xl gap-4 md:grid-cols-2">
             <button
               onClick={() => withWaitScreen("Opening import workspace...", () => {
                 window.history.pushState({}, "", pathForSection("Import Data"));
                 setPathway("import");
                 setActiveSection("Import Data");
               })}
-              className="rounded-lg border border-border bg-white p-6 text-left shadow-panel transition hover:-translate-y-0.5 hover:border-teal-300"
+              className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all hover:border-teal-300 hover:shadow-md"
             >
-              <UploadCloud className="mb-5 text-primary" size={34} />
-              <h2 className="text-2xl font-semibold">Import File & Analyse</h2>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                Upload CSV, Excel, or JSON files, classify data, validate quality, preview tables, run forecasting, and export SCM reports.
+              <div className="mb-5 grid h-11 w-11 place-items-center rounded-xl bg-teal-50 text-teal-700">
+                <UploadCloud size={22} />
+              </div>
+              <h2 className="text-xl font-bold text-slate-900">Import File & Analyse</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-500">
+                Upload CSV, Excel, or JSON files. Auto-classify sheets, validate quality, run forecasting, and export SCM reports.
               </p>
+              <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-teal-700">
+                Get started <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+              </div>
             </button>
             <button
               onClick={() => withWaitScreen("Opening search workspace...", () => {
@@ -498,13 +508,18 @@ export default function Home() {
                 setPathway("search");
                 setSearchDashboard(false);
               })}
-              className="rounded-lg border border-border bg-white p-6 text-left shadow-panel transition hover:-translate-y-0.5 hover:border-teal-300"
+              className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all hover:border-teal-300 hover:shadow-md"
             >
-              <Globe2 className="mb-5 text-primary" size={34} />
-              <h2 className="text-2xl font-semibold">Search By Choice</h2>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                Enter a product, category, brand, and region to run a separate Tavily-powered online market research search.
+              <div className="mb-5 grid h-11 w-11 place-items-center rounded-xl bg-slate-50 text-slate-600">
+                <Globe2 size={22} />
+              </div>
+              <h2 className="text-xl font-bold text-slate-900">Search By Choice</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-500">
+                Enter a product, category, brand, and region to run a Tavily-powered online market research search.
               </p>
+              <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-slate-600">
+                Search online <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+              </div>
             </button>
           </div>
         </section>
@@ -514,21 +529,28 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen bg-slate-100">
-      {pathway === "import" && <aside className="no-print sticky top-0 hidden h-screen w-72 shrink-0 overflow-y-auto border-r border-border bg-white p-4 lg:block">
-        <div className="mb-5 flex items-center gap-3">
-          <div className="rounded-md bg-primary p-2 text-white"><PackageSearch size={22} /></div>
+      {pathway === "import" && <aside className="no-print sticky top-0 hidden h-screen w-64 shrink-0 overflow-y-auto border-r border-border bg-white px-3 py-5 lg:block">
+        <div className="mb-6 flex items-center gap-2.5 px-2">
+          <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary text-white shadow-sm">
+            <PackageSearch size={16} />
+          </div>
           <div>
-            <div className="font-semibold">ForecastSync</div>
-            <div className="text-xs text-muted-foreground">SCM BI Forecasting</div>
+            <div className="text-sm font-bold text-slate-900">ForecastSync</div>
+            <div className="text-[10px] font-medium text-slate-400">SCM BI Forecasting</div>
           </div>
         </div>
-        <nav className="space-y-1">
+        <nav className="space-y-0.5">
           {visibleNavItems.map((item) => (
             <button
               key={item}
               onClick={() => navigateTo(item, "import")}
-              className={`w-full rounded-md px-3 py-2 text-left text-sm ${activeSection === item ? "bg-teal-50 font-medium text-teal-800" : "text-slate-600 hover:bg-slate-50"}`}
+              className={`group flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+                activeSection === item
+                  ? "bg-teal-50 font-semibold text-teal-800"
+                  : "font-medium text-slate-500 hover:bg-slate-50 hover:text-slate-800"
+              }`}
             >
+              <span className={`h-1.5 w-1.5 shrink-0 rounded-full transition-colors ${activeSection === item ? "bg-teal-600" : "bg-slate-200 group-hover:bg-slate-400"}`} />
               {item}
             </button>
           ))}
@@ -537,7 +559,7 @@ export default function Home() {
 
       <section className="w-full">
         {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting} />}
-        <header className="no-print border-b border-border bg-white px-5 py-4">
+        <header className="no-print sticky top-0 z-30 border-b border-border bg-white/95 px-6 py-3 backdrop-blur-sm">
           <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
             <div>
               <button className="mb-2 text-sm font-medium text-primary hover:underline" onClick={navigateHome}>Change pathway</button>
@@ -793,7 +815,7 @@ export default function Home() {
               <>
                 <DataQualityBanner datasets={filteredDatasets} />
                 {filteredDatasets.length > 0 && (
-                  <div className="flex flex-wrap items-center gap-2 rounded-md border border-teal-200 bg-teal-50 px-4 py-2 text-sm text-teal-900">
+                  <div className="flex flex-wrap items-center gap-2 rounded-xl border border-teal-200/60 bg-teal-50/60 px-4 py-2.5 text-sm text-teal-800">
                     <span className="font-medium">Active Workbook:</span>
                     <span>{activeWorkbookLabel(filteredDatasets)}</span>
                     {filteredDatasets.some((d) => d.type === "Forecast Actual Data") && (
@@ -808,13 +830,15 @@ export default function Home() {
                 <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {kpis.map((kpi) => (
                     <Card key={kpi.label} className="relative">
-                      <CardContent className="flex items-center justify-between">
-                        <div>
-                          <div className="text-sm text-muted-foreground">{kpi.label}</div>
-                          <div className="mt-1 text-2xl font-semibold">{kpi.value}</div>
-                          <div className="mt-2 text-xs text-muted-foreground">Source: {sourceSheetForKpi(kpi.label, result)}</div>
+                      <CardContent className="flex items-start justify-between gap-4">
+                        <div className="min-w-0">
+                          <div className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">{kpi.label}</div>
+                          <div className="mt-2 truncate text-3xl font-bold tracking-tight text-slate-900">{kpi.value}</div>
+                          <div className="mt-3 text-[10px] text-slate-400">Source: {sourceSheetForKpi(kpi.label, result)}</div>
                         </div>
-                        <kpi.icon className="text-primary" />
+                        <div className="shrink-0 rounded-xl bg-teal-50 p-3 text-teal-700">
+                          <kpi.icon size={18} />
+                        </div>
                       </CardContent>
                       <InfoCorner
                         title={kpi.label}
@@ -832,8 +856,8 @@ export default function Home() {
                 <Card>
                   <CardHeader className="relative flex flex-row items-center justify-between pr-12">
                     <div>
-                      <h2 className="font-semibold">Demand Forecast Summary</h2>
-                      <p className="text-sm text-muted-foreground">{result.selection.productName} · {result.selection.category} · {result.selection.brand}</p>
+                      <h2 className="font-semibold text-slate-900">Demand Forecast Summary</h2>
+                      <p className="mt-0.5 text-sm text-slate-400">{[result.selection.productName, result.selection.category, result.selection.brand].filter(Boolean).join(" · ") || "Current workbook"}</p>
                     </div>
                     <Badge tone="low">File analysis</Badge>
                     <InfoCorner
@@ -869,8 +893,8 @@ export default function Home() {
 
                 <div className="grid gap-5 xl:grid-cols-2">
                   <Card>
-                    <CardHeader className="relative border-b border-border bg-gradient-to-r from-white to-teal-50/40 pr-12">
-                      <h2 className="font-semibold">Bangladesh Regional Demand Map</h2>
+                    <CardHeader className="relative pr-12">
+                      <h2 className="font-semibold text-slate-900">Bangladesh Regional Demand Map</h2>
                       <p className="mt-1 text-sm text-muted-foreground">Regional demand concentration, growth, and risk by major Bangladesh markets.</p>
                       <InfoCorner title="Bangladesh Regional Demand Map" description="Shows regional demand markers, ranked demand bars, growth, and local risk for SCM allocation decisions." rules={["Marker radius is scaled by demand.", "Marker color follows risk level.", "Regional bars are normalized against the highest-demand region."]} />
                     </CardHeader>
@@ -889,8 +913,8 @@ export default function Home() {
                 </div>
 
                 <Card>
-                  <CardHeader className="relative border-b border-border bg-gradient-to-r from-white to-amber-50/50 pr-12">
-                    <h2 className="font-semibold">Risk Alerts & Action Plan</h2>
+                  <CardHeader className="relative pr-12">
+                    <h2 className="font-semibold text-slate-900">Risk Alerts & Action Plan</h2>
                     <p className="mt-1 text-sm text-muted-foreground">Operational risk triage with prioritized replenishment, reorder, seasonality, competitor, and refresh actions.</p>
                     <InfoCorner title="Risk Alerts & Action Plan" description="Converts forecast accuracy, seasonal lift, competitor pressure, and stock recommendation into SCM actions." rules={["High forecast error raises planning risk.", "Seasonal demand lift creates pre-stock alerts.", "Recommended stock and reorder point drive replenishment actions."]} />
                   </CardHeader>
@@ -908,11 +932,11 @@ export default function Home() {
                         </div>
                       ))}
                     </div>
-                    <ol className="relative space-y-3 border-l border-slate-200 pl-5 text-sm">
-                      {result.actionPlan.map((action, index) => <li key={action} className="relative rounded-md border border-border bg-white p-4 shadow-sm">
-                        <span className="absolute -left-[31px] top-4 grid h-6 w-6 place-items-center rounded-full bg-primary text-xs font-semibold text-white">{index + 1}</span>
-                        <div className="font-medium">Priority {index + 1}</div>
-                        <p className="mt-1 leading-6 text-muted-foreground">{action}</p>
+                    <ol className="relative space-y-3 border-l border-slate-100 pl-5 text-sm">
+                      {result.actionPlan.map((action, index) => <li key={action} className="relative rounded-xl border border-border bg-white p-4 shadow-sm">
+                        <span className="absolute -left-[29px] top-3.5 grid h-5 w-5 place-items-center rounded-full bg-primary text-[10px] font-bold text-white">{index + 1}</span>
+                        <div className="text-[11px] font-bold uppercase tracking-wide text-slate-400">Priority {index + 1}</div>
+                        <p className="mt-1 leading-6 text-slate-700">{action}</p>
                       </li>)}
                     </ol>
                   </CardContent>
@@ -1033,11 +1057,13 @@ export default function Home() {
 
 function LoadingOverlay({ message, blocking }: { message: string; blocking: boolean }) {
   return (
-    <div className={`fixed inset-0 z-50 grid place-items-center bg-slate-950/18 backdrop-blur-[2px] ${blocking ? "" : "pointer-events-none"}`}>
-      <div className="w-[min(420px,calc(100vw-32px))] rounded-lg border border-border bg-white p-6 text-center shadow-panel">
-        <Loader2 className="mx-auto mb-4 animate-spin text-primary" size={34} />
-        <h2 className="text-lg font-semibold text-slate-950">Please wait</h2>
-        <p className="mt-2 text-sm text-muted-foreground">{message}</p>
+    <div className={`fixed inset-0 z-50 grid place-items-center bg-slate-900/10 backdrop-blur-sm ${blocking ? "" : "pointer-events-none"}`}>
+      <div className="w-[min(400px,calc(100vw-32px))] rounded-2xl border border-border bg-white p-7 text-center shadow-panel">
+        <div className="mx-auto mb-4 grid h-12 w-12 place-items-center rounded-xl bg-teal-50 text-teal-700">
+          <Loader2 className="animate-spin" size={24} />
+        </div>
+        <h2 className="text-base font-bold text-slate-900">Please wait</h2>
+        <p className="mt-1.5 text-sm text-slate-500">{message}</p>
       </div>
     </div>
   );
@@ -1054,15 +1080,15 @@ function ChartSkeleton() {
 function InfoCorner({ title, description, rules }: { title: string; description: string; rules: string[] }) {
   return (
     <div className="group absolute right-3 top-3 z-20">
-      <button type="button" className="grid h-8 w-8 place-items-center rounded-md border border-border bg-white text-slate-500 shadow-sm hover:text-primary" aria-label={`${title} details`}>
-        <Info size={16} />
+      <button type="button" className="grid h-7 w-7 place-items-center rounded-lg border border-slate-200 bg-white text-slate-400 shadow-sm transition-colors hover:border-teal-300 hover:text-teal-600" aria-label={`${title} details`}>
+        <Info size={13} />
       </button>
-      <div className="pointer-events-none absolute right-0 top-10 hidden w-80 max-w-[calc(100vw-48px)] rounded-md border border-border bg-white p-4 text-left text-sm shadow-panel group-hover:block">
-        <h3 className="font-semibold text-slate-950">{title}</h3>
-        <p className="mt-2 leading-5 text-muted-foreground">{description}</p>
-        <div className="mt-3 font-medium text-slate-800">Rules used</div>
-        <ul className="mt-2 space-y-1 text-xs leading-5 text-muted-foreground">
-          {rules.slice(0, 5).map((rule) => <li key={rule}>{rule}</li>)}
+      <div className="pointer-events-none absolute right-0 top-9 hidden w-80 max-w-[calc(100vw-48px)] rounded-xl border border-border bg-white p-4 text-left shadow-panel group-hover:block">
+        <h3 className="text-sm font-bold text-slate-900">{title}</h3>
+        <p className="mt-2 text-xs leading-5 text-slate-500">{description}</p>
+        <div className="mt-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Rules used</div>
+        <ul className="mt-2 space-y-1.5 text-[11px] leading-4 text-slate-500">
+          {rules.slice(0, 5).map((rule) => <li key={rule} className="flex gap-1.5"><span className="mt-0.5 shrink-0 text-teal-500">·</span>{rule}</li>)}
         </ul>
       </div>
     </div>
@@ -1071,9 +1097,9 @@ function InfoCorner({ title, description, rules }: { title: string; description:
 
 function SummaryTile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-md border border-border bg-white p-3">
-      <div className="text-xs text-muted-foreground">{label}</div>
-      <div className="mt-1 text-xl font-semibold">{value}</div>
+    <div className="rounded-xl border border-border bg-white p-4">
+      <div className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">{label}</div>
+      <div className="mt-1.5 text-2xl font-bold tracking-tight text-slate-900">{value}</div>
     </div>
   );
 }
@@ -1166,9 +1192,9 @@ function DataQualityPipeline({ datasets }: { datasets: UploadedDataset[] }) {
       </div>
       <div className="grid gap-2 md:grid-cols-4 xl:grid-cols-8">
         {stages.map((stage, index) => (
-          <div key={stage.name} className={`rounded-md border p-3 text-xs ${hasData || index === 0 ? "border-teal-200 bg-teal-50 text-teal-900" : "border-border bg-slate-50 text-muted-foreground"}`}>
-            <div className="font-semibold">{stage.name}</div>
-            <div className="mt-1 leading-4 text-teal-700">{stage.detail}</div>
+          <div key={stage.name} className={`rounded-xl border p-3 text-xs ${hasData || index === 0 ? "border-teal-200/70 bg-teal-50/70 text-teal-900" : "border-border bg-slate-50 text-muted-foreground"}`}>
+            <div className="font-bold">{stage.name}</div>
+            <div className={`mt-1 leading-4 ${hasData || index === 0 ? "text-teal-700" : "text-slate-400"}`}>{stage.detail}</div>
           </div>
         ))}
       </div>
@@ -1207,7 +1233,7 @@ function ModuleOutputCard({
       }}
       className={`dashboard-card overflow-hidden transition hover:-translate-y-0.5 hover:shadow-panel ${dashboardSizeClass(cardSize)}`}
     >
-      <CardHeader className="relative min-h-24 border-b border-border bg-gradient-to-r from-white to-teal-50/40 pr-12">
+      <CardHeader className="relative pr-12">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="flex min-w-0 items-center gap-2">
             {onDropCard && (
