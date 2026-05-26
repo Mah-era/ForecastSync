@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { Activity, AlertTriangle, BarChart3, Boxes, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, UploadCloud } from "lucide-react";
+import { Activity, AlertTriangle, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -407,7 +407,10 @@ export default function Home() {
         { label: "Safety Stock", value: result.forecast.points.length ? formatNumber(result.forecast.safetyStock) : "Relevant data not found", icon: Boxes, rule: "Safety stock uses demand variability and lead-time assumption from current analysis." },
         { label: "Stockout Risk", value: stockoutRiskLabel(result), icon: AlertTriangle },
         { label: "Avg Lead Time", value: averageLeadTimeLabel(result), icon: Activity },
-        { label: "Competitor Pressure", value: competitorPressureLabel(result), icon: BarChart3, rule: "Calculated only from competitor rows in the current upload." }
+        { label: "Competitor Pressure", value: competitorPressureLabel(result), icon: BarChart3, rule: "Calculated only from competitor rows in the current upload." },
+        { label: "Promotion Pressure", value: `${result.webSearch.trendSignals.promotionPressure}/100`, icon: TrendingUp, rule: "Promotion pressure score from promotion rows in the current upload." },
+        { label: "Economic Risk", value: `${result.webSearch.trendSignals.economicRisk}/100`, icon: TrendingDown, rule: "Economic risk score from economic rows in the current upload." },
+        { label: "Seasonal Demand", value: `${result.webSearch.trendSignals.seasonalLift}/100`, icon: Calendar, rule: "Seasonal demand lift score from seasonality rows in the current upload." }
       ]
     : [];
   const busyMessage = renderingMessage
@@ -1797,6 +1800,9 @@ function sourceSheetForKpi(label: string, result: AnalysisResult) {
     const hasActual = result.skills.find((s) => s.id === "forecast-accuracy")?.chartData?.some((r) => "forecastError" in (r as object));
     return hasActual ? "Forecast_Actual" : "Historical_Sales (estimated)";
   }
+  if (label === "Promotion Pressure") return result.skills.find((s) => s.id === "promotion-impact")?.chartData?.length ? "Promotions" : "Estimated from file";
+  if (label === "Economic Risk") return result.skills.find((s) => s.id === "economic-conditions")?.chartData?.length ? "Economic" : "Estimated from file";
+  if (label === "Seasonal Demand") return result.skills.find((s) => s.id === "seasonality")?.chartData?.length ? "Seasonality" : "Estimated from file";
   return result.forecast.points.length ? "Historical_Sales" : "Relevant data not found";
 }
 
