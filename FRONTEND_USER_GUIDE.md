@@ -4,11 +4,13 @@
 
 Open the app and use it directly. No login is required.
 
+The landing page has an animated dark hero with a rain effect, the ForecastSync logo, and two large pathway buttons. Click a button to enter the chosen workflow.
+
 ## Choose a Pathway
 
 The first screen has two separate options:
 
-- **Import File & Analyse**: upload files, clean/validate them, run forecasting, and export reports.
+- **Import File & Analyse**: upload files, clean/validate them, select a product (if multiple are detected), run forecasting, and export reports.
 - **Search By Choice**: search a selected product/category/brand online with Tavily and create a separate search dashboard.
 
 The two pathways do not mix data unless you intentionally switch and run a new action.
@@ -36,6 +38,12 @@ Import includes data correction for blank rows, duplicate rows, numeric values s
 Excel workbooks are imported across all sheets. Uploading a new file immediately replaces the previous workbook data and clears old analysis/filter state, product metadata, expert notes, and search output, so the next dashboard is based on the current file only.
 
 When the workbook contains fields such as `Product`, `ProductName`, `Category`, `Brand`, `Region`, or a `Scenario_Info` sheet with `Field` and `Value` columns, ForecastSync fills the product/category/brand/region values from that uploaded file. It does not keep the previous product after a new import or after **Remove data**.
+
+## Product Selection
+
+When the uploaded file or workbook contains more than one product (detected from columns such as `ProductName`, `Product`, `Item`, `SKU`, or `Material`), a **Product Selection** card appears on the Import Data page. Use the teal-highlighted dropdown to choose one product. All subsequent analysis, charts, maps, and KPIs are filtered to that product only.
+
+If the file contains a single product, or no product column is detected, the product selector is hidden and all rows are used.
 
 ## Brand Filter
 
@@ -82,10 +90,9 @@ Important options include:
 
 Click **Run analysis**. The dashboard will show:
 
-- Forecast KPIs
+- **9 KPI cards**: Forecast Demand, Accuracy, Confidence, Stockout Risk, Inventory, Lead Time, Promotion Pressure, Economic Risk, and Seasonal Demand — each card shows the source sheet and row count used
 - Forecast chart
-- Reorderable and resizable module cards
-- Real module charts calculated from the current imported file analysis
+- Reorderable and resizable module cards with real chart visuals
 - Bangladesh demand map based on uploaded regional data when available
 - Supply chain flow map
 - Risk alerts
@@ -108,7 +115,27 @@ Each module card can be moved and resized:
 
 The dashboard cards use the current uploaded-file analysis. They are not static examples. Each card includes a source label and row count, and the corner info button explains the calculation rules.
 
+Module chart types matched to each skill:
+
+- **Customer Demand Patterns** — Sankey flow diagram (segment → channel → region) or regional pie chart
+- **Promotions & Discounts** — bubble chart (actual vs expected uplift, bubble size = budget)
+- **Competitor Activities** — scrollable event timeline table with colour-coded activity badges
+- **Forecasting Methods** — method comparison cards highlighting the best model (lowest MAPE) in teal
+- **Technology & Data Tools** — health matrix table with Available / Missing / Placeholder / Needs API Key status badges and a data quality score bar
+- **Final SCM Recommendation** — decision matrix table with risk-level and priority colour coding
+- **Inventory Levels** — stacked bar chart per SKU (current stock + in-transit)
+- **Lead Time** — stacked waterfall bar chart per supplier stage (purchase + production + shipping + delivery)
+- **Historical Sales Data** — composed area + line chart
+- **Market Trends** — area chart
+- **Seasonality** — bar chart with seasonal index
+- **Economic Conditions** — radar chart
+- **Forecast Accuracy** — line + bar composed chart
+
 The Bangladesh Regional Demand Map, SCM Flow Map, and Risk Alerts & Action Plan are recalculated from the latest uploaded file. If the workbook does not contain the relevant rows for a module, ForecastSync shows **Relevant data not found** with the source/row reason instead of demo data.
+
+## Sidebar Navigation
+
+Use the dot-active sidebar on the left to switch between modules. The active module is highlighted with a teal background and dot. All sidebar items navigate directly without a full page reload.
 
 ## Online Search
 

@@ -451,13 +451,13 @@ export default function Home() {
       <main className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100">
         {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting} />}
         <div className="rain-layer" aria-hidden="true">
-          {Array.from({ length: 22 }).map((_, index) => (
+          {Array.from({ length: 32 }).map((_, index) => (
             <span
               key={index}
               style={{
-                left: `${(index * 43) % 100}%`,
-                animationDelay: `${(index % 11) * -0.38}s`,
-                animationDuration: `${2.8 + (index % 7) * 0.28}s`
+                left: `${(index * 31) % 100}%`,
+                animationDelay: `${(index % 13) * -0.31}s`,
+                animationDuration: `${2.2 + (index % 7) * 0.22}s`
               }}
             />
           ))}
@@ -465,30 +465,31 @@ export default function Home() {
         <div className="clipart-cloud clipart-cloud-a" aria-hidden="true" />
         <div className="clipart-cloud clipart-cloud-b" aria-hidden="true" />
         <section className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 text-center">
-          <div className="mb-7 flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary text-white shadow-sm">
-              <PackageSearch size={20} />
+          <div className="mb-8 flex items-center gap-4">
+            <div className="grid h-16 w-16 place-items-center rounded-2xl bg-primary text-white shadow-md">
+              <PackageSearch size={32} />
             </div>
-            <span className="text-base font-bold tracking-tight text-slate-900">ForecastSync</span>
+            <div className="text-left">
+              <div className="text-2xl font-bold tracking-tight text-slate-900">ForecastSync</div>
+              <div className="text-sm text-slate-400">Demand planning intelligence</div>
+            </div>
           </div>
           <h1 className="max-w-2xl text-5xl font-bold tracking-tight text-slate-900" style={{ lineHeight: 1.15 }}>
             Demand planning,<br />powered by your data
           </h1>
-          <p className="mt-5 max-w-lg text-lg leading-relaxed text-slate-500">
-            Import files, forecast demand, analyse seasonality, inventory, and competitors — all from your own workbook.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-2">
+          <div className="mt-8 flex flex-wrap justify-center gap-2">
             {["Forecast accuracy", "Seasonality", "Competitor watch", "Inventory risk", "Lead time", "Sankey flow"].map((tag) => (
               <span key={tag} className="rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs text-slate-500 shadow-sm">{tag}</span>
             ))}
           </div>
-          <div className="mt-14 grid w-full max-w-3xl gap-4 md:grid-cols-2">
+          <div className="mt-12 grid w-full max-w-3xl gap-4 md:grid-cols-2">
             <button
-              onClick={() => withWaitScreen("Opening import workspace...", () => {
+              type="button"
+              onClick={() => {
                 window.history.pushState({}, "", pathForSection("Import Data"));
                 setPathway("import");
                 setActiveSection("Import Data");
-              })}
+              }}
               className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all hover:border-teal-300 hover:shadow-md"
             >
               <div className="mb-5 grid h-11 w-11 place-items-center rounded-xl bg-teal-50 text-teal-700">
@@ -503,11 +504,12 @@ export default function Home() {
               </div>
             </button>
             <button
-              onClick={() => withWaitScreen("Opening search workspace...", () => {
+              type="button"
+              onClick={() => {
                 window.history.pushState({}, "", pathForSection("Search By Choice"));
                 setPathway("search");
                 setSearchDashboard(false);
-              })}
+              }}
               className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all hover:border-teal-300 hover:shadow-md"
             >
               <div className="mb-5 grid h-11 w-11 place-items-center rounded-xl bg-slate-50 text-slate-600">

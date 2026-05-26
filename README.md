@@ -5,7 +5,9 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 ## Features
 
 - Direct use with no login or role-based access.
+- Clean, professional UI using Inter font, slate base with teal accent, and a dark animated landing hero.
 - Product, category, brand, and region selection.
+- **Per-product selector**: when an uploaded workbook contains multiple products, a product dropdown appears at the Import Data step so you can analyse one product at a time before running analysis.
 - Separate product/brand online search action using Tavily.
 - CSV, Excel, and JSON import with classification, preview, validation, and quality scoring.
 - Excel import reads every workbook sheet, including unmatched sheets, so the full current file set is available to analysis.
@@ -19,6 +21,8 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 - Explicit "live search unavailable" status when no web search API key is configured.
 - Moving average, weighted moving average, trend, seasonality, festival, promotion, competitor, economic, inventory, and lead-time forecast adjustments.
 - Forecast Error, Absolute Error, MAPE, forecast accuracy, confidence score, safety stock, reorder point, and recommended stock.
+- **9-KPI dashboard**: Forecast Demand, Accuracy, Confidence, Stockout Risk, Inventory, Lead Time, Promotion Pressure, Economic Risk, and Seasonal Demand — all driven from the current uploaded file.
+- **15 module chart visuals**: each module renders a chart type matched to its data — Sankey flow (customer demand), bubble chart (promotion impact), event timeline (competitor activities), method comparison cards (forecasting methods), health matrix (technology & data tools), decision matrix (final recommendation), stacked bar/waterfall (inventory and lead time), radar, area, composed, scatter, and pie charts.
 - Dashboard module cards use the current imported file analysis and render actual chart visuals with a staged wait screen when charts are expensive. Missing module-specific data displays `Relevant data not found` instead of demo data.
 - Drag-and-drop dashboard card ordering with 1:1, 2:1, 1:2, and 16:4 card sizing.
 - Hover detail buttons on dashboard and Forecast Methods cards showing interpretation and calculation rules.
@@ -72,6 +76,8 @@ Upload real files before running operational analysis. File import/checking does
 
 Uploading a new file set immediately clears the previous datasets, module filters, dashboard result, dashboard card order, product metadata, expert notes, and search result before parsing the new file. This prevents previous data from leaking into the next analysis.
 
+If the workbook contains multiple products, a **Product Selection** card appears at the Import Data step. Choose one product before clicking **Run analysis**. All analysis and chart data is then filtered to that product only.
+
 The **Run analysis** button is disabled until the current upload has finished and at least one dataset exists. If production import or analysis fails, the app displays the server status/error message instead of a generic failure.
 
 ## Dashboard Behavior
@@ -92,7 +98,7 @@ The Bangladesh Regional Demand Map reads uploaded regional demand rows when avai
 ForecastSync has a choice-first route structure:
 
 - `/`: home page with the two pathway choices.
-- `/import-data`: import, clean, validate, preview, select factors, and run file analysis.
+- `/import-data`: import, clean, validate, preview, select product, select factors, and run file analysis.
 - `/search-by-choice`: Tavily-backed product/category/brand search.
 - `/search-dashboard`: interpreted online-search dashboard after search results exist.
 - `/<module-name>`: detailed imported-analysis modules, for example `/market-trends`, `/customer-demand-patterns`, `/lead-time`, and `/final-scm-recommendation`.
@@ -117,7 +123,7 @@ The page uses reusable components from `components/forecasting`, diagrams from `
 
 - `app/`: Next.js routes and API endpoints.
 - `components/dashboard`: dashboard tables and dashboard support UI.
-- `components/charts`: Recharts visual components.
+- `components/charts`: Recharts visual components — 15 module chart types.
 - `components/maps`: Leaflet regional demand map and SCM flow map.
 - `lib/forecasting`: forecasting formulas and model logic.
 - `lib/file-import`: CSV, Excel, and JSON parsers.

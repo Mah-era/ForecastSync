@@ -44,15 +44,16 @@ body {
 .rain-layer span {
   position: absolute;
   top: -80px;
-  width: 1px;
-  height: 44px;
+  width: 1.5px;
+  height: 52px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(148, 163, 184, 0), rgba(148, 163, 184, 0.22));
+  background: linear-gradient(180deg, rgba(14, 116, 144, 0), rgba(14, 116, 144, 0.42));
   animation: rain-fall 3.6s linear infinite;
 }
 
 /* Clouds — softer, more translucent */
 .clipart-cloud {
+  pointer-events: none;
   position: absolute;
   width: 200px;
   height: 60px;
