@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       if (isExcel(file.name)) {
         datasets.push(...(await parseExcelWorkbook(file, type)));
       } else {
-        datasets.push(await parseUpload(file, type));
+        datasets.push(await parseUpload(file, inferUploadType(file.name, type)));
       }
     }
 
@@ -94,6 +94,11 @@ async function parseExcelWorkbook(file: File, fallbackType: UploadedDataType): P
       cleaningSummary: cleaned.summary
     };
   });
+}
+
+function inferUploadType(fileName: string, fallbackType: UploadedDataType): UploadedDataType {
+  const baseName = fileName.replace(/\.[^.]+$/, "");
+  return inferSheetType(baseName, fallbackType);
 }
 
 function inferSheetType(sheet: string, fallbackType: UploadedDataType): UploadedDataType {

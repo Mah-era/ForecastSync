@@ -107,11 +107,36 @@ export function SkillChart({ skill }: { skill: SkillResult }) {
     <ResponsiveContainer width="100%" height={260}>
       <BarChart data={data}>
         <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-        <XAxis dataKey={Object.keys(data[0] ?? {})[0]} />
+        <XAxis dataKey={xAxisKey(data[0])} />
         <YAxis />
         <Tooltip />
-        <Bar dataKey={Object.keys(data[0] ?? {}).find((key) => typeof data[0]?.[key] === "number") ?? "value"} fill="#0f766e" isAnimationActive={false} />
+        <Bar dataKey={primaryNumberKey(data[0])} fill="#0f766e" isAnimationActive={false} />
       </BarChart>
     </ResponsiveContainer>
   );
+}
+
+function xAxisKey(row: Record<string, number | string>) {
+  const preferred = ["period", "month", "metric", "stage", "indicator", "priority", "source", "label", "type"];
+  return preferred.find((key) => key in row) ?? Object.keys(row)[0] ?? "label";
+}
+
+function primaryNumberKey(row: Record<string, number | string>) {
+  const preferred = [
+    "actual",
+    "adjustedForecast",
+    "demand",
+    "value",
+    "score",
+    "days",
+    "risk",
+    "inflation",
+    "qualityScore",
+    "rows",
+    "recommendedStock",
+    "reorderPoint"
+  ];
+  const preferredKey = preferred.find((key) => typeof row?.[key] === "number");
+  if (preferredKey) return preferredKey;
+  return Object.keys(row ?? {}).find((key) => typeof row?.[key] === "number" && !["index", "lat", "lng", "latitude", "longitude"].includes(key.toLowerCase())) ?? "value";
 }
