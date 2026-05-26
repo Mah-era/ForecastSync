@@ -27,6 +27,7 @@ const inventoryKeys = ["inventory", "currentstock", "stock", "onhand", "stockonh
 export function extractDemandSeries(datasets: UploadedDataset[]) {
   const sales =
     datasets.find((dataset) => dataset.type === "Historical Sales Data" && dataset.rows.some(hasDemandValue)) ??
+    datasets.find((dataset) => dataset.type === "Forecast Actual Data" && dataset.rows.some(hasDemandValue)) ??
     datasets.find((dataset) => dataset.rows.some(hasDemandValue));
   const rows: Record<string, unknown>[] = sales?.rows?.filter(hasDemandValue) ?? [];
   if (!rows.length) {

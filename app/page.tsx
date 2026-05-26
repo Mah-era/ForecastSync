@@ -557,12 +557,13 @@ export default function Home() {
               {pathway === "search" && <Button variant="secondary" onClick={() => clearSearchData()} disabled={!marketSearch}>
                 <Trash2 size={16} />Remove data
               </Button>}
-              {pathway === "import" && <Button variant="secondary" onClick={exportPdf} disabled={!result || !selectedOutputs.includes("PDF Report")}><Download size={16} />PDF</Button>}
-              {pathway === "import" && <Button variant="secondary" onClick={exportExcel} disabled={!result || !selectedOutputs.includes("Excel Report")}><FileSpreadsheet size={16} />Excel</Button>}
+              {pathway === "import" && <Button variant="secondary" onClick={exportPdf} disabled={!result || !selectedOutputs.includes("PDF Report")} title={!result ? "Run analysis first." : !selectedOutputs.includes("PDF Report") ? "Enable PDF Report in Output Results." : undefined}><Download size={16} />PDF</Button>}
+              {pathway === "import" && <Button variant="secondary" onClick={exportExcel} disabled={!result || !selectedOutputs.includes("Excel Report")} title={!result ? "Run analysis first." : !selectedOutputs.includes("Excel Report") ? "Enable Excel Report in Output Results." : undefined}><FileSpreadsheet size={16} />Excel</Button>}
               {pathway === "import" && <Button
                 variant="secondary"
                 disabled={!result || !selectedOutputs.includes("CSV Export")}
                 onClick={exportCsv}
+                title={!result ? "Run analysis first." : !selectedOutputs.includes("CSV Export") ? "Enable CSV Export in Output Results." : undefined}
               >
                 <Download size={16} />CSV
               </Button>}
@@ -740,6 +741,19 @@ export default function Home() {
             {pathway === "import" && result && activeSection === "Dashboard" && (
               <>
                 <DataQualityBanner datasets={filteredDatasets} />
+                {filteredDatasets.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-2 rounded-md border border-teal-200 bg-teal-50 px-4 py-2 text-sm text-teal-900">
+                    <span className="font-medium">Active Workbook:</span>
+                    <span>{activeWorkbookLabel(filteredDatasets)}</span>
+                    {filteredDatasets.some((d) => d.type === "Forecast Actual Data") && (
+                      <Badge tone="low">Forecast_Actual detected</Badge>
+                    )}
+                    {filteredDatasets.some((d) => d.type === "SCM Flow Data") && (
+                      <Badge tone="low">SCM_Flow_Map detected</Badge>
+                    )}
+                    <span className="ml-auto text-xs text-teal-700">Source: current upload only · {filteredDatasets.reduce((sum, d) => sum + d.rows.length, 0)} rows</span>
+                  </div>
+                )}
                 <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {kpis.map((kpi) => (
                     <Card key={kpi.label} className="relative">
@@ -814,7 +828,7 @@ export default function Home() {
                   <Card>
                     <CardHeader><h2 className="font-semibold">SCM Flow Map</h2></CardHeader>
                     <CardContent className="space-y-4">
-                      <SupplyChainFlowMap data={buildSupplyChainFlow(result)} />
+                      <SupplyChainFlowMap data={buildSupplyChainFlow(result, filteredDatasets)} />
                       <div className="rounded-md border border-border p-4">
                         <h3 className="font-semibold">Final SCM Recommendation</h3>
                         <p className="mt-2 text-sm leading-6 text-slate-700">{result.finalRecommendation}</p>
@@ -1015,14 +1029,22 @@ function SummaryTile({ label, value }: { label: string; value: string }) {
 
 function VisualSourceMeta({ skill, rows, datasets }: { skill: SkillResult; rows: Record<string, unknown>[]; datasets: UploadedDataset[] }) {
   const sourceSheets = sourceSheetsForSkill(skill, datasets);
+  const canonicalSource = moduleSourceLabel(skill);
   const warnings = dataQualityWarnings(datasets);
   return (
-    <div className="flex flex-wrap gap-2 rounded-md border border-border bg-slate-50 p-3 text-xs text-muted-foreground">
-      <Badge>Source: {sourceSheets.length ? sourceSheets.join(", ") : "Relevant data not found"}</Badge>
-      <Badge>{rows.length} rows used</Badge>
-      {activeWorkbookLabel(datasets) && <Badge>Active Workbook: {activeWorkbookLabel(datasets)}</Badge>}
-      {warnings.slice(0, 3).map((warning) => <Badge key={warning} tone="medium">{warning}</Badge>)}
-      {!rows.length && <span>Relevant data not found for this module in the current uploaded workbook.</span>}
+    <div className="space-y-2 rounded-md border border-border bg-slate-50 p-3 text-xs text-muted-foreground">
+      <div className="flex flex-wrap gap-2">
+        <Badge>Source: {canonicalSource}</Badge>
+        <Badge>{rows.length} rows used</Badge>
+        {activeWorkbookLabel(datasets) && <Badge>Active Workbook: {activeWorkbookLabel(datasets)}</Badge>}
+        {sourceSheets.length > 0 && <Badge>File: {sourceSheets.slice(0, 2).join(", ")}</Badge>}
+      </div>
+      {warnings.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {warnings.map((warning) => <Badge key={warning} tone="medium">{warning}</Badge>)}
+        </div>
+      )}
+      {!rows.length && <div className="text-amber-700">Relevant data not found for this module in the current uploaded workbook. Upload the required sheet to populate this analysis.</div>}
     </div>
   );
 }
@@ -1039,33 +1061,69 @@ function DataQualityBanner({ datasets }: { datasets: UploadedDataset[] }) {
 }
 
 function DataQualityPipeline({ datasets }: { datasets: UploadedDataset[] }) {
-  const stages = [
-    "Upload File",
-    "Detect File Type",
-    "Read All Sheets",
-    "Classify Sheets",
-    "Clean Data",
-    "Validate Data",
-    "Map to Modules",
-    "Ready for Analysis"
-  ];
   const hasData = datasets.length > 0;
+  const totals = datasets.reduce(
+    (acc, d) => ({
+      blankRowsRemoved: acc.blankRowsRemoved + (d.cleaningSummary?.blankRowsRemoved ?? 0),
+      duplicateRowsRemoved: acc.duplicateRowsRemoved + (d.cleaningSummary?.duplicateRowsRemoved ?? 0),
+      numericValuesConverted: acc.numericValuesConverted + (d.cleaningSummary?.numericValuesConverted ?? 0),
+      dateValuesNormalized: acc.dateValuesNormalized + (d.cleaningSummary?.dateValuesNormalized ?? 0),
+      negativeDemandRowsFlagged: acc.negativeDemandRowsFlagged + (d.cleaningSummary?.negativeDemandRowsFlagged ?? 0),
+      outlierRowsFlagged: acc.outlierRowsFlagged + (d.cleaningSummary?.outlierRowsFlagged ?? 0)
+    }),
+    { blankRowsRemoved: 0, duplicateRowsRemoved: 0, numericValuesConverted: 0, dateValuesNormalized: 0, negativeDemandRowsFlagged: 0, outlierRowsFlagged: 0 }
+  );
+  const uniqueTypes = Array.from(new Set(datasets.map((d) => d.type)));
+  const stages = [
+    { name: "Upload File", detail: hasData ? `${datasets.length} file${datasets.length !== 1 ? "s" : ""} received` : "Waiting for upload" },
+    { name: "Detect File Type", detail: hasData ? "CSV / Excel / JSON detected" : "—" },
+    { name: "Read All Sheets", detail: hasData ? `${datasets.length} sheet${datasets.length !== 1 ? "s" : ""} read` : "—" },
+    { name: "Classify Sheets", detail: hasData ? uniqueTypes.slice(0, 3).join(", ") + (uniqueTypes.length > 3 ? "…" : "") : "—" },
+    {
+      name: "Clean Data",
+      detail: hasData
+        ? [
+            totals.blankRowsRemoved ? `${totals.blankRowsRemoved} blank rows removed` : null,
+            totals.duplicateRowsRemoved ? `${totals.duplicateRowsRemoved} duplicates removed` : null,
+            totals.numericValuesConverted ? `${totals.numericValuesConverted} text/currency values cleaned` : null,
+            totals.dateValuesNormalized ? `${totals.dateValuesNormalized} dates normalized` : null
+          ]
+            .filter(Boolean)
+            .join(" · ") || "No cleaning issues"
+        : "—"
+    },
+    {
+      name: "Validate Data",
+      detail: hasData
+        ? [
+            totals.negativeDemandRowsFlagged ? `${totals.negativeDemandRowsFlagged} return rows flagged` : null,
+            totals.outlierRowsFlagged ? `${totals.outlierRowsFlagged} outlier spikes flagged` : null
+          ]
+            .filter(Boolean)
+            .join(" · ") || "Validation passed"
+        : "—"
+    },
+    { name: "Map to Modules", detail: hasData ? "Sheets mapped to analysis modules" : "—" },
+    { name: "Ready for Analysis", detail: hasData ? "Click Run analysis" : "Upload a file first" }
+  ];
+
   return (
     <div className="rounded-md border border-border bg-white p-4">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <h3 className="font-semibold">Data Quality Pipeline</h3>
-        <Badge tone={hasData ? "low" : "medium"}>{hasData ? "Current workbook ready" : "Relevant data not found"}</Badge>
+        <Badge tone={hasData ? "low" : "medium"}>{hasData ? "Current workbook ready" : "No file imported"}</Badge>
       </div>
       <div className="grid gap-2 md:grid-cols-4 xl:grid-cols-8">
         {stages.map((stage, index) => (
-          <div key={stage} className={`rounded-md border p-3 text-xs ${hasData || index === 0 ? "border-teal-200 bg-teal-50 text-teal-900" : "border-border bg-slate-50 text-muted-foreground"}`}>
-            <div className="font-semibold">{stage}</div>
+          <div key={stage.name} className={`rounded-md border p-3 text-xs ${hasData || index === 0 ? "border-teal-200 bg-teal-50 text-teal-900" : "border-border bg-slate-50 text-muted-foreground"}`}>
+            <div className="font-semibold">{stage.name}</div>
+            <div className="mt-1 leading-4 text-teal-700">{stage.detail}</div>
           </div>
         ))}
       </div>
       {hasData && (
         <div className="mt-3 text-xs text-muted-foreground">
-          Source: {activeWorkbookLabel(datasets)} · Rows used: {datasets.reduce((sum, dataset) => sum + dataset.rows.length, 0)}
+          Active Workbook: {activeWorkbookLabel(datasets)} · Rows used: {datasets.reduce((sum, dataset) => sum + dataset.rows.length, 0)}
         </div>
       )}
     </div>
@@ -1152,19 +1210,19 @@ function ModuleOutputCard({
 
 function moduleSourceLabel(skill: SkillResult) {
   const labels: Record<string, string> = {
-    "historical-sales": "Historical Sales Data",
-    "market-trends": "Market Trend Data / Historical Sales Data",
-    seasonality: "Seasonality / Historical Sales Data",
-    "customer-demand": "Customer Demand Data",
-    "promotion-impact": "Promotion & Discount Data",
-    "economic-conditions": "Economic Data",
-    "competitor-activities": "Competitor Data",
-    "inventory-levels": "Inventory Data",
-    "lead-time": "Lead Time Data",
-    "forecasting-methods": "Historical Sales Data",
-    "technology-data": "Uploaded files",
-    "forecast-accuracy": "Historical Sales Data",
-    "final-recommendation": "Analysed modules"
+    "historical-sales": "Historical_Sales",
+    "market-trends": "Historical_Sales / Market_Trends",
+    seasonality: "Seasonality / Historical_Sales",
+    "customer-demand": "Regional_Demand_Map / Customer_Patterns",
+    "promotion-impact": "Promotions",
+    "economic-conditions": "Economic",
+    "competitor-activities": "Competitors",
+    "inventory-levels": "Inventory",
+    "lead-time": "Lead_Time",
+    "forecasting-methods": "Historical_Sales / Forecast_Actual",
+    "technology-data": "All sheets",
+    "forecast-accuracy": "Forecast_Actual",
+    "final-recommendation": "All analysed modules"
   };
   return skill.chartData.length || skill.tableData?.length ? labels[skill.id] ?? "Current workbook" : "Relevant data not found";
 }
@@ -1732,16 +1790,20 @@ function competitorPressureLabel(result: AnalysisResult) {
 }
 
 function sourceSheetForKpi(label: string, result: AnalysisResult) {
-  if (label === "Avg Lead Time") return result.skills.find((skill) => skill.id === "lead-time")?.tableData?.length ? "Lead Time Data" : "Relevant data not found";
-  if (label === "Competitor Pressure") return result.skills.find((skill) => skill.id === "competitor-activities")?.tableData?.length ? "Competitor Data" : "Relevant data not found";
-  if (label === "Stockout Risk") return result.skills.find((skill) => skill.id === "inventory-levels")?.tableData?.length ? "Inventory Data" : "Relevant data not found";
-  return result.forecast.points.length ? "Historical Sales Data" : "Relevant data not found";
+  if (label === "Avg Lead Time") return result.skills.find((skill) => skill.id === "lead-time")?.tableData?.length ? "Lead_Time" : "Relevant data not found";
+  if (label === "Competitor Pressure") return result.skills.find((skill) => skill.id === "competitor-activities")?.tableData?.length ? "Competitors" : "Relevant data not found";
+  if (label === "Stockout Risk") return result.skills.find((skill) => skill.id === "inventory-levels")?.tableData?.length ? "Inventory" : "Relevant data not found";
+  if (label === "Accuracy") {
+    const hasActual = result.skills.find((s) => s.id === "forecast-accuracy")?.chartData?.some((r) => "forecastError" in (r as object));
+    return hasActual ? "Forecast_Actual" : "Historical_Sales (estimated)";
+  }
+  return result.forecast.points.length ? "Historical_Sales" : "Relevant data not found";
 }
 
 function sourceSheetsForSkill(skill: SkillResult, datasets: UploadedDataset[]) {
   const map: Record<string, UploadedDataset["type"][]> = {
     "historical-sales": ["Historical Sales Data"],
-    "market-trends": ["Market Trend Data"],
+    "market-trends": ["Market Trend Data", "Historical Sales Data"],
     seasonality: ["Seasonality / Festival Data", "Historical Sales Data"],
     "customer-demand": ["Customer Demand Data"],
     "promotion-impact": ["Promotion & Discount Data"],
@@ -1749,9 +1811,9 @@ function sourceSheetsForSkill(skill: SkillResult, datasets: UploadedDataset[]) {
     "competitor-activities": ["Competitor Data"],
     "inventory-levels": ["Inventory Data"],
     "lead-time": ["Lead Time Data"],
-    "forecasting-methods": ["Historical Sales Data"],
+    "forecasting-methods": ["Historical Sales Data", "Forecast Actual Data"],
     "technology-data": datasets.map((dataset) => dataset.type),
-    "forecast-accuracy": ["Historical Sales Data"],
+    "forecast-accuracy": ["Forecast Actual Data", "Historical Sales Data"],
     "final-recommendation": datasets.map((dataset) => dataset.type)
   };
   const allowed = new Set(map[skill.id] ?? []);
@@ -1764,19 +1826,39 @@ function activeWorkbookLabel(datasets: UploadedDataset[]) {
 
 function dataQualityWarnings(datasets: UploadedDataset[]) {
   const warnings = new Set<string>();
+  const totals = { numeric: 0, dates: 0, dupes: 0, returns: 0, outliers: 0 };
   datasets.forEach((dataset) => {
     const summary = dataset.cleaningSummary;
     if (!summary) return;
-    if (summary.numericValuesConverted) warnings.add("Text/currency numbers cleaned");
-    if (summary.dateValuesNormalized) warnings.add("Dates normalized");
-    if (summary.duplicateRowsRemoved) warnings.add("Duplicate rows removed");
-    if (summary.negativeDemandRowsFlagged) warnings.add("Returns detected");
-    if (summary.outlierRowsFlagged) warnings.add("Outlier spikes flagged");
+    totals.numeric += summary.numericValuesConverted;
+    totals.dates += summary.dateValuesNormalized;
+    totals.dupes += summary.duplicateRowsRemoved;
+    totals.returns += summary.negativeDemandRowsFlagged;
+    totals.outliers += summary.outlierRowsFlagged;
   });
+  if (totals.numeric) warnings.add(`Text/currency numbers detected and cleaned (${totals.numeric} values).`);
+  if (totals.dates) warnings.add(`Invalid or Excel serial date format detected and normalized (${totals.dates} values).`);
+  if (totals.dupes) warnings.add(`Duplicate rows detected and removed (${totals.dupes} rows).`);
+  if (totals.returns) warnings.add(`Negative demand rows detected and treated as returns/refunds (${totals.returns} rows separated from gross demand).`);
+  if (totals.outliers) warnings.add(`Extreme outlier demand spikes detected and marked (${totals.outliers} rows flagged).`);
   return Array.from(warnings);
 }
 
-function buildSupplyChainFlow(result: AnalysisResult) {
+function buildSupplyChainFlow(result: AnalysisResult, datasets: UploadedDataset[]) {
+  const scmRows = datasets.filter((d) => d.type === "SCM Flow Data").flatMap((d) => d.rows);
+  if (scmRows.length) {
+    const nodeTypes = ["Supplier", "Warehouse", "Retailer", "Customer"];
+    const byType = nodeTypes.map((nodeType) => {
+      const match = scmRows.find((row) => String(row.NodeType ?? row.Type ?? "").toLowerCase() === nodeType.toLowerCase());
+      return {
+        step: nodeType,
+        metric: match ? (match.AvgTransitDays ? `${match.AvgTransitDays} day transit` : String(match.Name ?? nodeType)) : `${nodeType} — no data`,
+        note: match ? String(match.RiskLevel ?? match.Region ?? match.Notes ?? "") : "Upload SCM_Flow_Map sheet"
+      };
+    });
+    return byType;
+  }
+
   const leadSkill = result.skills.find((skill) => skill.id === "lead-time");
   const inventorySkill = result.skills.find((skill) => skill.id === "inventory-levels");
   const demandSkill = result.skills.find((skill) => skill.id === "customer-demand");
@@ -1790,12 +1872,12 @@ function buildSupplyChainFlow(result: AnalysisResult) {
   return [
     {
       step: "Supplier",
-      metric: avgLead.length ? `${Math.round(avgLead.reduce((sum, value) => sum + value, 0) / avgLead.length)} day avg lead` : "Lead time missing",
-      note: leadRows[0]?.stage ? String(leadRows[0].stage) : "Add supplier lead-time rows"
+      metric: avgLead.length ? `${Math.round(avgLead.reduce((sum, value) => sum + value, 0) / avgLead.length)} day avg lead` : "Lead time — data not found",
+      note: leadRows[0]?.stage ? String(leadRows[0].stage) : "Upload Lead_Time sheet for supplier timing"
     },
     {
       step: "Warehouse",
-      metric: currentStock ? `${Number(currentStock).toLocaleString()} current` : "Current stock missing",
+      metric: currentStock ? `${Number(currentStock).toLocaleString()} units current` : "Current stock — data not found",
       note: `Target ${Number(recommendedStock).toLocaleString()} units`
     },
     {
@@ -1806,7 +1888,7 @@ function buildSupplyChainFlow(result: AnalysisResult) {
     {
       step: "Customer",
       metric: topRegion?.region ? String(topRegion.region) : `${result.forecast.nextPeriodForecast.toLocaleString()} forecast`,
-      note: topRegion?.demand ? `${Number(topRegion.demand).toLocaleString()} regional demand` : "Upload regional demand rows for city allocation"
+      note: topRegion?.demand ? `${Number(topRegion.demand).toLocaleString()} regional demand` : "Upload Regional_Demand_Map sheet for city allocation"
     }
   ];
 }
@@ -1841,11 +1923,11 @@ function moduleFacets(rows: Record<string, unknown>[]): ModuleFacet[] {
     { key: "source", label: "Source sheet", allLabel: "All sources" }
   ];
   return config
-    .map((facet) => ({
-      ...facet,
-      values: uniqueFacetValues(rows, facet.key)
-    }))
-    .filter((facet) => facet.values.length > 1 || facet.key === "source" && facet.values.length > 0);
+    .map((facet) => ({ ...facet, values: uniqueFacetValues(rows, facet.key) }))
+    .filter((facet) => {
+      if (facet.key === "source") return facet.values.length > 0;
+      return facet.values.length > 1;
+    });
 }
 
 function uniqueFacetValues(rows: Record<string, unknown>[], key: ModuleFacet["key"]) {

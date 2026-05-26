@@ -14,21 +14,53 @@ const cityCoordinates: Record<string, { lat: number; lng: number }> = {
   mymensingh: { lat: 24.7471, lng: 90.4203 }
 };
 
-export const historicalSalesSkill: AnalysisSkill = ({ forecast }) => ({
-  id: "historical-sales",
-  title: "Historical Sales Data",
-  riskLevel: forecast.accuracy < 75 ? "high" : forecast.accuracy < 85 ? "medium" : "low",
-  recommendation: "Use recent trend and weighted moving average as the primary demand baseline.",
-  insights: [
-    forecast.points.length ? "Historical sales are calculated from demand-bearing rows in the current uploaded file." : "No demand-bearing historical rows were found in the current file.",
-    "Festival and promotion columns are included when they exist in the uploaded sales rows."
-  ],
-  chartData: forecast.points,
-  tableData: forecast.points,
-  kpis: [{ label: "Sales growth", value: `${salesGrowth(forecast.points)}%`, tone: forecast.accuracy < 75 ? "high" : "medium" }],
-  description: "Historical sales converts imported monthly demand into trend, moving average, and forecast baseline views.",
-  calculationRules: ["Forecast Error = Actual Demand - Forecasted Demand.", "Moving average uses the previous three periods when available.", "Weighted moving average favors the newest period with a 50/30/20 split."]
-});
+export const historicalSalesSkill: AnalysisSkill = ({ request, forecast }) => {
+  const salesRows = rowsByType(request.uploadedDatasets, ["Historical Sales Data"]);
+  const demandFieldKeys = ["UnitsSold", "ActualUnits", "Demand", "Quantity", "Sales", "Units"];
+  const returnRows = salesRows.filter((row) => numberFor(row, demandFieldKeys, 0) < 0);
+  const returnCount = returnRows.length;
+  const hasRevenue = salesRows.some((row) => numberFor(row, ["RevenueBDT", "Revenue", "SalesRevenue", "TotalRevenue"], 0) > 0);
+  const positiveRows = salesRows.filter((row) => numberFor(row, demandFieldKeys, 0) > 0);
+
+  const chartRows =
+    hasRevenue && positiveRows.length
+      ? positiveRows.map((row, index) => ({
+          period: String(valueFor(row, ["Month", "Period", "Date"]) ?? `P${index + 1}`),
+          unitsSold: numberFor(row, demandFieldKeys, 0),
+          revenueBDT: numberFor(row, ["RevenueBDT", "Revenue", "SalesRevenue", "TotalRevenue"], 0)
+        }))
+      : forecast.points;
+
+  const riskLevel: RiskLevel = forecast.accuracy < 75 ? "high" : forecast.accuracy < 85 ? "medium" : "low";
+  return {
+    id: "historical-sales",
+    title: "Historical Sales Data",
+    riskLevel,
+    recommendation: forecast.points.length
+      ? "Use recent trend and weighted moving average as the primary demand baseline."
+      : "Relevant data not found: upload historical sales rows with UnitsSold, Demand, or Quantity columns.",
+    insights: [
+      forecast.points.length
+        ? `Historical sales from ${positiveRows.length || forecast.points.length} positive demand rows${returnCount > 0 ? `. ${returnCount} return/refund rows detected and separated from gross demand.` : "."}`
+        : "No demand-bearing historical rows were found in the current file.",
+      hasRevenue
+        ? "RevenueBDT column detected — shown as secondary bars alongside unit sales."
+        : "Festival and promotion columns are included when they exist in the uploaded sales rows."
+    ],
+    chartData: chartRows,
+    tableData: salesRows.length ? salesRows : forecast.points,
+    kpis: [{ label: "Sales growth", value: `${salesGrowth(forecast.points)}%`, tone: forecast.accuracy < 75 ? "high" : "medium" }],
+    description: "Historical sales converts imported monthly demand into trend, moving average, and forecast baseline views.",
+    calculationRules: [
+      "Forecast Error = Actual Demand - Forecasted Demand.",
+      "Moving average uses the previous three periods when available.",
+      "Weighted moving average favors the newest period with a 50/30/20 split.",
+      returnCount > 0
+        ? `${returnCount} negative demand rows treated as returns/refunds and excluded from gross demand forecast. Gross demand uses positive rows only.`
+        : "RevenueBDT = UnitsSold × UnitPriceBDT where both columns are present."
+    ]
+  };
+};
 
 export const marketTrendSkill: AnalysisSkill = ({ request, webSearch, forecast }) => {
   const trendRows = rowsByType(request.uploadedDatasets, ["Market Trend Data"]);
@@ -265,7 +297,11 @@ export const technologyDataSkill: AnalysisSkill = ({ request }) => ({
   title: "Technology & Data Tools",
   riskLevel: request.uploadedDatasets.some((dataset) => dataset.qualityScore < 70) ? "high" : "low",
   recommendation: "Connect ERP, POS, supplier, inventory, and live web search feeds through the MCP connector layer as data maturity improves.",
-  insights: ["Uploaded files are validated and scored.", "MCP-ready connector interfaces are included for future integrations."],
+  insights: [
+    "Uploaded files are validated and scored per sheet.",
+    request.uploadedDatasets.some((d) => d.type === "Forecast Actual Data") ? "Forecast_Actual sheet detected — forecast accuracy uses real ActualUnits vs ForecastUnits." : "No Forecast_Actual sheet found. Upload one with ActualUnits and ForecastUnits for precise accuracy metrics.",
+    request.uploadedDatasets.some((d) => d.type === "SCM Flow Data") ? "SCM_Flow_Map sheet detected — supply chain flow map uses real node data." : "MCP-ready connector interfaces are included for future integrations."
+  ],
   chartData: request.uploadedDatasets.map((dataset) => ({ source: dataset.name, score: dataset.qualityScore, rows: dataset.rows.length })),
   tableData: request.uploadedDatasets.map((dataset) => ({
     file: dataset.name,
@@ -274,24 +310,90 @@ export const technologyDataSkill: AnalysisSkill = ({ request }) => ({
     qualityScore: dataset.qualityScore,
     issues: dataset.issues.join("; ") || "None"
   })),
-  description: "Technology and data tools measure source coverage, file health, cleaning status, and connector readiness.",
-  calculationRules: ["Quality score penalizes blank cells and visible data issues.", "Cleaning removes blank rows, duplicate rows, and converts numeric/date text.", "MCP connector placeholders remain separate from imported file analysis."]
+  description: "Technology and data tools show source coverage, file health per sheet, cleaning status, and connector readiness.",
+  calculationRules: [
+    "Quality score penalizes blank cells and visible data issues.",
+    "Cleaning removes blank rows, duplicate rows, and converts numeric/currency text.",
+    "Forecast_Actual sheet enables precise MAPE calculation from real ActualUnits vs ForecastUnits.",
+    "Live search (Tavily) is only active in the Search By Choice pathway — never called during file import."
+  ]
 });
 
-export const forecastAccuracySkill: AnalysisSkill = ({ forecast }) => ({
-  id: "forecast-accuracy",
-  title: "Forecast Accuracy",
-  riskLevel: forecast.accuracy < 75 ? "high" : forecast.accuracy < 85 ? "medium" : "low",
-  recommendation: `Forecast accuracy is ${forecast.accuracy}%; keep MAPE under 15% for operational planning.`,
-  insights: ["Forecast Error = Actual Demand - Forecasted Demand.", "MAPE is averaged from absolute percentage errors."],
-  chartData: forecast.points,
-  kpis: [
-    { label: "MAPE", value: `${forecast.mape}%`, tone: forecast.mape > 20 ? "high" : "medium" },
-    { label: "Accuracy", value: `${forecast.accuracy}%`, tone: forecast.accuracy > 85 ? "low" : "medium" }
-  ],
-  description: "Forecast accuracy compares forecast values against actual imported demand.",
-  calculationRules: ["Forecast Error = Actual Demand - Forecasted Demand.", "Absolute Error = absolute value of Forecast Error.", "MAPE is the average absolute percentage error; Accuracy = 100% - MAPE."]
-});
+export const forecastAccuracySkill: AnalysisSkill = ({ request, forecast }) => {
+  const forecastActualRows = rowsByType(request.uploadedDatasets, ["Forecast Actual Data"]);
+
+  if (forecastActualRows.length) {
+    const chartRows = forecastActualRows
+      .map((row, index) => {
+        const actual = numberFor(row, ["ActualUnits", "Actual", "UnitsSold", "ActualDemand"], 0);
+        const forecastVal = numberFor(row, ["ForecastUnits", "Forecast", "ForecastDemandUnits", "PlannedUnits"], 0);
+        const error = actual - forecastVal;
+        const absoluteError = Math.abs(error);
+        const ape = actual > 0 ? (absoluteError / actual) * 100 : 0;
+        return {
+          period: String(valueFor(row, ["Month", "Period", "Date", "ForecastMonth"]) ?? `M${index + 1}`),
+          actualUnits: Math.round(actual),
+          forecastUnits: Math.round(forecastVal),
+          forecastError: Math.round(error),
+          absoluteError: Math.round(absoluteError),
+          absolutePercentageError: Number(ape.toFixed(2))
+        };
+      })
+      .filter((r) => r.actualUnits > 0 || r.forecastUnits > 0);
+
+    if (chartRows.length) {
+      const mape = chartRows.reduce((sum, r) => sum + r.absolutePercentageError, 0) / chartRows.length;
+      const accuracy = Math.max(0, Math.min(100, 100 - mape));
+      const riskLevel: RiskLevel = accuracy < 75 ? "high" : accuracy < 85 ? "medium" : "low";
+      return {
+        id: "forecast-accuracy",
+        title: "Forecast Accuracy",
+        riskLevel,
+        recommendation: `Forecast accuracy from Forecast_Actual sheet: ${accuracy.toFixed(1)}% (MAPE: ${mape.toFixed(2)}%). ${accuracy < 80 ? "Review source quality and recent demand shifts." : "Accuracy is within operational planning targets."}`,
+        insights: [
+          `MAPE = ${mape.toFixed(2)}% calculated from ${chartRows.length} Forecast_Actual rows.`,
+          "Forecast Error = ActualUnits - ForecastUnits.",
+          "ForecastAccuracy = 100 - MAPE_as_percent. Zero actual rows are excluded from MAPE calculation."
+        ],
+        chartData: chartRows,
+        kpis: [
+          { label: "MAPE", value: `${mape.toFixed(2)}%`, tone: mape > 20 ? ("high" as const) : ("medium" as const) },
+          { label: "Accuracy", value: `${accuracy.toFixed(1)}%`, tone: accuracy > 85 ? ("low" as const) : ("medium" as const) }
+        ],
+        description: "Forecast accuracy uses ActualUnits vs ForecastUnits from the Forecast_Actual sheet for precise measurement.",
+        calculationRules: [
+          "Source: Forecast_Actual sheet.",
+          "Forecast Error = ActualUnits - ForecastUnits.",
+          "Absolute Error = abs(Forecast Error).",
+          "APE = AbsoluteError / ActualUnits. MAPE = average(APE). ForecastAccuracy = 100 - MAPE."
+        ]
+      };
+    }
+  }
+
+  return {
+    id: "forecast-accuracy",
+    title: "Forecast Accuracy",
+    riskLevel: forecast.accuracy < 75 ? "high" : forecast.accuracy < 85 ? "medium" : "low",
+    recommendation: `Forecast accuracy is ${forecast.accuracy}%; keep MAPE under 15% for operational planning. Upload a Forecast_Actual sheet with ActualUnits and ForecastUnits columns for precise measurement.`,
+    insights: [
+      "Forecast Error = Actual Demand - Forecasted Demand.",
+      "MAPE is averaged from absolute percentage errors.",
+      "Upload a Forecast_Actual sheet (ActualUnits, ForecastUnits) for precise accuracy measurement from real data."
+    ],
+    chartData: forecast.points,
+    kpis: [
+      { label: "MAPE", value: `${forecast.mape}%`, tone: forecast.mape > 20 ? ("high" as const) : ("medium" as const) },
+      { label: "Accuracy", value: `${forecast.accuracy}%`, tone: forecast.accuracy > 85 ? ("low" as const) : ("medium" as const) }
+    ],
+    description: "Forecast accuracy compares computed forecast values against imported demand. Source: Historical_Sales (estimated).",
+    calculationRules: [
+      "Forecast Error = Actual Demand - Forecasted Demand.",
+      "Absolute Error = absolute value of Forecast Error.",
+      "MAPE is the average absolute percentage error; Accuracy = 100% - MAPE."
+    ]
+  };
+};
 
 export const finalRecommendationSkill: AnalysisSkill = ({ request, forecast, webSearch }) => ({
   id: "final-recommendation",

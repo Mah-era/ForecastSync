@@ -174,8 +174,8 @@ function getInventoryStatus(datasets: UploadedDataset[], reorderPoint: number, r
 }
 
 function getAverageLeadTime(datasets: UploadedDataset[]) {
-  const values = rowsByTypes(datasets, ["Lead Time Data"])
-    .map((row) => numberFor(row, ["Days", "LeadTimeDays", "AverageLeadTime", "TotalLeadTimeDays", "PurchaseLeadDays", "ProductionLeadDays", "ShippingLeadDays", "DeliveryLeadDays", "DelayDays"], 0))
+  const values = rowsByTypes(datasets, ["Lead Time Data", "SCM Flow Data"])
+    .map((row) => numberFor(row, ["Days", "LeadTimeDays", "AverageLeadTime", "TotalLeadTimeDays", "PurchaseLeadDays", "ProductionLeadDays", "ShippingLeadDays", "DeliveryLeadDays", "DelayDays", "AvgTransitDays"], 0))
     .filter((value) => value > 0);
   return values.length ? average(values) : 0;
 }

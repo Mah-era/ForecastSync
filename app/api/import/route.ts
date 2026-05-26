@@ -6,14 +6,29 @@ import type { UploadedDataset, UploadedDataType } from "@/types/scm";
 
 const sheetTypeMap: Record<string, UploadedDataType> = {
   Historical_Sales: "Historical Sales Data",
+  Sales_History: "Historical Sales Data",
+  Sales_Data: "Historical Sales Data",
+  Forecast_Actual: "Forecast Actual Data",
+  Forecast_Accuracy: "Forecast Actual Data",
+  Accuracy: "Forecast Actual Data",
   Inventory: "Inventory Data",
+  Stock: "Inventory Data",
   Promotions: "Promotion & Discount Data",
+  Campaigns: "Promotion & Discount Data",
   Competitors: "Competitor Data",
+  Competitor_Activities: "Competitor Data",
   Economic: "Economic Data",
+  Economy: "Economic Data",
   Lead_Time: "Lead Time Data",
-  Forecast_Actual: "Historical Sales Data",
+  Suppliers: "Lead Time Data",
   Regional_Demand_Map: "Customer Demand Data",
+  Regional_Demand: "Customer Demand Data",
   Customer_Patterns: "Customer Demand Data",
+  SCM_Flow_Map: "SCM Flow Data",
+  Supply_Chain: "SCM Flow Data",
+  Seasonality: "Seasonality / Festival Data",
+  Festival: "Seasonality / Festival Data",
+  Market_Trends: "Market Trend Data",
   Technology_Data: "POS / ERP Data",
   Web_Search_Seeds: "Market Trend Data",
   Manual_Expert_Opinion: "Expert Opinion / Manual Notes"
@@ -106,25 +121,19 @@ function inferSheetType(sheet: string, fallbackType: UploadedDataType): Uploaded
   if (sheetTypeMap[sheet]) return sheetTypeMap[sheet];
 
   const normalized = sheet.toLowerCase().replace(/[^a-z0-9]+/g, " ");
-  if (normalized.includes("historical") || normalized.includes("sales") || normalized.includes("actual") || normalized.includes("forecast")) {
-    return "Historical Sales Data";
-  }
+  if (normalized.includes("scm") || normalized.includes("supply chain") || normalized.includes("flow map")) return "SCM Flow Data";
+  if (normalized.includes("forecast actual") || normalized.includes("actual vs") || (normalized.includes("forecast") && normalized.includes("accuracy"))) return "Forecast Actual Data";
+  if (normalized.includes("historical") || normalized.includes("sales")) return "Historical Sales Data";
   if (normalized.includes("inventory") || normalized.includes("stock")) return "Inventory Data";
   if (normalized.includes("promo") || normalized.includes("discount") || normalized.includes("campaign")) return "Promotion & Discount Data";
   if (normalized.includes("competitor") || normalized.includes("pricing")) return "Competitor Data";
   if (normalized.includes("economic") || normalized.includes("inflation") || normalized.includes("income")) return "Economic Data";
   if (normalized.includes("lead") || normalized.includes("supplier") || normalized.includes("delay")) return "Lead Time Data";
-  if (normalized.includes("regional") || normalized.includes("customer") || normalized.includes("demand") || normalized.includes("location")) {
-    return "Customer Demand Data";
-  }
+  if (normalized.includes("season") || normalized.includes("festival") || normalized.includes("eid") || normalized.includes("ramadan")) return "Seasonality / Festival Data";
+  if (normalized.includes("regional") || normalized.includes("customer") || normalized.includes("demand") || normalized.includes("location")) return "Customer Demand Data";
   if (normalized.includes("trend") || normalized.includes("search") || normalized.includes("market")) return "Market Trend Data";
   if (normalized.includes("pos") || normalized.includes("erp") || normalized.includes("technology")) return "POS / ERP Data";
-  if (normalized.includes("season") || normalized.includes("festival") || normalized.includes("eid") || normalized.includes("ramadan")) {
-    return "Seasonality / Festival Data";
-  }
-  if (normalized.includes("expert") || normalized.includes("manual") || normalized.includes("note") || normalized.includes("scenario")) {
-    return "Expert Opinion / Manual Notes";
-  }
+  if (normalized.includes("expert") || normalized.includes("manual") || normalized.includes("note") || normalized.includes("scenario")) return "Expert Opinion / Manual Notes";
 
   return fallbackType === "Historical Sales Data" ? "Expert Opinion / Manual Notes" : fallbackType;
 }

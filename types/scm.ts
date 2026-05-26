@@ -1,5 +1,6 @@
 export type UploadedDataType =
   | "Historical Sales Data"
+  | "Forecast Actual Data"
   | "Inventory Data"
   | "Customer Demand Data"
   | "Promotion & Discount Data"
@@ -8,6 +9,7 @@ export type UploadedDataType =
   | "Market Trend Data"
   | "Seasonality / Festival Data"
   | "Lead Time Data"
+  | "SCM Flow Data"
   | "POS / ERP Data"
   | "Expert Opinion / Manual Notes";
 
