@@ -29,6 +29,8 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 - PDF, Excel, and CSV exports.
 - MCP-ready connector registry for future ERP, POS, inventory, supplier, file, and web-search servers.
 
+- live link: https://forecastsync.onrender.com
+
 ## Run Locally
 
 ```bash
