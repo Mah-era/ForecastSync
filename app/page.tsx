@@ -1088,11 +1088,8 @@ function DashboardChartSlot({ skill, enabled, delayIndex }: { skill: SkillResult
   if (!ready) return <ChartSkeleton />;
 
   return (
-    <div className="space-y-3">
+    <div>
       <SkillChart skill={skill} />
-      <div className="rounded-md bg-slate-50 p-3 text-sm leading-6 text-slate-700">
-        {skill.insights[0] ?? skill.recommendation}
-      </div>
     </div>
   );
 }
@@ -1737,10 +1734,12 @@ function numericMax(row: Record<string, unknown>) {
 }
 
 function numberForAnyKey(row: Record<string, unknown>, keys: string[]) {
-  const normalizedKeys = keys.map(normalizeKey);
-  const matchedKey = Object.keys(row).find((key) => normalizedKeys.includes(normalizeKey(key)));
-  const value = matchedKey ? Number(row[matchedKey]) : 0;
-  return Number.isFinite(value) ? value : 0;
+  for (const key of keys) {
+    const matchedKey = Object.keys(row).find((rowKey) => normalizeKey(rowKey) === normalizeKey(key));
+    const value = matchedKey ? Number(row[matchedKey]) : 0;
+    if (Number.isFinite(value) && value !== 0) return value;
+  }
+  return 0;
 }
 
 function hasNormalizedKey(row: Record<string, unknown>, key: string) {

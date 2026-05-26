@@ -421,8 +421,11 @@ function extractRegionalDemand(datasets: UploadedDataset[]) {
 }
 
 function valueFor(row: Record<string, unknown>, keys: string[]) {
-  const match = Object.keys(row).find((key) => keys.map(normalizeKey).includes(normalizeKey(key)));
-  return match ? row[match] : undefined;
+  for (const key of keys) {
+    const match = Object.keys(row).find((rowKey) => normalizeKey(rowKey) === normalizeKey(key));
+    if (match) return row[match];
+  }
+  return undefined;
 }
 
 function numberFor(row: Record<string, unknown>, keys: string[], fallback: number) {

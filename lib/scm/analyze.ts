@@ -47,7 +47,9 @@ export async function runDemandAnalysis(request: AnalysisRequest): Promise<Analy
   };
   const forecast = buildForecast(datasets, webSearch);
   const skillResults = skills.map((skill) => skill({ request: normalizedRequest, webSearch, forecast }));
-  const visibleSkills = skillResults.filter((skill) => shouldShowSkill(skill.title, request.inputFactors, request.outputSections));
+  const visibleSkills = skillResults
+    .filter((skill) => shouldShowSkill(skill.title, request.inputFactors, request.outputSections))
+    .map((skill) => ensureCurrentFileSkillData(skill, datasets));
   const inventoryStatus = getInventoryStatus(datasets, forecast.reorderPoint, forecast.recommendedStock);
   const leadTime = getAverageLeadTime(datasets);
   const alerts = [
@@ -122,6 +124,20 @@ function buildFileTrendSignals(datasets: UploadedDataset[]): WebSearchResult["tr
   ].filter((value) => value > 0);
 
   const competitorRows = rowsByTypes(datasets, ["Competitor Data"]);
+  const competitorPrices = competitorRows
+    .map((row) => numberFor(row, ["Price", "CompetitorPrice", "CompetitorPriceBDT", "AvgPrice", "PriceBDT"], 0))
+    .filter((value) => value > 0);
+  const pricePressure = competitorPrices.length
+    ? clamp(
+        Math.round(
+          25 +
+            (standardDeviation(competitorPrices) / Math.max(1, average(competitorPrices))) * 100 +
+            (Math.min(...competitorPrices) / Math.max(...competitorPrices)) * 25
+        ),
+        20,
+        75
+      )
+    : 0;
   const competitorValues = competitorRows.flatMap((row) => [
     numberFor(row, ["PromotionIntensity", "Promotion", "DiscountPct", "Discount"], 0),
     numberFor(row, ["LaunchScore", "Launch", "NewProduct"], 0),
@@ -129,6 +145,7 @@ function buildFileTrendSignals(datasets: UploadedDataset[]): WebSearchResult["tr
     flagScore(row, ["PromoActive", "PromotionActive"], 65),
     flagScore(row, ["LaunchEvent", "NewProductLaunch"], 80)
   ]).filter((value) => value > 0);
+  if (pricePressure) competitorValues.push(pricePressure);
 
   const economicRows = rowsByTypes(datasets, ["Economic Data"]);
   const economicValues = economicRows.flatMap((row) => [
@@ -167,10 +184,66 @@ function rowsByTypes(datasets: UploadedDataset[], types: UploadedDataset["type"]
   return datasets.filter((dataset) => types.includes(dataset.type)).flatMap((dataset) => dataset.rows);
 }
 
+function ensureCurrentFileSkillData<T extends AnalysisResult["skills"][number]>(skill: T, datasets: UploadedDataset[]): T {
+  if (Array.isArray(skill.chartData) && skill.chartData.length) {
+    return {
+      ...skill,
+      tableData: Array.isArray(skill.tableData) && skill.tableData.length ? skill.tableData : skill.chartData
+    };
+  }
+
+  const fallbackRows = buildCurrentFileFallbackRows(datasets, skill.title);
+  return {
+    ...skill,
+    chartData: fallbackRows,
+    tableData: Array.isArray(skill.tableData) && skill.tableData.length ? skill.tableData : fallbackRows,
+    insights: skill.insights.length ? skill.insights : [`${skill.title} is summarized from the latest uploaded file.`]
+  };
+}
+
+function buildCurrentFileFallbackRows(datasets: UploadedDataset[], title: string) {
+  const sourceRows = datasets.flatMap((dataset) =>
+    dataset.rows.slice(0, 12).map((row, index) => ({
+      source: dataset.name,
+      type: dataset.type,
+      index: index + 1,
+      value: firstNumericValue(row),
+      label: firstTextValue(row) || dataset.type
+    }))
+  );
+
+  const usable = sourceRows.filter((row) => row.value > 0);
+  if (usable.length) return usable.slice(0, 12);
+
+  const datasetRows = datasets.map((dataset) => ({
+    source: dataset.name,
+    type: dataset.type,
+    rows: dataset.rows.length,
+    qualityScore: dataset.qualityScore,
+    value: dataset.rows.length || dataset.qualityScore,
+    label: title
+  }));
+  return datasetRows.length ? datasetRows : [{ source: "Current import", type: "No data", rows: 0, qualityScore: 0, value: 0, label: title }];
+}
+
+function firstNumericValue(row: Record<string, unknown>) {
+  const preferred = numberFor(row, ["ActualUnits", "UnitsSold", "Demand", "ForecastDemandUnits", "CurrentStock", "TotalLeadTimeDays", "CompetitorPriceBDT", "InflationRate", "DiscountPct", "Quantity", "Sales"], 0);
+  if (preferred > 0) return preferred;
+  const value = Object.values(row).map(Number).find((item) => Number.isFinite(item) && item > 0);
+  return value ?? 0;
+}
+
+function firstTextValue(row: Record<string, unknown>) {
+  const value = valueFor(row, ["Period", "Month", "Region", "City", "Brand", "ProductName", "Supplier", "CompetitorName", "Metric", "Indicator"]);
+  return String(value ?? "").trim();
+}
+
 function valueFor(row: Record<string, unknown>, keys: string[]) {
-  const normalizedKeys = keys.map(normalizeKey);
-  const match = Object.keys(row).find((key) => normalizedKeys.includes(normalizeKey(key)));
-  return match ? row[match] : undefined;
+  for (const key of keys) {
+    const match = Object.keys(row).find((rowKey) => normalizeKey(rowKey) === normalizeKey(key));
+    if (match) return row[match];
+  }
+  return undefined;
 }
 
 function numberFor(row: Record<string, unknown>, keys: string[], fallback: number) {
@@ -190,6 +263,11 @@ function flagScore(row: Record<string, unknown>, keys: string[], score: number) 
 
 function average(values: number[]) {
   return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
+}
+
+function standardDeviation(values: number[]) {
+  const mean = average(values);
+  return Math.sqrt(average(values.map((value) => (value - mean) ** 2)));
 }
 
 function clamp(value: number, min: number, max: number) {
