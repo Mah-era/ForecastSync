@@ -98,6 +98,7 @@ export default function Home() {
   const [sourceCount, setSourceCount] = useState(10);
   const [dashboardOrder, setDashboardOrder] = useState<string[]>([]);
   const [dashboardSizes, setDashboardSizes] = useState<Record<string, DashboardCardSize>>({});
+  const [productFilter, setProductFilter] = useState("All products");
   const [dashboardChartsReady, setDashboardChartsReady] = useState(false);
   const [loading, setLoading] = useState(false);
   const [importing, setImporting] = useState(false);
@@ -139,7 +140,9 @@ export default function Home() {
 
   const currentSkill = useMemo(() => result?.skills.find((skill) => skill.title === activeSection), [activeSection, result]);
   const brandOptions = useMemo(() => extractBrandOptions(datasets), [datasets]);
-  const filteredDatasets = useMemo(() => filterDatasetsByBrand(datasets, brandFilter), [brandFilter, datasets]);
+  const brandFilteredDatasets = useMemo(() => filterDatasetsByBrand(datasets, brandFilter), [brandFilter, datasets]);
+  const productOptions = useMemo(() => extractProductOptions(brandFilteredDatasets), [brandFilteredDatasets]);
+  const filteredDatasets = useMemo(() => filterDatasetsByProduct(brandFilteredDatasets, productFilter), [productFilter, brandFilteredDatasets]);
   const importedSummary = useMemo(() => summarizeDatasets(filteredDatasets), [filteredDatasets]);
   const currentModuleFilter = currentSkill ? moduleFilters[currentSkill.id] ?? defaultModuleFilter : defaultModuleFilter;
   const currentSkillRows = useMemo(() => {
@@ -241,6 +244,7 @@ export default function Home() {
     setMarketSearch(null);
     setSearchDashboard(false);
     setBrandFilter("All brands");
+    setProductFilter("All products");
     setModuleFilters({});
     setDashboardOrder([]);
     setDashboardSizes({});
@@ -368,6 +372,7 @@ export default function Home() {
     setResult(null);
     setImportStatus("");
     setBrandFilter("All brands");
+    setProductFilter("All products");
     setSelection({ productName: "", category: "", brand: "", region: "" });
     setExpertNotes("");
     setActiveSection("Import Data");
@@ -657,6 +662,49 @@ export default function Home() {
                     <option>All brands</option>
                     {brandOptions.map((brand) => <option key={brand}>{brand}</option>)}
                   </select>
+                </CardContent>
+              </Card>
+            )}
+            {pathway === "import" && activeSection === "Import Data" && productOptions.length > 1 && (
+              <Card>
+                <CardHeader className="relative">
+                  <h2 className="font-semibold">Product Selection</h2>
+                  <InfoCorner
+                    title="Product selection"
+                    description="Filters all analysis to a single product when multiple products are detected in the imported workbook."
+                    rules={[
+                      `${productOptions.length} products detected in the current file.`,
+                      "Recognized columns: ProductName, Product, Item, SKU, ItemCode, Material.",
+                      "Rows without a product column are kept regardless of selection.",
+                      "Selecting a product also pre-fills the product name for the analysis request."
+                    ]}
+                  />
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <select
+                    className="w-full rounded-md border border-teal-400 bg-teal-50 px-3 py-2 font-medium text-teal-900"
+                    value={productFilter}
+                    onChange={(event) => {
+                      const chosen = event.target.value;
+                      setProductFilter(chosen);
+                      if (chosen !== "All products") {
+                        setSelection((current) => ({ ...current, productName: chosen }));
+                      }
+                    }}
+                  >
+                    <option value="All products">All products</option>
+                    {productOptions.map((product) => <option key={product} value={product}>{product}</option>)}
+                  </select>
+                  {productFilter !== "All products" && (
+                    <p className="text-xs text-teal-700">
+                      Analysis will use only rows matching <strong>{productFilter}</strong>. Switch to &quot;All products&quot; to include everything.
+                    </p>
+                  )}
+                  {productFilter === "All products" && (
+                    <p className="text-xs text-muted-foreground">
+                      Select one product to focus the forecast, charts, and tables on a single product&apos;s data.
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             )}
@@ -1678,6 +1726,38 @@ function FilterCard<T extends string>({
       </CardContent>
     </Card>
   );
+}
+
+function extractProductOptions(datasets: UploadedDataset[]) {
+  const products = new Set<string>();
+  datasets.forEach((dataset) => {
+    dataset.rows.forEach((row) => {
+      const value = getProductValue(row);
+      if (value) products.add(value);
+    });
+  });
+  return Array.from(products).sort((a, b) => a.localeCompare(b));
+}
+
+function filterDatasetsByProduct(datasets: UploadedDataset[], product: string) {
+  if (product === "All products") return datasets;
+  return datasets.map((dataset) => {
+    const rowsWithProduct = dataset.rows.filter((row) => getProductValue(row) !== "");
+    if (!rowsWithProduct.length) return dataset;
+    const rows = dataset.rows.filter((row) => {
+      const val = getProductValue(row);
+      return val === "" || val === product;
+    });
+    return { ...dataset, rows };
+  });
+}
+
+function getProductValue(row: Record<string, unknown>) {
+  const productKey = Object.keys(row).find((key) =>
+    ["productname", "product", "item", "sku", "itemcode", "productcode", "material"].includes(normalizeKey(key))
+  );
+  const value = productKey ? row[productKey] : "";
+  return String(value ?? "").trim();
 }
 
 function extractBrandOptions(datasets: UploadedDataset[]) {
