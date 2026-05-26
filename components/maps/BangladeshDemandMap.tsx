@@ -21,7 +21,7 @@ const Map = dynamic(async () => {
           <leaflet.CircleMarker
             key={city.region}
             center={[city.lat, city.lng]}
-            radius={Math.max(8, city.demand / 600)}
+            radius={Math.min(34, Math.max(8, city.demand / 600))}
             pathOptions={{ color: city.risk === "high" ? "#dc2626" : city.risk === "medium" ? "#f59e0b" : "#0f766e", fillOpacity: 0.45 }}
           >
             <leaflet.Popup>
@@ -94,14 +94,29 @@ function MapMetric({ label, value }: { label: string; value: string }) {
   );
 }
 
-export function SupplyChainFlowMap() {
+type FlowStep = {
+  step: string;
+  metric: string;
+  note: string;
+};
+
+export function SupplyChainFlowMap({ data }: { data?: FlowStep[] }) {
+  const steps = data?.length
+    ? data
+    : [
+        { step: "Supplier", metric: "No file data", note: "Upload lead-time rows" },
+        { step: "Warehouse", metric: "No file data", note: "Upload inventory rows" },
+        { step: "Retailer", metric: "No file data", note: "Run demand analysis" },
+        { step: "Customer", metric: "No file data", note: "Upload regional demand rows" }
+      ];
   return (
     <div className="grid gap-3 rounded-lg border border-border bg-slate-50 p-4 md:grid-cols-4">
-      {["Supplier", "Warehouse", "Retailer", "Customer"].map((step, index) => (
-        <div key={step} className="relative rounded-md border border-slate-200 bg-white p-4 text-center shadow-sm">
+      {steps.map((step, index) => (
+        <div key={step.step} className="relative rounded-md border border-slate-200 bg-white p-4 text-center shadow-sm">
           <div className="text-xs font-medium uppercase text-muted-foreground">Step {index + 1}</div>
-          <div className="mt-2 text-lg font-semibold text-slate-900">{step}</div>
-          <div className="mt-2 text-sm text-muted-foreground">{["Source goods", "Buffer stock", "Market allocation", "Demand signal"][index]}</div>
+          <div className="mt-2 text-lg font-semibold text-slate-900">{step.step}</div>
+          <div className="mt-2 rounded-md bg-teal-50 px-2 py-1 text-sm font-medium text-teal-800">{step.metric}</div>
+          <div className="mt-2 text-sm text-muted-foreground">{step.note}</div>
           {index < 3 && <div className="absolute -right-3 top-1/2 hidden h-0.5 w-6 bg-primary md:block" />}
         </div>
       ))}

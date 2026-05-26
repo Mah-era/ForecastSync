@@ -76,7 +76,7 @@ The **Run analysis** button is disabled until the current upload has finished an
 
 ## Dashboard Behavior
 
-The central dashboard uses the exact analysis result produced from the current uploaded files. Forecast extraction selects rows with real demand columns such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`, so workbook info/scenario sheets are not used as demand history. Each module card renders real charts, KPIs, risk badges, and recommendation text. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
+The central dashboard uses the exact analysis result produced from the current uploaded files. Forecast extraction selects rows with real demand columns such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`, so workbook info/scenario sheets are not used as demand history. Each module card renders real charts, KPIs, risk badges, and recommendation text. If a module-specific sheet is missing, ForecastSync derives a current-file fallback view from demand, brand, inventory, lead-time, or regional fields instead of showing static placeholder data or blank charts. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
 
 Dashboard cards can be reordered with the drag handle and resized from the card size menu:
 
@@ -85,7 +85,7 @@ Dashboard cards can be reordered with the drag handle and resized from the card 
 - `1:2`
 - `16:4`
 
-The Bangladesh Regional Demand Map reads uploaded regional demand rows when available. It recognizes common fields such as `Region`, `City`, `Latitude`, `Longitude`, `Demand`, `ForecastDemandUnits`, `Growth`, and `Risk`.
+The Bangladesh Regional Demand Map reads uploaded regional demand rows when available. It recognizes common fields such as `Region`, `City`, `Latitude`, `Longitude`, `Demand`, `ForecastDemandUnits`, `Growth`, and `Risk`. If no region/city fields exist, it shows a current-file total marker so the map remains tied to the latest upload. The SCM Flow Map also recalculates from current-file lead time, inventory, reorder point, and customer demand data.
 
 ## Page Routes
 

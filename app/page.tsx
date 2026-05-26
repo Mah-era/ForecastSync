@@ -405,8 +405,8 @@ export default function Home() {
         { label: "Next Forecast", value: formatNumber(result.forecast.nextPeriodForecast), icon: LineChart },
         { label: "Accuracy", value: `${result.forecast.accuracy}%`, icon: CheckCircle2 },
         { label: "Safety Stock", value: formatNumber(result.forecast.safetyStock), icon: Boxes },
-        { label: "Stockout Risk", value: result.alerts.some((alert) => alert.message.includes("stock")) ? "Elevated" : "Managed", icon: AlertTriangle },
-        { label: "Avg Lead Time", value: "21 days", icon: Activity },
+        { label: "Stockout Risk", value: stockoutRiskLabel(result), icon: AlertTriangle },
+        { label: "Avg Lead Time", value: averageLeadTimeLabel(result), icon: Activity },
         { label: "Competitor Pressure", value: `${result.webSearch.trendSignals.competitorPressure}/100`, icon: BarChart3 }
       ]
     : [];
@@ -803,7 +803,7 @@ export default function Home() {
                   <Card>
                     <CardHeader><h2 className="font-semibold">SCM Flow Map</h2></CardHeader>
                     <CardContent className="space-y-4">
-                      <SupplyChainFlowMap />
+                      <SupplyChainFlowMap data={buildSupplyChainFlow(result)} />
                       <div className="rounded-md border border-border p-4">
                         <h3 className="font-semibold">Final SCM Recommendation</h3>
                         <p className="mt-2 text-sm leading-6 text-slate-700">{result.finalRecommendation}</p>
@@ -1575,6 +1575,56 @@ function summarizeDatasets(datasets: UploadedDataset[]) {
     0
   );
   return { datasets: datasets.length, rows, quality, numericDemand, blankRowsRemoved, duplicateRowsRemoved, correctedValues };
+}
+
+function averageLeadTimeLabel(result: AnalysisResult) {
+  const leadSkill = result.skills.find((skill) => skill.id === "lead-time");
+  const rows = (leadSkill?.chartData ?? []) as Record<string, unknown>[];
+  const values = rows.map((row) => numberForAnyKey(row, ["days", "leadtime", "averageleadtime", "totalleadtimedays"])).filter((value) => value > 0);
+  if (!values.length) return "No data";
+  return `${Math.round(values.reduce((sum, value) => sum + value, 0) / values.length)} days`;
+}
+
+function stockoutRiskLabel(result: AnalysisResult) {
+  const inventorySkill = result.skills.find((skill) => skill.id === "inventory-levels");
+  if (inventorySkill?.riskLevel === "high" || inventorySkill?.riskLevel === "critical") return "Elevated";
+  if (result.alerts.some((alert) => /stock|reorder|inventory/i.test(alert.message))) return "Elevated";
+  return inventorySkill?.kpis?.some((kpi) => /no file data/i.test(kpi.value)) ? "No stock data" : "Managed";
+}
+
+function buildSupplyChainFlow(result: AnalysisResult) {
+  const leadSkill = result.skills.find((skill) => skill.id === "lead-time");
+  const inventorySkill = result.skills.find((skill) => skill.id === "inventory-levels");
+  const demandSkill = result.skills.find((skill) => skill.id === "customer-demand");
+  const leadRows = (leadSkill?.chartData ?? []) as Record<string, unknown>[];
+  const inventoryRows = (inventorySkill?.chartData ?? []) as Record<string, unknown>[];
+  const demandRows = (demandSkill?.chartData ?? []) as Record<string, unknown>[];
+  const avgLead = leadRows.map((row) => numberForAnyKey(row, ["days", "leadtime", "totalleadtimedays"])).filter((value) => value > 0);
+  const currentStock = inventoryRows.find((row) => String(row.metric ?? "").toLowerCase().includes("current"))?.value;
+  const recommendedStock = inventoryRows.find((row) => String(row.metric ?? "").toLowerCase().includes("recommended"))?.value ?? result.forecast.recommendedStock;
+  const topRegion = demandRows.slice().sort((a, b) => numberForAnyKey(b, ["demand"]) - numberForAnyKey(a, ["demand"]))[0];
+  return [
+    {
+      step: "Supplier",
+      metric: avgLead.length ? `${Math.round(avgLead.reduce((sum, value) => sum + value, 0) / avgLead.length)} day avg lead` : "Lead time missing",
+      note: leadRows[0]?.stage ? String(leadRows[0].stage) : "Add supplier lead-time rows"
+    },
+    {
+      step: "Warehouse",
+      metric: currentStock ? `${Number(currentStock).toLocaleString()} current` : "Current stock missing",
+      note: `Target ${Number(recommendedStock).toLocaleString()} units`
+    },
+    {
+      step: "Retailer",
+      metric: `${result.forecast.reorderPoint.toLocaleString()} reorder point`,
+      note: "Replenishment threshold from current forecast"
+    },
+    {
+      step: "Customer",
+      metric: topRegion?.region ? String(topRegion.region) : `${result.forecast.nextPeriodForecast.toLocaleString()} forecast`,
+      note: topRegion?.demand ? `${Number(topRegion.demand).toLocaleString()} regional demand` : "Upload regional demand rows for city allocation"
+    }
+  ];
 }
 
 function filterModuleRows(rows: Record<string, unknown>[], filter: ModuleFilterState) {

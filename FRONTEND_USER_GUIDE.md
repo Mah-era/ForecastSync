@@ -108,6 +108,8 @@ Each module card can be moved and resized:
 
 The dashboard cards use the current uploaded-file analysis. They are not static examples.
 
+The Bangladesh Regional Demand Map, SCM Flow Map, and Risk Alerts & Action Plan are also recalculated from the latest uploaded file. If a workbook does not include a dedicated sheet for a module, ForecastSync uses available current-file demand, brand, inventory, lead-time, or regional fields to create a fallback analysis view instead of showing blank charts.
+
 ## Online Search
 
 Use **Search By Choice** when you want web research for a selected product, category, brand, and region. Choose the number of sites to search, then click **Search online**.

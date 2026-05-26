@@ -102,7 +102,9 @@ Dashboard module cards are drag-and-drop reorderable and support 1:1, 2:1, 1:2, 
 
 The Bangladesh Regional Demand Map is data-driven. When uploaded workbooks contain region/city, demand, growth, risk, and optional latitude/longitude fields, the map recalculates marker size, ranking, top region, and regional bars from that file. If no regional rows exist in the current file, the map shows a current-file empty state instead of using reference placeholder regions.
 
-The Risk Alerts & Action Plan panel summarizes alert count, high/critical alert count, action count, risk messages, and ordered action priorities.
+The SCM Flow Map is also data-driven. It recalculates supplier lead-time, warehouse stock/target, retailer reorder point, and customer region/forecast signals from the active analysis result.
+
+The Risk Alerts & Action Plan panel summarizes alert count, high/critical alert count, action count, risk messages, and ordered action priorities. Alerts now use current-file forecast accuracy, file-derived competitor/economic/seasonal/promotion pressure, inventory stock versus reorder point, and lead-time risk.
 
 ## Performance and Stability Work
 
@@ -134,6 +136,8 @@ Completed checks:
 - Production build passed with `npm run build`.
 - Excel fixture suite passed all 30 workbooks with `npm run test:fixtures`.
 - Browser smoke confirmed the DPF-01 Excel upload, import completion, product derivation from the workbook, Run analysis, dashboard navigation, forecast visibility, and clean `/api/import` + `/api/analyze` 200 responses.
+- Browser smoke confirmed a full Excel workbook updates forecast KPIs, Bangladesh Regional Demand Map, SCM Flow Map, Risk Alerts & Action Plan, and module charts from the current upload with no blank chart states.
+- Browser smoke confirmed a historical-sales-only CSV still gives current-file fallback module visuals and a current-file total map marker with no blank chart states.
 - Tavily integration test passed with `npm run test:web-search`.
 - Browser smoke confirmed: import analysis loads, dashboard cards render real charts from current analysis data, all 13 module filters expose tailored choices and apply without freezing, replacement imports remove stale filenames/results, `/forecast-methods` has unnumbered headings, hover details are present, and the Bangladesh map changes based on the uploaded regional-demand workbook.
 
