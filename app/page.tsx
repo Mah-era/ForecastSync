@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Activity, AlertTriangle, ArrowRight, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -108,7 +108,6 @@ export default function Home() {
   const [exporting, setExporting] = useState(false);
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState("");
-  const [, startTransition] = useTransition();
   const waitTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -223,16 +222,16 @@ export default function Home() {
   }
 
   function applyModuleFilter(skillId: string, filter: ModuleFilterState) {
-    window.setTimeout(() => {
-      setApplyingFilters(true);
-      showWaitMessage("Applying module filter to current analysis data...", 650);
+    setApplyingFilters(true);
+    showWaitMessage("Applying module filter to current analysis data...", 900);
+    // Double rAF: first rAF lets React flush the overlay paint, second rAF confirms the frame
+    // is on screen before running the expensive filter+chart update.
+    requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        startTransition(() => {
-          setModuleFilters((current) => ({ ...current, [skillId]: filter }));
-        });
-        window.setTimeout(() => setApplyingFilters(false), 320);
+        setModuleFilters((current) => ({ ...current, [skillId]: filter }));
+        window.setTimeout(() => setApplyingFilters(false), 150);
       });
-    }, 0);
+    });
   }
 
   async function handleFiles(files: FileList | null) {
@@ -449,7 +448,7 @@ export default function Home() {
   if (!pathway) {
     return (
       <main className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100">
-        {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting} />}
+        {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting || applyingFilters} />}
         <div className="rain-layer" aria-hidden="true">
           {Array.from({ length: 32 }).map((_, index) => (
             <span
@@ -560,7 +559,7 @@ export default function Home() {
       </aside>}
 
       <section className="w-full">
-        {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting} />}
+        {busyMessage && <LoadingOverlay message={busyMessage} blocking={importing || loading || searching || exporting || applyingFilters} />}
         <header className="no-print sticky top-0 z-30 border-b border-border bg-white/95 px-6 py-3 backdrop-blur-sm">
           <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
             <div>
@@ -1355,11 +1354,7 @@ function ModuleFilterPanel({
     });
     return Array.from(keys);
   }, [rows]);
-  const optionSet = useMemo(() => {
-    const allOptions = moduleFilterOptions(skill);
-    if (!rows.length) return ["All records"];
-    return allOptions.filter((option) => option === "All records" || rows.some((row) => applyModuleOption(row, option)));
-  }, [rows, skill]);
+  const optionSet = useMemo(() => moduleFilterOptions(skill), [skill]);
   const facets = useMemo(() => moduleFacets(rows), [rows]);
   const [draftFilter, setDraftFilter] = useState(filter);
 
@@ -1379,11 +1374,6 @@ function ModuleFilterPanel({
     );
   }, [filter, skill.id]);
 
-  useEffect(() => {
-    if (!optionSet.includes(draftFilter.option)) {
-      setDraftFilter((current) => ({ ...current, option: "All records" }));
-    }
-  }, [draftFilter.option, optionSet]);
 
   return (
     <div className="rounded-md border border-border bg-white p-3">
@@ -2009,20 +1999,35 @@ function buildSupplyChainFlow(result: AnalysisResult, datasets: UploadedDataset[
 
 function filterModuleRows(rows: Record<string, unknown>[], filter: ModuleFilterState) {
   const text = filter.text.trim().toLowerCase();
-  return rows
-    .filter((row) => !text || rowText(row).includes(text))
-    .filter((row) => facetMatches(row, "product", filter.product, "All products"))
-    .filter((row) => facetMatches(row, "category", filter.category, "All categories"))
-    .filter((row) => facetMatches(row, "brand", filter.brand, "All brands"))
-    .filter((row) => facetMatches(row, "region", filter.region, "All regions"))
-    .filter((row) => facetMatches(row, "channel", filter.channel, "All channels"))
-    .filter((row) => facetMatches(row, "source", filter.source, "All sources"))
-    .filter((row) => applyModuleOption(row, filter.option))
-    .map((row) => {
-      if (filter.metric === "All metrics") return row;
-      const firstKey = Object.keys(row)[0];
-      return { [firstKey]: row[firstKey], [filter.metric]: row[filter.metric] };
-    });
+  const allDefault =
+    !text &&
+    filter.product === "All products" &&
+    filter.category === "All categories" &&
+    filter.brand === "All brands" &&
+    filter.region === "All regions" &&
+    filter.channel === "All channels" &&
+    filter.source === "All sources" &&
+    filter.option === "All records" &&
+    filter.metric === "All metrics";
+  if (allDefault) return rows;
+
+  const filtered = rows.filter((row) => {
+    if (text && !rowText(row).includes(text)) return false;
+    if (filter.product !== "All products" && !facetMatches(row, "product", filter.product, "All products")) return false;
+    if (filter.category !== "All categories" && !facetMatches(row, "category", filter.category, "All categories")) return false;
+    if (filter.brand !== "All brands" && !facetMatches(row, "brand", filter.brand, "All brands")) return false;
+    if (filter.region !== "All regions" && !facetMatches(row, "region", filter.region, "All regions")) return false;
+    if (filter.channel !== "All channels" && !facetMatches(row, "channel", filter.channel, "All channels")) return false;
+    if (filter.source !== "All sources" && !facetMatches(row, "source", filter.source, "All sources")) return false;
+    if (!applyModuleOption(row, filter.option)) return false;
+    return true;
+  });
+
+  if (filter.metric === "All metrics") return filtered;
+  return filtered.map((row) => {
+    const firstKey = Object.keys(row)[0];
+    return { [firstKey]: row[firstKey], [filter.metric]: row[filter.metric] };
+  });
 }
 
 type ModuleFacet = { key: "product" | "category" | "brand" | "region" | "channel" | "source"; label: string; allLabel: string; values: string[] };
