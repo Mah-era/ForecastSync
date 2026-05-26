@@ -1,5 +1,6 @@
 import Papa from "papaparse";
 import * as XLSX from "xlsx";
+import { cleanImportedRows } from "@/lib/file-import/cleaning";
 import type { UploadedDataset, UploadedDataType } from "@/types/scm";
 
 export const uploadTypes: UploadedDataType[] = [
@@ -36,6 +37,8 @@ export async function parseUpload(file: File, type: UploadedDataType): Promise<U
     throw new Error("Unsupported file type. Upload CSV, Excel, or JSON.");
   }
 
+  const cleaned = cleanImportedRows(rows);
+  rows = cleaned.rows.map((row) => ({ SourceSheet: file.name, ...row }));
   const columns = Array.from(new Set(rows.flatMap((row) => Object.keys(row))));
   const missingCells = rows.reduce(
     (sum, row) => sum + columns.filter((column) => row[column] === null || row[column] === undefined || row[column] === "").length,
@@ -46,7 +49,13 @@ export async function parseUpload(file: File, type: UploadedDataType): Promise<U
   const issues = [
     rows.length === 0 ? "No rows detected." : "",
     columns.length === 0 ? "No columns detected." : "",
-    missingCells > 0 ? `${missingCells} blank cells detected.` : ""
+    missingCells > 0 ? `${missingCells} blank cells detected.` : "",
+    cleaned.summary.blankRowsRemoved ? `${cleaned.summary.blankRowsRemoved} blank rows removed.` : "",
+    cleaned.summary.duplicateRowsRemoved ? `${cleaned.summary.duplicateRowsRemoved} duplicate rows removed.` : "",
+    cleaned.summary.numericValuesConverted ? `${cleaned.summary.numericValuesConverted} numeric text values converted.` : "",
+    cleaned.summary.dateValuesNormalized ? `${cleaned.summary.dateValuesNormalized} date values normalized.` : "",
+    cleaned.summary.negativeDemandRowsFlagged ? `${cleaned.summary.negativeDemandRowsFlagged} negative demand/return rows flagged.` : "",
+    cleaned.summary.outlierRowsFlagged ? `${cleaned.summary.outlierRowsFlagged} outlier demand spikes flagged.` : ""
   ].filter(Boolean);
 
   return {
@@ -56,6 +65,7 @@ export async function parseUpload(file: File, type: UploadedDataType): Promise<U
     rows,
     columns,
     qualityScore,
-    issues
+    issues,
+    cleaningSummary: cleaned.summary
   };
 }

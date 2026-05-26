@@ -68,7 +68,7 @@ async function parseExcelWorkbook(file: File, fallbackType: UploadedDataType): P
   return sheets.map((sheet) => {
     const rawRows = XLSX.utils.sheet_to_json<Record<string, unknown>>(workbook.Sheets[sheet], { defval: "" });
     const cleaned = cleanImportedRows(rawRows);
-    const rows = cleaned.rows;
+    const rows: Record<string, unknown>[] = cleaned.rows.map((row) => ({ SourceSheet: sheet, ...row }));
     const columns = Array.from(new Set(rows.flatMap((row) => Object.keys(row))));
     const blankCells = rows.reduce(
       (sum, row) => sum + columns.filter((column) => row[column] === null || row[column] === undefined || row[column] === "").length,
@@ -81,7 +81,8 @@ async function parseExcelWorkbook(file: File, fallbackType: UploadedDataType): P
       cleaned.summary.duplicateRowsRemoved ? `${cleaned.summary.duplicateRowsRemoved} duplicate rows removed.` : "",
       cleaned.summary.numericValuesConverted ? `${cleaned.summary.numericValuesConverted} numeric text values converted.` : "",
       cleaned.summary.dateValuesNormalized ? `${cleaned.summary.dateValuesNormalized} date values normalized.` : "",
-      cleaned.summary.negativeDemandRowsFlagged ? `${cleaned.summary.negativeDemandRowsFlagged} negative demand/return rows flagged.` : ""
+      cleaned.summary.negativeDemandRowsFlagged ? `${cleaned.summary.negativeDemandRowsFlagged} negative demand/return rows flagged.` : "",
+      cleaned.summary.outlierRowsFlagged ? `${cleaned.summary.outlierRowsFlagged} outlier demand spikes flagged.` : ""
     ].filter(Boolean);
     return {
       id: crypto.randomUUID(),

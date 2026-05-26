@@ -38,40 +38,54 @@ export const marketTrendSkill: AnalysisSkill = ({ request, webSearch, forecast }
         trendIndex: numberFor(row, ["TrendIndex", "Trend Score", "DemandScore", "Score", "Index"], 0),
         source: String(valueFor(row, ["Source", "Title", "Channel"]) ?? "Imported file")
       }))
-    : forecast.points.map((point) => ({ period: point.period, trendIndex: point.adjustedForecast, demand: point.actual }));
+    : forecast.points.map((point, index, points) => {
+        const firstActual = points[0]?.actual || 0;
+        const previous = points[index - 1]?.actual || point.actual;
+        return {
+          period: point.period,
+          trendIndex: firstActual ? Math.round((point.actual / firstActual) * 100) : 0,
+          demand: point.actual,
+          growthPct: previous ? Number((((point.actual - previous) / previous) * 100).toFixed(1)) : 0,
+          source: "Historical Sales Data"
+        };
+      });
   return {
     id: "market-trends",
     title: "Market Trends",
     riskLevel: riskFromScore(webSearch.trendSignals.marketTrendIndex),
-    recommendation: "Use current file trend rows and latest demand movement to refresh the forecast after each upload.",
-    insights: [trendRows.length ? "Market trend rows are generated from the current uploaded file." : "No market trend sheet was found; trend view is derived from current imported demand movement.", "File analysis does not call live search."],
+    recommendation: chartRows.length ? "Use current file trend rows and historical demand growth to refresh the forecast after each upload." : "Relevant data not found: upload market trend rows or historical demand rows to calculate this module.",
+    insights: [trendRows.length ? "Market trend rows are generated from the current uploaded file." : chartRows.length ? "Market trend index is calculated from historical demand rows in the current file." : "Relevant data not found: no market trend or historical demand rows were found in the current file.", "File analysis does not call live search."],
     chartData: chartRows,
     tableData: trendRows.length ? trendRows : chartRows,
-    description: "Market trend analysis uses uploaded trend rows when available, otherwise current file demand movement.",
-    calculationRules: ["Trend index rows are read from the current workbook when present.", "If trend rows are absent, imported demand movement is used.", "File analysis never silently calls Tavily."]
+    description: "Market trend analysis uses uploaded trend rows or current-file historical demand growth.",
+    calculationRules: ["DemandIndex = current period demand / first period demand x 100.", "If trend and demand rows are absent, the module shows Relevant data not found.", "File analysis never silently calls Tavily."]
   };
 };
 
 export const seasonalitySkill: AnalysisSkill = ({ request, webSearch }) => {
   const seasonalRows = rowsByType(request.uploadedDatasets, ["Seasonality / Festival Data"]);
   const demandSeries = extractDemandSeries(request.uploadedDatasets);
+  const baselineDemand = demandSeries.length ? demandSeries.reduce((sum, row) => sum + row.actual, 0) / demandSeries.length : 0;
   const chartRows = seasonalRows.length
     ? seasonalRows.map((row, index) => ({
         month: String(valueFor(row, ["Month", "Period", "Festival", "Season"]) ?? `S${index + 1}`),
         demand: numberFor(row, ["Demand", "ForecastDemandUnits", "ActualUnits", "UnitsSold"], 0),
         festivalLift: numberFor(row, ["FestivalLiftPct", "Seasonality", "SeasonalLift", "Lift"], 0)
       }))
-    : demandSeries.map((row) => ({ month: row.period, demand: row.actual, festivalLift: row.festival }));
+    : demandSeries.map((row) => {
+        const seasonalIndex = baselineDemand ? row.actual / baselineDemand : 0;
+        return { month: row.period, demand: row.actual, festivalLift: Number(((seasonalIndex - 1) * 100).toFixed(1)), seasonalityIndex: Number(seasonalIndex.toFixed(2)) };
+      });
   return {
     id: "seasonality",
     title: "Seasonality",
     riskLevel: riskFromScore(webSearch.trendSignals.seasonalLift),
-    recommendation: "Raise pre-season stock cover before Ramadan, Eid, winter, summer, and local festival periods found in the file.",
-    insights: [seasonalRows.length ? "Seasonality rows are read from the uploaded workbook." : "Seasonality is derived from festival/seasonality columns in the current sales data.", "Monthly planning should include festival adjustment factors."],
+    recommendation: chartRows.length ? "Raise pre-season stock cover before high-index seasonal periods found in the file." : "Relevant data not found: upload seasonality/festival rows or historical monthly demand rows.",
+    insights: [seasonalRows.length ? "Seasonality rows are read from the uploaded workbook." : chartRows.length ? "Seasonality index is calculated from historical demand versus baseline demand in the current file." : "Relevant data not found: no seasonality or historical demand rows were found in the current file.", "Monthly planning should include festival adjustment factors."],
     chartData: chartRows,
-    tableData: seasonalRows.length ? seasonalRows : chartRows,
+    tableData: chartRows.length ? (seasonalRows.length ? seasonalRows : chartRows) : [],
     description: "Seasonality highlights monthly demand lift from the current file's festival and seasonality values.",
-    calculationRules: ["Festival lift is used as a percentage multiplier.", "Rows come from the current upload only.", "Planning recommendation raises stock before file-detected peak months."]
+    calculationRules: ["SeasonalityIndex = actual demand / baseline demand.", "SeasonalLiftPct = (SeasonalityIndex - 1) x 100.", "Rows come from the current upload only."]
   };
 };
 
@@ -82,10 +96,10 @@ export const customerDemandSkill: AnalysisSkill = ({ request }) => {
   return {
     id: "customer-demand",
     title: "Customer Demand Patterns",
-    riskLevel: data.some((item) => item.risk === "high") ? "high" : "medium",
-    recommendation: `Prioritize ${topRegion.region} replenishment while monitoring regional variability across Bangladesh markets.`,
+    riskLevel: data.some((item) => item.risk === "high") ? "high" : data.length ? "medium" : "low",
+    recommendation: data.length ? `Prioritize ${topRegion.region} replenishment while monitoring regional variability across Bangladesh markets.` : "Relevant data not found: upload region/city demand rows for Bangladesh map analysis.",
     insights: [
-      regionalData.length ? "Regional demand map is generated from the current uploaded file." : "No regional map data was found in the current file.",
+      regionalData.length ? "Regional demand map is generated from the current uploaded file." : "Relevant data not found: no regional map data was found in the current file.",
       "Regional variability requires separate inventory buffers."
     ],
     chartData: data,
@@ -104,23 +118,22 @@ export const promotionImpactSkill: AnalysisSkill = ({ request, webSearch }) => {
         promotion: numberFor(row, ["Promotion", "DiscountPct", "Discount", "PromotionIntensity"], 0),
         demand: numberFor(row, ["Demand", "ActualUnits", "UnitsSold", "ForecastDemandUnits"], 0)
       }))
-    : demandSeries.map((row) => ({ period: row.period, promotion: row.promotion, demand: row.actual }));
+    : demandSeries.filter((row) => row.promotion > 0).map((row) => ({ period: row.period, promotion: row.promotion, demand: row.actual }));
   return {
     id: "promotion-impact",
     title: "Promotions & Discounts",
     riskLevel: riskFromScore(webSearch.trendSignals.promotionPressure),
-    recommendation: "Use promotions selectively when uplift is visible in the uploaded file; avoid discounting into low-stock weeks.",
-    insights: [promotionRows.length ? "Promotion rows are read from the uploaded workbook." : "Promotion view is derived from promotion/discount columns in current sales data.", "Discount planning should be linked to reorder timing."],
+    recommendation: chartRows.length ? "Use promotions selectively when uplift is visible in the uploaded file; avoid discounting into low-stock weeks." : "Relevant data not found: upload promotion, discount, campaign, or uplift rows.",
+    insights: [chartRows.length ? "Promotion rows are read from the uploaded workbook or promotion columns in sales data." : "Relevant data not found: no promotion or discount rows were found in the current file.", "Discount planning should be linked to reorder timing."],
     chartData: chartRows,
-    tableData: promotionRows.length ? promotionRows : chartRows,
+    tableData: chartRows.length ? (promotionRows.length ? promotionRows : chartRows) : [],
     description: "Promotion impact compares current file discount intensity with demand response and stockout exposure.",
-    calculationRules: ["Promotion adjustment adds half of discount/festival pressure to demand projection.", "Rows come from the current upload only.", "Discount planning is linked to reorder timing."]
+    calculationRules: ["Promotion adjustment adds half of discount/festival pressure to demand projection.", "Rows come from the current upload only.", "Missing promotion rows return Relevant data not found."]
   };
 };
 
 export const economicConditionSkill: AnalysisSkill = ({ request, webSearch }) => {
   const rows = rowsByType(request.uploadedDatasets, ["Economic Data"]);
-  const demandSeries = extractDemandSeries(request.uploadedDatasets);
   const chartRows = rows.length
     ? rows.map((row, index) => ({
         indicator: String(valueFor(row, ["Indicator", "Metric", "Period", "Month"]) ?? `E${index + 1}`),
@@ -128,19 +141,13 @@ export const economicConditionSkill: AnalysisSkill = ({ request, webSearch }) =>
         demand: numberFor(row, ["Demand", "ForecastDemandUnits", "ActualUnits", "UnitsSold"], 0),
         risk: numberFor(row, ["Risk", "EconomicRisk", "Score"], webSearch.trendSignals.economicRisk)
       }))
-    : demandSeries.map((row) => ({
-        indicator: row.period,
-        inflation: 0,
-        demand: row.actual,
-        risk: webSearch.trendSignals.economicRisk,
-        note: "No economic sheet in current file; demand row retained for file-linked view."
-      }));
+    : [];
   return {
     id: "economic-conditions",
     title: "Economic Conditions",
     riskLevel: riskFromScore(webSearch.trendSignals.economicRisk),
-    recommendation: "Maintain value-pack availability and monitor inflation-driven price sensitivity found in the current file.",
-    insights: [rows.length ? "Economic rows are read from the uploaded workbook." : "No economic data rows were found in the current file.", "Purchasing power changes should be used as a forecast adjustment."],
+    recommendation: rows.length ? "Maintain value-pack availability and monitor inflation-driven price sensitivity found in the current file." : "Relevant data not found: upload economic, inflation, income, or purchasing power rows.",
+    insights: [rows.length ? "Economic rows are read from the uploaded workbook." : "Relevant data not found: no economic data rows were found in the current file.", "Purchasing power changes should be used as a forecast adjustment."],
     chartData: chartRows,
     tableData: rows.length ? rows : chartRows,
     description: "Economic conditions connect uploaded inflation and purchasing power rows with demand risk.",
@@ -150,40 +157,24 @@ export const economicConditionSkill: AnalysisSkill = ({ request, webSearch }) =>
 
 export const competitorActivitySkill: AnalysisSkill = ({ request, webSearch }) => {
   const rows = rowsByType(request.uploadedDatasets, ["Competitor Data"]);
-  const brandRows = groupDemandByBrand(request.uploadedDatasets);
-  const demandSeries = extractDemandSeries(request.uploadedDatasets);
   const chartRows = rows.length
     ? rows.map((row, index) => ({
-        competitor: String(valueFor(row, ["Competitor", "CompetitorName", "Brand", "Company"]) ?? `Competitor ${index + 1}`),
+        competitor: competitorNameFromRow(row) || `Imported competitor row ${index + 1}`,
         price: numberFor(row, ["Price", "CompetitorPrice", "CompetitorPriceBDT", "AvgPrice"], 0),
         promotionIntensity: numberFor(row, ["PromotionIntensity", "Promotion", "DiscountPct", "Discount"], flagScore(row, ["PromoActive", "PromotionActive"], 65)),
         launchScore: numberFor(row, ["LaunchScore", "Launch", "NewProduct"], flagScore(row, ["LaunchEvent", "NewProductLaunch"], 80))
       }))
-    : brandRows.length
-      ? brandRows.map((row) => ({
-          competitor: row.brand,
-          price: 0,
-          promotionIntensity: row.demandShare,
-          launchScore: webSearch.trendSignals.competitorPressure,
-          demand: row.demand
-        }))
-      : demandSeries.slice(-6).map((row) => ({
-          competitor: row.period,
-          price: 0,
-          promotionIntensity: webSearch.trendSignals.competitorPressure,
-          launchScore: 0,
-          demand: row.actual
-        }));
+    : [];
   return {
     id: "competitor-activities",
     title: "Competitor Activities",
     riskLevel: riskFromScore(webSearch.trendSignals.competitorPressure),
-    recommendation: "Monitor competitor pricing and launches from the uploaded file before finalizing inventory and discount plans.",
-    insights: [rows.length ? "Competitor rows are read from the uploaded workbook." : "No competitor sheet was found; this view uses current-file brand demand mix where available.", "Competitor promotions can suppress baseline demand."],
+    recommendation: rows.length ? "Monitor competitor pricing and launches from the uploaded file before finalizing inventory and discount plans." : "Relevant data not found: upload competitor rows to calculate competitor activity.",
+    insights: [rows.length ? "Competitor rows are read from the uploaded workbook." : "Relevant data not found: no competitor rows were found in the current file.", "Competitor promotions can suppress baseline demand."],
     chartData: chartRows,
-    tableData: rows.length ? rows : chartRows,
+    tableData: rows.length ? rows : [],
     description: "Competitor activity tracks uploaded pricing, launches, promotions, and market pressure.",
-    calculationRules: ["Competitor rows come from the current upload only.", "Higher pressure reduces adjusted forecast.", "Pricing watch is recommended before promotion approval."]
+    calculationRules: ["Competitor rows come from the current upload only.", "Brand names are shown only when present in uploaded competitor rows.", "Missing competitor rows return Relevant data not found."]
   };
 };
 
@@ -214,7 +205,7 @@ export const inventoryPlanningSkill: AnalysisSkill = ({ request, forecast }) => 
     chartData,
     tableData: rows.length ? rows : chartData,
     kpis: [
-      { label: "Current stock", value: currentStock === null ? "No file data" : `${Math.round(currentStock)} units`, tone: riskLevel },
+      { label: "Current stock", value: currentStock === null ? "Relevant data not found" : `${Math.round(currentStock)} units`, tone: riskLevel },
       { label: "Reorder point", value: `${forecast.reorderPoint} units`, tone: riskLevel }
     ],
     description: "Inventory planning turns current-file stock, demand variability, and lead time into stock targets.",
@@ -229,17 +220,17 @@ export const leadTimeSkill: AnalysisSkill = ({ request }) => {
         stage: String(valueFor(row, ["Stage", "LeadTimeStage", "Process", "Supplier"]) ?? `Stage ${index + 1}`),
         days: numberFor(row, ["Days", "LeadTimeDays", "AverageLeadTime", "TotalLeadTimeDays", "PurchaseLeadDays", "ProductionLeadDays", "ShippingLeadDays", "DeliveryLeadDays", "DelayDays"], 0)
       }))
-    : [{ stage: "No lead-time rows in current file", days: 0, note: "Upload lead-time data to calculate supplier timing." }];
+    : [];
   return {
     id: "lead-time",
     title: "Lead Time",
     riskLevel: chartRows.some((row) => row.days > 21) ? "high" : rows.length ? "medium" : "low",
-    recommendation: "Place purchase orders before the demand peak using lead-time stages from the current file.",
-    insights: [rows.length ? "Lead-time rows are read from the uploaded workbook." : "No lead-time data rows were found in the current file.", "Inbound, warehouse, and last-mile timelines should be monitored separately."],
+    recommendation: rows.length ? "Place purchase orders before the demand peak using lead-time stages from the current file." : "Relevant data not found: upload lead-time rows to calculate supplier timing.",
+    insights: [rows.length ? "Lead-time rows are read from the uploaded workbook." : "Relevant data not found: no lead-time data rows were found in the current file.", "Inbound, warehouse, and last-mile timelines should be monitored separately."],
     chartData: chartRows,
-    tableData: rows.length ? rows : chartRows,
+    tableData: rows.length ? rows : [],
     description: "Lead time breaks the uploaded supply path into purchase, production, transport, and receiving stages.",
-    calculationRules: ["Lead-time rows come from the current upload only.", "Delay risk increases with longer inbound timelines.", "Purchase orders are pulled forward before demand peaks."]
+    calculationRules: ["Lead-time rows come from the current upload only.", "Delay risk increases with longer inbound timelines.", "Missing lead-time rows return Relevant data not found."]
   };
 };
 
@@ -346,23 +337,6 @@ function salesGrowth(points: { actual: number }[]) {
   return first ? Number((((last - first) / first) * 100).toFixed(1)) : 0;
 }
 
-function groupDemandByBrand(datasets: UploadedDataset[]) {
-  const rows = datasets.flatMap((dataset) => dataset.rows);
-  const grouped = new Map<string, number>();
-  rows.forEach((row) => {
-    const brand = String(valueFor(row, ["Brand", "ProductBrand", "Manufacturer", "Company"]) ?? "").trim();
-    const demand = numberFor(row, ["ActualUnits", "UnitsSold", "Demand", "ForecastDemandUnits", "Quantity", "Sales"], 0);
-    if (!brand || demand <= 0) return;
-    grouped.set(brand, (grouped.get(brand) ?? 0) + demand);
-  });
-  const total = Array.from(grouped.values()).reduce((sum, value) => sum + value, 0);
-  return Array.from(grouped.entries()).map(([brand, demand]) => ({
-    brand,
-    demand: Math.round(demand),
-    demandShare: total ? Math.round((demand / total) * 100) : 0
-  }));
-}
-
 function sumPositive(rows: Record<string, unknown>[], keys: string[]) {
   let total = 0;
   for (const row of rows) {
@@ -370,6 +344,11 @@ function sumPositive(rows: Record<string, unknown>[], keys: string[]) {
     if (value > 0) total += value;
   }
   return total > 0 ? total : null;
+}
+
+function competitorNameFromRow(row: Record<string, unknown>) {
+  const value = valueFor(row, ["CompetitorName", "Competitor", "CompetitorProduct", "Brand", "Company"]);
+  return String(value ?? "").trim();
 }
 
 function flagScore(row: Record<string, unknown>, keys: string[], score: number) {
@@ -413,11 +392,7 @@ function extractRegionalDemand(datasets: UploadedDataset[]) {
   const groupedRows = Array.from(grouped.values()).filter((item) => item.demand > 0);
   if (groupedRows.length) return groupedRows;
 
-  const demandSeries = extractDemandSeries(datasets);
-  const totalDemand = demandSeries.reduce((sum, row) => sum + row.actual, 0);
-  return totalDemand > 0
-    ? [{ region: "Current file total", lat: 23.685, lng: 90.3563, demand: Math.round(totalDemand), growth: salesGrowth(demandSeries), risk: "medium" as const }]
-    : [];
+  return [];
 }
 
 function valueFor(row: Record<string, unknown>, keys: string[]) {

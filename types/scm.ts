@@ -76,6 +76,7 @@ export interface UploadedDataset {
     numericValuesConverted: number;
     dateValuesNormalized: number;
     negativeDemandRowsFlagged: number;
+    outlierRowsFlagged: number;
   };
 }
 

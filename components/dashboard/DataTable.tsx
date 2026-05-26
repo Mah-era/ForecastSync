@@ -10,7 +10,7 @@ export function DataTable({ rows }: { rows: object[] }) {
   }));
   const table = useReactTable({ data, columns, getCoreRowModel: getCoreRowModel() });
 
-  if (!data.length) return <div className="rounded-md border border-dashed border-border p-4 text-sm text-muted-foreground">No table rows available.</div>;
+  if (!data.length) return <div className="rounded-md border border-dashed border-border p-4 text-sm text-muted-foreground">Relevant data not found</div>;
 
   return (
     <div className="overflow-x-auto rounded-md border border-border">

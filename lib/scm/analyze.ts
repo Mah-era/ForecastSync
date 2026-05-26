@@ -184,7 +184,7 @@ function rowsByTypes(datasets: UploadedDataset[], types: UploadedDataset["type"]
   return datasets.filter((dataset) => types.includes(dataset.type)).flatMap((dataset) => dataset.rows);
 }
 
-function ensureCurrentFileSkillData<T extends AnalysisResult["skills"][number]>(skill: T, datasets: UploadedDataset[]): T {
+function ensureCurrentFileSkillData<T extends AnalysisResult["skills"][number]>(skill: T, _datasets: UploadedDataset[]): T {
   if (Array.isArray(skill.chartData) && skill.chartData.length) {
     return {
       ...skill,
@@ -192,50 +192,12 @@ function ensureCurrentFileSkillData<T extends AnalysisResult["skills"][number]>(
     };
   }
 
-  const fallbackRows = buildCurrentFileFallbackRows(datasets, skill.title);
   return {
     ...skill,
-    chartData: fallbackRows,
-    tableData: Array.isArray(skill.tableData) && skill.tableData.length ? skill.tableData : fallbackRows,
-    insights: skill.insights.length ? skill.insights : [`${skill.title} is summarized from the latest uploaded file.`]
+    chartData: [],
+    tableData: Array.isArray(skill.tableData) && skill.tableData.length ? skill.tableData : [],
+    insights: skill.insights.length ? skill.insights : [`Relevant data not found for ${skill.title}.`]
   };
-}
-
-function buildCurrentFileFallbackRows(datasets: UploadedDataset[], title: string) {
-  const sourceRows = datasets.flatMap((dataset) =>
-    dataset.rows.slice(0, 12).map((row, index) => ({
-      source: dataset.name,
-      type: dataset.type,
-      index: index + 1,
-      value: firstNumericValue(row),
-      label: firstTextValue(row) || dataset.type
-    }))
-  );
-
-  const usable = sourceRows.filter((row) => row.value > 0);
-  if (usable.length) return usable.slice(0, 12);
-
-  const datasetRows = datasets.map((dataset) => ({
-    source: dataset.name,
-    type: dataset.type,
-    rows: dataset.rows.length,
-    qualityScore: dataset.qualityScore,
-    value: dataset.rows.length || dataset.qualityScore,
-    label: title
-  }));
-  return datasetRows.length ? datasetRows : [{ source: "Current import", type: "No data", rows: 0, qualityScore: 0, value: 0, label: title }];
-}
-
-function firstNumericValue(row: Record<string, unknown>) {
-  const preferred = numberFor(row, ["ActualUnits", "UnitsSold", "Demand", "ForecastDemandUnits", "CurrentStock", "TotalLeadTimeDays", "CompetitorPriceBDT", "InflationRate", "DiscountPct", "Quantity", "Sales"], 0);
-  if (preferred > 0) return preferred;
-  const value = Object.values(row).map(Number).find((item) => Number.isFinite(item) && item > 0);
-  return value ?? 0;
-}
-
-function firstTextValue(row: Record<string, unknown>) {
-  const value = valueFor(row, ["Period", "Month", "Region", "City", "Brand", "ProductName", "Supplier", "CompetitorName", "Metric", "Indicator"]);
-  return String(value ?? "").trim();
 }
 
 function valueFor(row: Record<string, unknown>, keys: string[]) {

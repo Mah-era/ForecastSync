@@ -67,9 +67,9 @@ const outputSections: OutputSection[] = [
   "CSV Export"
 ];
 
-type ModuleFilterState = { text: string; metric: string; option: string };
+type ModuleFilterState = { text: string; metric: string; option: string; product: string; category: string; brand: string; region: string; channel: string; source: string };
 type DashboardCardSize = "1:1" | "16:4" | "2:1" | "1:2";
-const defaultModuleFilter: ModuleFilterState = { text: "", metric: "All metrics", option: "All records" };
+const defaultModuleFilter: ModuleFilterState = { text: "", metric: "All metrics", option: "All records", product: "All products", category: "All categories", brand: "All brands", region: "All regions", channel: "All channels", source: "All sources" };
 
 async function readApiJson<T>(response: Response): Promise<T & { error?: string }> {
   const text = await response.text();
@@ -151,7 +151,7 @@ export default function Home() {
     return filterModuleRows(rows, currentModuleFilter);
   }, [currentModuleFilter, currentSkill]);
   const currentSkillChart = useMemo(() => {
-    return currentSkill ? { ...currentSkill, chartData: currentSkillChartRows.length ? currentSkillChartRows : currentSkill.chartData, tableData: currentSkillRows } : null;
+    return currentSkill ? { ...currentSkill, chartData: currentSkillChartRows, tableData: currentSkillRows } : null;
   }, [currentSkill, currentSkillChartRows, currentSkillRows]);
   const visibleNavItems = useMemo(() => {
     if (!result) return ["Import Data"];
@@ -222,15 +222,13 @@ export default function Home() {
   function applyModuleFilter(skillId: string, filter: ModuleFilterState) {
     window.setTimeout(() => {
       setApplyingFilters(true);
-      showWaitMessage("Applying module filter to current analysis data...", 1400);
-      window.setTimeout(() => {
+      showWaitMessage("Applying module filter to current analysis data...", 650);
+      requestAnimationFrame(() => {
         startTransition(() => {
           setModuleFilters((current) => ({ ...current, [skillId]: filter }));
         });
-      }, 120);
-      window.setTimeout(() => {
-        setApplyingFilters(false);
-      }, 1300);
+        window.setTimeout(() => setApplyingFilters(false), 320);
+      });
     }, 0);
   }
 
@@ -246,6 +244,8 @@ export default function Home() {
     setModuleFilters({});
     setDashboardOrder([]);
     setDashboardSizes({});
+    setDashboardChartsReady(false);
+    setExpertNotes("");
     setImportStatus(`Processing ${files.length} file${files.length === 1 ? "" : "s"}...`);
     try {
       const formData = new FormData();
@@ -402,12 +402,12 @@ export default function Home() {
 
   const kpis = result
     ? [
-        { label: "Next Forecast", value: formatNumber(result.forecast.nextPeriodForecast), icon: LineChart },
-        { label: "Accuracy", value: `${result.forecast.accuracy}%`, icon: CheckCircle2 },
-        { label: "Safety Stock", value: formatNumber(result.forecast.safetyStock), icon: Boxes },
+        { label: "Next Forecast", value: result.forecast.points.length ? formatNumber(result.forecast.nextPeriodForecast) : "Relevant data not found", icon: LineChart, rule: "Uses current-file demand rows and adjusted forecast multipliers." },
+        { label: "Accuracy", value: result.forecast.points.length ? `${result.forecast.accuracy}%` : "Relevant data not found", icon: CheckCircle2, rule: "Forecast Accuracy = 100% - MAPE from current-file actual and forecast rows." },
+        { label: "Safety Stock", value: result.forecast.points.length ? formatNumber(result.forecast.safetyStock) : "Relevant data not found", icon: Boxes, rule: "Safety stock uses demand variability and lead-time assumption from current analysis." },
         { label: "Stockout Risk", value: stockoutRiskLabel(result), icon: AlertTriangle },
         { label: "Avg Lead Time", value: averageLeadTimeLabel(result), icon: Activity },
-        { label: "Competitor Pressure", value: `${result.webSearch.trendSignals.competitorPressure}/100`, icon: BarChart3 }
+        { label: "Competitor Pressure", value: competitorPressureLabel(result), icon: BarChart3, rule: "Calculated only from competitor rows in the current upload." }
       ]
     : [];
   const busyMessage = renderingMessage
@@ -739,16 +739,27 @@ export default function Home() {
 
             {pathway === "import" && result && activeSection === "Dashboard" && (
               <>
+                <DataQualityBanner datasets={filteredDatasets} />
                 <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {kpis.map((kpi) => (
-                    <Card key={kpi.label}>
+                    <Card key={kpi.label} className="relative">
                       <CardContent className="flex items-center justify-between">
                         <div>
                           <div className="text-sm text-muted-foreground">{kpi.label}</div>
                           <div className="mt-1 text-2xl font-semibold">{kpi.value}</div>
+                          <div className="mt-2 text-xs text-muted-foreground">Source: {sourceSheetForKpi(kpi.label, result)}</div>
                         </div>
                         <kpi.icon className="text-primary" />
                       </CardContent>
+                      <InfoCorner
+                        title={kpi.label}
+                        description={kpi.rule ?? "Calculated from the current uploaded workbook only."}
+                        rules={[
+                          kpi.rule ?? "Uses current-file analysed rows only.",
+                          "Uploading a new workbook clears old analysis and filters.",
+                          kpi.value === "Relevant data not found" ? "Required source rows are missing in the current workbook." : "Messy numeric values are cleaned before calculation."
+                        ]}
+                      />
                     </Card>
                   ))}
                 </div>
@@ -855,6 +866,7 @@ export default function Home() {
                   />
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <DataQualityPipeline datasets={filteredDatasets} />
                   <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
                     <SummaryTile label="Rows analysed" value={formatNumber(importedSummary.rows)} />
                     <SummaryTile label="Data sources" value={String(importedSummary.datasets)} />
@@ -923,8 +935,10 @@ export default function Home() {
                   <InfoCorner title={currentSkill.title} description={currentSkill.description ?? currentSkill.recommendation} rules={currentSkill.calculationRules ?? currentSkill.insights} />
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <DataQualityBanner datasets={filteredDatasets} />
                   <ModuleFilterPanel
                     skill={currentSkill}
+                    rows={((currentSkill.tableData ?? currentSkill.chartData) as Record<string, unknown>[])}
                     filter={currentModuleFilter}
                     setFilter={(filter) => applyModuleFilter(currentSkill.id, filter)}
                   />
@@ -937,6 +951,7 @@ export default function Home() {
                     </a>
                   )}
                   <SkillChart skill={currentSkillChart} />
+                  <VisualSourceMeta skill={currentSkill} rows={currentSkillRows} datasets={filteredDatasets} />
                   {currentSkill.id === "forecasting-methods" && result && <ForecastingMethodsDetail result={result} />}
                   <DataTable rows={currentSkillRows} />
                 </CardContent>
@@ -994,6 +1009,65 @@ function SummaryTile({ label, value }: { label: string; value: string }) {
     <div className="rounded-md border border-border bg-white p-3">
       <div className="text-xs text-muted-foreground">{label}</div>
       <div className="mt-1 text-xl font-semibold">{value}</div>
+    </div>
+  );
+}
+
+function VisualSourceMeta({ skill, rows, datasets }: { skill: SkillResult; rows: Record<string, unknown>[]; datasets: UploadedDataset[] }) {
+  const sourceSheets = sourceSheetsForSkill(skill, datasets);
+  const warnings = dataQualityWarnings(datasets);
+  return (
+    <div className="flex flex-wrap gap-2 rounded-md border border-border bg-slate-50 p-3 text-xs text-muted-foreground">
+      <Badge>Source: {sourceSheets.length ? sourceSheets.join(", ") : "Relevant data not found"}</Badge>
+      <Badge>{rows.length} rows used</Badge>
+      {activeWorkbookLabel(datasets) && <Badge>Active Workbook: {activeWorkbookLabel(datasets)}</Badge>}
+      {warnings.slice(0, 3).map((warning) => <Badge key={warning} tone="medium">{warning}</Badge>)}
+      {!rows.length && <span>Relevant data not found for this module in the current uploaded workbook.</span>}
+    </div>
+  );
+}
+
+function DataQualityBanner({ datasets }: { datasets: UploadedDataset[] }) {
+  const warnings = dataQualityWarnings(datasets);
+  if (!warnings.length) return null;
+  return (
+    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+      <div className="font-semibold">Data quality warning</div>
+      <div className="mt-1">{warnings.join(" · ")}</div>
+    </div>
+  );
+}
+
+function DataQualityPipeline({ datasets }: { datasets: UploadedDataset[] }) {
+  const stages = [
+    "Upload File",
+    "Detect File Type",
+    "Read All Sheets",
+    "Classify Sheets",
+    "Clean Data",
+    "Validate Data",
+    "Map to Modules",
+    "Ready for Analysis"
+  ];
+  const hasData = datasets.length > 0;
+  return (
+    <div className="rounded-md border border-border bg-white p-4">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <h3 className="font-semibold">Data Quality Pipeline</h3>
+        <Badge tone={hasData ? "low" : "medium"}>{hasData ? "Current workbook ready" : "Relevant data not found"}</Badge>
+      </div>
+      <div className="grid gap-2 md:grid-cols-4 xl:grid-cols-8">
+        {stages.map((stage, index) => (
+          <div key={stage} className={`rounded-md border p-3 text-xs ${hasData || index === 0 ? "border-teal-200 bg-teal-50 text-teal-900" : "border-border bg-slate-50 text-muted-foreground"}`}>
+            <div className="font-semibold">{stage}</div>
+          </div>
+        ))}
+      </div>
+      {hasData && (
+        <div className="mt-3 text-xs text-muted-foreground">
+          Source: {activeWorkbookLabel(datasets)} · Rows used: {datasets.reduce((sum, dataset) => sum + dataset.rows.length, 0)}
+        </div>
+      )}
     </div>
   );
 }
@@ -1067,9 +1141,32 @@ function ModuleOutputCard({
           </div>
         ) : null}
         {onDropCard ? <DashboardChartSlot skill={skill} enabled={chartsEnabled} delayIndex={chartDelayIndex} /> : <SkillChart skill={skill} />}
+        <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+          <Badge>Source: {moduleSourceLabel(skill)}</Badge>
+          <Badge>{(skill.tableData ?? skill.chartData).length} rows used</Badge>
+        </div>
       </CardContent>
     </Card>
   );
+}
+
+function moduleSourceLabel(skill: SkillResult) {
+  const labels: Record<string, string> = {
+    "historical-sales": "Historical Sales Data",
+    "market-trends": "Market Trend Data / Historical Sales Data",
+    seasonality: "Seasonality / Historical Sales Data",
+    "customer-demand": "Customer Demand Data",
+    "promotion-impact": "Promotion & Discount Data",
+    "economic-conditions": "Economic Data",
+    "competitor-activities": "Competitor Data",
+    "inventory-levels": "Inventory Data",
+    "lead-time": "Lead Time Data",
+    "forecasting-methods": "Historical Sales Data",
+    "technology-data": "Uploaded files",
+    "forecast-accuracy": "Historical Sales Data",
+    "final-recommendation": "Analysed modules"
+  };
+  return skill.chartData.length || skill.tableData?.length ? labels[skill.id] ?? "Current workbook" : "Relevant data not found";
 }
 
 function DashboardChartSlot({ skill, enabled, delayIndex }: { skill: SkillResult; enabled: boolean; delayIndex: number }) {
@@ -1103,14 +1200,15 @@ function dashboardSizeClass(size: DashboardCardSize) {
 
 function ModuleFilterPanel({
   skill,
+  rows,
   filter,
   setFilter
 }: {
   skill: SkillResult;
+  rows: Record<string, unknown>[];
   filter: ModuleFilterState;
   setFilter: (filter: ModuleFilterState) => void;
 }) {
-  const rows = (skill.tableData ?? skill.chartData) as Record<string, unknown>[];
   const metricOptions = useMemo(() => {
     const keys = new Set<string>();
     rows.slice(0, 250).forEach((row) => {
@@ -1120,14 +1218,35 @@ function ModuleFilterPanel({
     });
     return Array.from(keys);
   }, [rows]);
-  const optionSet = useMemo(() => moduleFilterOptions(skill), [skill.id]);
+  const optionSet = useMemo(() => {
+    const allOptions = moduleFilterOptions(skill);
+    if (!rows.length) return ["All records"];
+    return allOptions.filter((option) => option === "All records" || rows.some((row) => applyModuleOption(row, option)));
+  }, [rows, skill]);
+  const facets = useMemo(() => moduleFacets(rows), [rows]);
   const [draftFilter, setDraftFilter] = useState(filter);
 
   useEffect(() => {
     setDraftFilter((current) =>
-      current.text === filter.text && current.metric === filter.metric && current.option === filter.option ? current : filter
+      current.text === filter.text &&
+      current.metric === filter.metric &&
+      current.option === filter.option &&
+      current.product === filter.product &&
+      current.category === filter.category &&
+      current.brand === filter.brand &&
+      current.region === filter.region &&
+      current.channel === filter.channel &&
+      current.source === filter.source
+        ? current
+        : { ...defaultModuleFilter, ...filter }
     );
   }, [filter, skill.id]);
+
+  useEffect(() => {
+    if (!optionSet.includes(draftFilter.option)) {
+      setDraftFilter((current) => ({ ...current, option: "All records" }));
+    }
+  }, [draftFilter.option, optionSet]);
 
   return (
     <div className="rounded-md border border-border bg-white p-3">
@@ -1176,6 +1295,21 @@ function ModuleFilterPanel({
             {metricOptions.map((metric) => <option key={metric}>{metric}</option>)}
           </select>
         </label>
+      </div>
+      <div className="mt-3 grid gap-3 md:grid-cols-3">
+        {facets.map((facet) => (
+          <label key={facet.key} className="text-sm">
+            <span className="mb-1 block text-muted-foreground">{facet.label}</span>
+            <select
+              className="w-full rounded-md border border-border px-3 py-2"
+              value={draftFilter[facet.key]}
+              onChange={(event) => setDraftFilter({ ...draftFilter, [facet.key]: event.target.value })}
+            >
+              <option>{facet.allLabel}</option>
+              {facet.values.map((value) => <option key={value}>{value}</option>)}
+            </select>
+          </label>
+        ))}
       </div>
       <p className="mt-3 text-xs text-muted-foreground">
         Filters are applied only after clicking Apply, so charts and tables keep using the current analysed data until the wait screen completes.
@@ -1584,9 +1718,62 @@ function averageLeadTimeLabel(result: AnalysisResult) {
 
 function stockoutRiskLabel(result: AnalysisResult) {
   const inventorySkill = result.skills.find((skill) => skill.id === "inventory-levels");
+  const inventoryRows = (inventorySkill?.tableData ?? []) as Record<string, unknown>[];
+  if (!inventoryRows.length) return "Relevant data not found";
   if (inventorySkill?.riskLevel === "high" || inventorySkill?.riskLevel === "critical") return "Elevated";
   if (result.alerts.some((alert) => /stock|reorder|inventory/i.test(alert.message))) return "Elevated";
-  return inventorySkill?.kpis?.some((kpi) => /no file data/i.test(kpi.value)) ? "No stock data" : "Managed";
+  return "Managed";
+}
+
+function competitorPressureLabel(result: AnalysisResult) {
+  const competitorSkill = result.skills.find((skill) => skill.id === "competitor-activities");
+  const competitorRows = (competitorSkill?.tableData ?? competitorSkill?.chartData ?? []) as Record<string, unknown>[];
+  return competitorRows.length ? `${result.webSearch.trendSignals.competitorPressure}/100` : "Relevant data not found";
+}
+
+function sourceSheetForKpi(label: string, result: AnalysisResult) {
+  if (label === "Avg Lead Time") return result.skills.find((skill) => skill.id === "lead-time")?.tableData?.length ? "Lead Time Data" : "Relevant data not found";
+  if (label === "Competitor Pressure") return result.skills.find((skill) => skill.id === "competitor-activities")?.tableData?.length ? "Competitor Data" : "Relevant data not found";
+  if (label === "Stockout Risk") return result.skills.find((skill) => skill.id === "inventory-levels")?.tableData?.length ? "Inventory Data" : "Relevant data not found";
+  return result.forecast.points.length ? "Historical Sales Data" : "Relevant data not found";
+}
+
+function sourceSheetsForSkill(skill: SkillResult, datasets: UploadedDataset[]) {
+  const map: Record<string, UploadedDataset["type"][]> = {
+    "historical-sales": ["Historical Sales Data"],
+    "market-trends": ["Market Trend Data"],
+    seasonality: ["Seasonality / Festival Data", "Historical Sales Data"],
+    "customer-demand": ["Customer Demand Data"],
+    "promotion-impact": ["Promotion & Discount Data"],
+    "economic-conditions": ["Economic Data"],
+    "competitor-activities": ["Competitor Data"],
+    "inventory-levels": ["Inventory Data"],
+    "lead-time": ["Lead Time Data"],
+    "forecasting-methods": ["Historical Sales Data"],
+    "technology-data": datasets.map((dataset) => dataset.type),
+    "forecast-accuracy": ["Historical Sales Data"],
+    "final-recommendation": datasets.map((dataset) => dataset.type)
+  };
+  const allowed = new Set(map[skill.id] ?? []);
+  return datasets.filter((dataset) => allowed.has(dataset.type) && dataset.rows.length).map((dataset) => dataset.name);
+}
+
+function activeWorkbookLabel(datasets: UploadedDataset[]) {
+  return datasets.map((dataset) => dataset.name).filter(Boolean).slice(0, 2).join(", ");
+}
+
+function dataQualityWarnings(datasets: UploadedDataset[]) {
+  const warnings = new Set<string>();
+  datasets.forEach((dataset) => {
+    const summary = dataset.cleaningSummary;
+    if (!summary) return;
+    if (summary.numericValuesConverted) warnings.add("Text/currency numbers cleaned");
+    if (summary.dateValuesNormalized) warnings.add("Dates normalized");
+    if (summary.duplicateRowsRemoved) warnings.add("Duplicate rows removed");
+    if (summary.negativeDemandRowsFlagged) warnings.add("Returns detected");
+    if (summary.outlierRowsFlagged) warnings.add("Outlier spikes flagged");
+  });
+  return Array.from(warnings);
 }
 
 function buildSupplyChainFlow(result: AnalysisResult) {
@@ -1628,12 +1815,65 @@ function filterModuleRows(rows: Record<string, unknown>[], filter: ModuleFilterS
   const text = filter.text.trim().toLowerCase();
   return rows
     .filter((row) => !text || rowText(row).includes(text))
+    .filter((row) => facetMatches(row, "product", filter.product, "All products"))
+    .filter((row) => facetMatches(row, "category", filter.category, "All categories"))
+    .filter((row) => facetMatches(row, "brand", filter.brand, "All brands"))
+    .filter((row) => facetMatches(row, "region", filter.region, "All regions"))
+    .filter((row) => facetMatches(row, "channel", filter.channel, "All channels"))
+    .filter((row) => facetMatches(row, "source", filter.source, "All sources"))
     .filter((row) => applyModuleOption(row, filter.option))
     .map((row) => {
       if (filter.metric === "All metrics") return row;
       const firstKey = Object.keys(row)[0];
       return { [firstKey]: row[firstKey], [filter.metric]: row[filter.metric] };
     });
+}
+
+type ModuleFacet = { key: "product" | "category" | "brand" | "region" | "channel" | "source"; label: string; allLabel: string; values: string[] };
+
+function moduleFacets(rows: Record<string, unknown>[]): ModuleFacet[] {
+  const config: Omit<ModuleFacet, "values">[] = [
+    { key: "product", label: "Product", allLabel: "All products" },
+    { key: "category", label: "Category", allLabel: "All categories" },
+    { key: "brand", label: "Brand", allLabel: "All brands" },
+    { key: "region", label: "Region", allLabel: "All regions" },
+    { key: "channel", label: "Channel", allLabel: "All channels" },
+    { key: "source", label: "Source sheet", allLabel: "All sources" }
+  ];
+  return config
+    .map((facet) => ({
+      ...facet,
+      values: uniqueFacetValues(rows, facet.key)
+    }))
+    .filter((facet) => facet.values.length > 1 || facet.key === "source" && facet.values.length > 0);
+}
+
+function uniqueFacetValues(rows: Record<string, unknown>[], key: ModuleFacet["key"]) {
+  const values = new Set<string>();
+  rows.forEach((row) => {
+    const value = facetValue(row, key);
+    if (value) values.add(value);
+  });
+  return Array.from(values).sort((a, b) => a.localeCompare(b));
+}
+
+function facetMatches(row: Record<string, unknown>, key: ModuleFacet["key"], selected: string, allLabel: string) {
+  if (!selected || selected === allLabel) return true;
+  return facetValue(row, key) === selected;
+}
+
+function facetValue(row: Record<string, unknown>, key: ModuleFacet["key"]) {
+  const keys: Record<ModuleFacet["key"], string[]> = {
+    product: ["product", "productname", "item", "sku", "material"],
+    category: ["category", "productcategory", "segment", "department"],
+    brand: ["brand", "productbrand", "manufacturer", "company"],
+    region: ["region", "city", "market", "country"],
+    channel: ["channel", "preferredchannel", "saleschannel"],
+    source: ["source", "sheet", "type", "file"]
+  };
+  const matchedKey = Object.keys(row).find((rowKey) => keys[key].includes(normalizeKey(rowKey)));
+  const value = matchedKey ? String(row[matchedKey] ?? "").trim() : "";
+  return value;
 }
 
 function applyModuleOption(row: Record<string, unknown>, option: string) {

@@ -49,7 +49,7 @@ export function ForecastChart({ data }: { data: ForecastPoint[] }) {
 export function SkillChart({ skill }: { skill: SkillResult }) {
   const data = skill.chartData as Record<string, number | string>[];
   if (!data.length) {
-    return <div className="grid h-64 place-items-center rounded-md border border-dashed border-border bg-slate-50 text-sm text-muted-foreground">No chart data available</div>;
+    return <div className="grid h-64 place-items-center rounded-md border border-dashed border-border bg-slate-50 text-sm text-muted-foreground">Relevant data not found</div>;
   }
   if (skill.id.includes("customer")) {
     return (

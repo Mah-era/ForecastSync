@@ -44,9 +44,9 @@ export function BangladeshDemandMap({ data }: { data?: DemandRegion[] }) {
     return (
       <div className="grid min-h-[320px] place-items-center rounded-lg border border-dashed border-border bg-slate-50 p-6 text-center">
         <div>
-          <div className="text-lg font-semibold text-slate-900">No regional rows in the current file</div>
+          <div className="text-lg font-semibold text-slate-900">Relevant data not found</div>
           <p className="mt-2 max-w-md text-sm leading-6 text-muted-foreground">
-            Add region/city and demand columns to the uploaded workbook to render the Bangladesh demand map from that exact file.
+            No regional rows found for the Bangladesh demand map. Add region/city and demand columns to the uploaded workbook.
           </p>
         </div>
       </div>
@@ -104,10 +104,10 @@ export function SupplyChainFlowMap({ data }: { data?: FlowStep[] }) {
   const steps = data?.length
     ? data
     : [
-        { step: "Supplier", metric: "No file data", note: "Upload lead-time rows" },
-        { step: "Warehouse", metric: "No file data", note: "Upload inventory rows" },
-        { step: "Retailer", metric: "No file data", note: "Run demand analysis" },
-        { step: "Customer", metric: "No file data", note: "Upload regional demand rows" }
+        { step: "Supplier", metric: "Relevant data not found", note: "Upload lead-time rows" },
+        { step: "Warehouse", metric: "Relevant data not found", note: "Upload inventory rows" },
+        { step: "Retailer", metric: "Relevant data not found", note: "Run demand analysis" },
+        { step: "Customer", metric: "Relevant data not found", note: "Upload regional demand rows" }
       ];
   return (
     <div className="grid gap-3 rounded-lg border border-border bg-slate-50 p-4 md:grid-cols-4">

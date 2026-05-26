@@ -31,7 +31,7 @@ Useful paths:
 
 You can upload multiple files. For operational results, upload historical demand or sales data before running analysis.
 
-Excel import includes data correction for blank rows, duplicate rows, numeric values stored as text, date normalization, and extra spaces in text fields.
+Import includes data correction for blank rows, duplicate rows, numeric values stored as text, currency strings such as `৳850 BDT`, comma-separated numbers such as `741,300`, Excel serial dates, negative demand/return rows, outlier spikes, and extra spaces in text fields.
 
 Excel workbooks are imported across all sheets. Uploading a new file immediately replaces the previous workbook data and clears old analysis/filter state, product metadata, expert notes, and search output, so the next dashboard is based on the current file only.
 
@@ -106,9 +106,9 @@ Each module card can be moved and resized:
 - Use the **Size** menu to choose `1:1`, `2:1`, `1:2`, or `16:4`.
 - Hover the info button in the card corner to see what the card means and which calculation rules were used.
 
-The dashboard cards use the current uploaded-file analysis. They are not static examples.
+The dashboard cards use the current uploaded-file analysis. They are not static examples. Each card includes a source label and row count, and the corner info button explains the calculation rules.
 
-The Bangladesh Regional Demand Map, SCM Flow Map, and Risk Alerts & Action Plan are also recalculated from the latest uploaded file. If a workbook does not include a dedicated sheet for a module, ForecastSync uses available current-file demand, brand, inventory, lead-time, or regional fields to create a fallback analysis view instead of showing blank charts.
+The Bangladesh Regional Demand Map, SCM Flow Map, and Risk Alerts & Action Plan are recalculated from the latest uploaded file. If the workbook does not contain the relevant rows for a module, ForecastSync shows **Relevant data not found** with the source/row reason instead of demo data.
 
 ## Online Search
 
@@ -142,9 +142,9 @@ Use the sidebar to open detailed modules:
 - Forecast Accuracy
 - Final SCM Recommendation
 
-Each module contains insights, chart visuals, table data, risk level, and recommendation text.
+Each module contains chart visuals, table data, source labels, risk level, and recommendation text. If the module cannot be calculated from the current workbook, it shows **Relevant data not found**.
 
-Each module page has tailored filters for that module. For example, Inventory Levels includes safety stock and reorder point choices, Lead Time includes stage choices, Forecast Accuracy includes error and bias choices, and Customer Demand includes regional choices. Change the filter values, then click **Apply**. The app shows a wait screen while the current analysed data is filtered and the chart/table refresh. The input/output factor checkboxes remain only on the Import Data page.
+Each module page has tailored filters for that module. For example, Inventory Levels includes safety stock and reorder point choices, Lead Time includes stage choices, Forecast Accuracy includes error and bias choices, and Customer Demand includes regional choices. Product, category, brand, region, channel, and source filters appear only when those fields exist in the active rows. Change the filter values, then click **Apply**. The app shows a wait screen while the current analysed data is filtered and the chart/table refresh. The input/output factor checkboxes remain only on the Import Data page.
 
 ## Forecast Methods Page
 

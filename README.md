@@ -11,7 +11,7 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 - Excel import reads every workbook sheet, including unmatched sheets, so the full current file set is available to analysis.
 - Unknown Excel sheets are classified by sheet-name heuristics instead of being treated as historical sales by default.
 - Product, category, brand, and region are derived from the current uploaded workbook when matching fields exist.
-- Excel data cleaning and correction for trimmed text, normalized dates, converted numeric values, duplicate rows, and blank rows.
+- Excel/CSV/JSON data cleaning and correction for trimmed text, normalized Excel serial dates, currency/text numbers such as `৳850 BDT` and `741,300`, duplicate rows, blank rows, negative demand/returns, and outlier demand spikes.
 - Downloadable import templates in `public/templates`.
 - Checkbox-controlled input factors and output sections.
 - Web search integration through Tavily when `TAVILY_API_KEY` is available.
@@ -19,7 +19,7 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 - Explicit "live search unavailable" status when no web search API key is configured.
 - Moving average, weighted moving average, trend, seasonality, festival, promotion, competitor, economic, inventory, and lead-time forecast adjustments.
 - Forecast Error, Absolute Error, MAPE, forecast accuracy, confidence score, safety stock, reorder point, and recommended stock.
-- Dashboard module cards use the current imported file analysis and render actual chart visuals with a staged wait screen when charts are expensive.
+- Dashboard module cards use the current imported file analysis and render actual chart visuals with a staged wait screen when charts are expensive. Missing module-specific data displays `Relevant data not found` instead of demo data.
 - Drag-and-drop dashboard card ordering with 1:1, 2:1, 1:2, and 16:4 card sizing.
 - Hover detail buttons on dashboard and Forecast Methods cards showing interpretation and calculation rules.
 - Clean URL navigation: `/` is the choice home, `/import-data` opens file analysis, `/search-by-choice` opens online search, and module pages use paths such as `/historical-sales-data`, `/inventory-levels`, and `/forecast-accuracy`.
@@ -76,7 +76,7 @@ The **Run analysis** button is disabled until the current upload has finished an
 
 ## Dashboard Behavior
 
-The central dashboard uses the exact analysis result produced from the current uploaded files. Forecast extraction selects rows with real demand columns such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`, so workbook info/scenario sheets are not used as demand history. Each module card renders real charts, KPIs, risk badges, and recommendation text. If a module-specific sheet is missing, ForecastSync derives a current-file fallback view from demand, brand, inventory, lead-time, or regional fields instead of showing static placeholder data or blank charts. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
+The central dashboard uses the exact analysis result produced from the current uploaded files. Forecast extraction selects rows with real demand columns such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`, so workbook info/scenario sheets are not used as demand history. Each module card renders real charts, KPIs, risk badges, source labels, row counts, and recommendation text. If required rows are missing for a module, ForecastSync shows `Relevant data not found` with source/row metadata instead of static placeholder data. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
 
 Dashboard cards can be reordered with the drag handle and resized from the card size menu:
 
@@ -85,7 +85,7 @@ Dashboard cards can be reordered with the drag handle and resized from the card 
 - `1:2`
 - `16:4`
 
-The Bangladesh Regional Demand Map reads uploaded regional demand rows when available. It recognizes common fields such as `Region`, `City`, `Latitude`, `Longitude`, `Demand`, `ForecastDemandUnits`, `Growth`, and `Risk`. If no region/city fields exist, it shows a current-file total marker so the map remains tied to the latest upload. The SCM Flow Map also recalculates from current-file lead time, inventory, reorder point, and customer demand data.
+The Bangladesh Regional Demand Map reads uploaded regional demand rows when available. It recognizes common fields such as `Region`, `City`, `Latitude`, `Longitude`, `Demand`, `ForecastDemandUnits`, `Growth`, and `Risk`. If no region/city fields exist, it shows `Relevant data not found` rather than a demo marker. The SCM Flow Map recalculates from current-file lead time, inventory, reorder point, and customer demand data, and missing stages are explicitly labeled.
 
 ## Page Routes
 
@@ -169,5 +169,4 @@ Latest verification completed:
 
 - `npm run build` passed.
 - `npm run test:fixtures` passed all 30 Excel fixture workbooks.
-- `npm run test:web-search` passed with Tavily configured.
-- Browser smoke passed for import analysis, dynamic Bangladesh map update from `DPF-22_Bangladesh_Regional_Demand_Map.xlsx`, dashboard card resize, `/forecast-methods`, hover detail buttons, and console/page error checks.
+- Browser smoke passed for import analysis, dynamic Bangladesh map update from `DPF-22_Bangladesh_Regional_Demand_Map.xlsx`, source labels, tailored filter Apply behavior, wait screen completion, and console/page error checks.
