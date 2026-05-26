@@ -9,6 +9,8 @@ Advanced SCM demand planning web app built with Next.js App Router, TypeScript, 
 - Separate product/brand online search action using Tavily.
 - CSV, Excel, and JSON import with classification, preview, validation, and quality scoring.
 - Excel import reads every workbook sheet, including unmatched sheets, so the full current file set is available to analysis.
+- Unknown Excel sheets are classified by sheet-name heuristics instead of being treated as historical sales by default.
+- Product, category, brand, and region are derived from the current uploaded workbook when matching fields exist.
 - Excel data cleaning and correction for trimmed text, normalized dates, converted numeric values, duplicate rows, and blank rows.
 - Downloadable import templates in `public/templates`.
 - Checkbox-controlled input factors and output sections.
@@ -66,11 +68,13 @@ Recommended columns for historical sales:
 
 Upload real files before running operational analysis. File import/checking does not call Tavily. Excel import reads all sheets in the uploaded workbook. If no historical file is present, forecast outputs remain empty instead of using placeholder demand data.
 
-Uploading a new file set immediately clears the previous datasets, module filters, dashboard result, dashboard card order, and search result before parsing the new file. This prevents previous data from leaking into the next analysis.
+Uploading a new file set immediately clears the previous datasets, module filters, dashboard result, dashboard card order, product metadata, expert notes, and search result before parsing the new file. This prevents previous data from leaking into the next analysis.
+
+The **Run analysis** button is disabled until the current upload has finished and at least one dataset exists. If production import or analysis fails, the app displays the server status/error message instead of a generic failure.
 
 ## Dashboard Behavior
 
-The central dashboard uses the exact analysis result produced from the current uploaded files. Each module card renders real charts, KPIs, risk badges, and recommendation text. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
+The central dashboard uses the exact analysis result produced from the current uploaded files. Forecast extraction selects rows with real demand columns such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`, so workbook info/scenario sheets are not used as demand history. Each module card renders real charts, KPIs, risk badges, and recommendation text. Because chart rendering can be expensive with many Excel sheets, ForecastSync shows a processing overlay and mounts dashboard charts in stages.
 
 Dashboard cards can be reordered with the drag handle and resized from the card size menu:
 

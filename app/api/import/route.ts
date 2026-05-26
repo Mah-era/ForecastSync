@@ -19,25 +19,41 @@ const sheetTypeMap: Record<string, UploadedDataType> = {
   Manual_Expert_Opinion: "Expert Opinion / Manual Notes"
 };
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+export const maxDuration = 60;
+
 export async function POST(request: Request) {
-  const formData = await request.formData();
-  const type = (formData.get("type")?.toString() || "Historical Sales Data") as UploadedDataType;
-  const files = formData.getAll("files").filter((item): item is File => item instanceof File);
+  try {
+    const formData = await request.formData();
+    const type = (formData.get("type")?.toString() || "Historical Sales Data") as UploadedDataType;
+    const files = formData.getAll("files").filter(isFileLike);
 
-  if (!files.length) {
-    return NextResponse.json({ error: "No files uploaded." }, { status: 400 });
-  }
-
-  const datasets = [];
-  for (const file of files) {
-    if (isExcel(file.name)) {
-      datasets.push(...(await parseExcelWorkbook(file)));
-    } else {
-      datasets.push(await parseUpload(file, type));
+    if (!files.length) {
+      return NextResponse.json({ error: "No files uploaded." }, { status: 400 });
     }
-  }
 
-  return NextResponse.json({ datasets });
+    const datasets = [];
+    for (const file of files) {
+      if (isExcel(file.name)) {
+        datasets.push(...(await parseExcelWorkbook(file, type)));
+      } else {
+        datasets.push(await parseUpload(file, type));
+      }
+    }
+
+    return NextResponse.json({ datasets });
+  } catch (error) {
+    console.error("Import API failed", error);
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : "File import failed on the server." },
+      { status: 500 }
+    );
+  }
+}
+
+function isFileLike(item: FormDataEntryValue): item is File {
+  return typeof item === "object" && item !== null && "arrayBuffer" in item && "name" in item;
 }
 
 function isExcel(fileName: string) {
@@ -45,7 +61,7 @@ function isExcel(fileName: string) {
   return extension === "xlsx" || extension === "xls";
 }
 
-async function parseExcelWorkbook(file: File): Promise<UploadedDataset[]> {
+async function parseExcelWorkbook(file: File, fallbackType: UploadedDataType): Promise<UploadedDataset[]> {
   const workbook = XLSX.read(await file.arrayBuffer());
   const sheets = workbook.SheetNames;
 
@@ -70,7 +86,7 @@ async function parseExcelWorkbook(file: File): Promise<UploadedDataset[]> {
     return {
       id: crypto.randomUUID(),
       name: `${file.name} / ${sheet}`,
-      type: sheetTypeMap[sheet] ?? "Historical Sales Data",
+      type: inferSheetType(sheet, fallbackType),
       rows,
       columns,
       qualityScore: Math.max(0, Math.round(100 - (blankCells / totalCells) * 100)),
@@ -78,4 +94,31 @@ async function parseExcelWorkbook(file: File): Promise<UploadedDataset[]> {
       cleaningSummary: cleaned.summary
     };
   });
+}
+
+function inferSheetType(sheet: string, fallbackType: UploadedDataType): UploadedDataType {
+  if (sheetTypeMap[sheet]) return sheetTypeMap[sheet];
+
+  const normalized = sheet.toLowerCase().replace(/[^a-z0-9]+/g, " ");
+  if (normalized.includes("historical") || normalized.includes("sales") || normalized.includes("actual") || normalized.includes("forecast")) {
+    return "Historical Sales Data";
+  }
+  if (normalized.includes("inventory") || normalized.includes("stock")) return "Inventory Data";
+  if (normalized.includes("promo") || normalized.includes("discount") || normalized.includes("campaign")) return "Promotion & Discount Data";
+  if (normalized.includes("competitor") || normalized.includes("pricing")) return "Competitor Data";
+  if (normalized.includes("economic") || normalized.includes("inflation") || normalized.includes("income")) return "Economic Data";
+  if (normalized.includes("lead") || normalized.includes("supplier") || normalized.includes("delay")) return "Lead Time Data";
+  if (normalized.includes("regional") || normalized.includes("customer") || normalized.includes("demand") || normalized.includes("location")) {
+    return "Customer Demand Data";
+  }
+  if (normalized.includes("trend") || normalized.includes("search") || normalized.includes("market")) return "Market Trend Data";
+  if (normalized.includes("pos") || normalized.includes("erp") || normalized.includes("technology")) return "POS / ERP Data";
+  if (normalized.includes("season") || normalized.includes("festival") || normalized.includes("eid") || normalized.includes("ramadan")) {
+    return "Seasonality / Festival Data";
+  }
+  if (normalized.includes("expert") || normalized.includes("manual") || normalized.includes("note") || normalized.includes("scenario")) {
+    return "Expert Opinion / Manual Notes";
+  }
+
+  return fallbackType === "Historical Sales Data" ? "Expert Opinion / Manual Notes" : fallbackType;
 }

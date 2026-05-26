@@ -71,14 +71,25 @@ type ModuleFilterState = { text: string; metric: string; option: string };
 type DashboardCardSize = "1:1" | "16:4" | "2:1" | "1:2";
 const defaultModuleFilter: ModuleFilterState = { text: "", metric: "All metrics", option: "All records" };
 
+async function readApiJson<T>(response: Response): Promise<T & { error?: string }> {
+  const text = await response.text();
+  if (!text) return {} as T & { error?: string };
+
+  try {
+    return JSON.parse(text) as T & { error?: string };
+  } catch {
+    return { error: text } as T & { error?: string };
+  }
+}
+
 export default function Home() {
   const [pathway, setPathway] = useState<"import" | "search" | null>(null);
   const [activeSection, setActiveSection] = useState("Dashboard");
   const [datasets, setDatasets] = useState<UploadedDataset[]>([]);
-  const [selection, setSelection] = useState({ productName: "Dove Beauty Bar", category: "cosmetics", brand: "Dove / Unilever", region: "Bangladesh" });
+  const [selection, setSelection] = useState<ProductSelection>({ productName: "", category: "", brand: "", region: "" });
   const [selectedInputs, setSelectedInputs] = useState<InputFactor[]>(inputFactors);
   const [selectedOutputs, setSelectedOutputs] = useState<OutputSection[]>(outputSections);
-  const [expertNotes, setExpertNotes] = useState("Consider Ramadan and Eid retail peaks, inflation sensitivity, and competitor discounting.");
+  const [expertNotes, setExpertNotes] = useState("");
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [marketSearch, setMarketSearch] = useState<WebSearchResult | null>(null);
   const [searchDashboard, setSearchDashboard] = useState(false);
@@ -241,9 +252,13 @@ export default function Home() {
       Array.from(files).forEach((file) => formData.append("files", file));
       formData.append("type", "Historical Sales Data");
       const response = await fetch("/api/import", { method: "POST", body: formData });
-      const payload = await response.json();
-      if (!response.ok) throw new Error(payload.error || "Could not import file.");
+      const payload = await readApiJson<{ datasets: UploadedDataset[] }>(response);
+      if (!response.ok) throw new Error(payload.error || `Could not import file. Server returned ${response.status}.`);
+      if (!Array.isArray(payload.datasets) || !payload.datasets.length) {
+        throw new Error("The file imported, but no usable worksheets or rows were found.");
+      }
       setDatasets(payload.datasets);
+      setSelection(extractSelectionFromDatasets(payload.datasets));
       setImportStatus(`Done. Imported ${payload.datasets.length} file${payload.datasets.length === 1 ? "" : "s"}.`);
       setActiveSection("Import Data");
       window.history.pushState({}, "", pathForSection("Import Data"));
@@ -268,8 +283,8 @@ export default function Home() {
         expertNotes
       };
       const response = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(request) });
-      if (!response.ok) throw new Error("Analysis request failed.");
-      const nextResult = (await response.json()) as AnalysisResult;
+      const nextResult = await readApiJson<AnalysisResult>(response);
+      if (!response.ok) throw new Error(nextResult.error || `Analysis request failed. Server returned ${response.status}.`);
       setResult(nextResult);
       setDashboardOrder(nextResult.skills.map((skill) => skill.id));
       setActiveSection("Dashboard");
@@ -353,6 +368,8 @@ export default function Home() {
     setResult(null);
     setImportStatus("");
     setBrandFilter("All brands");
+    setSelection({ productName: "", category: "", brand: "", region: "" });
+    setExpertNotes("");
     setActiveSection("Import Data");
     setDashboardOrder([]);
     setDashboardSizes({});
@@ -526,7 +543,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              {pathway === "import" && <Button onClick={analyze} disabled={loading || importing}>
+              {pathway === "import" && <Button onClick={analyze} disabled={loading || importing || !datasets.length} title={!datasets.length ? "Upload a file before running analysis." : undefined}>
                 {loading ? <Loader2 className="animate-spin" size={16} /> : <Search size={16} />}
                 Run analysis
               </Button>}
@@ -1496,6 +1513,49 @@ function getBrandValue(row: Record<string, unknown>) {
   const brandKey = Object.keys(row).find((key) => ["brand", "productbrand", "manufacturer", "company"].includes(normalizeKey(key)));
   const value = brandKey ? row[brandKey] : "";
   return String(value ?? "").trim();
+}
+
+function extractSelectionFromDatasets(datasets: UploadedDataset[]): ProductSelection {
+  return {
+    productName:
+      findScenarioValue(datasets, ["product", "productname", "item", "sku"]) ||
+      firstRowValue(datasets, ["productname", "product", "item", "sku", "material"]),
+    category:
+      findScenarioValue(datasets, ["category", "productcategory"]) ||
+      firstRowValue(datasets, ["category", "productcategory", "segment", "department"]),
+    brand:
+      findScenarioValue(datasets, ["brand", "manufacturer", "company"]) ||
+      firstRowValue(datasets, ["brand", "productbrand", "manufacturer", "company"]),
+    region:
+      findScenarioValue(datasets, ["region", "market", "country"]) ||
+      firstRowValue(datasets, ["region", "city", "market", "country"])
+  };
+}
+
+function findScenarioValue(datasets: UploadedDataset[], keys: string[]) {
+  for (const dataset of datasets) {
+    for (const row of dataset.rows) {
+      const field = firstRowValueFromRow(row, ["field", "key", "attribute", "name"]);
+      const value = firstRowValueFromRow(row, ["value", "result", "text"]);
+      if (field && value && keys.includes(normalizeKey(field))) return value;
+    }
+  }
+  return "";
+}
+
+function firstRowValue(datasets: UploadedDataset[], keys: string[]) {
+  for (const dataset of datasets) {
+    for (const row of dataset.rows) {
+      const value = firstRowValueFromRow(row, keys);
+      if (value) return value;
+    }
+  }
+  return "";
+}
+
+function firstRowValueFromRow(row: Record<string, unknown>, keys: string[]) {
+  const matchedKey = Object.keys(row).find((key) => keys.includes(normalizeKey(key)));
+  return matchedKey ? String(row[matchedKey] ?? "").trim() : "";
 }
 
 function summarizeDatasets(datasets: UploadedDataset[]) {

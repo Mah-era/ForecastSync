@@ -33,7 +33,9 @@ You can upload multiple files. For operational results, upload historical demand
 
 Excel import includes data correction for blank rows, duplicate rows, numeric values stored as text, date normalization, and extra spaces in text fields.
 
-Excel workbooks are imported across all sheets. Uploading a new file immediately replaces the previous workbook data and clears old analysis/filter state, so the next dashboard is based on the current file only.
+Excel workbooks are imported across all sheets. Uploading a new file immediately replaces the previous workbook data and clears old analysis/filter state, product metadata, expert notes, and search output, so the next dashboard is based on the current file only.
+
+When the workbook contains fields such as `Product`, `ProductName`, `Category`, `Brand`, `Region`, or a `Scenario_Info` sheet with `Field` and `Value` columns, ForecastSync fills the product/category/brand/region values from that uploaded file. It does not keep the previous product after a new import or after **Remove data**.
 
 ## Brand Filter
 
@@ -93,6 +95,8 @@ Click **Run analysis**. The dashboard will show:
 If a live search API key is not configured, the web source panel clearly shows that live search is unavailable.
 
 Large workbooks and chart-heavy dashboards may show a wait screen while the app renders. Wait for the overlay to disappear before clicking the next action.
+
+The **Run analysis** button stays disabled until import is complete and at least one current dataset exists. If import or analysis fails on the server, the red error message shows the returned status or server message so you can see what needs fixing.
 
 ## Dashboard Cards
 

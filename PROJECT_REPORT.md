@@ -24,7 +24,9 @@ The import and online-search paths are intentionally separate. Importing and che
 
 The navigation is route-based after the home page. `/` is the choice screen, `/import-data` is the file workflow, `/search-by-choice` is the web-search workflow, `/search-dashboard` is the interpreted search output, and detailed SCM module pages use module slugs such as `/historical-sales-data`, `/market-trends`, and `/forecast-accuracy`.
 
-Every new file import clears the previous in-memory datasets, analysis result, dashboard card state, module filters, and search result before parsing the new upload. Excel workbooks are imported sheet-by-sheet, including unmatched sheets, so analysis receives the full current workbook rather than only recognized templates.
+Every new file import clears the previous in-memory datasets, analysis result, dashboard card state, module filters, product metadata, expert notes, and search result before parsing the new upload. Excel workbooks are imported sheet-by-sheet, including unmatched sheets, so analysis receives the full current workbook rather than only recognized templates.
+
+To prevent placeholder or stale-file analysis, unmatched workbook sheets are classified by sheet-name heuristics instead of defaulting to historical sales, product/category/brand/region values are derived from the current workbook when available, and the forecasting extractor chooses rows that contain real demand fields such as `ActualUnits`, `UnitsSold`, `Demand`, `Sales`, or `Quantity`.
 
 ## Forecasting Logic
 
@@ -115,6 +117,8 @@ The freezing issue was addressed by removing the main sources of unnecessary wor
 - A stable default module-filter object and guarded draft synchronization prevent the previous render-loop freeze.
 - Filter Apply starts the wait screen first and schedules chart/table recalculation after the browser has painted.
 - Module route changes use the same wait overlay pattern so chart-heavy pages have time to render.
+- Production API routes run explicitly on the Node.js runtime, return JSON error messages, and reject analysis when no imported dataset is present.
+- The **Run analysis** action is disabled until a current import has completed successfully.
 
 ## Current Limitations
 
@@ -129,6 +133,7 @@ Completed checks:
 
 - Production build passed with `npm run build`.
 - Excel fixture suite passed all 30 workbooks with `npm run test:fixtures`.
+- Browser smoke confirmed the DPF-01 Excel upload, import completion, product derivation from the workbook, Run analysis, dashboard navigation, forecast visibility, and clean `/api/import` + `/api/analyze` 200 responses.
 - Tavily integration test passed with `npm run test:web-search`.
 - Browser smoke confirmed: import analysis loads, dashboard cards render real charts from current analysis data, all 13 module filters expose tailored choices and apply without freezing, replacement imports remove stale filenames/results, `/forecast-methods` has unnumbered headings, hover details are present, and the Bangladesh map changes based on the uploaded regional-demand workbook.
 

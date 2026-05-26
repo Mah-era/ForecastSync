@@ -5,19 +5,53 @@ function numeric(value: unknown, fallback = 0) {
   return Number.isFinite(parsed) ? parsed : fallback;
 }
 
+const demandKeys = [
+  "actual",
+  "actualdemand",
+  "actualunits",
+  "demand",
+  "demandunits",
+  "forecastdemandunits",
+  "quantity",
+  "sales",
+  "salesunits",
+  "unit",
+  "units",
+  "unitssold"
+];
+const periodKeys = ["period", "month", "date", "orderdate", "salesdate", "forecastmonth"];
+const promotionKeys = ["promotion", "discountpct", "discount", "promoupliftpct", "campaignuplift"];
+const festivalKeys = ["festival", "festivalliftpct", "seasonality", "seasonalindex", "seasonallift"];
+const inventoryKeys = ["inventory", "currentstock", "stock", "onhand", "stockonhand"];
+
 export function extractDemandSeries(datasets: UploadedDataset[]) {
-  const sales = datasets.find((dataset) => dataset.type === "Historical Sales Data") ?? datasets.find((dataset) => dataset.rows.length);
-  const rows: Record<string, unknown>[] = sales?.rows?.length ? sales.rows : [];
+  const sales =
+    datasets.find((dataset) => dataset.type === "Historical Sales Data" && dataset.rows.some(hasDemandValue)) ??
+    datasets.find((dataset) => dataset.rows.some(hasDemandValue));
+  const rows: Record<string, unknown>[] = sales?.rows?.filter(hasDemandValue) ?? [];
   if (!rows.length) {
     return [];
   }
   return rows.map((row, index) => ({
-    period: normalizePeriod(row.period ?? row.month ?? row.Month ?? row.date ?? row.Date ?? `P${index + 1}`),
-    actual: numeric(row.actual ?? row.ActualUnits ?? row.UnitsSold ?? row.demand ?? row.Demand ?? row.sales ?? row.quantity, 0),
-    promotion: numeric(row.promotion ?? row.DiscountPct ?? row.discount, 0),
-    festival: numeric(row.festival ?? row.FestivalLiftPct ?? row.seasonality, 0),
-    inventory: numeric(row.inventory ?? row.CurrentStock ?? row.stock, 0)
+    period: normalizePeriod(valueByKeys(row, periodKeys) ?? `P${index + 1}`),
+    actual: numeric(valueByKeys(row, demandKeys), 0),
+    promotion: numeric(valueByKeys(row, promotionKeys), 0),
+    festival: numeric(valueByKeys(row, festivalKeys), 0),
+    inventory: numeric(valueByKeys(row, inventoryKeys), 0)
   }));
+}
+
+function valueByKeys(row: Record<string, unknown>, keys: string[]) {
+  const normalized = Object.entries(row).map(([key, value]) => [normalizeKey(key), value] as const);
+  return normalized.find(([key, value]) => keys.includes(key) && value !== "")?.[1];
+}
+
+function hasDemandValue(row: Record<string, unknown>) {
+  return numeric(valueByKeys(row, demandKeys), 0) > 0;
+}
+
+function normalizeKey(key: string) {
+  return key.toLowerCase().replace(/[^a-z0-9]+/g, "");
 }
 
 function average(values: number[]) {
