@@ -1,5 +1,22 @@
 import type { SearchRequest, WebSearchResult } from "@/types/scm";
 
+export interface WebSearchAvailability {
+  available: boolean;
+  provider: "tavily" | "unavailable";
+  message: string;
+}
+
+export function getWebSearchAvailability(environment: NodeJS.ProcessEnv = process.env): WebSearchAvailability {
+  const available = Boolean(environment.TAVILY_API_KEY?.trim());
+  return {
+    available,
+    provider: available ? "tavily" : "unavailable",
+    message: available
+      ? "Tavily live market research is configured and ready."
+      : "Online research is offline until TAVILY_API_KEY is configured. File-based forecasting still works."
+  };
+}
+
 export async function runWebSearch(selection: SearchRequest): Promise<WebSearchResult> {
   const query = `${selection.productName} ${selection.brand} ${selection.category} Bangladesh demand trends competitors inflation Ramadan Eid`;
   const tavilyKey = process.env.TAVILY_API_KEY;

@@ -2,14 +2,15 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Activity, AlertTriangle, ArrowRight, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud } from "lucide-react";
+import { Activity, AlertTriangle, ArrowRight, BarChart3, Boxes, Calendar, CheckCircle2, Download, FileSpreadsheet, Filter, Globe2, GripVertical, History, Info, LineChart, Loader2, PackageSearch, Search, Trash2, TrendingDown, TrendingUp, UploadCloud, Wifi, WifiOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { DataTable } from "@/components/dashboard/DataTable";
 import { downloadBlob, exportAnalysisExcel, toCsv } from "@/lib/export/report";
 import { formatNumber, riskClass } from "@/lib/utils";
-import type { AnalysisRequest, AnalysisResult, InputFactor, OutputSection, ProductSelection, SkillResult, UploadedDataset, WebSearchResult } from "@/types/scm";
+import { loadAnalysisHistory, saveAnalysisSnapshot, type AnalysisSnapshot } from "@/lib/analysis/history";
+import type { AnalysisRequest, AnalysisResult, InputFactor, OutputSection, ProductSelection, SkillResult, UploadedDataset, WebSearchAvailability, WebSearchResult } from "@/types/scm";
 
 const ForecastChart = dynamic(() => import("@/components/charts/ScmCharts").then((module) => module.ForecastChart), {
   ssr: false,
@@ -92,6 +93,9 @@ export default function Home() {
   const [expertNotes, setExpertNotes] = useState("");
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [marketSearch, setMarketSearch] = useState<WebSearchResult | null>(null);
+  const [providerAvailability, setProviderAvailability] = useState<WebSearchAvailability | null>(null);
+  const [analysisHistory, setAnalysisHistory] = useState<AnalysisSnapshot[]>([]);
+  const [restoredAnalysis, setRestoredAnalysis] = useState(false);
   const [searchDashboard, setSearchDashboard] = useState(false);
   const [brandFilter, setBrandFilter] = useState("All brands");
   const [moduleFilters, setModuleFilters] = useState<Record<string, ModuleFilterState>>({});
@@ -135,6 +139,20 @@ export default function Home() {
     applyPath();
     window.addEventListener("popstate", applyPath);
     return () => window.removeEventListener("popstate", applyPath);
+  }, []);
+
+  useEffect(() => {
+    const saved = loadAnalysisHistory(window.localStorage);
+    setAnalysisHistory(saved);
+    if (sectionFromPath(window.location.pathname) === "Dashboard" && saved[0]) {
+      setResult(saved[0].result);
+      setDashboardOrder(saved[0].result.skills.map((skill) => skill.id));
+      setRestoredAnalysis(true);
+    }
+    fetch("/api/search")
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error("Provider check failed")))
+      .then((status: WebSearchAvailability) => setProviderAvailability(status))
+      .catch(() => setProviderAvailability({ available: false, provider: "unavailable", message: "Provider status could not be checked. File-based forecasting still works." }));
   }, []);
 
   const currentSkill = useMemo(() => result?.skills.find((skill) => skill.title === activeSection), [activeSection, result]);
@@ -289,6 +307,8 @@ export default function Home() {
       const nextResult = await readApiJson<AnalysisResult>(response);
       if (!response.ok) throw new Error(nextResult.error || `Analysis request failed. Server returned ${response.status}.`);
       setResult(nextResult);
+      setAnalysisHistory(saveAnalysisSnapshot(window.localStorage, nextResult));
+      setRestoredAnalysis(false);
       setDashboardOrder(nextResult.skills.map((skill) => skill.id));
       setActiveSection("Dashboard");
       window.history.pushState({}, "", pathForSection("Dashboard"));
@@ -297,6 +317,17 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
+  }
+
+  function restoreAnalysis(snapshotId: string) {
+    const snapshot = analysisHistory.find((item) => item.id === snapshotId);
+    if (!snapshot) return;
+    setResult(snapshot.result);
+    setDashboardOrder(snapshot.result.skills.map((skill) => skill.id));
+    setPathway("import");
+    setActiveSection("Dashboard");
+    setRestoredAnalysis(true);
+    window.history.pushState({}, "", pathForSection("Dashboard"));
   }
 
   async function searchMarket() {
@@ -518,6 +549,10 @@ export default function Home() {
               <p className="mt-2 text-sm leading-6 text-slate-500">
                 Enter a product, category, brand, and region to run a Tavily-powered online market research search.
               </p>
+              <div className={`mt-4 flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-medium ${providerAvailability?.available ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"}`}>
+                {providerAvailability?.available ? <Wifi size={14} /> : <WifiOff size={14} />}
+                {providerAvailability?.available ? "Live Tavily provider ready" : "Online provider not configured"}
+              </div>
               <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-slate-600">
                 Search online <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
               </div>
@@ -556,6 +591,15 @@ export default function Home() {
             </button>
           ))}
         </nav>
+        {analysisHistory.length > 0 && <div className="mt-6 border-t border-slate-100 pt-4">
+          <div className="mb-2 flex items-center gap-2 px-2 text-[11px] font-bold uppercase tracking-wider text-slate-400"><History size={13} />Saved analyses</div>
+          <div className="space-y-1">
+            {analysisHistory.slice(0, 4).map((snapshot) => <button key={snapshot.id} onClick={() => restoreAnalysis(snapshot.id)} className="w-full rounded-lg px-2 py-2 text-left hover:bg-slate-50">
+              <span className="block truncate text-xs font-semibold text-slate-700">{snapshot.label}</span>
+              <span className="mt-0.5 block text-[10px] text-slate-400">{new Date(snapshot.createdAt).toLocaleString()} · v{snapshot.version}</span>
+            </button>)}
+          </div>
+        </div>}
       </aside>}
 
       <section className="w-full">
@@ -609,6 +653,10 @@ export default function Home() {
                 <h2 className="font-semibold">Product & Brand</h2>
               </CardHeader>
               <CardContent className="space-y-3">
+                <div className={`flex items-start gap-2 rounded-lg border p-3 text-xs ${providerAvailability?.available ? "border-emerald-200 bg-emerald-50 text-emerald-800" : "border-amber-200 bg-amber-50 text-amber-800"}`}>
+                  {providerAvailability?.available ? <Wifi className="mt-0.5 shrink-0" size={15} /> : <WifiOff className="mt-0.5 shrink-0" size={15} />}
+                  <span><strong>{providerAvailability?.available ? "Live provider ready." : "Online research unavailable."}</strong> {providerAvailability?.message ?? "Checking provider status…"}</span>
+                </div>
                 {[
                   ["productName", "Product name"],
                   ["category", "Category"],
@@ -814,6 +862,7 @@ export default function Home() {
 
             {pathway === "import" && result && activeSection === "Dashboard" && (
               <>
+                {restoredAnalysis && <div className="flex items-center gap-2 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-800"><History size={16} /><span>Restored a versioned local analysis from {new Date(result.generatedAt).toLocaleString()}. Uploads are not stored; run again to refresh from source data.</span></div>}
                 <DataQualityBanner datasets={filteredDatasets} />
                 {filteredDatasets.length > 0 && (
                   <div className="flex flex-wrap items-center gap-2 rounded-xl border border-teal-200/60 bg-teal-50/60 px-4 py-2.5 text-sm text-teal-800">

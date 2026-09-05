@@ -171,3 +171,9 @@ export interface AnalysisResult {
   actionPlan: string[];
   generatedAt: string;
 }
+
+export interface WebSearchAvailability {
+  available: boolean;
+  provider: "tavily" | "unavailable";
+  message: string;
+}
